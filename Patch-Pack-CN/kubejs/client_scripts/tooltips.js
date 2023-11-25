@@ -1,3 +1,4 @@
+//本愿说他搞这个文件
 const bone_effigy = [
     'crow',
     'sugar_glider',
