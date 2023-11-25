@@ -1,7 +1,7 @@
 # Modpack Name 汉化补丁
 CurseForge|Modrinth|Modpack Version|Status
 :-|:-|:-|:-
-[ModpackName]()|[ModpackName]()|Version|*Active*|
+[Prey](https://www.curseforge.com/minecraft/modpacks/prey-beta)|[ModpackName]()|Version|*Active*|
 # 译者
 查看贡献者列表以获得完整译者名单
 # 鸣谢
