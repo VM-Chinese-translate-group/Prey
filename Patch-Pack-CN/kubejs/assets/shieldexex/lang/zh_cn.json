@@ -7,7 +7,7 @@
   "item.shieldexex.diamond_shield": "钻石盾",
   "item.shieldexex.netherite_shield": "下界合金盾",
   "item.shieldexex.electrum_shield": "琥珀金盾",
-  "item.shieldexex.adamantite_shield": "Adamantite Shield",
+  "item.shieldexex.adamantite_shield": "精金盾",
 
   "item.shieldexex.wooden_tower_shield": "木塔盾",
   "item.shieldexex.stone_tower_shield": "石塔盾",
@@ -16,9 +16,9 @@
   "item.shieldexex.diamond_tower_shield": "钻石塔盾",
   "item.shieldexex.netherite_tower_shield": "下界合金塔盾",
   "item.shieldexex.electrum_tower_shield": "琥珀金塔盾",
-  "item.shieldexex.adamantite_tower_shield": "Adamantite Tower Shield",
+  "item.shieldexex.adamantite_tower_shield": "精金塔盾",
 
 
-  "itemGroup.shield": "更多盾牌"
+  "itemGroup.shield": "盾牌"
 
 }
