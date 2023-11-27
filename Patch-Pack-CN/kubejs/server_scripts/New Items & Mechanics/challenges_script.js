@@ -23,7 +23,7 @@ EntityEvents.hurt(event => {
     //Utils.server.tell(`Step 5 done`)
     if (knock_knock_counter[player_username] == undefined) {
         knock_knock_counter[player_username] = 1
-        event.source.player.tell(`Villager Kills: ${knock_knock_counter[player_username]}`)
+        event.source.player.tell(`村民击杀数：${knock_knock_counter[player_username]}`)
         knock_knock_trigger = false
         event.entity.kill()
         event.server.scheduleInTicks(20, () => {
@@ -31,7 +31,7 @@ EntityEvents.hurt(event => {
         })
 	} else {
 		knock_knock_counter[player_username]++;
-        event.source.player.tell(`Villager Kills: ${knock_knock_counter[player_username]}`)
+        event.source.player.tell(`村民击杀数：${knock_knock_counter[player_username]}`)
         knock_knock_trigger = false
         event.entity.kill()
         event.server.scheduleInTicks(20, () => {
@@ -65,10 +65,10 @@ EntityEvents.death('lategamegolems:lgg_entity', event => {
         if (source.type != 'bullet') return
         if (golem_counter[player_username] == undefined) {
             golem_counter[player_username] = 1
-            event.source.player.tell(`Golem Kills: ${golem_counter[player_username]}`)
+            event.source.player.tell(`傀儡击杀数：${golem_counter[player_username]}`)
         } else {
             golem_counter[player_username]++
-            event.source.player.tell(`Golem Kills: ${golem_counter[player_username]}`)
+            event.source.player.tell(`傀儡击杀数：${golem_counter[player_username]}`)
         }
         if (knock_knock_counter[player_username] != 30) return;
         if (golem_counter[player_username] != 3)
