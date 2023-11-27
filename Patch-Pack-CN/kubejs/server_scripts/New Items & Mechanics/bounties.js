@@ -33,26 +33,26 @@ creeper.forEach((entity) => {
 			let player_username = event.source.player.username;
 			if (bounty_counter[player_username] == undefined) {
 				bounty_counter[player_username] = 1
-				event.source.player.tell(`Creeper Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`苦力怕击杀数：${bounty_counter[player_username]}`)
 				
 			} else {
 				bounty_counter[player_username]++;
-				event.source.player.tell(`Creeper Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`苦力怕击杀数：${bounty_counter[player_username]}`)
 			}
 		}
 		if (event.entity.player) {
 		let player_username = event.source.player.username;
 		if (bounty_counter[player_username] == undefined) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Creeper Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`苦力怕击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] <= 5) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Creeper Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`苦力怕击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] > 5) {
 			bounty_counter[player_username]-5
-			event.entity.tell(`Creeper Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`苦力怕击杀数：${bounty_counter[player_username]}`)
 		}
     }
 	})
@@ -93,26 +93,26 @@ skeleton.forEach((entity) => {
 			let player_username = event.source.player.username;
 			if (bounty_counter[player_username] == undefined) {
 				bounty_counter[player_username] = 1
-				event.source.player.tell(`Skeleton Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`骷髅击杀数：${bounty_counter[player_username]}`)
 				
 			} else {
 				bounty_counter[player_username]++;
-				event.source.player.tell(`Skeleton Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`骷髅击杀数：${bounty_counter[player_username]}`)
 			}
 		}
 		if (event.entity.player) {
 		let player_username = event.source.player.username;
 		if (bounty_counter[player_username] == undefined) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Skeleton Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`骷髅击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] <= 5) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Skeleton Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`骷髅击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] > 5) {
 			bounty_counter[player_username]-5
-			event.entity.tell(`Skeleton Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`骷髅击杀数：${bounty_counter[player_username]}`)
 		}
     }
 	})
@@ -135,26 +135,26 @@ spider.forEach((entity) => {
 			let player_username = event.source.player.username;
 			if (bounty_counter[player_username] == undefined) {
 				bounty_counter[player_username] = 1
-				event.source.player.tell(`Spider Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`蜘蛛击杀数：${bounty_counter[player_username]}`)
 				
 			} else {
 				bounty_counter[player_username]++;
-				event.source.player.tell(`Spider Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`蜘蛛击杀数：${bounty_counter[player_username]}`)
 			}
 		}
 		if (event.entity.player) {
 		let player_username = event.source.player.username;
 		if (bounty_counter[player_username] == undefined) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Spider Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`蜘蛛击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] <= 5) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Spider Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`蜘蛛击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] > 5) {
 			bounty_counter[player_username]-5
-			event.entity.tell(`Spider Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`蜘蛛击杀数：${bounty_counter[player_username]}`)
 		}
     }
 	})
@@ -200,26 +200,26 @@ zombie.forEach((entity) => {
 			let player_username = event.source.player.username;
 			if (bounty_counter[player_username] == undefined) {
 				bounty_counter[player_username] = 1
-				event.source.player.tell(`Zombie Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`僵尸击杀数：${bounty_counter[player_username]}`)
 				
 			} else {
 				bounty_counter[player_username]++;
-				event.source.player.tell(`Zombie Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`僵尸击杀数：${bounty_counter[player_username]}`)
 			}
 		}
 		if (event.entity.player) {
 		let player_username = event.source.player.username;
 		if (bounty_counter[player_username] == undefined) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Zombie Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`僵尸击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] <= 5) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Zombie Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`僵尸击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] > 5) {
 			bounty_counter[player_username]-5
-			event.entity.tell(`Zombie Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`僵尸击杀数：${bounty_counter[player_username]}`)
 		}
     }
 	})
@@ -243,26 +243,26 @@ enderman.forEach((entity) => {
 			let player_username = event.source.player.username;
 			if (bounty_counter[player_username] == undefined) {
 				bounty_counter[player_username] = 1
-				event.source.player.tell(`Enderman Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`末影人击杀数：${bounty_counter[player_username]}`)
 				
 			} else {
 				bounty_counter[player_username]++;
-				event.source.player.tell(`Enderman Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`末影人击杀数：${bounty_counter[player_username]}`)
 			}
 		}
 		if (event.entity.player) {
 		let player_username = event.source.player.username;
 		if (bounty_counter[player_username] == undefined) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Enderman Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`末影人击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] <= 5) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Enderman Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`末影人击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] > 5) {
 			bounty_counter[player_username]-5
-			event.entity.tell(`Enderman Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`末影人击杀数：${bounty_counter[player_username]}`)
 		}
     }
 	})
@@ -300,26 +300,26 @@ pillager.forEach((entity) => {
 			let player_username = event.source.player.username;
 			if (bounty_counter[player_username] == undefined) {
 				bounty_counter[player_username] = 1
-				event.source.player.tell(`Pillager Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`掠夺者击杀数：${bounty_counter[player_username]}`)
 				
 			} else {
 				bounty_counter[player_username]++;
-				event.source.player.tell(`Pillager Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`掠夺者击杀数：${bounty_counter[player_username]}`)
 			}
 		}
 		if (event.entity.player) {
 		let player_username = event.source.player.username;
 		if (bounty_counter[player_username] == undefined) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Pillager Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`掠夺者击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] <= 5) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Pillager Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`掠夺者击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] > 5) {
 			bounty_counter[player_username]-5
-			event.entity.tell(`Pillager Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`掠夺者击杀数：${bounty_counter[player_username]}`)
 		}
     }
 	})
@@ -342,26 +342,26 @@ piglin.forEach((entity) => {
 			let player_username = event.source.player.username;
 			if (bounty_counter[player_username] == undefined) {
 				bounty_counter[player_username] = 1
-				event.source.player.tell(`Piglin Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`猪灵击杀数：${bounty_counter[player_username]}`)
 				
 			} else {
 				bounty_counter[player_username]++;
-				event.source.player.tell(`Piglin Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`猪灵击杀数：${bounty_counter[player_username]}`)
 			}
 		}
 		if (event.entity.player) {
 		let player_username = event.source.player.username;
 		if (bounty_counter[player_username] == undefined) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Piglin Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`猪灵击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] <= 5) {
 			bounty_counter[player_username] = 0
-			event.entity.tell(`Piglin Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`猪灵击杀数：${bounty_counter[player_username]}`)
 		}
 		if (bounty_counter[player_username] > 5) {
 			bounty_counter[player_username]-5
-			event.entity.tell(`Piglin Kills: ${bounty_counter[player_username]}`)
+			event.entity.tell(`猪灵击杀数：${bounty_counter[player_username]}`)
 		}
     }
 	})
@@ -385,26 +385,26 @@ drowned.forEach((entity) => {
 			let player_username = event.source.player.username;
 			if (bounty_counter[player_username] == undefined) {
 				bounty_counter[player_username] = 1
-				event.source.player.tell(`Drowned Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`溺尸击杀数：${bounty_counter[player_username]}`)
 				
 			} else {
 				bounty_counter[player_username]++;
-				event.source.player.tell(`Drowned Kills: ${bounty_counter[player_username]}`)
+				event.source.player.tell(`溺尸击杀数：${bounty_counter[player_username]}`)
 			}
 		}
 		if (event.entity.player) {
             let player_username = event.source.player.username;
             if (bounty_counter[player_username] == undefined) {
                 bounty_counter[player_username] = 0
-                event.entity.tell(`Drowned Kills: ${bounty_counter[player_username]}`)
+                event.entity.tell(`溺尸击杀数：${bounty_counter[player_username]}`)
             }
             if (bounty_counter[player_username] <= 5) {
                 bounty_counter[player_username] = 0
-                event.entity.tell(`Drowned Kills: ${bounty_counter[player_username]}`)
+                event.entity.tell(`溺尸击杀数：${bounty_counter[player_username]}`)
             }
             if (bounty_counter[player_username] > 5) {
                 bounty_counter[player_username]-5
-                event.entity.tell(`Drowned Kills: ${bounty_counter[player_username]}`)
+                event.entity.tell(`溺尸击杀数：${bounty_counter[player_username]}`)
             }
         }
 
@@ -450,15 +450,15 @@ bounty_level_one.forEach((bounty_entity) => {
         if (event.player.persistentData.contains('kubejs_class:bounty_hunter')) {
             bounty_hunter_trigger = true
         }
-        Utils.server.runCommandSilent(`/tell ${player_username} 5 minute timer begins now. Slaughter all ${bounty_entity}s in your path.`)
+        Utils.server.runCommandSilent(`/tell ${player_username} 计时五分钟开始。屠杀你路上的所有${bounty_entity}。`)
         event.server.scheduleInTicks(6000, event => {
             if (bounty_counter[player_username] < 25) {
-                Utils.server.runCommandSilent(`/tell ${player_username} No Reward for Failure`)
+                Utils.server.runCommandSilent(`/tell ${player_username} 失败没有奖励`)
                 Utils.server.runCommandSilent(`/tag ${player_username} remove ${bounty_entity}_active_bounty`)
                 bounty_counter[player_username] = 0
             }
             if (bounty_counter[player_username] >= 25 && bounty_counter[player_username] <= 49) {
-                Utils.server.runCommandSilent(`/tell ${player_username} 25+ kills`)
+                Utils.server.runCommandSilent(`/tell ${player_username} 25+ 击杀数`)
                 bounty_counter[player_username] = 0
                 Utils.server.runCommandSilent(`/tag ${player_username} remove ${bounty_entity}_active_bounty`)
                 Utils.server.runCommandSilent(`/give ${player_username} kubejs:common_bounty_reward`)
@@ -467,7 +467,7 @@ bounty_level_one.forEach((bounty_entity) => {
                 }
             }
             if (bounty_counter[player_username] > 50 && bounty_counter[player_username] < 74) {
-                Utils.server.runCommandSilent(`/tell ${player_username} 50+ kills`)
+                Utils.server.runCommandSilent(`/tell ${player_username} 50+ 击杀数`)
                 bounty_counter[player_username] = 0
                 Utils.server.runCommandSilent(`/tag ${player_username} remove ${bounty_entity}_active_bounty`)
                 Utils.server.runCommandSilent(`/give ${player_username} kubejs:uncommon_bounty_reward`)
@@ -476,7 +476,7 @@ bounty_level_one.forEach((bounty_entity) => {
                 }
             }
             if (bounty_counter[player_username] >= 75) {
-                Utils.server.runCommandSilent(`/tell ${player_username} 75+ kills`)
+                Utils.server.runCommandSilent(`/tell ${player_username} 75+ 击杀数`)
                 bounty_counter[player_username] = 0
                 Utils.server.runCommandSilent(`/tag ${player_username} remove ${bounty_entity}_active_bounty`)
                 Utils.server.runCommandSilent(`/give ${player_username} kubejs:rare_bounty_reward`)
@@ -503,15 +503,15 @@ bounty_level_two.forEach((bounty_entity) => {
         if (event.player.persistentData.contains('kubejs_class:bounty_hunter')) {
             bounty_hunter_trigger = true
         }
-        Utils.server.runCommandSilent(`/tell ${player_username} 5 minute timer begins now. Slaughter all ${bounty_entity}s in your path.`)
+        Utils.server.runCommandSilent(`/tell ${player_username} 计时5分钟开始。屠杀你路上的所有${bounty_entity}。`)
         event.server.scheduleInTicks(6000, event => {
             if (bounty_counter[player_username] < 15) {
-                Utils.server.runCommandSilent(`/tell ${player_username} No Reward for Failure`)
+                Utils.server.runCommandSilent(`/tell ${player_username} 失败没有奖励`)
                 Utils.server.runCommandSilent(`/tag ${player_username} remove ${bounty_entity}_active_bounty`)
                 bounty_counter[player_username] = 0
             }
             if (bounty_counter[player_username] >= 15 && bounty_counter[player_username] <= 24) {
-                Utils.server.runCommandSilent(`/tell ${player_username} 15+ kills`)
+                Utils.server.runCommandSilent(`/tell ${player_username} 15+ 击杀数`)
                 bounty_counter[player_username] = 0
                 Utils.server.runCommandSilent(`/tag ${player_username} remove ${bounty_entity}_active_bounty`)
                 Utils.server.runCommandSilent(`/give ${player_username} kubejs:common_bounty_reward`)
@@ -520,7 +520,7 @@ bounty_level_two.forEach((bounty_entity) => {
                 }
             }
             if (bounty_counter[player_username] > 25 && bounty_counter[player_username] < 49) {
-                Utils.server.runCommandSilent(`/tell ${player_username} 25+ kills`)
+                Utils.server.runCommandSilent(`/tell ${player_username} 25+ 击杀数`)
                 bounty_counter[player_username] = 0
                 Utils.server.runCommandSilent(`/tag ${player_username} remove ${bounty_entity}_active_bounty`)
                 Utils.server.runCommandSilent(`/give ${player_username} kubejs:uncommon_bounty_reward`)
@@ -529,7 +529,7 @@ bounty_level_two.forEach((bounty_entity) => {
                 }
             }
             if (bounty_counter[player_username] >= 50) {
-                Utils.server.runCommandSilent(`/tell ${player_username} 50+ kills`)
+                Utils.server.runCommandSilent(`/tell ${player_username} 50+ 击杀数`)
                 bounty_counter[player_username] = 0
                 Utils.server.runCommandSilent(`/tag ${player_username} remove ${bounty_entity}_active_bounty`)
                 Utils.server.runCommandSilent(`/give ${player_username} kubejs:rare_bounty_reward`)
@@ -626,7 +626,8 @@ let hvt_counter = new Map()
 let hvt_current = new Map()
 ItemEvents.rightClicked('kubejs:high_value_target', event => {
 	if (event.player.persistentData.HVT_counter > 0) {
-		event.player.tell('You can only have 1 active High Value Target Contract.')
+//待译
+		event.player.tell('你只能拥有一张激活的高价悬赏令。')
 		event.player.paint({
 			hvt: {
 				w: '$screenW', 
@@ -654,7 +655,7 @@ ItemEvents.rightClicked('kubejs:high_value_target', event => {
 				color: 'darkRed',
 				type: 'text',
 				centered: true,
-				text: `High Value Target`,
+				text: `高价悬赏目标`,
 				shadow: true,
 				scale: 1.1,
 			},
@@ -671,7 +672,7 @@ ItemEvents.rightClicked('kubejs:high_value_target', event => {
 		.replace(/\w+/g, word => word.charAt(0).toUpperCase() + word.slice(1));
 		let hvt_complete = event.player.persistentData[`${randomEntry}_hvt`]
 		event.entity.tags.add(`${randomEntry}_bounty`)
-		Utils.server.runCommandSilent(`/tell ${player_username} You must kill ${hvt_complete} ${formattedEntry}`)
+		Utils.server.runCommandSilent(`/tell ${player_username} 你必须击杀${hvt_complete} ${formattedEntry}`)
 		hvt_current[player_username] = `${formattedEntry}`
 		event.item.count--
 		event.player.paint({
@@ -701,7 +702,7 @@ ItemEvents.rightClicked('kubejs:high_value_target', event => {
 				color: 'darkRed',
 				type: 'text',
 				centered: true,
-				text: `High Value Target`,
+				text: `高价悬赏目标`,
 				shadow: true,
 				scale: 1.1,
 			},
@@ -735,15 +736,15 @@ EntityEvents.death(event => {
 	event.source.player.persistentData.HVT_counter -= 1
 
 	hvt_counter[`${player_username}_${entity_name}`] = 0
-	event.server.tell(event.entity.displayName.getString() + " Bounty Complete")
+	event.server.tell(event.entity.displayName.getString() + "悬赏完成")
 	event.source.player.tags.remove(`${entity_id}_bounty`)
 	if (!event.source.player.persistentData.contains(`kubejs_class:bounty_hunter`)) {
 		Utils.server.runCommandSilent(`/give ${player_username} numismaticoverhaul:bronze_coin ${(hvt_complete*2)*3}`)
-		event.source.player.tell(`High Value Target Reward: ${(hvt_complete*2)*3} Bronze Coins`)
+		event.source.player.tell(`高价悬赏目标奖励：${(hvt_complete*2)*3} 青铜币`)
 	} else {
 		Utils.server.runCommandSilent(`/give ${player_username} numismaticoverhaul:bronze_coin ${(hvt_complete*2)*9}`)
 		event.source.player.persistentData.souls += 50
-		event.source.player.paint({souls_word: {text: `Souls: ${event.source.player.persistentData.souls}`}})
-		event.source.player.tell(`Dark Marauder Reward: ${(hvt_complete*2)*9} Bronze Coins & 50 Souls`)
+		event.source.player.paint({souls_word: {text: `灵魂：${event.source.player.persistentData.souls}`}})
+		event.source.player.tell(`邪恶强盗的奖励：${(hvt_complete*2)*9} 青铜币和50 灵魂`)
 	}
 })
