@@ -96,11 +96,11 @@ ItemEvents.crafted(event => {
 
 
     if (t_counter == e_counter*50) {
-        event.player.tell(`Blacksmith Tool Leveling Progress: 50% Complete`)
+        event.player.tell(`铁匠工具升级进度：已完成50%`)
     }
 
     if (t_counter == e_counter*250) {
-        event.player.tell(`Blacksmith Tool Leveling Progress: 50% Complete`)
+        event.player.tell(`铁匠工具升级进度：已完成50%`)
     }
 
     Utils.server.tell('e_counter = '+e_counter)
@@ -110,7 +110,7 @@ ItemEvents.crafted(event => {
     if (t_counter < e_counter*500) return
         //Utils.server.tell('Counter Passed')
         event.player.persistentData.per_tools_counter = 0
-        Utils.server.runCommandSilent(`/tell ${player_name} Blacksmith Mutliplier: Level Up`)
+        Utils.server.runCommandSilent(`/tell ${player_name} 铁匠倍率：升级`)
         event.player.persistentData.per_blacksmith_counter += 1
         blacksmith_tool_commands.forEach((command) => {
             Utils.server.runCommandSilent(`/attribute ${player_name} ${command} ${e_counter*1.1}`)
@@ -130,11 +130,11 @@ ItemEvents.crafted(event => {
     let a_counter = event.player.persistentData.per_armor_counter
 
     if (a_counter == e_counter*40) {
-        event.player.tell(`Blacksmith Armor Leveling Progress: 10% Complete`)
+        event.player.tell(`铁匠盔甲升级进度：已完成10%`)
     }
 
     if (a_counter == e_counter*200) {
-        event.player.tell(`Blacksmith Armor Leveling Progress: 50% Complete`)
+        event.player.tell(`铁匠盔甲升级进度：已完成50%`)
     }
 
     //Utils.server.tell('e_counter = '+e_counter)
@@ -144,7 +144,7 @@ ItemEvents.crafted(event => {
     if (a_counter < e_counter*400) return
         //Utils.server.tell('Counter Passed')
         event.player.persistentData.per_armor_counter = 0
-        Utils.server.runCommandSilent(`/tell ${player_name} Blacksmith Mutliplier: Level Up`)
+        Utils.server.runCommandSilent(`/tell ${player_name} 铁匠倍率：升级`)
         event.player.persistentData.per_blacksmith_counter += 1
         blacksmith_armor_commands.forEach((command) => {
             Utils.server.runCommandSilent(`/attribute ${player_name} ${command} ${e_counter*1.1}`)
