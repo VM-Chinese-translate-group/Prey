@@ -77,7 +77,7 @@
 			tasks: [{
 				entity: "cataclysm:the_harbinger"
 				id: "6670A2EC88D73C65"
-				title: "Use the Nether Star to activate The Harbinger"
+				title: "使用下界之星唤醒先驱者"
 				type: "kill"
 				value: 1L
 			}]
@@ -103,7 +103,7 @@
 				structure: "cataclysm:ancient_factory"
 				type: "structure"
 			}]
-			title: "In the Overworld, find the Ancient Factory"
+			title: "在主世界找到远古工厂"
 			x: -4.5d
 			y: 1.0d
 		}
@@ -150,7 +150,7 @@
 					type: "item"
 				}
 			]
-			title: "Spawn The Wither"
+			title: "召唤凋灵"
 			x: -0.5d
 			y: -1.0d
 		}
@@ -173,7 +173,7 @@
 				structure: "betterfortresses:fortress"
 				type: "structure"
 			}]
-			title: "Seek out a Nether Fortress"
+			title: "找到下界要塞"
 			x: -0.5d
 			y: -3.5d
 		}
@@ -185,7 +185,7 @@
 				id: "56DF21AEB8C4E23E"
 				type: "dimension"
 			}]
-			title: "Journey to The Nether"
+			title: "下界之旅"
 			x: -0.5d
 			y: -4.5d
 		}
@@ -214,7 +214,7 @@
 				}
 				type: "item"
 			}]
-			title: "Craft Compound Z"
+			title: "合成复合物Z"
 			x: -2.0d
 			y: -4.5d
 		}
@@ -300,7 +300,7 @@
 					}
 				}
 				id: "7F5BE5A08470C1B9"
-				title: "Kill the Awful Ghast"
+				title: "击杀惊骇恶魂"
 				type: "kill"
 				value: 1L
 			}]
@@ -310,7 +310,7 @@
 		{
 			dependencies: ["3A2D9327A2FC0B91"]
 			id: "77FBA5FDDAF1C224"
-			subtitle: "Use a Wither Star on the Altar"
+			subtitle: "使用下界之星点击祭坛"
 			tasks: [{
 				block: "stalwart_dungeons:awful_ghast_altar"
 				block_type: 0
@@ -324,7 +324,7 @@
 				id: "092F0AFAF063EB53"
 				replace: false
 				replaced: "minecraft:air"
-				title: "Place the Awful Ghast Altar"
+				title: "放置惊骇恶魂祭坛"
 				type: "questsadditions:place"
 				value: 1L
 			}]
@@ -345,11 +345,11 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Watch your step..."
+			subtitle: "小心脚下……"
 			tasks: [{
 				id: "5829E2C85F613C1D"
 				structure: "minecraft:ancient_city"
-				title: "Locate an Ancient City"
+				title: "找到远古城市"
 				type: "structure"
 			}]
 			x: -4.0d
@@ -440,7 +440,7 @@
 				}
 				type: "item"
 			}]
-			title: "Use the Heart of the Deep to ignite the portal"
+			title: "使用深渊之心点亮传送门"
 			x: -5.5d
 			y: -3.0d
 		}
@@ -518,7 +518,7 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "Blow the Warden Horn while in The Otherside"
+			subtitle: "在幽冥吹响监守者号角"
 			tasks: [{
 				entity: "deeperdarker:stalker"
 				id: "1E226FAB82040302"
@@ -550,7 +550,7 @@
 				structure: "cataclysm:soul_black_smith"
 				type: "structure"
 			}]
-			title: "In the Nether, find the Soul Blacksmith"
+			title: "在下界找到灵魂锻造厂"
 			x: -3.5d
 			y: -2.0d
 		}
@@ -695,7 +695,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "Use the Burning Ashes on the Altar to begin..."
+			title: "使用炽燃余烬点击祭坛以开始……"
 			x: -3.0d
 			y: 3.0d
 		}
@@ -724,7 +724,7 @@
 				}
 				type: "item"
 			}]
-			title: "Obtain Burning Ashes"
+			title: "获得炽燃余烬"
 			x: -3.0d
 			y: 2.0d
 		}
@@ -747,7 +747,7 @@
 				structure: "cataclysm:burning_arena"
 				type: "structure"
 			}]
-			title: "Venture to The Burning Arena"
+			title: "前往烈焰竞技场的冒险"
 			x: -3.0d
 			y: 1.0d
 		}
@@ -757,7 +757,7 @@
 			tasks: [{
 				dimension: "deeperdarker:otherside"
 				id: "0C632A33D3FE2F33"
-				title: "Go to The Otherside"
+				title: "前往幽冥"
 				type: "dimension"
 			}]
 			x: -5.5d
@@ -824,11 +824,11 @@
 			tasks: [{
 				entity: "cataclysm:the_leviathan"
 				id: "178AB97C69E9E69E"
-				title: "Kill 2x Leviathans"
+				title: "击杀2个利维坦"
 				type: "kill"
 				value: 1L
 			}]
-			title: "Kill The Leviathan"
+			title: "击杀利维坦"
 			x: -3.0d
 			y: 14.0d
 		}
@@ -846,7 +846,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Use the Abyssal Sacrifice on the Altar to begin..."
+			subtitle: "使用深渊祭品点击祭坛以开始……"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -858,7 +858,7 @@
 				id: "18759636819589BE"
 				observe_type: 0
 				timer: 0L
-				title: "Delve into The Sunken City and find the Altar"
+				title: "深入沉没之城并找到祭坛"
 				to_observe: "cataclysm:altar_of_abyss"
 				type: "observation"
 			}]
@@ -890,7 +890,7 @@
 				}
 				type: "item"
 			}]
-			title: "Craft an Abyssal Sacrifice"
+			title: "合成深渊祭品"
 			x: -3.0d
 			y: 12.0d
 		}
@@ -914,7 +914,7 @@
 			tasks: [{
 				id: "53A87A5230103CD7"
 				structure: "cataclysm:sunken_city"
-				title: "Find a Sunken City"
+				title: "找到沉没之城"
 				type: "structure"
 			}]
 			x: -3.0d
@@ -1345,7 +1345,7 @@
 				}
 				type: "item"
 			}]
-			title: "Trade with The Gatekeeper to obtain a Zeal Lighter"
+			title: "与守门人交易以获得御风火石"
 			x: -3.0d
 			y: 6.0d
 		}
@@ -1358,7 +1358,7 @@
 			id: "0B6912461E6CAF40"
 			tasks: [{
 				id: "5D18D4F00460821E"
-				title: "Find a Gatekeepers House"
+				title: "找到一个守门人小屋"
 				type: "checkmark"
 			}]
 			x: -3.0d
@@ -1408,7 +1408,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Throw Compound Z on a Wither Skeleton"
+			subtitle: "把复合物Z扔到凋零骷髅身上"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1423,11 +1423,11 @@
 				id: "1F8F6E8827F5DB6A"
 				observe_type: 5
 				timer: 0L
-				title: "Spawn and kill a Mutant Wither Skeleton"
+				title: "召唤并击杀一个突变凋灵骷髅"
 				to_observe: "mutantmore:mutant_wither_skeleton"
 				type: "observation"
 			}]
-			title: "Spawn and kill a Mutant Wither Skeleton"
+			title: "召唤并击杀一个突变凋灵骷髅"
 			x: -1.5d
 			y: -3.0d
 		}
@@ -1475,7 +1475,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Throw Compound Z on a Blaze"
+			subtitle: "把复合物Z扔到烈焰人身上"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1487,11 +1487,11 @@
 				id: "5EF3D3BE5839DDC9"
 				observe_type: 5
 				timer: 0L
-				title: "Spawn and kill a Mutant Blaze"
+				title: "召唤并击杀一个突变烈焰人"
 				to_observe: "mutantmore:mutant_blaze"
 				type: "observation"
 			}]
-			title: "Spawn and kill a Mutant Blaze"
+			title: "召唤并击杀一个突变烈焰人"
 			x: 0.5d
 			y: -3.0d
 		}
@@ -1509,7 +1509,7 @@
 				}
 				type: "item"
 			}]
-			title: "Obtain the Rib Cage"
+			title: "获得胸廓"
 			x: -1.5d
 			y: -2.0d
 		}
@@ -1527,7 +1527,7 @@
 				}
 				type: "item"
 			}]
-			title: "Obtain the Mutant Blaze Core"
+			title: "获得突变烈焰人核心"
 			x: 0.5d
 			y: -2.0d
 		}
@@ -1586,14 +1586,14 @@
 				id: "2ADFC3FEACA474DA"
 				observe_type: 5
 				timer: 0L
-				title: "Spawn and kill The Wither"
+				title: "召唤并击杀凋灵"
 				to_observe: "minecraft:wither"
 				type: "observation"
 			}]
-			title: "Spawn and kill the Wither"
+			title: "召唤并击杀凋灵"
 			x: -0.5d
 			y: 0.0d
 		}
 	]
-	title: "Chapter 2: The Journey"
+	title: "第二章：旅程"
 }
