@@ -1,7 +1,7 @@
 {
 	"unlocked_by_default": false,
 	"exclusive_root": true,
-	"title": "Archery",
+	"title": "箭术",
 	"icon": {
 		"type": "texture",
 		"data": {
