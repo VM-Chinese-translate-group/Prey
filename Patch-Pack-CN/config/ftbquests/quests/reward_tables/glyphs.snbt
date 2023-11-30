@@ -107,5 +107,5 @@
 		{ item: "ars_nouveau:glyph_linger" }
 		{ item: "ars_nouveau:glyph_dispel" }
 	]
-	title: "Glyphs"
+	title: "魔符"
 }

@@ -26,5 +26,5 @@
 		{ count: 32, item: "thermal:ice_grenade" }
 		{ count: 32, item: "thermal:fire_grenade" }
 	]
-	title: "Rarer Ores"
+	title: "稀有矿石"
 }

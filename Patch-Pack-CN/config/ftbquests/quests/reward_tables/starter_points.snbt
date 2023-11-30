@@ -15,7 +15,7 @@
 					Damage: 0
 				}
 			}
-			title: "3x Archery Tree Points"
+			title: "3x箭术技能点"
 			type: "command"
 		}
 		{
@@ -30,7 +30,7 @@
 					Damage: 0
 				}
 			}
-			title: "3x Crafting Tree Points"
+			title: "3x合成技能点"
 			type: "command"
 		}
 		{
@@ -45,7 +45,7 @@
 					Damage: 0
 				}
 			}
-			title: "3x Magic Tree Points"
+			title: "3x魔法技能点"
 			type: "command"
 		}
 		{
@@ -60,7 +60,7 @@
 					Damage: 0
 				}
 			}
-			title: "3x Melee Tree Points"
+			title: "3x近战技能点"
 			type: "command"
 		}
 		{
@@ -75,9 +75,9 @@
 					Damage: 0
 				}
 			}
-			title: "3x Mining Tree Points"
+			title: "3x挖掘技能点"
 			type: "command"
 		}
 	]
-	title: "Starter Points"
+	title: "初始点数"
 }
