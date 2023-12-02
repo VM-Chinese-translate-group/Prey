@@ -23,7 +23,7 @@ ItemEvents.tooltip(event => {
 		text.add(3, [Text.of(' 模式：').gold(), Text.of(' 停留，游荡').gray()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
-		text.add(6, Text.green(' Monke').bold(true))
+		text.add(6, Text.green(' 猴子').bold(true))
 	  })
 
 	  event.addAdvanced('kubejs:grizzly_bear_summoning_stone', (item, advanced, text) => {
@@ -67,8 +67,8 @@ ItemEvents.tooltip(event => {
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
-		text.add(6, [Text.of(' > Can be given an').gray(), Text.of(' Ancient Dart').gold(), Text.of(' 提高攻击伤害并增加穿透能力').gray()])
-		text.add(7, Text.green(' > Monke').bold(true))
+		text.add(6, [Text.of(' > 给予它一个').gray(), Text.of(' 古代飞镖').gold(), Text.of('以提高攻击伤害并增加穿透能力').gray()])
+		text.add(7, Text.green(' > 猴子').bold(true))
 	  })
 
 	  event.addAdvanced('kubejs:elephant_summoning_stone', (item, advanced, text) => {
@@ -78,7 +78,7 @@ ItemEvents.tooltip(event => {
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 游荡').gray()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
-		text.add(6, Text.gray(' > 可以安装箱子并骑乘'))
+		text.add(6, Text.gray(' > 骑乘时可带有箱子))
 	  })
 
 	  event.addAdvanced('kubejs:komodo_dragon_summoning_stone', (item, advanced, text) => {
@@ -100,7 +100,7 @@ ItemEvents.tooltip(event => {
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
-		text.add(6, Text.gray(' > 攻击可瘫痪节肢动物'))
+		text.add(6, Text.gray(' > 攻击可使节肢动物瘫痪'))
 	  })
 
 	  event.addAdvanced('kubejs:kangaroo_summoning_stone', (item, advanced, text) => {
@@ -151,11 +151,11 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 25').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随, ').yellow(), Text.of('Break Blocks').darkAqua()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随, ').yellow(), Text.of('破坏方块').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
-		text.add(6, [Text.of(' > 攻击会在目标上').gray(), Text.of(' 造成').red(), Text.of(' 火焰效果t').gray()])
-		text.add(7, [Text.of(' > 为进入').gray(), Text.of(' 破坏方块模式').darkAqua(), Text.of('，给它你想让它破坏的方块，并设置为').gray(), Text.of(' 游荡模式').gold()])
+		text.add(6, [Text.of(' > 攻击会对目标').gray(), Text.of('造成').gray(), Text.of(' 火焰效果').red()])
+		text.add(7, [Text.of(' > 进入').gray(), Text.of(' 破坏方块模式').darkAqua(), Text.of('，需要给它你想让它破坏的方块，并设置为').gray(), Text.of(' 游荡模式').gold()])
 	})
 
 	  event.addAdvanced('kubejs:mimic_octopus_summoning_stone', (item, advanced, text) => {
@@ -165,11 +165,11 @@ ItemEvents.tooltip(event => {
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
-		text.add(6, [Text.of(' > 只能在水中生存，除非使用 ').gray(), Text.of('除非使用粘液球 ').green(), Text.of('而粘液球必须每 2 天重新使用一次。').gray()])
-		text.add(7, [Text.of(' > 当获得特定物品时，它会模仿其他生物。在模仿中，你可以为它注入').gray(), Text.of(' 5-8 个复刻凝胶').gold(), Text.of(' 来激活').gray(), Text.of(' 特殊攻击').yellow()])
+		text.add(6, [Text.of(' > 只能在水中生存，除非使用 ').gray(), Text.of('粘液球 ').green(), Text.of('，而粘液球必须每 2天重新使用一次。').gray()])
+		text.add(7, [Text.of(' > 当获得特定物品时，它会模仿其他生物。在模仿中，你可以为它注入').gray(), Text.of(' 5-8个复刻凝胶').gold(), Text.of(' 来激活').gray(), Text.of(' 特殊攻击').yellow()])
 		text.add(8, Text.white(' '))
 		if (!event.alt) {
-			text.add(9, [Text.of('按住 ').yellow(), Text.of('ALT ').gold(), Text.of('了解更多有关其').yellow(), Text.of(' 形态，').aqua(), Text.of(' 攻击，').red(), Text.of(' 和相应的').yellow(), Text.of('物品的内容').green()])
+			text.add(9, [Text.of('按住 ').yellow(), Text.of('ALT ').gold(), Text.of('以了解更多有关其').yellow(), Text.of(' 形态，').aqua(), Text.of(' 攻击，').red(), Text.of('以及其相应').yellow(), Text.of('物品的内容').green()])
 		  } else {
 			text.add(9, [Text.of('苦力怕形态：').aqua()])
 			text.add(10, [Text.of(' > 物品：').green(), Text.of('火药').gray()])
@@ -190,10 +190,10 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('kubejs:warlock', (item, advanced, text) => {
 		
 		if (!event.shift) {
-			text.add(1, [Text.of('按住').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('来查看').yellow(), Text.of('副职业综合').darkPurple()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业综合').darkPurple()])
 		  } else {
 		  text.add(1, Text.gold('  ')) 
-		  text.add(2, [Text.of('副职业综合:').gold().underlined()])
+		  text.add(2, [Text.of('副职业综合：').gold().underlined()])
 		  text.add(3, [Text.of(' > 战斗法师').aqua()])
 		  text.add(4, [Text.of(' > 守护者').aqua()])
 		  text.add(5, [Text.of(' > 巫师').aqua()])
@@ -204,9 +204,9 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住').yellow(), Text.of('CTRL').gold(), Text.of('来查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
-			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+100 最大法力值...').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+150最大法力值').darkPurple(), Text.of(')').yellow()])
+			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+100最大法力值……').blue(), Text.of('（副职业综合效果：').yellow(), Text.of('+150最大法力值').darkPurple(), Text.of('）').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('沙漠蛛蜂').gold()])
-			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('杀死任何怪物可获得 45 法力值').lightPurple()])
+			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('杀死任何怪物可获得45法力值').lightPurple()])
 		  }
 		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('专注于魔法的职业。推荐副职业从前线输出伤害到后方治疗和辅助')])
 		  text.add(2, Text.gold('  ')) 
@@ -216,7 +216,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:rogue', (item, advanced, text) => {
 		
 		if (!event.shift) {
-			text.add(1, [Text.of('按住').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('来查看').yellow(), Text.of('副职业综合').darkPurple()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('来查看').yellow(), Text.of('副职业综合').darkPurple()])
 		  } else {
 		  text.add(1, Text.gold('  ')) 
 		  text.add(2, [Text.of('副职业综合:').gold().underlined()])
@@ -227,14 +227,14 @@ ItemEvents.tooltip(event => {
 		  text.add(7, Text.gold('  ')) 
 		  }
 		  if (!event.ctrl) {
-			text.add(1, [Text.of('按住').yellow(), Text.of('CTRL ').gold(), Text.of('来查看').yellow(), Text.of('职业属性').gold()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('CTRL ').gold(), Text.of('来查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
 			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+20%暴击伤害').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+30%暴击伤害').darkPurple(), Text.of(')').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('袋鼠').gold()])
 			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('杀掉一个敌人时你会隐身于阴影并获得5秒的爆发加速').lightPurple()])
 		  }
-		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('一个侧重于潜行和精确攻击的主要业，推荐的副职业都非常独特，从根上改变了游戏的玩法')])
+		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('一个侧重于潜行和精确攻击的主职业，推荐的副职业都非常独特，从根本上改变了游戏的玩法')])
 		  text.add(2, Text.gold('  ')) 
 	  })
 
@@ -243,7 +243,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:scout', (item, advanced, text) => {
 		
 		if (!event.shift) {
-			text.add(1, [Text.of('按住').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('来查看').yellow(), Text.of('副职业综合').darkPurple()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业综合').darkPurple()])
 		  } else {
 		  text.add(1, Text.gold('  ')) 
 		  text.add(2, [Text.of('副职业综合:').gold().underlined()])
@@ -254,21 +254,21 @@ ItemEvents.tooltip(event => {
 		  text.add(7, Text.gold('  ')) 
 		  }
 		  if (!event.ctrl) {
-			text.add(1, [Text.of('按住').yellow(), Text.of('CTRL ').gold(), Text.of('来查看').yellow(), Text.of('职业属性').gold()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('CTRL ').gold(), Text.of('以查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
 			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+20%范围攻击速度').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+35%范围攻击速度').darkPurple(), Text.of(')').yellow()])
-			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('秃鹰').gold()])
-			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('每10个成功几种的弹射物都会生成一道').lightPurple(), Text.of('闪电').yellow(), Text.of('击中目标，弹射物包括抛物').lightPurple()])
+			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('白头海雕').gold()])
+			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('每成功击中10次弹射物都会生成一道').lightPurple(), Text.of('闪电').yellow(), Text.of('击中目标，弹射物包括掷出的物品。').lightPurple()])
 		  }
-		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('专注于远程攻击和精确的 CQC，建议副职业都非常多样而且提供专业工具像连发弓和魔法双刃匕首')])
+		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('专注于远程攻击和精确的CQC，推荐的副职业都非常多样，且提供像连发弓和魔法双刃匕首这样的专业工具')])
 		  text.add(2, Text.gold('  ')) 
 	  })
 
 	  event.addAdvanced('kubejs:warden', (item, advanced, text) => {
 		
 		if (!event.shift) {
-			text.add(1, [Text.of('按住').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('来查看').yellow(), Text.of('副职业综合').darkPurple()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业综合').darkPurple()])
 		  } else {
 		  text.add(1, Text.gold('  ')) 
 		  text.add(2, [Text.of('副职业综合:').gold().underlined()])
@@ -279,14 +279,14 @@ ItemEvents.tooltip(event => {
 		  text.add(7, Text.gold('  ')) 
 		  }
 		  if (!event.ctrl) {
-			text.add(1, [Text.of('按住').yellow(), Text.of('CTRL ').gold(), Text.of('来查看').yellow(), Text.of('职业属性').gold()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('CTRL ').gold(), Text.of('以查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
-			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+2基础护甲').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+2.5基础护甲').darkPurple(), Text.of(')').yellow()])
+			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+2基础护甲值').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+2.5基础护甲值').darkPurple(), Text.of(')').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('灰熊').gold()])
-			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('每杀一个敌人可以回复一点血量').lightPurple()])
+			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('每击杀一名敌人可以回复少许生命值').lightPurple()])
 		  }
-		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('这个大胆的主职业擅长尽可能长时间地保持战斗状态。推荐的副职业非常活，将近战与其他主职业的独特之处结合在一起。')])
+		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('这个大胆的主职业擅长尽可能长时间地保持战斗状态。推荐的副职业非常灵活，将近战与其他主职业的独特之处结合在一起。')])
 		  text.add(2, Text.gold('  ')) 
 	  })
 
@@ -303,33 +303,33 @@ ItemEvents.tooltip(event => {
 		  text.add(8, Text.gold('职业属性：').underlined().italic())
 		  text.add(9, [Text.of(' - 职业数据：').gray(), Text.of('+20%中毒伤害').blue()])
 		  text.add(10, [Text.of(' - 职业宠物：').gray(), Text.of('科莫多巨蜥').gold()])
-		  text.add(11, [Text.of(' - 职业被动：').gray(), Text.of('特定怪物有机会在生成时自动被你驯服').lightPurple()])
+		  text.add(11, [Text.of(' - 职业被动：').gray(), Text.of('有概率生成自动被你驯服的生物。').lightPurple()])
 
 	  })
 
 	  event.addAdvanced('kubejs:blacksmith', (item, advanced, text) => {
-		text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of(' 铁匠专门制作精美的工具和盔甲。每制作一件作品，他们的专业技能都会有所提高、 随着时间的推移，他们的技艺也在不断提高')])
+		text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of(' 铁匠专门制作精美的工具和盔甲。每制作一件作品，他们的专业技能都会有所提高。随着时间的推移，他们的技艺也在不断提高')])
 		text.add(2, Text.gold('  ')) 
 		text.add(3, Text.yellow('职业属性：').underlined(true))
 		text.add(4, [Text.of(' > 没有副职业').red().bold()])
 		text.add(5, [Text.of(' > 职业宠物：').gray(), Text.of('鳄鱼').gold()])
-		text.add(6, [Text.of(' > 职业被动:').gray(), Text.of('职业数据可以被升级.').lightPurple()])
+		text.add(6, [Text.of(' > 职业被动：').gray(), Text.of('职业数据可以被升级。').lightPurple()])
 		text.add(7, Text.gold(' '))
-		text.add(8, Text.yellow('被动详情:').underlined())
-		text.add(9, [Text.of(' > 每制作').white(), Text.of(' 250个工具').red(), Text.of('或者').white(), Text.of('200盔甲碎片').gold(), Text.of(' 都会会获得').white(), Text.of(' +1').green(), Text.of(' 在所有').white(), Text.of('可升级的数据').darkGreen(), Text.of('木头和石头不计入').white()])
+		text.add(8, Text.yellow('被动详情：').underlined())
+		text.add(9, [Text.of(' > 每合成').white(), Text.of(' 250个工具').red(), Text.of('或者').white(), Text.of('200盔甲碎片').gold(), Text.of(' 都会获得').white(), Text.of(' +1').green(), Text.of('可升级数据').darkGreen(), Text.of('。木制和石制工具不计入其中').white()])
 		text.add(10, Text.gold(' '))
 		text.add(11, Text.gold(' '))
 		if (!event.shift) {
-			text.add(11, [Text.of('按住').gold(), Text.of('SHIFT ').yellow(), Text.of('来查看').gold(), Text.of('可升级的数据').darkGreen().underlined()])
+			text.add(11, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('以查看').gold(), Text.of('可升级的数据').darkGreen().underlined()])
 		} else {
-			text.add(11, Text.yellow('可升级工具数据').underlined())
+			text.add(11, Text.yellow('可升级的工具数据').underlined())
 			text.add(12, Text.gray(' - 制作的近战武器攻击速度'))
 			text.add(13, Text.gray(' - 制作的近战武器攻击伤害'))
 			text.add(14, Text.gray(' - 制作的远程武器攻击速度'))
 			text.add(15, Text.gray(' - 制作的远程武器宝石插槽'))
 			text.add(16, Text.gray(' - 制作的盾牌护甲奖励'))
 			text.add(17, Text.gray(' '))
-			text.add(18, Text.yellow('可升级盔甲数据').underlined())
+			text.add(18, Text.yellow('可升级的盔甲数据').underlined())
 			text.add(19, Text.gray(' - 制作盔甲防御'))
 			text.add(20, Text.gray(' - 制作靴子宝石插槽'))
 			text.add(21, Text.gray(' - 制作头盔宝石插槽'))
@@ -338,35 +338,35 @@ ItemEvents.tooltip(event => {
 	  })
 	  event.addAdvanced('supplementaries:quiver', (item, advanced, text) => {
 		
-		text.add(1, [Text.of('将此物品悬停在箭上并').gray(), Text.of(' 右键 ').gold(), Text.of('来把箭放入Quiver.').gray(), ]), 
+		text.add(1, [Text.of('将此物品悬停在箭上并').gray(), Text.of('右击 ').gold(), Text.of('以把箭放入箭袋。').gray(), ]), 
 		text.add(2, Text.gold(' ')) 
-		text.add(3, [Text.of('按住').gray(), Text.of(' X ').gold(), Text.of('来查看弓箭并在他们之间环选').gray()])
+		text.add(3, [Text.of('按住').gray(), Text.of(' X ').gold(), Text.of('以查看弓箭并在它们之间选择').gray()])
 	  })
 
 	event.addAdvanced('kubejs:rune_of_the_guardian', (item, advanced, text) => {
 		
 
 		if (!event.alt) {
-			text.add(1, [Text.of('按住').gold(), Text.of('ALT ').yellow(), Text.of('来查看被动').gold()])
+			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
-			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of(' 圣咒力量').gold()])
-			text.add(3, [Text.of(' >').white(), Text.of(' 30%').green(), Text.of('杀死怪物后').white(), Text.of('有几率恢复').white(), Text.of('法力值').blue()])
+			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('神圣法术强度').gold()])
+			text.add(3, [Text.of(' >').white(), Text.of('杀死怪物后有').white(), Text.of('30%').green(), Text.of('概率恢复).white(), Text.of('法力值').blue()])
 
 		  }
 
 		if (!event.shift) {
-			text.add(1, [Text.of('按住').gold(), Text.of('SHIFT ').yellow(), Text.of('来查看天赋树技能。').gold()])
+			text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('以查看天赋树技能。').gold()])
 		  } else {
 			text.add(1, Text.yellow('天赋树技能').underlined(true))
 			text.add(2, Text.aqua(' > 最大法力值'))
 			text.add(3, Text.aqua(' > 法术抗性'))
-			text.add(4, Text.aqua(' > 圣咒力量'))
+			text.add(4, Text.aqua(' > 神圣法术强度'))
 			text.add(5, Text.aqua(' > 法术冷却时间'))
 			text.add(6, Text.aqua(' '))
 		  }
 		  text.add(1, Text.yellow('概述').underlined(true))
-		  text.add(2, [Text.of(' > 一个灵活的职业可以持有').white(), Text.of(' 守护者的魔法书').lightPurple().italic(), Text.of('和').white(), Text.of('霹雳长矛').lightPurple().italic(), Text.of('，提供治疗和保护。')])
+		  text.add(2, [Text.of(' > 一个灵活的职业可以持有着').white(), Text.of('守护者的魔法书').lightPurple().italic(), Text.of('和').white(), Text.of('霹雳长矛').lightPurple().italic(), Text.of('，提供治疗和保护。')])
 		  text.add(3, Text.yellow('  '))
 	  })
 
@@ -375,27 +375,27 @@ ItemEvents.tooltip(event => {
 		
 
 		if (!event.alt) {
-			text.add(1, [Text.of('按住').gold(), Text.of('ALT ').yellow(), Text.of('来查看被动').gold()])
+			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
-			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('火系法术力量').gold()])
-			text.add(3, [Text.of(' > 达成').white(), Text.of(' 10次击杀').red(), Text.of('会获得10秒钟的').white(), Text.of('充能').lightPurple(), Text.of('效果').white()])
+			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('火焰法术强度').gold()])
+			text.add(3, [Text.of(' > 每达成').white(), Text.of('10次击杀').red(), Text.of('会获得10秒钟的').white(), Text.of('超负荷').lightPurple(), Text.of('效果').white()])
   
 		}
 
 		if (!event.shift) {
-			text.add(1, [Text.of('按住').gold(), Text.of('SHIFT ').yellow(), Text.of('来查看天赋树技能。').gold()])
+			text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('来查看天赋树技能。').gold()])
 		  } else {
 			text.add(1, Text.yellow('天赋树技能').underlined(true))
-			text.add(2, Text.aqua(' > 末影法术力量'))
-			text.add(3, Text.aqua(' > 雷电法术力量'))
-			text.add(4, Text.aqua(' > 冰法术力量'))
-			text.add(5, Text.aqua(' > 火法术力量'))
+			text.add(2, Text.aqua(' > 末影法术强度'))
+			text.add(3, Text.aqua(' > 雷电法术强度'))
+			text.add(4, Text.aqua(' > 冰霜法术强度'))
+			text.add(5, Text.aqua(' > 火焰法术强度'))
 			text.add(6, Text.yellow('  '))
 		  }
 
 		  text.add(1, Text.yellow('概述').underlined(true))
-		  text.add(2, [Text.of(' > 一个攻击性施法类角色，挥舞').white(), Text.of(' 战斗法师的法典').lightPurple().italic(), Text.of('，可以使用强大的元素法术')])
+		  text.add(2, [Text.of(' > 一个攻击性施法类职业，挥舞').white(), Text.of('战斗法师的法典').lightPurple().italic(), Text.of('，可以使用强大的元素法术')])
 		  text.add(3, Text.yellow('  '))
 
 
