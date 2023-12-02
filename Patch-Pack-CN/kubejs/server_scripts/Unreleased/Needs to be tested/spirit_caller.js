@@ -11,7 +11,7 @@ ItemEvents.rightClicked('kubejs:rune_of_the_spirit_caller', event => {
     event.player.paint({
         souls_word: {
             type: 'text',
-            text: `Souls: ${souls}`,
+            text: `灵魂：${souls}`,
             w: '$screenW', 
             h: '$screenH',
             x: 69,
@@ -25,7 +25,7 @@ ItemEvents.rightClicked('kubejs:rune_of_the_spirit_caller', event => {
         },
         summon_points: {
             type: 'text',
-            text: `XP: ${parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`,
+            text: `经验：${parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`,
             w: '$screenW', 
             h: '$screenH',
             x: 69,
@@ -56,8 +56,8 @@ EntityEvents.death(event => {
         player.persistentData.souls += parseInt(2*(event.entity.maxHealth/6))/// Double soul collection at night
         
     }
-    player.paint({souls_word: {text: `Souls: ${player.persistentData.souls}`}})
-    player.paint({summon_points: {text: `Summon XP to Lvl Up ${parseInt(1000*player.persistentData.souls_levels-player.persistentData.souls_leveling)}`}})
+    player.paint({souls_word: {text: `灵魂：${player.persistentData.souls}`}})
+    player.paint({summon_points: {text: `召唤经验升级至${parseInt(1000*player.persistentData.souls_levels-player.persistentData.souls_leveling)}`}})
 })
 
 //EntityEvents.hurt(event => {
@@ -70,11 +70,11 @@ EntityEvents.death(event => {
   //  if (event.level.day) {
    //     player.persistentData.souls += parseInt(event.entity.maxHealth/6)
 //
-    //    player.paint({souls_word: {text: `Souls: ${player.persistentData.souls}`}})
+    //    player.paint({souls_word: {text: `灵魂：${player.persistentData.souls}`}})
   //  } else {
    //     player.persistentData.souls += parseInt(event.entity.maxHealth/6)
     //    player.persistentData.souls += parseInt(event.entity.maxHealth/6) /// Double soul collection at night
-    //    player.paint({souls_word: {text: `Souls: ${player.persistentData.souls}`}})
+    //    player.paint({souls_word: {text: `灵魂：${player.persistentData.souls}`}})
   //  }
 //})
 
@@ -88,7 +88,7 @@ EntityEvents.death(event => {
 //ItemEvents.rightClicked('minecraft:emerald', event => {
     //if (dev_tools == 0) return
     //event.player.persistentData.souls += 50
-  //  event.player.paint({souls_word: {text: `Souls: ${event.player.persistentData.souls}`}})
+  //  event.player.paint({souls_word: {text: `灵魂：${event.player.persistentData.souls}`}})
 //})
 
 
@@ -97,7 +97,7 @@ ItemEvents.entityInteracted('kubejs:admin_sword', event => {
     let player = event.player
     let player_username = player.username
     let display_name = event.target.displayName.getString()
-    event.target.customName = `${player_username}'s ${display_name}`
+    event.target.customName = `${player_username}\u7684${display_name}`
     event.target.getCapability($RPGGods.TAMEABLE).orElse(null).setTamedBy(player)
 })
 
@@ -112,7 +112,7 @@ EntityEvents.death(event => {
     if (event.entity.persistentData.souls < 0) {
         event.entity.persistentData.souls = 0
     }
-    event.player.paint({souls_word: {text: `Souls: ${event.player.persistentData.souls}`}})
+    event.player.paint({souls_word: {text: `灵魂：${event.player.persistentData.souls}`}})
 })
 
 
@@ -135,8 +135,8 @@ EntityEvents.hurt(event => {
 
     if (boss_hits[player_username] != 3) return
     player.persistentData.souls += 1
-    player.paint({souls_word: {text: `Souls: ${player.persistentData.souls}`}})
-    player.paint({summon_points: {text: `Summon XP to Lvl Up ${parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`}})
+    player.paint({souls_word: {text: `灵魂：${player.persistentData.souls}`}})
+    player.paint({summon_points: {text: `召唤经验升级至${parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`}})
     boss_hits[player_username] = 0  
 })
 
@@ -149,7 +149,7 @@ ItemEvents.rightClicked('kubejs:orb_of_slaughtered_foes', event => {
         let entity_cost = event.player.persistentData.summon_cost
         let souls = event.player.persistentData.souls
         if (entity_cost > souls) {
-            event.player.tell('You require '+ (entity_cost - souls)+ ' more Souls to summon this Creature')
+            event.player.tell('你需要'+ (entity_cost - souls)+ '以上的灵魂以召唤这种生物')
         } else {
             event.player.tags.add('OOSF')
             Utils.server.scheduleInTicks(40, () => {
@@ -157,8 +157,8 @@ ItemEvents.rightClicked('kubejs:orb_of_slaughtered_foes', event => {
             })
             Utils.server.runCommandSilent(`/execute at ${player_username} run summon ${entity_id}`)
             event.player.persistentData.souls -= event.player.persistentData.summon_cost
-            event.player.paint({souls_word: {text: `Souls: ${event.player.persistentData.souls}`}})
-            event.player.paint({summon_points: {text: `Summon XP to Lvl Up ${parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`}})
+            event.player.paint({souls_word: {text: `灵魂：${event.player.persistentData.souls}`}})
+            event.player.paint({summon_points: {text: `召唤经验升级至${parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`}})
 
         }
     })
@@ -202,7 +202,7 @@ EntityEvents.spawned(event => {
     }
     event.entity.tags.add('sc_entity')
     let display_name = event.entity.displayName.getString()
-    event.entity.customName = `${player.username}'s ${display_name}`
+    event.entity.customName = `${player.username}\u7684${display_name}`
 ///
 
     player.persistentData.souls_leveling += event.entity.maxHealth/3
@@ -216,9 +216,10 @@ EntityEvents.spawned(event => {
     //if (event.entity.maxHealth <= 30) return
     //if (player.persistentData.souls_leveling < 5) return
     player.persistentData.souls_levels += 1
+    //标记
     Utils.server.tell('Spirit Crystal Level Up')
     player.persistentData.souls_leveling = 0
-    player.paint({summon_points: {text: `Summon XP to Lvl Up ${parseInt(1000*player.persistentData.souls_levels-player.persistentData.souls_leveling)}`}})
+    player.paint({summon_points: {text: `召唤经验升级至${parseInt(1000*player.persistentData.souls_levels-player.persistentData.souls_leveling)}`}})
 })
 
 //ItemEvents.rightClicked('kubejs:admin_sword', event => {
@@ -243,9 +244,10 @@ EntityEvents.death(event => {
         if (event.entity.maxHealth <= 30) {
             player.persistentData.summon_id = entity_id
             player.persistentData.summon_cost = entity_health
+            //标记
             player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
         } else {
-            player.tell('That Creature is too strong for this Crystal')
+            player.tell('此生物对水晶来说太强')
         }
     } else if (player.persistentData.souls_levels == 2) {
         if (event.entity.maxHealth <= 75) {
@@ -253,7 +255,7 @@ EntityEvents.death(event => {
             player.persistentData.summon_cost = entity_health
             player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
         } else {
-            player.tell('That Creature is too strong for this Crystal')
+            player.tell('此生物对水晶来说太强')
         }
     } else if (player.persistentData.souls_levels == 3) {
         if (event.entity.maxHealth <= 120) {
@@ -261,7 +263,7 @@ EntityEvents.death(event => {
             player.persistentData.summon_cost = entity_health
             player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
         } else {
-            player.tell('That Creature is too strong for this Crystal')
+            player.tell('此生物对水晶来说太强')
         }
     } else if (player.persistentData.souls_levels == 4) {
         if (event.entity.maxHealth <= 240) {
@@ -269,7 +271,7 @@ EntityEvents.death(event => {
             player.persistentData.summon_cost = entity_health
             player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
         } else {
-            player.tell('That Creature is too strong for this Crystal')
+            player.tell('此生物对水晶来说太强')
         }
     } else if (player.persistentData.souls_levels == 5) {
         if (event.entity.maxHealth <= 480) {
@@ -277,7 +279,7 @@ EntityEvents.death(event => {
             player.persistentData.summon_cost = entity_health
             player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
         } else {
-            player.tell('That Creature is too strong for this Crystal')
+            player.tell('此生物对水晶来说太强')
         }
     } else if (player.persistentData.souls_levels == 6) {
         if (event.entity.maxHealth <= 960) {
@@ -285,7 +287,7 @@ EntityEvents.death(event => {
             player.persistentData.summon_cost = entity_health
             player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
         } else {
-            player.tell('That Creature is too strong for this Crystal')
+            player.tell('此生物对水晶来说太强')
         }
     } else if (player.persistentData.souls_levels > 6) {
         if (event.entity.maxHealth <= 999) {
@@ -293,7 +295,7 @@ EntityEvents.death(event => {
             player.persistentData.summon_cost = entity_health
             player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
         } else {
-            player.tell('That Creature is too strong for this Crystal')
+            player.tell('此生物对水晶来说太强')
         }
     }
 
