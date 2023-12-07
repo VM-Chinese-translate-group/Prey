@@ -439,7 +439,7 @@
 			dependencies: ["7E369C270A0FCEBD"]
 			id: "296B6450B84F9F73"
 			optional: true
-			subtitle: "扔向敌人消除其状态效果. 在即将到来的战斗中非常有效..."
+			subtitle: "扔向敌人消除其状态效果. 在即将到来的战斗中非常有效……"
 			tasks: [{
 				id: "4A04F881253B0D02"
 				item: {
