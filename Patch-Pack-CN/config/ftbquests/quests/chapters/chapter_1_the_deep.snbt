@@ -285,7 +285,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "战败的王者必将东山再起..."
+			subtitle: "战败的王必将东山再起……"
 			tasks: [{
 				id: "47934B73FDE55B24"
 				structure: "irons_spellbooks:catacombs"
