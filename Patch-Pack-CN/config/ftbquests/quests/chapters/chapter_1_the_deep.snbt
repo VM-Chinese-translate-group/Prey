@@ -180,7 +180,7 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "以吹响贝壳号角为起点..."
+			subtitle: "以吹响贝壳号角为起点……"
 			tasks: [{
 				entity: "aquamirae:captain_cornelia"
 				id: "44D801B856AFF96F"
