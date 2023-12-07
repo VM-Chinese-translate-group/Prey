@@ -419,7 +419,7 @@
 			dependencies: ["7E369C270A0FCEBD"]
 			id: "6E201C4866D3BA40"
 			optional: true
-			subtitle: "强烈推荐用于即将到来的战斗..."
+			subtitle: "强烈推荐用于即将到来的战斗……"
 			tasks: [{
 				id: "4EA082A77A984CC3"
 				item: {
