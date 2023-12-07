@@ -217,7 +217,7 @@ EntityEvents.spawned(event => {
     //if (player.persistentData.souls_leveling < 5) return
     player.persistentData.souls_levels += 1
     //标记
-    Utils.server.tell('Spirit Crystal Level Up')
+    Utils.server.tell('仪式水晶升级')
     player.persistentData.souls_leveling = 0
     player.paint({summon_points: {text: `召唤经验升级至${parseInt(1000*player.persistentData.souls_levels-player.persistentData.souls_leveling)}`}})
 })

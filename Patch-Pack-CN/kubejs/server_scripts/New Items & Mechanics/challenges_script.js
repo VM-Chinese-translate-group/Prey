@@ -41,7 +41,7 @@ EntityEvents.hurt(event => {
 
 	if (knock_knock_counter[player_username] != 30) return;
     if (golem_counter[player_username] != 3)
-        event.source.player.tell('Soul Steal Elixir Challenge: Complete')
+        event.source.player.tell('灵魂窃取圣酿挑战：完成')
         Utils.server.runCommandSilent(`/give ${player_username} kubejs:soul_steal_elixir`)
         Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
         event.source.player.tags.remove(`soul_steal`)
@@ -72,7 +72,7 @@ EntityEvents.death('lategamegolems:lgg_entity', event => {
         }
         if (knock_knock_counter[player_username] != 30) return;
         if (golem_counter[player_username] != 3)
-            event.source.player.tell('Soul Steal Elixir Challenge: Complete')
+            event.source.player.tell('灵魂窃取圣酿挑战：完成')
             Utils.server.runCommandSilent(`/give ${player_username} kubejs:soul_steal_elixir`)
             Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
             event.source.player.tags.remove(`soul_steal`)
@@ -95,14 +95,14 @@ EntityEvents.death('minecraft:piglin_brute', event => {
 
     if (strength_elixir[player_username] == undefined) {
         strength_elixir[player_username] = 1
-        Utils.server.tell(`Dual Golden Axe Kills: ${strength_elixir[player_username]}`)
+        Utils.server.tell(`双斧手击杀数：${strength_elixir[player_username]}`)
 	} else {
 		strength_elixir[player_username]++;
-        Utils.server.tell(`Dual Golden Axe Kills: ${strength_elixir[player_username]}`)
+        Utils.server.tell(`双斧手击杀数： ${strength_elixir[player_username]}`)
 	}
     if (strength_elixir[player_username] != 100) return
     Utils.server.runCommandSilent(`/give ${player_username} kubejs:strength_elixir`)
-    event.player.tell('Strength Elixir Challenge: Complete')
+    event.player.tell('力量圣酿挑战：完成')
     Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
     Utils.server.runCommandSilent(`/tag ${player_username} remove strength`)
     strength_elixir[event.source.player.username] = 0
@@ -133,14 +133,14 @@ EntityEvents.death(event => {
             if (chestArmorItem != '1 paraglider_wood' && chestArmorItem != '1 paraglider_iron' && chestArmorItem != '1 paraglider_gold' && chestArmorItem != '1 paraglider_diamond' && chestArmorItem != '1 paraglider_netherite') return
             if (grenade_launcher[player_username] == undefined) {
                 grenade_launcher[player_username] = 1
-                event.source.player.tell(`Angel Wings Challenge Kills: ${grenade_launcher[player_username]}`)
+                event.source.player.tell(`天使之翼挑战击杀数：${grenade_launcher[player_username]}`)
                 
             } else {
                 grenade_launcher[player_username]++;
-                event.source.player.tell(`Angel Wings Challenge Kills: ${grenade_launcher[player_username]}`)
+                event.source.player.tell(`天使之翼挑战击杀数：${grenade_launcher[player_username]}`)
             }
             if (grenade_launcher[player_username] == 150) {
-                Utils.server.runCommandSilent(`/tell ${player_username} Angel Wings Elixir Challenge: Complete`)
+                Utils.server.runCommandSilent(`/tell ${player_username} 天使之翼圣酿挑战：完成`)
                 Utils.server.runCommandSilent(`/give ${player_username} kubejs:angel_wings_elixir`)
                 Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
                 Utils.server.runCommandSilent(`/tag ${player_username} remove angel_wings`)
@@ -170,14 +170,14 @@ EntityEvents.death(event => {
             if (chestArmorItem != '1 copper_jetpack_chestplate' && chestArmorItem != '1 brass_jetpack_chestplate' && chestArmorItem != '1 andesite_jetpack_chestplate') return
             if (bazooka_counter[player_username] == undefined) {
                 bazooka_counter[player_username] = 1
-                event.source.player.tell(`Absorption Challenge Kills: ${bazooka_counter[player_username]}`)
+                event.source.player.tell(`伤害吸收挑战击杀数：${bazooka_counter[player_username]}`)
                 
             } else {
                 bazooka_counter[player_username]++;
-                event.source.player.tell(`Absorption Challenge Kills: ${bazooka_counter[player_username]}`)
+                event.source.player.tell(`伤害吸收挑战击杀数：${bazooka_counter[player_username]}`)
             }
             if (bazooka_counter[player_username] == 100) {
-                Utils.server.runCommandSilent(`/tell ${player_username} Absorption Elixir Challenge: Complete`)
+                Utils.server.runCommandSilent(`/tell ${player_username} 伤害吸收圣酿挑战：完成`)
                 Utils.server.runCommandSilent(`/give ${player_username} kubejs:absorption_elixir`)
                 Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
                 Utils.server.runCommandSilent(`/tag ${player_username} remove absorption`)
@@ -216,14 +216,14 @@ EntityEvents.death(event => {
 		charged_counter[player_username]++;
 	}
 	if (charged_counter[player_username] == 250) {
-		Utils.server.tell('Charged Elixir Challenge: 50% Complete. 125 Kills Remaining')
+		Utils.server.tell('超负荷圣酿挑战：已完成50%。剩余125击杀数')
 	}
 
 	if (charged_counter[player_username] != 500) return;
 		event.source.player.tags.remove(`charged`)
 		Utils.server.runCommandSilent(`/give ${player_username} kubejs:charged_elixir`)
         Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
-		Utils.server.tell('Charged Elixir Challenge: Complete')
+		Utils.server.tell('超负荷圣酿挑战：完成')
 		charged_counter[player_username] = 0
     }
 })
@@ -291,34 +291,34 @@ EntityEvents.death('minecraft:villager', event => {
             
             }
         }
-        Utils.server.tell(`Soul Vulture Kills: ${soul_vulture_counter[player_username]}`)
-        Utils.server.tell(`Rocky Roller Kills: ${rocky_roller_counter[player_username]}`)
-        Utils.server.tell(`Murmur Kills: ${murmur_counter[player_username]}`)
-        Utils.server.tell(`Anaconda Kills: ${anaconda_counter[player_username]}`)
-        Utils.server.tell(`Crocodile Kills: ${crocodile_counter[player_username]}`)
+        Utils.server.tell(`灵魂鹫击杀数：${soul_vulture_counter[player_username]}`)
+        Utils.server.tell(`岩磙兽击杀数：${rocky_roller_counter[player_username]}`)
+        Utils.server.tell(`轻语灵击杀数：${murmur_counter[player_username]}`)
+        Utils.server.tell(`森蚺击杀数：${anaconda_counter[player_username]}`)
+        Utils.server.tell(`鳄鱼击杀数： ${crocodile_counter[player_username]}`)
         if (soul_vulture_counter[player_username] > 4) {
             soul_vulture_counter[player_username] = 5
-            Utils.server.runCommandSilent(`/tell ${player_username} Speed Elixir: Soul Vulture Kills Completed`)
+            Utils.server.runCommandSilent(`/tell ${player_username} 速度圣酿：灵魂鹫击杀完成`)
         }
 
         if (rocky_roller_counter[player_username] > 4) {
             rocky_roller_counter[player_username] = 5
-            Utils.server.runCommandSilent(`/tell ${player_username} Speed Elixir: Rocky Roller Kills Completed`)
+            Utils.server.runCommandSilent(`/tell ${player_username} 速度圣酿：岩磙兽击杀完成`)
         }
         
         if (murmur_counter[player_username] > 4) {
             murmur_counter[player_username] = 5
-            Utils.server.runCommandSilent(`/tell ${player_username} Speed Elixir: Murmur Kills Completed`)
+            Utils.server.runCommandSilent(`/tell ${player_username} 速度圣酿：轻语灵击杀完成`)
         }
 
         if (anaconda_counter[player_username] > 4) {
             anaconda_counter[player_username] = 5
-            Utils.server.runCommandSilent(`/tell ${player_username} Speed Elixir: Anaconda Kills Completed`)
+            Utils.server.runCommandSilent(`/tell ${player_username} 速度圣酿：森蚺击杀完成`)
         }
 
         if (crocodile_counter[player_username] > 4) {
             crocodile_counter[player_username] = 5
-            Utils.server.runCommandSilent(`/tell ${player_username} Speed Elixir: Crocodile Kills Completed`)
+            Utils.server.runCommandSilent(`/tell ${player_username} 速度圣酿：鳄鱼击杀完成`)
         }
     
 
@@ -331,7 +331,7 @@ EntityEvents.death('minecraft:villager', event => {
     player.tags.remove(`speed`)
     Utils.server.runCommandSilent(`/give ${player_username} kubejs:speed_elixir`)
     Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
-    Utils.server.tell('Speed Elixir Challenge: Complete')
+    Utils.server.tell('速度圣酿挑战：完成')
     crocodile_counter[player_username] = 0
 })
 
@@ -374,7 +374,7 @@ flying_creatures.forEach((entity) => {
         if (firebolt_counter[player_username] != 150) return;
         Utils.server.runCommandSilent(`/give ${player_username} kubejs:fire_elixir`)
         event.source.player.tags.remove('fire')
-        event.source.player.tell('Fire Elixir Challenge: Complete')
+        event.source.player.tell('火焰圣酿挑战：完成')
         Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
         firebolt_counter[player_username] = 0
 
@@ -420,7 +420,7 @@ EntityEvents.death(event => {
             endurance_counter[player_username]++;
         }
         if (endurance_counter[player_username] == 75) {
-            Utils.server.tell('Endurance Trial: 50% Complete. 75 Kills Remaining')
+            Utils.server.tell('额外羽毛试炼：已完成50%。剩余75击杀数')
         }
 
         if (endurance_counter[player_username] != 150) return;
@@ -436,7 +436,7 @@ PlayerEvents.respawned(event => {
     let player_username = event.entity.username
     if (!event.entity.tags.contains(`endurance`)) return
     endurance_counter[player_username] = 0
-    Utils.server.runCommandSilent(`/tell ${player_username} Endurance Trial: Failed`)
+    Utils.server.runCommandSilent(`/tell ${player_username} 额外羽毛试炼：失败`)
 
 })
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -510,7 +510,7 @@ Object.entries(pet_kills).forEach(([class_name, pet]) => {
             Utils.server.runCommandSilent(`/give ${player_username} kubejs:regeneration_elixir`)
             Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
             regeneration_counter[player_username] = 0
-            Utils.server.tell('Regeneration Trial: Complete')
+            Utils.server.tell('生命恢复试炼：完成')
     })
 })
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -525,10 +525,10 @@ EntityEvents.death(event => {
     if (weapon != '1 yamato') return
     if (shadow_form_hit_counter[player_username] == undefined) {
         shadow_form_hit_counter[player_username] = 1
-        event.source.player.tell(`Heartstop Kills: ${shadow_form_hit_counter[player_username]}`)
+        event.source.player.tell(`止心击杀：${shadow_form_hit_counter[player_username]}`)
     } else {
         shadow_form_hit_counter[player_username]++
-        event.source.player.tell(`Heartstop Kills: ${shadow_form_hit_counter[player_username]}`)
+        event.source.player.tell(`止心击杀：${shadow_form_hit_counter[player_username]}`)
     }
 
     if (shadow_form_hit_counter[player_username] != 30) return;
@@ -546,14 +546,14 @@ EntityEvents.hurt(event => {
     if (shadow_form_hurt_counter[player_username] == undefined) {
         shadow_form_hurt_counter[player_username] = 1
         Utils.server.tell(shadow_form_hurt_counter[player_username])
-        Utils.server.tell(`Heartstop Strikes: ${shadow_form_hurt_counter[player_username]}`)
+        Utils.server.tell(`止心攻击：${shadow_form_hurt_counter[player_username]}`)
     } else {
         shadow_form_hurt_counter[player_username]++
-        Utils.server.tell(`Heartstop Strikes: ${shadow_form_hurt_counter[player_username]}`)
+        Utils.server.tell(`止心攻击：${shadow_form_hurt_counter[player_username]}`)
     }
 
     if (shadow_form_hurt_counter[player_username] != 5) return;
-    event.entity.tell('Heartstop Challenge: Failed')
+    event.entity.tell('止心术挑战：失败')
     shadow_form_hurt_counter[player_username] = 0
     shadow_form_hit_counter[player_username] = 0
 })
