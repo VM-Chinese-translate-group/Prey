@@ -331,7 +331,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "杀死于船长室的掠夺者"
+			subtitle: "杀死船长室的掠夺者"
 			tasks: [{
 				id: "3040617DFA666E2E"
 				item: {
