@@ -17,7 +17,7 @@ ItemEvents.entityInteracted(event => {
     if (entity.maxHealth < 25) {
         if (!player.persistentData.contains('kubejs_class:beastmaster ')) {
             if (common_flute_cooldown[player_username] == 0) {
-                player.tell('Common Beastmaster Totem: Recharging...')
+                player.tell('普通驯兽师图腾：再充能中……')
             } else {
     //
                 if (common_flute_cooldown[player_username] == undefined) {
@@ -30,13 +30,13 @@ ItemEvents.entityInteracted(event => {
                 entity.tags.add(`kubejs_common_tame`)
                 Utils.server.scheduleInTicks(1200, () => {
                     common_flute_cooldown[player_username]++
-                    event.player.tell('Common Beastmaster Totem: Ready')
+                    event.player.tell('普通驯兽师图腾：就绪')
                 })
     //
             }
         } else {
             if (common_flute_cooldown[player_username] == 0) {
-                player.tell('Common Beastmaster Totem: Recharging...')
+                player.tell('普通驯兽师图腾：再充能中')
             } else {
     //
                 if (common_flute_cooldown[player_username] == undefined) {
@@ -49,13 +49,13 @@ ItemEvents.entityInteracted(event => {
                 entity.tags.add(`kubejs_common_tame`)
                 Utils.server.scheduleInTicks(600, () => {
                     common_flute_cooldown[player_username]++
-                    event.player.tell('Common Beastmaster Totem: Ready')
+                    event.player.tell('普通驯兽师图腾：就绪')
                 })
     //
             }
         }
     } else {
-        event.player.tell('Upgrade your Beastmasters Totem to tame this animal')
+        event.player.tell('升级你的驯兽师图腾以驯服此动物')
     }
 })
 
@@ -76,7 +76,7 @@ ItemEvents.entityInteracted(event => {
     if (entity.maxHealth < 50) {
         if (!player.persistentData.contains('kubejs_class:beastmaster ')) {
             if (common_flute_cooldown[player_username] == 0) {
-                player.tell('Uncommon Beastmaster Totem: Recharging...')
+                player.tell('不凡驯兽师图腾：再充能中')
             } else {
     //
                 if (common_flute_cooldown[player_username] == undefined) {
@@ -89,13 +89,13 @@ ItemEvents.entityInteracted(event => {
                 entity.tags.add(`kubejs_uncommon_tame`)
                 Utils.server.scheduleInTicks(2400, () => {
                     common_flute_cooldown[player_username]++
-                    event.player.tell('Uncommon Beastmaster Totem: Ready')
+                    event.player.tell('不凡驯兽师图腾：就绪')
                 })
     //
             }
         } else {
             if (common_flute_cooldown[player_username] == 0) {
-                player.tell('Common Beastmaster Totem: Recharging...')
+                player.tell('普通驯兽师图腾：再充能中')
             } else {
     //
                 if (common_flute_cooldown[player_username] == undefined) {
@@ -112,13 +112,13 @@ ItemEvents.entityInteracted(event => {
                 entity.tags.add(`kubejs_uncommon_tame`)
                 Utils.server.scheduleInTicks(900, () => {
                     common_flute_cooldown[player_username]++
-                    event.player.tell('Uncommon Beastmaster Totem: Ready')
+                    event.player.tell('不凡驯兽师图腾：就绪')
                 })
     //
             }
         }
     } else {
-        event.player.tell('Upgrade your Beastmasters Totem to tame this animal')
+        event.player.tell('升级你的驯兽师图腾以驯服此动物')
     }
 })
 
@@ -137,7 +137,7 @@ ItemEvents.entityInteracted(event => {
     let display_name = entity.displayName.getString()
     if (!player.persistentData.contains('kubejs_class:beastmaster ')) {
         if (rare_flute_cooldown[player_username] == 0) {
-            player.tell('Rare Beastmaster Totem: Recharging...')
+            player.tell('稀有驯兽师图腾：再充能中……')
         } else {
 //
             if (rare_flute_cooldown[player_username] == undefined) {
@@ -150,13 +150,13 @@ ItemEvents.entityInteracted(event => {
             entity.tags.add(`kubejs_rare_tame`)
             Utils.server.scheduleInTicks(3600, () => {
                 rare_flute_cooldown[player_username]++
-                event.player.tell('Rare Beastmaster Totem: Ready')
+                event.player.tell('稀有驯兽师图腾：就绪')
             })
 //
         }
     } else {
         if (rare_flute_cooldown[player_username] == 0) {
-            player.tell('Rare Beastmaster Totem: Recharging...')
+            player.tell('稀有驯兽师图腾：再充能中……')
         } else {
 //
             if (rare_flute_cooldown[player_username] == undefined) {
@@ -173,7 +173,7 @@ ItemEvents.entityInteracted(event => {
             entity.tags.add(`kubejs_rare_tame`)
             Utils.server.scheduleInTicks(1200, () => {
                 rare_flute_cooldown[player_username]++
-                event.player.tell('Rare Beastmaster Totem: Ready')
+                event.player.tell('稀有驯兽师图腾：就绪')
             })
         }
     }
