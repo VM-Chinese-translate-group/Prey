@@ -41,7 +41,7 @@
     "death.attack.summoned_trident_storm": "%1$s被%2$s召唤的带电三叉戟叉死了",
     "death.trident_storm": "%1$s被带电三叉戟叉死了",
     "death.attack.trident_storm": "%1$s被带电三叉戟叉死了",
-    "death.poison_quill": "%1$s他被毒刺藤射死了",
+    "death.poison_quill": "%1$s被毒刺藤射死了",
     "death.attack.poison_quill": "%1$s被%2$s射出的毒刺藤射死了",
     "entity.dungeons_mobs.illusioner": "幻术师",
     "entity.dungeons_mobs.illusioner_clone": "幻术师",
