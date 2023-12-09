@@ -38,7 +38,7 @@
     "death.ice_chunk": "%1$s被冰块压碎了",
     "death.attack.ice_chunk": "%1$s被来自%2$s的冰块压碎了",
     "death.summoned_trident_storm": "%1$s被带电三叉戟叉死了",
-    "death.attack.summoned_trident_storm": "%1$s被由%2$s召唤的带电三叉戟叉死了",
+    "death.attack.summoned_trident_storm": "%1$s被%2$s召唤的带电三叉戟叉死了",
     "death.trident_storm": "%1$s被带电三叉戟叉死了",
     "death.attack.trident_storm": "%1$s被带电三叉戟叉死了",
     "death.poison_quill": "%1$s他被毒刺藤射死了",
