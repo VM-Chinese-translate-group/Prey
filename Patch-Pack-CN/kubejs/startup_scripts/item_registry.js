@@ -165,17 +165,17 @@ const paramount_discs = {
         event.create('shadow_form_elixir', 'basic').group('KubeJS').texture('kubejs:item/elixir_of_shadow').rarity('epic').displayName('止心圣酿')//
         event.create('strength_elixir', 'basic').group('KubeJS').texture('kubejs:item/elixir_of_strength').rarity('epic')//
         event.create('endurance_elixir', 'basic').group('KubeJS').texture('kubejs:item/elixir_of_endurance').rarity('epic')//
-        event.create('fire_elixir', 'basic').group('KubeJS').texture('kubejs:item/fire_elixir').rarity('epic').displayName('Dragons Breath Elixir')//
+        event.create('fire_elixir', 'basic').group('KubeJS').texture('kubejs:item/fire_elixir').rarity('epic').displayName('龙息圣酿')//
         event.create('absorption_elixir', 'basic').group('KubeJS').texture('kubejs:item/absorption_elixir').rarity('epic')//
         event.create('charged_elixir', 'basic').group('KubeJS').texture('kubejs:item/charged_elixir').rarity('epic')//
         event.create('soul_steal_elixir', 'basic').group('KubeJS').texture('kubejs:item/soul_steal_elixir').rarity('epic')//
         event.create('angel_wings_elixir', 'basic').group('KubeJS').texture('kubejs:item/angelic_elixir').rarity('epic')//
-        event.create('bloodlust', 'basic').displayName('Forgotten Tablet: Bloodlust').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('surge', 'basic').displayName('Forgotten Tablet: Surge').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('restoration', 'basic').displayName('Forgotten Tablet: Restoration').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('shadow_form', 'basic').displayName('Forgotten Tablet: Heartstop').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('strike', 'basic').displayName('Forgotten Tablet: Strike').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('trial_blood_oath', 'basic').displayName('Forgotten Tablet: Blood Oath').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('bloodlust', 'basic').displayName('被遗忘的石板：嗜血').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('surge', 'basic').displayName('被遗忘的石板：Surge').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('restoration', 'basic').displayName('被遗忘的石板：复原').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('shadow_form', 'basic').displayName('被遗忘的石板：Heartstop').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('strike', 'basic').displayName('被遗忘的石板：Strike').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('trial_blood_oath', 'basic').displayName('被遗忘的石板：Blood Oath').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
         event.create('blood_oath', 'basic').group('KubeJS').texture('kubejs:icons/blood_oath')
         event.create('summoners_gateway', 'basic').group('KubeJS').texture('kubejs:item/totem').displayName('Summoning Gateway')
         event.create('evasion_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Evasion Elixir')////
