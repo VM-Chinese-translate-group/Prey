@@ -103,14 +103,14 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Seek out an Ocean Monument and slaughter its inhabitants"
+			subtitle: "寻找海底神殿并屠戮其居民"
 			tasks: [{
 				id: "039E5F42C53DC5E9"
 				structure: "betteroceanmonuments:ocean_monument"
-				title: "Find an Ocean Monument"
+				title: "寻找海底神殿"
 				type: "structure"
 			}]
-			title: "The Drowned"
+			title: "溺尸"
 			x: -1.0d
 			y: -4.0d
 		}
@@ -180,7 +180,7 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "Blow the Shell Horn to begin..."
+			subtitle: "以吹响贝壳号角为起点……"
 			tasks: [{
 				entity: "aquamirae:captain_cornelia"
 				id: "44D801B856AFF96F"
@@ -285,13 +285,13 @@
 				}
 				type: "item"
 			}]
-			subtitle: "The defeated king will rise again..."
+			subtitle: "战败的王必将东山再起……"
 			tasks: [{
 				id: "47934B73FDE55B24"
 				structure: "irons_spellbooks:catacombs"
 				type: "structure"
 			}]
-			title: "Journey to the Catacombs"
+			title: "地下墓穴之旅"
 			x: -1.0d
 			y: 2.5d
 		}
@@ -331,7 +331,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Kill the Pillager in the Captains Quarters"
+			subtitle: "杀死船长室的掠夺者"
 			tasks: [{
 				id: "3040617DFA666E2E"
 				item: {
@@ -343,7 +343,7 @@
 				}
 				type: "item"
 			}]
-			title: "Obtain a Shell Horn from the Frozen Ship"
+			title: "从搁浅舰船获得贝壳号角"
 			x: -1.0d
 			y: -0.5d
 		}
@@ -377,7 +377,7 @@
 				}
 				type: "item"
 			}]
-			title: "Recommended: Back Tank"
+			title: "力荐: 背罐"
 			x: 0.5d
 			y: -3.5d
 		}
@@ -411,7 +411,7 @@
 				}
 				type: "item"
 			}]
-			title: "Recommended: Diving Helmet"
+			title: "力荐: 潜水头盔"
 			x: -2.5d
 			y: -3.5d
 		}
@@ -419,7 +419,7 @@
 			dependencies: ["7E369C270A0FCEBD"]
 			id: "6E201C4866D3BA40"
 			optional: true
-			subtitle: "HIGHLY recommended for the coming battle..."
+			subtitle: "强烈推荐用于即将到来的战斗……"
 			tasks: [{
 				id: "4EA082A77A984CC3"
 				item: {
@@ -439,7 +439,7 @@
 			dependencies: ["7E369C270A0FCEBD"]
 			id: "296B6450B84F9F73"
 			optional: true
-			subtitle: "Throw at an enemy to remove its status effects. Will be VERY useful in the coming battle..."
+			subtitle: "扔向敌人消除其状态效果，在即将到来的战斗中非常有效……"
 			tasks: [{
 				id: "4A04F881253B0D02"
 				item: {
@@ -458,5 +458,5 @@
 			y: 0.0d
 		}
 	]
-	title: "Chapter 1: The Beginning"
+	title: "第一章：伊始"
 }

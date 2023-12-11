@@ -12,7 +12,7 @@
 					Damage: 0
 				}
 			}
-			title: "游侠"
+			title: "Ranger"
 			type: "command"
 		}
 		{
@@ -44,7 +44,7 @@
 					weapon_attributes: "{\"parent\":\"bettercombat:claymore\",\"attributes\":{\"attack_range\":3.5,\"pose\":\"bettercombat:pose_two_handed_sword\",\"two_handed\":true,\"category\":\"claymore\",\"attacks\":[{\"hitbox\":\"HORIZONTAL_PLANE\",\"damage_multiplier\":0.75,\"angle\":150.0,\"upswing\":0.5,\"animation\":\"bettercombat:two_handed_slash_horizontal_right\",\"swing_sound\":{\"id\":\"bettercombat:claymore_swing\",\"volume\":1.0,\"pitch\":1.0,\"randomness\":0.1}},{\"hitbox\":\"FORWARD_BOX\",\"damage_multiplier\":1.0,\"angle\":0.0,\"upswing\":0.5,\"animation\":\"bettercombat:two_handed_stab_left\",\"swing_sound\":{\"id\":\"bettercombat:claymore_stab\",\"volume\":1.0,\"pitch\":1.0,\"randomness\":0.1}},{\"hitbox\":\"VERTICAL_PLANE\",\"damage_multiplier\":1.25,\"angle\":150.0,\"upswing\":0.5,\"animation\":\"bettercombat:two_handed_slam\",\"swing_sound\":{\"id\":\"bettercombat:claymore_slam\",\"volume\":1.0,\"pitch\":1.0,\"randomness\":0.0}}]}}"
 				}
 			}
-			title: "战士"
+			title: "Warrior"
 			type: "command"
 		}
 		{
@@ -56,7 +56,7 @@
 				}
 				id: "sophisticatedbackpacks:iron_backpack"
 			}
-			title: "冒险家"
+			title: "Adventurer"
 			type: "command"
 		}
 		{
@@ -68,7 +68,7 @@
 					Damage: 0
 				}
 			}
-			title: "海盗"
+			title: "Pirate"
 			type: "command"
 		}
 		{
@@ -96,7 +96,7 @@
 					RepairCost: 1
 				}
 			}
-			title: "武僧"
+			title: "Shaolin"
 			type: "command"
 		}
 		{
@@ -122,7 +122,7 @@
 					weapon_attributes: "{\"parent\":\"bettercombat:axe\",\"attributes\":{\"attack_range\":3.0,\"two_handed\":false,\"category\":\"axe\",\"attacks\":[{\"hitbox\":\"HORIZONTAL_PLANE\",\"damage_multiplier\":1.0,\"angle\":90.0,\"upswing\":0.5,\"animation\":\"bettercombat:one_handed_slash_horizontal_right\",\"swing_sound\":{\"id\":\"bettercombat:axe_slash\",\"volume\":1.0,\"pitch\":1.0,\"randomness\":0.1}},{\"hitbox\":\"HORIZONTAL_PLANE\",\"damage_multiplier\":1.0,\"angle\":90.0,\"upswing\":0.5,\"animation\":\"bettercombat:one_handed_slash_horizontal_left\",\"swing_sound\":{\"id\":\"bettercombat:axe_slash\",\"volume\":1.0,\"pitch\":1.0,\"randomness\":0.1}}]}}"
 				}
 			}
-			title: "狂战士"
+			title: "Berserker"
 			type: "command"
 		}
 		{
@@ -134,7 +134,7 @@
 					Damage: 0
 				}
 			}
-			title: "召唤师"
+			title: "Summoner"
 			type: "command"
 		}
 		{
@@ -163,7 +163,7 @@
 					weapon_attributes: "{\"parent\":\"bettercombat:katana\",\"attributes\":{\"attack_range\":3.5,\"pose\":\"bettercombat:pose_two_handed_katana\",\"two_handed\":true,\"category\":\"katana\",\"attacks\":[{\"hitbox\":\"HORIZONTAL_PLANE\",\"damage_multiplier\":0.8,\"angle\":120.0,\"upswing\":0.5,\"animation\":\"bettercombat:two_handed_slash_horizontal_right\",\"swing_sound\":{\"id\":\"bettercombat:katana_slash\",\"volume\":1.0,\"pitch\":1.0,\"randomness\":0.1}},{\"hitbox\":\"VERTICAL_PLANE\",\"damage_multiplier\":1.2,\"angle\":120.0,\"upswing\":0.5,\"animation\":\"bettercombat:two_handed_slash_vertical_left\",\"swing_sound\":{\"id\":\"bettercombat:katana_slash\",\"volume\":1.0,\"pitch\":1.0,\"randomness\":0.1}},{\"hitbox\":\"VERTICAL_PLANE\",\"damage_multiplier\":1.2,\"angle\":120.0,\"upswing\":0.5,\"animation\":\"bettercombat:two_handed_slash_vertical_right\",\"swing_sound\":{\"id\":\"bettercombat:katana_slash\",\"volume\":1.0,\"pitch\":1.0,\"randomness\":0.1}},{\"hitbox\":\"HORIZONTAL_PLANE\",\"damage_multiplier\":0.8,\"angle\":120.0,\"upswing\":0.5,\"animation\":\"bettercombat:two_handed_slash_horizontal_left\",\"swing_sound\":{\"id\":\"bettercombat:katana_slash\",\"volume\":1.0,\"pitch\":1.0,\"randomness\":0.1}}]}}"
 				}
 			}
-			title: "剑圣"
+			title: "Kensei"
 			type: "command"
 		}
 		{
@@ -173,7 +173,7 @@
 				id: "numismaticoverhaul:gold_coin"
 				tag: { }
 			}
-			title: "商人"
+			title: "Joo"
 			type: "command"
 		}
 		{
@@ -185,9 +185,9 @@
 					Damage: 0
 				}
 			}
-			title: "战斗法师"
+			title: "Battlemage"
 			type: "command"
 		}
 	]
-	title: "初始套装"
+	title: "Starter Packs"
 }

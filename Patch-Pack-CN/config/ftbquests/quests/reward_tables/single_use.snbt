@@ -10,5 +10,5 @@
 		{ item: "pneumaticcraft:creative_compressed_iron_block" }
 		{ item: "ars_nouveau:creative_source_jar" }
 	]
-	title: "单人使用"
+	title: "Single Use"
 }

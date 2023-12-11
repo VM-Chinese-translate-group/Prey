@@ -19,7 +19,7 @@
 					command: "/puffish_skills points add @p Elixirs 1"
 					icon: "kubejs:fire_elixir"
 					id: "6195F8D050D2ED09"
-					title: "1x Elixir Point"
+					title: "1x灵药点"
 					type: "command"
 				}
 				{
@@ -57,13 +57,13 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press H to view your Skill Trees and Elixir Challenges"
+			subtitle: "按下“H”来查看你的技能树和灵药点"
 			tasks: [{
 				id: "36AF815F834793DA"
-				title: "Finish Tutorial"
+				title: "完成教程"
 				type: "checkmark"
 			}]
-			title: "Finish Tutorial"
+			title: "完成教程"
 			x: 0.5d
 			y: 2.5d
 		}
@@ -108,10 +108,10 @@
 						value: "curios:glider"
 					}
 				}
-				title: "Any #curios:glider"
+				title: "任何#curios:glider"
 				type: "item"
 			}]
-			title: "Acquire a Paraglider"
+			title: "获得一个滑翔伞"
 			x: -1.0d
 			y: 1.5d
 		}
@@ -194,7 +194,7 @@
 				}
 				type: "item"
 			}]
-			title: "Acquire a Grappling Hook"
+			title: "获得一个抓钩"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -205,15 +205,9 @@
 				{
 					auto: "enabled"
 					command: "/puffish_skills category unlock @p Crafting"
-					icon: {
-						Count: 1
-						ForgeCaps: {
-							"dungeons_libraries:built_in_enchantments": { }
-						}
-						id: "aquamirae:dead_sea_scroll"
-					}
+					icon: "aquamirae:dead_sea_scroll"
 					id: "646840C2F3740C74"
-					title: "Unlock Crafting Skill Tree"
+					title: "解锁合成技能树"
 					type: "command"
 				}
 				{
@@ -228,26 +222,26 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press \"H\" to view your Skill Trees"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "0F57AC510960A3D2"
 				item: "crafting_on_a_stick:crafting_table"
 				type: "item"
 			}]
-			title: "Acquire a Crafting Table on a Stick"
+			title: "获得一个便携式工作台"
 			x: 0.5d
 			y: -0.5d
 		}
 		{
 			description: [
-				"&nBasic Controls:&r"
+				"&n基本控制：&r"
 				""
-				"    &oOpen Skill Tree&r: H"
-				"    &oOpen Quiver:&r X (Quiver Required)"
-				"    &oBackpack:&r B (Backpack Required)"
-				"    &oZoom:&r C"
-				"    &oBuilding Menu:&r TAB"
-				"    &oSpellbook Wheel:&r V (Spellbook Required)"
+				"    &o打开技能树&r：H"
+				"    &o打开箭袋：&rX（需要装备箭袋）"
+				"    &o背包：&rB（需要装备背包）"
+				"    &o缩放：&rC"
+				"    &o建造菜单：&rTAB"
+				"    &o法术书滚轮：&rV（需要手持法术书）"
 				""
 				"___________________________"
 			]
@@ -274,13 +268,13 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press 'H' to allocate your starting Skill Points"
+			subtitle: "按下“H”来分配你的初始技能点"
 			tasks: [{
 				id: "398B76A53A074272"
-				title: "Read This:"
+				title: "阅读这个："
 				type: "checkmark"
 			}]
-			title: "Choose Your Main Class"
+			title: "选择你的主职业"
 			x: 0.5d
 			y: -2.0d
 		}
@@ -291,15 +285,9 @@
 				{
 					auto: "enabled"
 					command: "/puffish_skills category unlock @p Mining"
-					icon: {
-						Count: 1
-						ForgeCaps: {
-							"dungeons_libraries:built_in_enchantments": { }
-						}
-						id: "aquamirae:dead_sea_scroll"
-					}
+					icon: "aquamirae:dead_sea_scroll"
 					id: "2519B4AA4E31DF99"
-					title: "Unlock Mining Skill Tree"
+					title: "解锁挖掘技能树"
 					type: "command"
 				}
 				{
@@ -314,7 +302,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press \"H\" to view your Skill Trees"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "2B3E44623F548139"
 				item: {
@@ -324,10 +312,10 @@
 						value: "kubejs:hammers"
 					}
 				}
-				title: "Any #kubejs:hammers"
+				title: "任何#kubejs:hammers"
 				type: "item"
 			}]
-			title: "Acquire Any Hammer"
+			title: "获得任何锤子"
 			x: -0.5d
 			y: -0.5d
 		}
@@ -340,7 +328,7 @@
 					command: "/puffish_skills category unlock @p Melee"
 					icon: "aquamirae:dead_sea_scroll"
 					id: "6D2297AB6406D9E5"
-					title: "Unlock Melee Skill Tree"
+					title: "解锁近战技能树"
 					type: "command"
 				}
 				{
@@ -356,7 +344,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press \"H\" to view your Skill Trees"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "0A3C6FD43F074D8F"
 				item: {
@@ -366,10 +354,10 @@
 						value: "forge:tools/swords"
 					}
 				}
-				title: "Any #forge:swords"
+				title: "任何#forge:swords"
 				type: "item"
 			}]
-			title: "Acquire a Sword"
+			title: "获得一把剑"
 			x: 1.5d
 			y: -0.5d
 		}
@@ -380,15 +368,9 @@
 				{
 					auto: "enabled"
 					command: "/puffish_skills category unlock @p Magic"
-					icon: {
-						Count: 1
-						ForgeCaps: {
-							"dungeons_libraries:built_in_enchantments": { }
-						}
-						id: "aquamirae:dead_sea_scroll"
-					}
+					icon: "aquamirae:dead_sea_scroll"
 					id: "3D21A8BE5C12B9B5"
-					title: "Unlock Magic Skill Tree"
+					title: "解锁魔法技能树"
 					type: "command"
 				}
 				{
@@ -404,7 +386,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press \"H\" to view your Skill Trees"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "33F7407753ABE2E3"
 				item: {
@@ -414,10 +396,10 @@
 						value: "kubejs:magic_item"
 					}
 				}
-				title: "Any #kubejs:magic_item"
+				title: "任何#kubejs:magic_item"
 				type: "item"
 			}]
-			title: "Acquire Any Spell Casting Item"
+			title: "获得任何施法物品"
 			x: -1.5d
 			y: -0.5d
 		}
@@ -430,7 +412,7 @@
 					command: "/puffish_skills category unlock @p Archery"
 					icon: "aquamirae:dead_sea_scroll"
 					id: "787E1F3FC026754D"
-					title: "Unlock Archery Skill Tree"
+					title: "解锁箭术技能树"
 					type: "command"
 				}
 				{
@@ -446,7 +428,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press \"H\" to view your Skill Trees"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "08898689C7E31D04"
 				item: {
@@ -456,10 +438,10 @@
 						value: "kubejs:ranged"
 					}
 				}
-				title: "Any #kubejs:ranged"
+				title: "任何#kubejs:ranged"
 				type: "item"
 			}]
-			title: "Acquire a Bow"
+			title: "获得一把弓"
 			x: 2.5d
 			y: -0.5d
 		}
@@ -472,7 +454,7 @@
 				"07064FA7A7AE22D3"
 			]
 			id: "0005BA1722883D37"
-			subtitle: "A valuable tool for the journey ahead"
+			subtitle: "旅途中的宝贝"
 			tasks: [{
 				id: "3BFCDCF6B5C7C24A"
 				item: {
@@ -484,10 +466,10 @@
 				}
 				type: "item"
 			}]
-			title: "Craft a Structure Compass"
+			title: "制作一个结构指南针"
 			x: 0.5d
 			y: 1.5d
 		}
 	]
-	title: "Tutorial"
+	title: "教程"
 }
