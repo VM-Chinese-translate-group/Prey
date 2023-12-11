@@ -1,6 +1,6 @@
 {
     "attack_reach+5%": {
-        "title": "+5% Attack Reach",
+        "title": "+5% 攻击范围",
         "icon": {
             "type": "texture",
             "data": {
@@ -19,7 +19,7 @@
         ]
     },
     "artifact_cooldown_multiplier+5%": {
-        "title": "+5% Artifact Cooldown Multiplier",
+        "title": "+5% 饰品冷却增幅",
         "icon": {
             "type": "texture",
             "data": {
@@ -57,7 +57,7 @@
         ]
     },
     "life_steal+5%": {
-        "title": "+5% Life Steal",
+        "title": "+5% 生命窃取",
         "icon": {
             "type": "texture",
             "data": {
@@ -76,7 +76,7 @@
         ]
     },
     "magic_damage_multiplier+5%": {
-        "title": "+5% Magic Damage Multiplier",
+        "title": "+5% 魔法伤害增幅",
         "icon": {
             "type": "texture",
             "data": {
@@ -95,7 +95,7 @@
         ]
     },
     "ranged_damage_multiplier+5%": {
-        "title": "+5% Ranged Damage Multiplier",
+        "title": "+5% 远程伤害增幅",
         "icon": {
             "type": "texture",
             "data": {
@@ -114,7 +114,7 @@
         ]
     },
     "ranged_damage+5%": {
-        "title": "+5% Ranged Damage",
+        "title": "+5% 远程伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -209,7 +209,7 @@
         ]
     },
     "stamina+5%": {
-        "title": "+5% Max Feathers",
+        "title": "+5% 最大耐力",
         "icon": {
             "type": "texture",
             "data": {
@@ -228,7 +228,7 @@
         ]
     },
     "reach_distance+5%": {
-        "title": "+5% Reach Distance",
+        "title": "+5% 触及距离",
         "icon": {
             "type": "texture",
             "data": {
@@ -247,7 +247,7 @@
         ]
     },
     "blood_spell_power+5%": {
-        "title": "+5% Blood Spell Power",
+        "title": "+5% 鲜血法术强度",
         "icon": {
             "type": "item",
             "data": {
@@ -266,7 +266,7 @@
         ]
     },
     "cast_time_reduction+5%": {
-        "title": "+5% Cast Time Reduction",
+        "title": "+5% 吟唱缩减",
         "icon": {
             "type": "item",
             "data": {
@@ -285,7 +285,7 @@
         ]
     },
     "cooldown_reduction+5%": {
-        "title": "+5% Cooldown Reduction",
+        "title": "+5% 冷却缩减",
         "icon": {
             "type": "item",
             "data": {
@@ -304,7 +304,7 @@
         ]
     },
     "ender_spell_power+5%": {
-        "title": "+5% Ender Spell Power",
+        "title": "+5% 末影法术强度",
         "icon": {
             "type": "item",
             "data": {
@@ -323,7 +323,7 @@
         ]
     },
     "evocation_spell_power+5%": {
-        "title": "+5% Evocation Spell Power",
+        "title": "+5% 唤魔法术强度",
         "icon": {
             "type": "item",
             "data": {
@@ -342,7 +342,7 @@
         ]
     },
     "fire_spell_power+5%": {
-        "title": "+5% Fire Spell Power",
+        "title": "+5% 火焰魔法强度",
         "icon": {
             "type": "item",
             "data": {
@@ -361,7 +361,7 @@
         ]
     },
     "holy_spell_power+5%": {
-        "title": "+5% Holy Spell Power",
+        "title": "+5% 神圣魔法强度",
         "icon": {
             "type": "item",
             "data": {
@@ -380,7 +380,7 @@
         ]
     },
     "ice_spell_power+5%": {
-        "title": "+5% Ice Spell Power",
+        "title": "+5% 冰霜魔法强度",
         "icon": {
             "type": "item",
             "data": {
@@ -399,7 +399,7 @@
         ]
     },
     "max_mana+5%": {
-        "title": "+5% Max Mana",
+        "title": "+5% 最大法力值",
         "icon": {
             "type": "item",
             "data": {
@@ -418,7 +418,7 @@
         ]
     },
     "poison_spell_power+5%": {
-        "title": "+5% Nature Spell Power",
+        "title": "+5% 自然法术强度",
         "icon": {
             "type": "item",
             "data": {
@@ -437,7 +437,7 @@
         ]
     },
     "spell_power+5%": {
-        "title": "+5% Spell Power",
+        "title": "+5% 法术强度",
         "icon": {
             "type": "item",
             "data": {
@@ -456,7 +456,7 @@
         ]
     },
     "lightning_spell_power+5%": {
-        "title": "+5% Lightning Spell Power",
+        "title": "+5% 雷电法术强度",
         "icon": {
             "type": "item",
             "data": {
@@ -475,7 +475,7 @@
         ]
     },
     "spell_resist+5%": {
-        "title": "+5% Spell Resist",
+        "title": "+5% 法术抗性",
         "icon": {
             "type": "item",
             "data": {
@@ -494,7 +494,7 @@
         ]
     },
     "summon_damage+5%": {
-        "title": "+5% Summon Damage",
+        "title": "+5% 召唤伤害",
         "icon": {
             "type": "item",
             "data": {
@@ -513,7 +513,7 @@
         ]
     },
     "generic.armor+5%": {
-        "title": "+5% Armor",
+        "title": "+5% 护甲值",
         "icon": {
             "type": "texture",
             "data": {
@@ -532,7 +532,7 @@
         ]
     },
     "generic.armor_toughness+5%": {
-        "title": "+5% Armor Toughness",
+        "title": "+5% 盔甲韧性",
         "icon": {
             "type": "texture",
             "data": {
@@ -551,7 +551,7 @@
         ]
     },
     "generic.attack_damage+5%": {
-        "title": "+5% Attack Damage",
+        "title": "+5% 攻击伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -570,7 +570,7 @@
         ]
     },
     "generic.attack_knockback+5%": {
-        "title": "+5% Attack Knockback",
+        "title": "+5% 击退",
         "icon": {
             "type": "texture",
             "data": {
@@ -589,7 +589,7 @@
         ]
     },
     "generic.attack_speed+5%": {
-        "title": "+5% Attack Speed",
+        "title": "+5% 攻击速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -608,7 +608,7 @@
         ]
     },
     "generic.knockback_resistance+5%": {
-        "title": "+5% Knockback Resistance",
+        "title": "+5% 击退抗性",
         "icon": {
             "type": "texture",
             "data": {
@@ -627,7 +627,7 @@
         ]
     },
     "generic.luck+5%": {
-        "title": "+5% Luck",
+        "title": "+5% 幸运值",
         "icon": {
             "type": "effect",
             "data": {
@@ -646,7 +646,7 @@
         ]
     },
     "generic.max_health+5%": {
-        "title": "+5% Max Health",
+        "title": "+5% 最大生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -665,7 +665,7 @@
         ]
     },
     "generic.movement_speed+5%": {
-        "title": "+5% Movement Speed",
+        "title": "+5% 速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -684,7 +684,7 @@
         ]
     },
     "generic.jump_strength+5%": {
-        "title": "+5% Jump Strength",
+        "title": "+5% 跳跃能力",
         "icon": {
             "type": "effect",
             "data": {
@@ -703,7 +703,7 @@
         ]
     },
     "accuracy+5%": {
-        "title": "+5% Accuracy",
+        "title": "+5% 精准度",
         "icon": {
             "type": "texture",
             "data": {
@@ -722,7 +722,7 @@
         ]
     },
     "critical_damage+5%": {
-        "title": "+5% Critical Damage",
+        "title": "+5% 暴击伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -741,7 +741,7 @@
         ]
     },
     "critical_hit+5%": {
-        "title": "+5% Critical Hit",
+        "title": "+5% 暴击率",
         "icon": {
             "type": "texture",
             "data": {
@@ -760,7 +760,7 @@
         ]
     },
     "dodge+5%": {
-        "title": "+5% Dodge",
+        "title": "+5% 闪避",
         "icon": {
             "type": "texture",
             "data": {
@@ -779,7 +779,7 @@
         ]
     },
     "healing_power+5%": {
-        "title": "+5% Healing Power",
+        "title": "+5% 治愈力",
         "icon": {
             "type": "texture",
             "data": {
@@ -798,7 +798,7 @@
         ]
     },
     "parry+5%": {
-        "title": "+5% Parry",
+        "title": "+5% 招架",
         "icon": {
             "type": "texture",
             "data": {
@@ -817,7 +817,7 @@
         ]
     },
     "penetration+5%": {
-        "title": "+5% Penetration",
+        "title": "+5% 穿刺",
         "icon": {
             "type": "texture",
             "data": {
