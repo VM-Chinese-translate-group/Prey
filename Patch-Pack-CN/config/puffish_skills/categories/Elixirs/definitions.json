@@ -1,6 +1,6 @@
 {
     "relic_evasion": {
-        "title": "Challenge: Evasion",
+        "title": "挑战：隐匿",
         "icon": {
             "type": "texture",
             "data": {
@@ -17,7 +17,7 @@
         ]
     },
     "relic_speed": {
-        "title": "Challenge: Speed",
+        "title": "挑战：速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -34,7 +34,7 @@
         ]
     },
     "relic_resistance": {
-        "title": "Challenge: Resistance",
+        "title": "挑战：抗性提升",
         "icon": {
             "type": "texture",
             "data": {
@@ -51,7 +51,7 @@
         ]
     },
     "relic_regeneration": {
-        "title": "Challenge: Regeneration",
+        "title": "挑战：生命恢复",
         "icon": {
             "type": "texture",
             "data": {
@@ -68,7 +68,7 @@
         ]
     },
     "relic_heartstop": {
-        "title": "Challenge: Heartstop",
+        "title": "挑战：止心术",
         "icon": {
             "type": "texture",
             "data": {
@@ -85,7 +85,7 @@
         ]
     },
     "relic_strength": {
-        "title": "Challenge: Strength",
+        "title": "挑战：力量",
         "icon": {
             "type": "texture",
             "data": {
@@ -136,7 +136,7 @@
         ]
     },
     "relic_absorption": {
-        "title": "Challenge: Absorption",
+        "title": "挑战：伤害吸收",
         "icon": {
             "type": "texture",
             "data": {
