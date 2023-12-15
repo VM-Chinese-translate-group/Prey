@@ -57,7 +57,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来查看你的技能树和灵药点"
+			subtitle: "按下“H”来查看你的技能树和圣酿挑战"
 			tasks: [{
 				id: "36AF815F834793DA"
 				title: "完成教程"
