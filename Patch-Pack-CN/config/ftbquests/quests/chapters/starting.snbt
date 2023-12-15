@@ -19,7 +19,7 @@
 					command: "/puffish_skills points add @p Elixirs 1"
 					icon: "kubejs:fire_elixir"
 					id: "6195F8D050D2ED09"
-					title: "1x灵药点"
+					title: "1x 圣酿点"
 					type: "command"
 				}
 				{
