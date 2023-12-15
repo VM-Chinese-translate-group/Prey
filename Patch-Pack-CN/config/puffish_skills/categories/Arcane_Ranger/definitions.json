@@ -133,7 +133,7 @@
         ]
     },
     "soul_cap+5%": {
-        "title": "+5% Soul Cap",
+        "title": "+5% 灵魂上限",
         "icon": {
             "type": "texture",
             "data": {
@@ -171,7 +171,7 @@
         ]
     },
     "summon_cap+5%": {
-        "title": "+5% Summon Cap",
+        "title": "+5% 召唤上限",
         "icon": {
             "type": "texture",
             "data": {
@@ -190,7 +190,7 @@
         ]
     },
     "feathers_regen+5%": {
-        "title": "+5% Feather Regen",
+        "title": "+5% 羽毛获取",
         "icon": {
             "type": "texture",
             "data": {
@@ -209,7 +209,7 @@
         ]
     },
     "stamina+5%": {
-        "title": "+5% 最大耐力",
+        "title": "+5% 最大羽毛数",
         "icon": {
             "type": "texture",
             "data": {
@@ -665,7 +665,7 @@
         ]
     },
     "generic.movement_speed+5%": {
-        "title": "+5% 速度",
+        "title": "+5% 移动速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -684,7 +684,7 @@
         ]
     },
     "generic.jump_strength+5%": {
-        "title": "+5% 跳跃能力",
+        "title": "+5% 跳跃高度",
         "icon": {
             "type": "effect",
             "data": {
@@ -836,7 +836,7 @@
         ]
     },
     "regeneration+5%": {
-        "title": "+1/2 Heart Regen Every 30 Seconds",
+        "title": "每30秒+0.5颗心再生",
         "icon": {
             "type": "texture",
             "data": {
@@ -855,7 +855,7 @@
         ]
     },
     "resilience+5%": {
-        "title": "+5% Resilience",
+        "title": "+5% 抵抗",
         "icon": {
             "type": "texture",
             "data": {
@@ -874,7 +874,7 @@
         ]
     },
     "attack_speed_under_potion_effect+5%": {
-        "title": "+5% Attack Speed Under Potion Effect",
+        "title": "+5% 拥有药水效果时提供攻击速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -893,7 +893,7 @@
         ]
     },
     "brewed_potions_duration+5%": {
-        "title": "+5% Brewed Potions Duration",
+        "title": "+5% 酿造药水持续时长提升",
         "icon": {
             "type": "texture",
             "data": {
@@ -912,7 +912,7 @@
         ]
     },
     "can_poison_weapons+5%": {
-        "title": "+5% Can Poison Weapons",
+        "title": "+5% 武器淬毒",
         "icon": {
             "type": "texture",
             "data": {
@@ -931,7 +931,7 @@
         ]
     },
     "brewed_harmful_potions_strength+5%": {
-        "title": "+5% Brewed Harmful Potions Strength",
+        "title": "+5% 酿造减益药水强度提升",
         "icon": {
             "type": "texture",
             "data": {
@@ -950,7 +950,7 @@
         ]
     },
     "brewed_beneficial_potions_strength+5%": {
-        "title": "+5% Brewed Beneficial Potions Strength",
+        "title": "+5% 酿造增益药水强度提升",
         "icon": {
             "type": "texture",
             "data": {
@@ -969,7 +969,7 @@
         ]
     },
     "brewed_healing_potions_strength+5%": {
-        "title": "+5% Brewed Healing Potions Strength",
+        "title": "+5% 酿造治疗药水强度提升",
         "icon": {
             "type": "texture",
             "data": {
@@ -988,7 +988,7 @@
         ]
     },
     "brewed_beneficial_potions_duration+5%": {
-        "title": "+5% Brewed Beneficial Potions Duration",
+        "title": "+5% 酿造增益药水持续时长提升",
         "icon": {
             "type": "texture",
             "data": {
@@ -1007,7 +1007,7 @@
         ]
     },
     "brewed_potions_strength+5%": {
-        "title": "+5% Brewed Potions Strength",
+        "title": "+5% 酿造药水强度提升",
         "icon": {
             "type": "texture",
             "data": {
@@ -1026,7 +1026,7 @@
         ]
     },
     "brewed_poisons_strength+5%": {
-        "title": "+5% Brewed Poisons Strength",
+        "title": "+5% 酿造剧毒药水强度提升",
         "icon": {
             "type": "texture",
             "data": {
@@ -1045,7 +1045,7 @@
         ]
     },
     "brewed_harmful_potions_duration+5%": {
-        "title": "+5% Brewed Harmful Potions Duration",
+        "title": "+5% 酿造减益药水持续时长提升",
         "icon": {
             "type": "texture",
             "data": {
@@ -1064,7 +1064,7 @@
         ]
     },
     "crit_chance_against_poisoned+5%": {
-        "title": "+5% Crit Chance Against Poisoned",
+        "title": "+5% 对中毒敌人的暴击率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1083,7 +1083,7 @@
         ]
     },
     "damage_against_poisoned+5%": {
-        "title": "+5% Damage Against Poisoned",
+        "title": "+5% 对中毒敌人的伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1102,7 +1102,7 @@
         ]
     },
     "damage_under_potion_effect+5%": {
-        "title": "+5% Damage Under Potion Effect",
+        "title": "+5% 拥有药水效果时提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1121,7 +1121,7 @@
         ]
     },
     "resistance+5%": {
-        "title": "+5% Incoming Healing",
+        "title": "+5% 受到治疗",
         "icon": {
             "type": "texture",
             "data": {
@@ -1141,7 +1141,7 @@
     },
     
     "damage_per_potion_effect+5%": {
-        "title": "+5% Damage Per Potion Effect",
+        "title": "+5% 药水效果提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1160,7 +1160,7 @@
         ]
     },
     "evasion_under_potion_effect+5%": {
-        "title": "+5% Evasion Under Potion Effect",
+        "title": "+5% 拥有药水效果时提供闪避率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1179,7 +1179,7 @@
         ]
     },
     "evasion_per_potion_effect+5%": {
-        "title": "+5% Evasion Per Potion Effect",
+        "title": "+5% 药水效果提供闪避率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1198,7 +1198,7 @@
         ]
     },
     "maximum_life_under_potion_effect+5%": {
-        "title": "+5% Maximum Life Under Potion Effect",
+        "title": "+5% 拥有药水效果时提供最大生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -1217,7 +1217,7 @@
         ]
     },
     "can_mix_potions+5%": {
-        "title": "+5% Can Mix Potions",
+        "title": "+5% 混合药水",
         "icon": {
             "type": "texture",
             "data": {
@@ -1236,7 +1236,7 @@
         ]
     },
     "crit_damage_against_poisoned+5%": {
-        "title": "+5% Crit Damage Against Poisoned",
+        "title": "+5% 对中毒敌人的暴击伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1255,7 +1255,7 @@
         ]
     },
     "life_per_hit_under_potion_effect+5%": {
-        "title": "+5% Life Per Hit While Under Potion Effect",
+        "title": "+5% 拥有药水效果时提供每次击中的生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -1274,7 +1274,7 @@
         ]
     },
     "incoming_healing+5%": {
-        "title": "+5% Incoming Healing",
+        "title": "+5% 受到治疗",
         "icon": {
             "type": "texture",
             "data": {
@@ -1293,7 +1293,7 @@
         ]
     },
     "damage_per_enchantment+5%": {
-        "title": "+5% Damage Per Enchantment",
+        "title": "+5% 每个魔咒提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1312,7 +1312,7 @@
         ]
     },
     "crit_chance_per_enchantment+5%": {
-        "title": "+5% Crit Chance Per Enchantment",
+        "title": "+5% 每个魔咒提供暴击率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1331,7 +1331,7 @@
         ]
     },
     "crit_damage_per_enchantment+5%": {
-        "title": "+5% Crit Damage Per Weapon Enchantment",
+        "title": "+5% 每个武器魔咒提供暴击伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1350,7 +1350,7 @@
         ]
     },
     "enchantment_level_requirement+5%": {
-        "title": "+5% Enchantment Level Requirement",
+        "title": "+5% 魔咒等级需求",
         "icon": {
             "type": "texture",
             "data": {
@@ -1369,7 +1369,7 @@
         ]
     },
     "armor_enchantment_power+5%": {
-        "title": "+5% Armor Enchantment Power",
+        "title": "+5% 盔甲获得更好的魔咒",
         "icon": {
             "type": "texture",
             "data": {
@@ -1388,7 +1388,7 @@
         ]
     },
     "maximum_life_with_enchanted_item+5%": {
-        "title": "+5% Maximum Life With Enchanted Item",
+        "title": "+5% 附魔物品提供最大生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -1407,7 +1407,7 @@
         ]
     },
     "armor_with_enchanted_shield+5%": {
-        "title": "+5% Armor With Enchanted Shield",
+        "title": "+5% 附魔盾牌提供护甲值",
         "icon": {
             "type": "texture",
             "data": {
@@ -1426,7 +1426,7 @@
         ]
     },
     "maximum_life_per_enchantment+5%": {
-        "title": "+5% Maximum Life Per Enchantment",
+        "title": "+5% 每个魔咒提供最大生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -1445,7 +1445,7 @@
         ]
     },
     "damage_per_weapon_enchantment_level+5%": {
-        "title": "+5% Damage Per Weapon Enchantment Level",
+        "title": "+5% 每级武器魔咒等级提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1464,7 +1464,7 @@
         ]
     },
     "armor_per_chestplate_enchantment+5%": {
-        "title": "+5% Armor Per Chestplate Enchantment",
+        "title": "+5% 每个胸甲魔咒提供护甲值",
         "icon": {
             "type": "texture",
             "data": {
@@ -1483,7 +1483,7 @@
         ]
     },
     "maximum_life_per_armor_enchantment+5%": {
-        "title": "+5% Maximum Life Per Armor Enchantment",
+        "title": "+5% 每个盔甲魔咒提供最大生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -1502,7 +1502,7 @@
         ]
     },
     "block_chance_with_enchanted_shield+5%": {
-        "title": "+5% Block Chance With Enchanted Shield",
+        "title": "+5% 附魔盾牌提供格挡率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1521,7 +1521,7 @@
         ]
     },
     "damage_with_enchanted_weapon+5%": {
-        "title": "+5% Damage With Enchanted Weapon",
+        "title": "+5% 附魔武器提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1540,7 +1540,7 @@
         ]
     },
     "crit_chance_with_enchanted_weapon+5%": {
-        "title": "+5% Crit Chance With Enchanted Weapon",
+        "title": "+5% 附魔盾牌提供暴击率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1559,7 +1559,7 @@
         ]
     },
     "attack_speed_with_enchanted_weapon+5%": {
-        "title": "+5% Attack Speed With Enchanted Weapon",
+        "title": "+5% 附魔武器提供攻击速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -1578,7 +1578,7 @@
         ]
     },
     "free_enchantment_chance+5%": {
-        "title": "+5% Free Enchantment Chance",
+        "title": "+5% 免费附魔概率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1597,7 +1597,7 @@
         ]
     },
     "life_on_block_per_shield_enchantment+5%": {
-        "title": "+5% Life On Block Per Shield Enchantment",
+        "title": "+5% 每个盾牌魔咒提供格挡时恢复生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -1616,7 +1616,7 @@
         ]
     },
     "block_chance_per_shield_enchantment+5%": {
-        "title": "+5% Block Chance Per Shield Enchantment",
+        "title": "+5% 每个盾牌魔咒提供格挡率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1635,7 +1635,7 @@
         ]
     },
     "damage_against_burning+5%": {
-        "title": "+5% Damage Against Burning",
+        "title": "+5% 对着火敌人的伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1654,7 +1654,7 @@
         ]
     },
     "chance_to_ignite+5%": {
-        "title": "+5% Chance To Ignite",
+        "title": "+5% 点燃几率",
         "icon": {
             "type": "item",
             "data": {
@@ -1673,7 +1673,7 @@
         ]
     },
     "crafted_weapon_chance_to_ignite+5%": {
-        "title": "+5% Crafted Weapon Chance To Ignite",
+        "title": "+5% 合成武器的点燃几率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1692,7 +1692,7 @@
         ]
     },
     "crafted_weapon_damage_against_burning+5%": {
-        "title": "+5% Crafted Weapon Damage Against Burning",
+        "title": "+5% 合成的武器提供对着火敌人的伤害",
         "icon": {
             "type": "item",
             "data": {
@@ -1711,7 +1711,7 @@
         ]
     },
     "crit_chance_against_burning+5%": {
-        "title": "+5% Crit Chance Against Burning",
+        "title": "+5% 对着火敌人的暴击率",
         "icon": {
             "type": "item",
             "data": {
@@ -1730,7 +1730,7 @@
         ]
     },
     "crafted_quivers_damage_against_burning+5%": {
-        "title": "+5% Crafted Quivers Damage Against Burning",
+        "title": "+5% 合成的箭袋提供对着火敌人的伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1749,7 +1749,7 @@
         ]
     },
     "crafted_quivers_chance_to_ignite+5%": {
-        "title": "+5% Crafted Quivers Chance To Ignite",
+        "title": "+5% 合成的箭袋的点燃几率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1768,7 +1768,7 @@
         ]
     },
     "experience_from_ore+5%": {
-        "title": "+5% Experience From Ore",
+        "title": "+5% 来自挖掘矿石的经验",
         "icon": {
             "type": "item",
             "data": {
@@ -1787,7 +1787,7 @@
         ]
     },
     "experience_from_mobs+5%": {
-        "title": "+5% Experience From Mobs",
+        "title": "+5% 来自击杀生物的经验",
         "icon": {
             "type": "item",
             "data": {
@@ -1806,7 +1806,7 @@
         ]
     },
     "crafted_armor_defence+5%": {
-        "title": "+5% Crafted Armor Defence",
+        "title": "+5% 合成的盔甲提供防御",
         "icon": {
             "type": "texture",
             "data": {
@@ -1825,7 +1825,7 @@
         ]
     },
     "crafted_melee_weapon_damage_bonus+5%": {
-        "title": "+5% Crafted Melee Weapon Damage",
+        "title": "+5% 合成的近战武器提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1844,7 +1844,7 @@
         ]
     },
     "crafted_melee_weapon_attack_speed+5%": {
-        "title": "+5% Crafted Melee Weapon Attack Speed",
+        "title": "+5% 合成的近战武器提供攻击速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -1863,7 +1863,7 @@
         ]
     },
     "chance_to_craft_tougher_armor+5%": {
-        "title": "+5% Chance To Craft Tougher Armor",
+        "title": "+5% 合成更坚韧的盔甲的几率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1882,7 +1882,7 @@
         ]
     },
     "damage_with_shield+5%": {
-        "title": "+5% Damage With Shield",
+        "title": "+5% 手持盾牌时提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1901,7 +1901,7 @@
         ]
     },
     "crit_chance_with_shield+5%": {
-        "title": "+5% Crit Chance With Shield",
+        "title": "+5% 手持盾牌时提供暴击率",
         "icon": {
             "type": "texture",
             "data": {
@@ -1920,7 +1920,7 @@
         ]
     },
     "crit_damage_with_shield+5%": {
-        "title": "+5% Crit Damage With Shield",
+        "title": "+5% 手持盾牌时提供暴击伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1939,7 +1939,7 @@
         ]
     },
     "armor_with_shield+5%": {
-        "title": "+5% Armor With Shield",
+        "title": "+5% 手持盾牌时提供护甲值",
         "icon": {
             "type": "texture",
             "data": {
@@ -1958,7 +1958,7 @@
         ]
     },
     "attack_damage_per_armor+5%": {
-        "title": "+5% Attack Damage Per Armor",
+        "title": "+5% 盔甲提供攻击伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -1977,7 +1977,7 @@
         ]
     },
     "maximum_life_per_armor+5%": {
-        "title": "+5% Maximum Life Per Armor",
+        "title": "+5% 每个盔甲提供最大生命值",
         "icon": {
             "type": "item",
             "data": {
@@ -1996,7 +1996,7 @@
         ]
     },
     "maximum_life_per_boots_armor+5%": {
-        "title": "+5% Maximum Life Per Boots Armor",
+        "title": "+5% 来自靴子的护甲值提供最大生命值",
         "icon": {
             "type": "item",
             "data": {
@@ -2015,7 +2015,7 @@
         ]
     },
     "crafted_shields_armor+5%": {
-        "title": "+5% Crafted Shields Armor",
+        "title": "+5% 合成的盾牌提供护甲值",
         "icon": {
             "type": "texture",
             "data": {
@@ -2034,7 +2034,7 @@
         ]
     },
     "attack_speed_with_shield+5%": {
-        "title": "+5% Attack Speed With Shield",
+        "title": "+5% 手持盾牌时提供攻击速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -2053,7 +2053,7 @@
         ]
     },
     "life_regeneration_with_shield+5%": {
-        "title": "+5% Life Regeneration With Shield",
+        "title": "+5% 手持盾牌时提供生命恢复",
         "icon": {
             "type": "texture",
             "data": {
@@ -2072,7 +2072,7 @@
         ]
     },
     "chestplate_armor+5%": {
-        "title": "+5% Chestplate Armor",
+        "title": "+5% 胸甲护甲值",
         "icon": {
             "type": "texture",
             "data": {
@@ -2091,7 +2091,7 @@
         ]
     },
     "crafted_equipment_durability+5%": {
-        "title": "+5% Crafted Equipment Durability",
+        "title": "+5% 合成的装备提供耐久度",
         "icon": {
             "type": "texture",
             "data": {
@@ -2110,7 +2110,7 @@
         ]
     },
     "crafted_armor_maximum_life+5%": {
-        "title": "+5% Crafted Armor Maximum Life",
+        "title": "+5% 合成的盔甲提供最大生命值",
         "icon": {
             "type": "item",
             "data": {
@@ -2129,7 +2129,7 @@
         ]
     },
     "crafted_shields_maximum_life+5%": {
-        "title": "+5% Crafted Shields Maximum Life",
+        "title": "+5% 合成的盾牌提供最大生命值",
         "icon": {
             "type": "effect",
             "data": {
@@ -2148,7 +2148,7 @@
         ]
     },
     "crafted_weapon_attack_speed+5%": {
-        "title": "+5% Crafted Weapon Attack Speed",
+        "title": "+5% 合成的武器提供攻击速度",
         "icon": {
             "type": "effect",
             "data": {
@@ -2167,7 +2167,7 @@
         ]
     },
     "crafted_shields_block_chance+5%": {
-        "title": "+5% Crafted Shields Block Chance",
+        "title": "+5% 合成的盾牌提供格挡率",
         "icon": {
             "type": "texture",
             "data": {
@@ -2186,7 +2186,7 @@
         ]
     },
     "melee_damage+5%": {
-        "title": "+5% Melee Damage",
+        "title": "+5% 近战伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -2205,7 +2205,7 @@
         ]
     },
     "crafted_melee_weapon_crit_chance+5%": {
-        "title": "+5% Crafted Melee Weapon Crit Chance",
+        "title": "+5% 合成的近战武器提供暴击率",
         "icon": {
             "type": "texture",
             "data": {
@@ -2224,7 +2224,7 @@
         ]
     },
     "melee_crit_damage+5%": {
-        "title": "+5% Melee Crit Damage",
+        "title": "+5% 近战暴击伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -2243,7 +2243,7 @@
         ]
     },
     "crafted_weapon_double_loot_chance+5%": {
-        "title": "+5% Crafted Weapon Double Loot Chance",
+        "title": "+5% 合成的武器有几率掉落双倍战利品",
         "icon": {
             "type": "texture",
             "data": {
@@ -2262,7 +2262,7 @@
         ]
     },
     "mining_speed+5%": {
-        "title": "+5% Mining Speed",
+        "title": "+5% 挖掘速度",
         "icon": {
             "type": "item",
             "data": {
@@ -2281,7 +2281,7 @@
         ]
     },
     "maximum_equipment_sockets+5%": {
-        "title": "+1 Maximum Equipment Sockets",
+        "title": "+1 装备镶孔",
         "icon": {
             "type": "item",
             "data": {
@@ -2300,7 +2300,7 @@
         ]
     },
     "maximum_weapon_sockets+5%": {
-        "title": "+1 Maximum Weapon Sockets",
+        "title": "+1 武器镶孔",
         "icon": {
             "type": "item",
             "data": {
@@ -2319,7 +2319,7 @@
         ]
     },
     "maximum_chestplate_sockets+5%": {
-        "title": "+1 Maximum Chestplate Sockets",
+        "title": "+1 胸甲镶孔",
         "icon": {
             "type": "item",
             "data": {
@@ -2338,7 +2338,7 @@
         ]
     },
     "gem_power+5%": {
-        "title": "+5% Gem Power",
+        "title": "+5% 宝石能力",
         "icon": {
             "type": "item",
             "data": {
@@ -2357,7 +2357,7 @@
         ]
     },
     "gem_power_in_armor+5%": {
-        "title": "+5% Gem Power In Armor",
+        "title": "+5% 盔甲宝石能力",
         "icon": {
             "type": "item",
             "data": {
@@ -2376,7 +2376,7 @@
         ]
     },
     "gem_power_in_weapon+5%": {
-        "title": "+5% Gem Power In Weapon",
+        "title": "+5% 武器宝石能力",
         "icon": {
             "type": "item",
             "data": {
@@ -2395,7 +2395,7 @@
         ]
     },
     "armor_per_gem_in_helmet+5%": {
-        "title": "+5% Armor Per Gem In Helmet",
+        "title": "+5% 头盔宝石提供护甲值",
         "icon": {
             "type": "item",
             "data": {
@@ -2414,7 +2414,7 @@
         ]
     },
     "damage_per_gem_in_weapon+5%": {
-        "title": "+5% Damage Per Gem In Weapon",
+        "title": "+5% 每颗武器上的宝石提供伤害",
         "icon": {
             "type": "item",
             "data": {
@@ -2433,7 +2433,7 @@
         ]
     },
     "armor_per_gem_in_chestplate+5%": {
-        "title": "+5% Armor Per Gem In Chestplate",
+        "title": "+5% 胸甲宝石提供护甲值",
         "icon": {
             "type": "item",
             "data": {
@@ -2452,7 +2452,7 @@
         ]
     },
     "maximum_life_per_gem_in_armor+5%": {
-        "title": "+5% Maximum Life Per Gem In Armor",
+        "title": "+5% 盔甲上的宝石提供最大生命值",
         "icon": {
             "type": "item",
             "data": {
@@ -2471,7 +2471,7 @@
         ]
     },
     "maximum_life_per_gem_in_helmet+5%": {
-        "title": "+5% Maximum Life Per Gem In Helmet",
+        "title": "+5% 头盔上的宝石提供最大生命值",
         "icon": {
             "type": "item",
             "data": {
@@ -2490,7 +2490,7 @@
         ]
     },
     "attack_speed_per_gem_in_weapon+5%": {
-        "title": "+5% Attack Speed Per Gem In Weapon",
+        "title": "+5% 每颗武器上的宝石提供攻击速度",
         "icon": {
             "type": "item",
             "data": {
@@ -2509,7 +2509,7 @@
         ]
     },
     "crit_chance_per_gem_in_weapon+5%": {
-        "title": "+5% Crit Chance Per Gem In Weapon",
+        "title": "+5% 每颗武器上的宝石提供暴击率",
         "icon": {
             "type": "item",
             "data": {
@@ -2528,7 +2528,7 @@
         ]
     },
     "crit_damage_per_gem_in_weapon+5%": {
-        "title": "+5% Crit Damage Per Gem In Weapon",
+        "title": "+5% 每颗武器上的宝石提供暴击伤害",
         "icon": {
             "type": "item",
             "data": {
@@ -2547,7 +2547,7 @@
         ]
     },
     "life_regeneration_per_gem_in_helmet+5%": {
-        "title": "+5% Life Regeneration Per Gem In Helmet",
+        "title": "+5% 头盔宝石提供生命恢复",
         "icon": {
             "type": "item",
             "data": {
@@ -2566,7 +2566,7 @@
         ]
     },
     "damage_with_gem_in_weapon+5%": {
-        "title": "+5% Damage With Gem In Weapon",
+        "title": "+5% 武器拥有宝石时提供伤害",
         "icon": {
             "type": "item",
             "data": {
@@ -2585,7 +2585,7 @@
         ]
     },
     "attack_speed_with_gem_in_weapon+5%": {
-        "title": "+5% Attack Speed With Gem In Weapon",
+        "title": "+5% 武器拥有宝石时提供攻击速度",
         "icon": {
             "type": "item",
             "data": {
@@ -2604,7 +2604,7 @@
         ]
     },
     "crafted_boots_sockets+5%": {
-        "title": "+1 Crafted Boots Sockets",
+        "title": "+1 合成的靴子提供镶孔",
         "icon": {
             "type": "item",
             "data": {
@@ -2623,7 +2623,7 @@
         ]
     },
     "crafted_boots_movement_speed+5%": {
-        "title": "+5% Crafted Boots Movement Speed",
+        "title": "+5% 合成的靴子提供移动速度",
         "icon": {
             "type": "item",
             "data": {
@@ -2642,7 +2642,7 @@
         ]
     },
     "damage_per_distance_to_spawn+5%": {
-        "title": "+5% Damage Per Distance To Spawn",
+        "title": "+5% 与出生点的距离提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -2661,7 +2661,7 @@
         ]
     },
     "crafted_rings_critical_damage+5%": {
-        "title": "+5% Crafted Rings Critical Damage",
+        "title": "+5% 合成的戒指提供暴击伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -2680,7 +2680,7 @@
         ]
     },
     "maximum_ring_sockets+5%": {
-        "title": "+1 Maximum Ring Sockets",
+        "title": "+1 戒指镶孔",
         "icon": {
             "type": "item",
             "data": {
@@ -2699,7 +2699,7 @@
         ]
     },
     "gem_power_in_jewelry+5%": {
-        "title": "+5% Gem Power In Jewelry",
+        "title": "+5% 珠宝宝石能力",
         "icon": {
             "type": "item",
             "data": {
@@ -2718,7 +2718,7 @@
         ]
     },
     "crafted_necklaces_maximum_life+5%": {
-        "title": "+5% Crafted Necklaces Maximum Life",
+        "title": "+5% 合成的项链提供最大生命值",
         "icon": {
             "type": "item",
             "data": {
@@ -2737,7 +2737,7 @@
         ]
     },
     "double_loot_chance+5%": {
-        "title": "+5% Double Loot Chance",
+        "title": "+5% 双倍战利品几率",
         "icon": {
             "type": "texture",
             "data": {
@@ -2756,7 +2756,7 @@
         ]
     },
     "triple_loot_chance+5%": {
-        "title": "+5% Triple Loot Chance",
+        "title": "+5% 三倍战利品几率",
         "icon": {
             "type": "texture",
             "data": {
@@ -2775,7 +2775,7 @@
         ]
     },
     "crafted_armor_evasion+5%": {
-        "title": "+5% Crafted Armor Evasion",
+        "title": "+5% 合成的盔甲提供闪避率",
         "icon": {
             "type": "texture",
             "data": {
@@ -2794,7 +2794,7 @@
         ]
     },
     "projectile_damage+5%": {
-        "title": "+5% Projectile Damage",
+        "title": "+5% 弹射物伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -2813,7 +2813,7 @@
         ]
     },
     "crafted_ranged_weapon_attack_speed+5%": {
-        "title": "+5% Crafted Ranged Weapon Attack Speed",
+        "title": "+5% 合成的远程武器提供攻击速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -2832,7 +2832,7 @@
         ]
     },
     "damage_per_distance_to_enemy+5%": {
-        "title": "+5% Damage Per Distance To Enemy",
+        "title": "+5% 与敌人的距离提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -2851,7 +2851,7 @@
         ]
     },
     "crafted_helmets_sockets+5%": {
-        "title": "+1 Crafted Helmets Sockets",
+        "title": "+1 合成的头盔提供镶孔",
         "icon": {
             "type": "texture",
             "data": {
@@ -2870,7 +2870,7 @@
         ]
     },
     "crafted_ranged_weapon_sockets+5%": {
-        "title": "+1 Crafted Ranged Weapon Sockets",
+        "title": "+1 合成的远程武器提供镶孔",
         "icon": {
             "type": "texture",
             "data": {
@@ -2889,7 +2889,7 @@
         ]
     },
     "maximum_life_per_evasion+5%": {
-        "title": "+5% Maximum Life Per Evasion",
+        "title": "+5% 闪避率提供最大生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -2908,7 +2908,7 @@
         ]
     },
     "evasion_chance_when_wounded+5%": {
-        "title": "+5% Evasion Chance When Wounded",
+        "title": "+5% 受伤时的闪避率",
         "icon": {
             "type": "texture",
             "data": {
@@ -2927,7 +2927,7 @@
         ]
     },
     "arrow_life_steal+5%": {
-        "title": "+5% Life Per Arrow Hit",
+        "title": "+5% 每次弹射物击中的生命值",
         "icon": {
             "type": "item",
             "data": {
@@ -2946,7 +2946,7 @@
         ]
     },
     "attack_speed_with_ranged_weapon+5%": {
-        "title": "+5% Attack Speed With Ranged Weapon",
+        "title": "+5% 远程武器提供攻击速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -2965,7 +2965,7 @@
         ]
     },
     "chance_to_retrieve_arrows+5%": {
-        "title": "+5% Chance To Retrieve Arrows",
+        "title": "+5% 回收箭矢几率",
         "icon": {
             "type": "item",
             "data": {
@@ -2984,7 +2984,7 @@
         ]
     },
     "projectile_crit_chance+5%": {
-        "title": "+5% Projectile Crit Chance",
+        "title": "+5% 弹射物暴击率",
         "icon": {
             "type": "texture",
             "data": {
@@ -3003,7 +3003,7 @@
         ]
     },
     "projectile_crit_damage+5%": {
-        "title": "+5% Projectile Crit Damage",
+        "title": "+5% 弹射物暴击伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -3022,7 +3022,7 @@
         ]
     },
     "stealth+5%": {
-        "title": "+5% Stealth",
+        "title": "+5% 隐匿",
         "icon": {
             "type": "item",
             "data": {
@@ -3041,7 +3041,7 @@
         ]
     },
     "jump+5%": {
-        "title": "+5% Jump Height",
+        "title": "+5% 跳跃高度",
         "icon": {
             "type": "effect",
             "data": {
@@ -3060,7 +3060,7 @@
         ]
     },
     "crafted_armor_stealth+5%": {
-        "title": "+5% Crafted Armor Stealth",
+        "title": "+5% 合成的盔甲提供隐匿",
         "icon": {
             "type": "texture",
             "data": {
@@ -3079,7 +3079,7 @@
         ]
     },
     "crafted_boots_stealth+5%": {
-        "title": "+5% Crafted Boots Stealth",
+        "title": "+5% 合成的靴子提供隐匿",
         "icon": {
             "type": "texture",
             "data": {
@@ -3098,7 +3098,7 @@
         ]
     },
     "crafted_weapon_life_per_hit+5%": {
-        "title": "+5% Crafted Weapon Life Per Hit",
+        "title": "+5% 合成的武器提供每次击中的生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -3117,7 +3117,7 @@
         ]
     },
     "crafted_quivers_capacity+5%": {
-        "title": "+5% Crafted Quivers Capacity",
+        "title": "+5% 合成的箭袋提供容量",
         "icon": {
             "type": "texture",
             "data": {
@@ -3136,7 +3136,7 @@
         ]
     },
     "crafted_quivers_maximum_life+5%": {
-        "title": "+5% Crafted Quivers Maximum Life",
+        "title": "+5% 合成的箭袋提供最大生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -3155,7 +3155,7 @@
         ]
     },
     "maximum_life_per_arrow_in_quiver+5%": {
-        "title": "+5% Maximum Life Per Arrow In Quiver",
+        "title": "+5% 箭袋里有箭矢时提供最大生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -3174,7 +3174,7 @@
         ]
     },
     "cooked_food_saturation+5%": {
-        "title": "+5% Cooked Food Saturation",
+        "title": "+5% 熟食提供饱和度",
         "icon": {
             "type": "item",
             "data": {
@@ -3193,7 +3193,7 @@
         ]
     },
     "cooked_food_damage_per_saturation+5%": {
-        "title": "+5% Cooked Food Damage Per Saturation",
+        "title": "+5% 熟食的饱和度提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -3212,7 +3212,7 @@
         ]
     },
     "cooked_food_life_regeneration+5%": {
-        "title": "+5% Cooked Food Life Regeneration",
+        "title": "+5% 熟食提供生命恢复",
         "icon": {
             "type": "texture",
             "data": {
@@ -3231,7 +3231,7 @@
         ]
     },
     "damage_if_damaged+5%": {
-        "title": "+5% Damage If Damaged",
+        "title": "+5% 受到伤害时提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -3250,7 +3250,7 @@
         ]
     },
     "damage_if_wounded+5%": {
-        "title": "+5% Damage If Wounded",
+        "title": "+5% 受伤时提供伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -3269,7 +3269,7 @@
         ]
     },
     "crafted_axes_crit_chance+5%": {
-        "title": "+5% Crafted Axes Crit Chance",
+        "title": "+5% 合成的斧提供暴击率",
         "icon": {
             "type": "item",
             "data": {
@@ -3288,7 +3288,7 @@
         ]
     },
     "attack_speed_if_wounded+5%": {
-        "title": "+5% Attack Speed If Wounded",
+        "title": "+5% 受伤时提供攻击速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -3307,7 +3307,7 @@
         ]
     },
     "crit_chance_if_wounded+5%": {
-        "title": "+5% Crit Chance If Wounded",
+        "title": "+5% 受伤时提供暴击率",
         "icon": {
             "type": "texture",
             "data": {
@@ -3326,7 +3326,7 @@
         ]
     },
     "life_per_hit_if_wounded+5%": {
-        "title": "+5% Life Per Hit If Wounded",
+        "title": "+5% 受伤时提供每次击中的生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -3345,7 +3345,7 @@
         ]
     },
     "double_fishing_loot_chance+5%": {
-        "title": "+5% Double Fishing Loot Chance",
+        "title": "+5% 双倍钓鱼战利品几率",
         "icon": {
             "type": "item",
             "data": {
@@ -3364,7 +3364,7 @@
         ]
     },
     "experience_from_fishing+5%": {
-        "title": "+5% Experience From Fishing",
+        "title": "+5% 来自钓鱼的经验",
         "icon": {
             "type": "item",
             "data": {
@@ -3383,7 +3383,7 @@
         ]
     },
     "luck_while_fishing+5%": {
-        "title": "+5% Luck While Fishing",
+        "title": "+5% 钓鱼时的幸运",
         "icon": {
             "type": "item",
             "data": {
@@ -3402,7 +3402,7 @@
         ]
     },
     "life_per_hit+5%": {
-        "title": "+5% Life Per Hit",
+        "title": "+5% 每次击中的生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -3421,7 +3421,7 @@
         ]
     },
     "life_on_block+5%": {
-        "title": "+5% Life On Block",
+        "title": "+5% 格挡时恢复生命值",
         "icon": {
             "type": "texture",
             "data": {
@@ -3440,7 +3440,7 @@
         ]
     },
     "life_regeneration+5%": {
-        "title": "+5% Life Regeneration",
+        "title": "+5% 生命恢复",
         "icon": {
             "type": "texture",
             "data": {
@@ -3459,7 +3459,7 @@
         ]
     },
     "block_chance+5%": {
-        "title": "+5% Block Chance",
+        "title": "+5% 格挡率",
         "icon": {
             "type": "texture",
             "data": {
@@ -3478,7 +3478,7 @@
         ]
     },
     "crit_damage+5%": {
-        "title": "+5% Crit Damage",
+        "title": "+5% 暴击伤害",
         "icon": {
             "type": "texture",
             "data": {
@@ -3497,7 +3497,7 @@
         ]
     },
     "crit_chance+5%": {
-        "title": "+5% Crit Chance",
+        "title": "+5% 暴击率",
         "icon": {
             "type": "texture",
             "data": {
@@ -3516,7 +3516,7 @@
         ]
     },
     "chance_to_explode_enemy+5%": {
-        "title": "+5% Chance To Explode Enemy",
+        "title": "+5% 引爆敌人几率",
         "icon": {
             "type": "item",
             "data": {
