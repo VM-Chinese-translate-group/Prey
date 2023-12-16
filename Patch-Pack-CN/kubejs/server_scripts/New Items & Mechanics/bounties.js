@@ -745,6 +745,6 @@ EntityEvents.death(event => {
 		Utils.server.runCommandSilent(`/give ${player_username} numismaticoverhaul:bronze_coin ${(hvt_complete*2)*9}`)
 		event.source.player.persistentData.souls += 50
 		event.source.player.paint({souls_word: {text: `灵魂：${event.source.player.persistentData.souls}`}})
-		event.source.player.tell(`邪恶强盗的奖励：${(hvt_complete*2)*9} 青铜币和50 灵魂`)
+		event.source.player.tell(`邪恶强盗的奖励：${(hvt_complete*2)*9} 青铜币和50灵魂`)
 	}
 })

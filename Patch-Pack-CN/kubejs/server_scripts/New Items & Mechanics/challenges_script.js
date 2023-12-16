@@ -534,7 +534,7 @@ EntityEvents.death(event => {
     if (shadow_form_hit_counter[player_username] != 30) return;
     Utils.server.runCommandSilent(`/give ${player_username} kubejs:shadow_form_elixir`)
     event.source.player.tags.remove('shadow_form')
-    event.source.player.tell('Heartstop Challenge: Complete')
+    event.source.player.tell('止心挑战：完成')
     Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
     shadow_form_hit_counter[player_username] = 0
 })
@@ -546,10 +546,10 @@ EntityEvents.hurt(event => {
     if (shadow_form_hurt_counter[player_username] == undefined) {
         shadow_form_hurt_counter[player_username] = 1
         Utils.server.tell(shadow_form_hurt_counter[player_username])
-        Utils.server.tell(`止心攻击：${shadow_form_hurt_counter[player_username]}`)
+        Utils.server.tell(`止心攻击数：${shadow_form_hurt_counter[player_username]}`)
     } else {
         shadow_form_hurt_counter[player_username]++
-        Utils.server.tell(`止心攻击：${shadow_form_hurt_counter[player_username]}`)
+        Utils.server.tell(`止心攻击数：${shadow_form_hurt_counter[player_username]}`)
     }
 
     if (shadow_form_hurt_counter[player_username] != 5) return;

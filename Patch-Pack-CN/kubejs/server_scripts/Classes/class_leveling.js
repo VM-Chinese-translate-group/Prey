@@ -110,7 +110,7 @@ ItemEvents.crafted(event => {
     if (t_counter < e_counter*500) return
         //Utils.server.tell('Counter Passed')
         event.player.persistentData.per_tools_counter = 0
-        Utils.server.runCommandSilent(`/tell ${player_name} 铁匠倍率：升级`)
+        Utils.server.runCommandSilent(`/tell ${player_name} 铁匠增幅：升级`)
         event.player.persistentData.per_blacksmith_counter += 1
         blacksmith_tool_commands.forEach((command) => {
             Utils.server.runCommandSilent(`/attribute ${player_name} ${command} ${e_counter*1.1}`)
@@ -144,7 +144,7 @@ ItemEvents.crafted(event => {
     if (a_counter < e_counter*400) return
         //Utils.server.tell('Counter Passed')
         event.player.persistentData.per_armor_counter = 0
-        Utils.server.runCommandSilent(`/tell ${player_name} 铁匠倍率：升级`)
+        Utils.server.runCommandSilent(`/tell ${player_name} 铁匠增幅：升级`)
         event.player.persistentData.per_blacksmith_counter += 1
         blacksmith_armor_commands.forEach((command) => {
             Utils.server.runCommandSilent(`/attribute ${player_name} ${command} ${e_counter*1.1}`)
