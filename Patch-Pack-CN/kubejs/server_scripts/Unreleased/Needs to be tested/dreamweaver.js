@@ -79,7 +79,7 @@ EntityEvents.hurt(event => {
     if (event.source.projectile) return
     if (!event.entity.tags.contains(`dreamweaver_mark_${username}`)) return
     if (!event.source.actual.persistentData.contains('kubejs_class:dreamweaver')) return
-    if (event.source.player.mainHandItem.displayName.string != '   [Torment]') return
+    if (event.source.player.mainHandItem.displayName.string != '   [苦痛]') return
     if (event.entity.player) {
         let target_username = event.entity.username
         Utils.server.runCommandSilent(`/sanity set ${target_username} 0`)

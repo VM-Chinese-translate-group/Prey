@@ -245,7 +245,7 @@ EntityEvents.death(event => {
             player.persistentData.summon_id = entity_id
             player.persistentData.summon_cost = entity_health
             //标记
-            player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
+            player.tell(event.entity.displayName.getString()+ '灵魂被捕获。')
         } else {
             player.tell('此生物对水晶来说太强')
         }
@@ -253,7 +253,7 @@ EntityEvents.death(event => {
         if (event.entity.maxHealth <= 75) {
             player.persistentData.summon_id = entity_id
             player.persistentData.summon_cost = entity_health
-            player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
+            player.tell(event.entity.displayName.getString()+ '灵魂被捕获。')
         } else {
             player.tell('此生物对水晶来说太强')
         }
@@ -261,7 +261,7 @@ EntityEvents.death(event => {
         if (event.entity.maxHealth <= 120) {
             player.persistentData.summon_id = entity_id
             player.persistentData.summon_cost = entity_health
-            player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
+            player.tell(event.entity.displayName.getString()+ '灵魂被捕获。')
         } else {
             player.tell('此生物对水晶来说太强')
         }
@@ -269,7 +269,7 @@ EntityEvents.death(event => {
         if (event.entity.maxHealth <= 240) {
             player.persistentData.summon_id = entity_id
             player.persistentData.summon_cost = entity_health
-            player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
+            player.tell(event.entity.displayName.getString()+ '灵魂被捕获。')
         } else {
             player.tell('此生物对水晶来说太强')
         }
@@ -277,7 +277,7 @@ EntityEvents.death(event => {
         if (event.entity.maxHealth <= 480) {
             player.persistentData.summon_id = entity_id
             player.persistentData.summon_cost = entity_health
-            player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
+            player.tell(event.entity.displayName.getString()+ '灵魂被捕获。')
         } else {
             player.tell('此生物对水晶来说太强')
         }
@@ -285,7 +285,7 @@ EntityEvents.death(event => {
         if (event.entity.maxHealth <= 960) {
             player.persistentData.summon_id = entity_id
             player.persistentData.summon_cost = entity_health
-            player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
+            player.tell(event.entity.displayName.getString()+ '灵魂被捕获。')
         } else {
             player.tell('此生物对水晶来说太强')
         }
@@ -293,7 +293,7 @@ EntityEvents.death(event => {
         if (event.entity.maxHealth <= 999) {
             player.persistentData.summon_id = entity_id
             player.persistentData.summon_cost = entity_health
-            player.tell(event.entity.displayName.getString()+ ' Spirit Captured.')
+            player.tell(event.entity.displayName.getString()+ '灵魂被捕获。')
         } else {
             player.tell('此生物对水晶来说太强')
         }
