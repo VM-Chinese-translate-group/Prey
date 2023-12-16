@@ -78,7 +78,7 @@ ItemEvents.tooltip(event => {
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 游荡').gray()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
-		text.add(6, Text.gray(' > 骑乘时可带有箱子))
+		text.add(6, Text.gray(' > 骑乘时可带有箱子'))
 	  })
 
 	  event.addAdvanced('kubejs:komodo_dragon_summoning_stone', (item, advanced, text) => {
@@ -351,7 +351,7 @@ ItemEvents.tooltip(event => {
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
 			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('神圣法术强度').gold()])
-			text.add(3, [Text.of(' >').white(), Text.of('杀死怪物后有').white(), Text.of('30%').green(), Text.of('概率恢复).white(), Text.of('法力值').blue()])
+			text.add(3, [Text.of(' >').white(), Text.of('杀死怪物后有').white(), Text.of('30%').green(), Text.of('概率恢复').white(), Text.of('法力值').blue()])
 
 		  }
 
