@@ -38,7 +38,7 @@
         ]
     },
     "follower_cost_limit+5%": {
-        "title": "+5% Follower Cost Limit",
+        "title": "+5% 跟随者施法上限",
         "icon": {
             "type": "texture",
             "data": {
@@ -152,7 +152,7 @@
         ]
     },
     "soul_gathering+5%": {
-        "title": "+5% Soul Gathering",
+        "title": "+5% 灵魂收集",
         "icon": {
             "type": "texture",
             "data": {

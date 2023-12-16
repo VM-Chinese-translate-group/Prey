@@ -1,6 +1,6 @@
 {
     "trial_bloodlust": {
-        "title": "Trial: Bloodlust",
+        "title": "试炼：嗜血",
         "icon": {
             "type": "texture",
             "data": {
@@ -17,7 +17,7 @@
         ]
     },
     "trial_surge": {
-        "title": "Trial: Surge",
+        "title": "试炼：潮涌",
         "icon": {
             "type": "texture",
             "data": {
@@ -35,7 +35,7 @@
     },
 
     "trial_restoration": {
-        "title": "Trial: Restoration",
+        "title": "试炼：复原",
         "icon": {
             "type": "texture",
             "data": {
@@ -53,7 +53,7 @@
     },
 
     "trial_shadow_form": {
-        "title": "Trial: Heartstop",
+        "title": "试炼：止心",
         "icon": {
             "type": "texture",
             "data": {
@@ -71,7 +71,7 @@
     },
 
     "trial_strike": {
-        "title": "Trial: Strike",
+        "title": "试炼：打击",
         "icon": {
             "type": "texture",
             "data": {
@@ -88,7 +88,7 @@
         ]
     },
     "trial_blood_oath": {
-        "title": "Trial: Blood Oath",
+        "title": "试炼：血誓",
         "icon": {
             "type": "texture",
             "data": {
