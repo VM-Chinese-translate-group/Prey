@@ -21,10 +21,10 @@ ItemEvents.rightClicked('kubejs:mindshatter_orb', event => {
         })
         Utils.server.scheduleInTicks(1000, event => {
             mind_shatter_trigger = true
-            player.tell('Mindshatter Orb: Ready')
+            player.tell('颤心球：就绪')
         })
     } else {
-        event.player.tell('Allow your Sanity to recharge before using MIND SHATTER again.')
+        event.player.tell('再次使用颤心之前，让你的理智值充足')
     }
 
 })
@@ -56,7 +56,7 @@ EntityEvents.hurt(event => {
     }
     if (sorrow_counter[username+id] != 3) return
     event.entity.tags.add(`dreamweaver_mark_${username}`)
-    event.source.actual.tell('Dreamweaver mark added.')
+    event.source.actual.tell('织梦师标记已添加。')
     event.entity.potionEffects.add('tetra:bleeding',40)
     sorrow_counter[username] = 0
 })
