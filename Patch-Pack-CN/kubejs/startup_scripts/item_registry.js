@@ -170,12 +170,12 @@ const paramount_discs = {
         event.create('charged_elixir', 'basic').group('KubeJS').texture('kubejs:item/charged_elixir').rarity('epic')//
         event.create('soul_steal_elixir', 'basic').group('KubeJS').texture('kubejs:item/soul_steal_elixir').rarity('epic')//
         event.create('angel_wings_elixir', 'basic').group('KubeJS').texture('kubejs:item/angelic_elixir').rarity('epic')//
-        event.create('bloodlust', 'basic').displayName('被遗忘的石板：嗜血').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('surge', 'basic').displayName('被遗忘的石板：Surge').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('restoration', 'basic').displayName('被遗忘的石板：复原').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('shadow_form', 'basic').displayName('被遗忘的石板：Heartstop').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('strike', 'basic').displayName('被遗忘的石板：Strike').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('trial_blood_oath', 'basic').displayName('被遗忘的石板：Blood Oath').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('bloodlust', 'basic').displayName('忘却的石板：嗜血').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('surge', 'basic').displayName('忘却的石板：潮涌').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('restoration', 'basic').displayName('忘却的石板：复原').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('shadow_form', 'basic').displayName('忘却的石板：止心').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('strike', 'basic').displayName('忘却的石板：打击').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('trial_blood_oath', 'basic').displayName('忘却的石板：血誓').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
         event.create('blood_oath', 'basic').group('KubeJS').texture('kubejs:icons/blood_oath')
         event.create('summoners_gateway', 'basic').group('KubeJS').texture('kubejs:item/totem').displayName('Summoning Gateway')
         event.create('evasion_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Evasion Elixir')////
