@@ -13,11 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3.5.3
       
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.7.0
-        with:
-          node-version: 16
-      
       - name: Setup Python
         uses: actions/setup-python@v4.7.0
         with:
@@ -27,7 +22,7 @@ jobs:
         run: python source_files/packer.py
       
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: packaged-files
-          path: patch-out
+          path: ./pack.zip

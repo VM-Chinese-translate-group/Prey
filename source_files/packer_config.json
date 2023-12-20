@@ -1,5 +1,4 @@
 {
-    "paths": [
-      "Patch-Pack-CN"
-    ]
+    "content": "./Patch-Pack-CN",
+    "output_path": "./pack.zip"
 }
