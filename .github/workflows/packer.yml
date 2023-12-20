@@ -12,17 +12,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3.5.3
-      
-      - name: Setup Python
-        uses: actions/setup-python@v4.7.0
-        with:
-          python-version: 3.8
-
-      - name: Run packer.py
-        run: python source_files/packer.py
-      
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: packaged-files
-          path: ./pack.zip
+          name: pack.zip
+          path: ./Patch-Pack-CN
+      - name: Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "pack.zip"
+          tag: "Realease-${{ steps.date.outputs.date }}"
