@@ -1,12 +1,13 @@
 name: Packer
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    # 每周日凌晨 0 点执行 Release
+    - cron: 
+        0 0 * * 0
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     
     steps:
