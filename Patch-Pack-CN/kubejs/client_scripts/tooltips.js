@@ -995,7 +995,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	})
 
 	event.addAdvanced('kubejs:strike', (item, advanced, text) => {
-		text.add(1, [Text.of('试炼').darkRed().italic(), Text.of(' 使用').white(), Text.of('弹射物').darkPurple(), Text.of('杀掉').white(), Text.of('1500').red().underlined(), Text.of('个敌人').white()])
+		text.add(1, [Text.of('试炼：').darkRed().italic(), Text.of('使用').white(), Text.of('弹射物').darkPurple(), Text.of('击杀').white(), Text.of('1500').red().underlined(), Text.of('名敌人').white()])
         text.add(2, Text.white(' ')),
         text.add(3, [Text.of('奖励：').green().italic(), Text.of('每第').white(), Text.of('15个').yellow(), Text.of('成功命中的弹射物，2道').white(), Text.of('雷电').yellow(), Text.of('将击中当前目标。')])
     })
