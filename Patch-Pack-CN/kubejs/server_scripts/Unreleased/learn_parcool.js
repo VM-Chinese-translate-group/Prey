@@ -5,12 +5,13 @@ ItemEvents.rightClicked('kubejs:breakfall', event => {
     if (player.tags.contains('breakfall')) return
     Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility BreakfallReady true`)
     Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility Roll true`)
+    Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility Tap true`)
     player.tell('Skill Acquired: Breakfall')
     player.tags.add('breakfall')
     event.item.count -= 1
 })
 
-ItemEvents.rightClicked('kubejs:catleap', event => {
+ItemEvents.rightClicked('kubejs:catleap', event => {//
     let player = event.player
     let player_username = event.player.username
     if (player.tags.contains('catleap')) return
@@ -40,7 +41,7 @@ ItemEvents.rightClicked('kubejs:horizontal_wallrun', event => {
     event.item.count -= 1
 })
 
-ItemEvents.rightClicked('kubejs:ledgegrab', event => {
+ItemEvents.rightClicked('kubejs:ledgegrab', event => {//
     let player = event.player
     let player_username = event.player.username
     if (player.tags.contains('ledge_grab')) return
@@ -53,7 +54,7 @@ ItemEvents.rightClicked('kubejs:ledgegrab', event => {
     event.item.count -= 1
 })
 
-ItemEvents.rightClicked('kubejs:crawl', event => {
+ItemEvents.rightClicked('kubejs:crawl', event => { //
     let player = event.player
     let player_username = event.player.username
     if (player.tags.contains('crawl')) return

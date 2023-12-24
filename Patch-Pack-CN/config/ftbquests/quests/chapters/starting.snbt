@@ -64,8 +64,8 @@
 				type: "checkmark"
 			}]
 			title: "完成教程"
-			x: 0.5d
-			y: 2.5d
+			x: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -108,12 +108,12 @@
 						value: "curios:glider"
 					}
 				}
-				title: "任何#curios:glider"
+				title: "任意#curios:glider"
 				type: "item"
 			}]
 			title: "获得一个滑翔伞"
-			x: -1.0d
-			y: 1.5d
+			x: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -195,17 +195,23 @@
 				type: "item"
 			}]
 			title: "获得一个抓钩"
-			x: 2.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["44EF4C8A7F6402F1"]
+			dependencies: ["7620E496F9C5CCAC"]
 			id: "6D614A7BBAB27D65"
 			rewards: [
 				{
 					auto: "enabled"
 					command: "/puffish_skills category unlock @p Crafting"
-					icon: "aquamirae:dead_sea_scroll"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+						id: "aquamirae:dead_sea_scroll"
+					}
 					id: "646840C2F3740C74"
 					title: "解锁合成技能树"
 					type: "command"
@@ -228,9 +234,9 @@
 				item: "crafting_on_a_stick:crafting_table"
 				type: "item"
 			}]
-			title: "获得一个便携式工作台"
-			x: 0.5d
-			y: -0.5d
+			title: "获得一个便携式橡木工作台"
+			x: 2.5d
+			y: 1.5d
 		}
 		{
 			description: [
@@ -275,17 +281,23 @@
 				type: "checkmark"
 			}]
 			title: "选择你的主职业"
-			x: 0.5d
-			y: -2.0d
+			x: 2.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["44EF4C8A7F6402F1"]
+			dependencies: ["7620E496F9C5CCAC"]
 			id: "0E17BABF340B2891"
 			rewards: [
 				{
 					auto: "enabled"
 					command: "/puffish_skills category unlock @p Mining"
-					icon: "aquamirae:dead_sea_scroll"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+						id: "aquamirae:dead_sea_scroll"
+					}
 					id: "2519B4AA4E31DF99"
 					title: "解锁挖掘技能树"
 					type: "command"
@@ -312,15 +324,15 @@
 						value: "kubejs:hammers"
 					}
 				}
-				title: "任何#kubejs:hammers"
+				title: "任意挖掘锤"
 				type: "item"
 			}]
-			title: "获得任何锤子"
-			x: -0.5d
-			y: -0.5d
+			title: "获得任意锤子"
+			x: 1.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["44EF4C8A7F6402F1"]
+			dependencies: ["7620E496F9C5CCAC"]
 			id: "5C7BD2716009CA41"
 			rewards: [
 				{
@@ -354,21 +366,27 @@
 						value: "forge:tools/swords"
 					}
 				}
-				title: "任何#forge:swords"
+				title: "任意剑"
 				type: "item"
 			}]
 			title: "获得一把剑"
-			x: 1.5d
-			y: -0.5d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["44EF4C8A7F6402F1"]
+			dependencies: ["7620E496F9C5CCAC"]
 			id: "07064FA7A7AE22D3"
 			rewards: [
 				{
 					auto: "enabled"
 					command: "/puffish_skills category unlock @p Magic"
-					icon: "aquamirae:dead_sea_scroll"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+						id: "aquamirae:dead_sea_scroll"
+					}
 					id: "3D21A8BE5C12B9B5"
 					title: "解锁魔法技能树"
 					type: "command"
@@ -396,15 +414,15 @@
 						value: "kubejs:magic_item"
 					}
 				}
-				title: "任何#kubejs:magic_item"
+				title: "任意魔法卷轴或法术书"
 				type: "item"
 			}]
-			title: "获得任何施法物品"
-			x: -1.5d
-			y: -0.5d
+			title: "Acquire Any Spell Casting Item"
+			x: 0.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["44EF4C8A7F6402F1"]
+			dependencies: ["7620E496F9C5CCAC"]
 			id: "3BEECD043A542D08"
 			rewards: [
 				{
@@ -438,12 +456,12 @@
 						value: "kubejs:ranged"
 					}
 				}
-				title: "任何#kubejs:ranged"
+				title: "任意弓"
 				type: "item"
 			}]
 			title: "获得一把弓"
-			x: 2.5d
-			y: -0.5d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -467,9 +485,298 @@
 				type: "item"
 			}]
 			title: "制作一个结构指南针"
-			x: 0.5d
-			y: 1.5d
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["44EF4C8A7F6402F1"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+				id: "kubejs:class_lootbox"
+			}
+			id: "5F3C8446A48403E0"
+			rewards: [{
+				id: "211BDA29499DB849"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+					id: "kubejs:class_lootbox"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				elapsedTime: 300L
+				id: "030D6162972C99CC"
+				title: "Class Lootbox"
+				type: "questsadditions:time"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["44EF4C8A7F6402F1"]
+			description: [
+				"&lStarting Skills:&r"
+				" "
+				" &nWall Cling:&r "
+				"   > While against a wall, hold &oSHIFT&r to cling to the wall"
+				""
+				""
+				""
+				"&lUnlockable Skills:&r"
+				" "
+				" &nLedge Grab:&r "
+				"   > While against a ledge, hold &oRIGHT-CLICK&r to hold on to the edge"
+				""
+				" &nClimb Up:&r"
+				"   > While using Ledge Grab, press &oSPACE&r to climb up."
+				""
+				" &nWall Jump:&r"
+				"   > While using Ledge Grab or Wall Cling, look away from the ledge you are holding and press &oSPACE&r to jump away from the wall. Can be chained to another Ledge Grab or Wall Cling"
+				""
+				" &nWall Slide:&r"
+				"   > While falling next to a wall, hold &oRIGHT-CLICK&r to slow your fall and reduce fall damage"
+				""
+				" &nCat Leap:&r"
+				"   > While sprinting, tap &oSHIFT&r to do a long horizontal jump. "
+				""
+				" &nCrawl:&r "
+				"   > Hold &oZ&r to crawl. Can be used to go under gaps of 1 block."
+				""
+				" &nSlide:&r"
+				"   > While Sprinting, hold &oZ&r to Slide. Can be used to go under gaps of 1 block without losing momentum."
+				""
+				" &nBreakfall:&r "
+				"   > While falling, Hold &oSHIFT&r and &oR&r before hitting the ground to reduce the fall damage you take."
+				""
+				" &nHorizontal Wallrun:&r "
+				"  > While Sprinting parallel to a wall, jump towards the wall and hold &oR&r and &oCTRL&r to run along the wall. Press &oSPACE&r to jump away from the wall using Wall Jump"
+				""
+				" &nVertical Wallrun:&r "
+				"   > While Sprinting, face a wall and look slightly up towards a ledge. Then press and hold &oSPACE&r to run up the wall. Chain this with Wall Cling or Ledge Grab."
+			]
+			id: "151988F78FFBCEB5"
+			rewards: [{
+				id: "1ACA1F52FC3FF4B4"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "Parkour help"
+			tasks: [{
+				id: "1CD02B4422C7EF5F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "parcool:parcool_guide"
+					}
+				}
+				type: "item"
+			}]
+			title: "ParCool Tutorial [READ ME]"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["151988F78FFBCEB5"]
+			description: [
+				" &nCrawl:&r "
+				"   > Hold &oZ&r to crawl. Can be used to go under gaps of 1 block."
+				""
+				" &nSlide:&r"
+				"   > While Sprinting, hold &oZ&r to Slide. Can be used to go under gaps of 1 block without losing momentum."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+				id: "kubejs:crawl"
+			}
+			id: "4DF87944C39C3424"
+			rewards: [{
+				id: "7A02A5C71A10FBE8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+					id: "kubejs:crawl"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				elapsedTime: 30L
+				id: "754A831418AD2CDB"
+				title: "Learn Parkour: Crawl"
+				type: "questsadditions:time"
+			}]
+			title: "Parkour Skill: Crawl"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4DF87944C39C3424"]
+			description: [
+				"&nCat Leap:&r"
+				"   > While sprinting, tap &oSHIFT&r to do a long horizontal jump. "
+			]
+			icon: "kubejs:catleap"
+			id: "32795C02B2854A37"
+			rewards: [{
+				id: "0EAC941D902544D5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+					id: "kubejs:catleap"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				elapsedTime: 45L
+				gameTime: "game"
+				id: "69975E5A254AD356"
+				type: "questsadditions:time"
+			}]
+			title: "Parkour Skill: Cat Leap"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["32795C02B2854A37"]
+			description: [
+				"&nLedge Grab:&r "
+				"   > While against a ledge, hold &oRIGHT-CLICK&r to hold on to the edge"
+				""
+				" &nClimb Up:&r"
+				"   > While using Ledge Grab, press &oSPACE&r to climb up."
+				""
+				" &nWall Jump:&r"
+				"   > While using Ledge Grab or Wall Cling, look away from the ledge you are holding and press &oSPACE&r to jump away from the wall. Can be chained to another Ledge Grab or Wall Cling"
+				""
+				" &nWall Slide:&r"
+				"   > While falling next to a wall, hold &oRIGHT-CLICK&r to slow your fall and reduce fall damage"
+			]
+			icon: "kubejs:ledgegrab"
+			id: "65843007A63422B3"
+			rewards: [{
+				id: "355149F9D5DB7773"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+					id: "kubejs:ledgegrab"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				elapsedTime: 45L
+				id: "54AC8ECD87FA0CED"
+				title: "Parkour Skill: Ledge Grab"
+				type: "questsadditions:time"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["65843007A63422B3"]
+			description: [
+				"&nBreakfall:&r "
+				"   > While falling, Hold &oSHIFT&r and &oR&r before hitting the ground to reduce the fall damage you take."
+			]
+			icon: "kubejs:breakfall"
+			id: "5AC85A470C9499FE"
+			rewards: [{
+				id: "16E5F79F4F9A292D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+					id: "kubejs:breakfall"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				elapsedTime: 45L
+				id: "0784F090A3D0A2AF"
+				title: "Parkour Skill: Break Fall"
+				type: "questsadditions:time"
+			}]
+			title: "Parkour Skill: Break Fall"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5AC85A470C9499FE"]
+			description: [
+				" &nVertical Wallrun:&r "
+				"   > While Sprinting, face a wall and look slightly up towards a ledge. Then press and hold &oSPACE&r to run up the wall. Chain this with Wall Cling or Ledge Grab."
+			]
+			icon: "kubejs:vertical_wallrun"
+			id: "45FD45256E21D9AC"
+			rewards: [{
+				id: "4EB346164D7638A1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+					id: "kubejs:vertical_wallrun"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				elapsedTime: 45L
+				id: "14A8E15EC13EF27D"
+				title: "Parkour Skill: Vertical Wallrun"
+				type: "questsadditions:time"
+			}]
+			title: "Parkour Skill: Vertical Wallrun"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45FD45256E21D9AC"]
+			description: [
+				" &nHorizontal Wallrun:&r "
+				"  > While Sprinting parallel to a wall, jump towards the wall and hold &oR&r and &oCTRL&r to run along the wall. Press &oSPACE&r to jump away from the wall using Wall Jump"
+			]
+			icon: "kubejs:horizontal_wallrun"
+			id: "7620E496F9C5CCAC"
+			rewards: [{
+				id: "30DC963E53F8118C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+					id: "kubejs:horizontal_wallrun"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				elapsedTime: 45L
+				id: "1318BC6EE8F409EA"
+				title: "Parkour Skill: Horizontal Wallrun"
+				type: "questsadditions:time"
+			}]
+			title: "Parkour Skill: Horizontal Wallrun"
+			x: 2.0d
+			y: 0.0d
 		}
 	]
-	title: "教程"
+	title: "Tutorial"
 }

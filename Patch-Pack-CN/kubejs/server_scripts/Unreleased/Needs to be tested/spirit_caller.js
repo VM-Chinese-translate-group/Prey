@@ -167,6 +167,7 @@ ItemEvents.rightClicked('kubejs:orb_of_slaughtered_foes', event => {
 ///////////////////////////////////////
 
 EntityEvents.spawned(event => {
+    if (event.entity.player) return
     if (!event.entity.monster) return
     let player = event.level.getNearestPlayer(event.entity, 3)
     if (player == null) return

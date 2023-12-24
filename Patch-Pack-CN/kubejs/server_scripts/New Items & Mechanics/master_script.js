@@ -493,10 +493,30 @@ PlayerEvents.loggedIn((event) => {
 		if (event.server.persistentData.first_load == false) return
 		event.server.persistentData.putBoolean('first_load', false)
 		let player = event.player
+		let player_username = player.username
 		event.server.scheduleInTicks(200, event => {
 			Utils.server.tell('5 Minute Peace Period Begins Now.')
 			Utils.server.runCommand('/mode Stage0 noreload')
 			Utils.server.runCommand('/difficulty peaceful')
+			Utils.server.runCommandSilent('/playertabs setNumberOfTabs 4')
+			Utils.server.runCommandSilent('/playertabs setTabName 0 Gear')
+			Utils.server.runCommandSilent('/playertabs setTabName 1 Food')
+			Utils.server.runCommandSilent('/playertabs setTabName 2 Blocks')
+			Utils.server.runCommandSilent('/playertabs setTabName 3 Misc')
+			Utils.server.runCommandSilent(`/parcool limitation enable ${player_username}`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility BreakfallReady false`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility Roll false`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility CatLeap false`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility VerticalWallRun false`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility HorizontalWallRun false`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility ClimbUp false`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility ClingToCliff false`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility WallSlide false`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility WallJump false`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility Crawl false`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility Slide false`)
+			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility Tap false`)
+
 			event.server.persistentData.putInt('lev_death', 0)
 			event.server.persistentData.putInt('golem_counter', 0)
 			event.server.persistentData.putInt('guardian_counter', 0)
@@ -516,8 +536,6 @@ PlayerEvents.loggedIn((event) => {
 			Utils.server.tell('The 5 minute peace period has ended. Prepare Yourself. ')
             })
     })
-
-
 
 EntityEvents.hurt(event => {
     let dmgSource = event.source

@@ -120,7 +120,7 @@ EntityEvents.death(event => {
 
 EntityEvents.hurt('minecraft:wolf', event => {
     if (event.source.actual == null) return
-    if (!event.source.actual.player) return
+    if (!event.source.player) return
     if (event.source.player.mainHandItem != 'kubejs:betrayal') return
     if (!event.source.player.tags.contains('old_yeller_four')) return
     let player_username = event.source.player.username
