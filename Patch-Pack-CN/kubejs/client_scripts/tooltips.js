@@ -1355,7 +1355,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	event.addAdvanced(`kubejs:speed_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
 		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('速度').lightPurple(), Text.of('效果的几率').gray()])
-		text.add(3, [Text.of(' > 收集').gray(), Text.of(' Elixir Shards').yellow(), Text.of('以增加触发效果的几率。').gray()])
+		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
 		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('杀死敌人时，它们会获得 ').gray(), Text.of('速度II效果').lightPurple(), Text.of('10秒').green()])
