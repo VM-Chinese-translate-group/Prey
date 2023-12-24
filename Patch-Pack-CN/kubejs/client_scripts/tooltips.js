@@ -470,7 +470,7 @@ ItemEvents.tooltip(event => {
 			text.add(27, [Text.of('  > ').gold(), Text.of('幽灵').italic()])
 			text.add(28, [Text.of(' ').gold()])
 			text.add(29, [Text.of('等级3召唤物：').red()])
-			text.add(30, [Text.of('  > ').gold(), Text.of('所有等级1和2的召唤：').italic()])
+			text.add(30, [Text.of('  > ').gold(), Text.of('所有等级1和2的召唤物：').italic()])
 			text.add(31, [Text.of('  > ').gold(), Text.of('远古骑士').italic()])
 			text.add(32, [Text.of('  > ').gold(), Text.of('骇狼首领（Dire Hound Leader）').italic()])
 			text.add(33, [Text.of('  > ').gold(), Text.of('亡灵术士').italic()])
