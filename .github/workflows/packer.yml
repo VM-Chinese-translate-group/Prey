@@ -1,33 +1,28 @@
 name: Packer
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    # 每周日凌晨 0 点执行 Release
+    - cron: 
+        0 0 * * 0
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout
         uses: actions/checkout@v3.5.3
-      
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.7.0
-        with:
-          node-version: 16
-      
-      - name: Setup Python
-        uses: actions/setup-python@v4.7.0
-        with:
-          python-version: 3.8
-
-      - name: Run packer.py
-        run: python source_files/packer.py
-      
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
-          name: packaged-files
-          path: patch-out
+          name: pack.zip
+          path: ./Patch-Pack-CN
+      - name: Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "pack.zip"
+          tag: "Realease-${{ steps.date.outputs.date }}"
