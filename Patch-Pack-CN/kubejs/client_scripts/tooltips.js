@@ -1365,36 +1365,36 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	event.addAdvanced(`kubejs:resistance_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
 		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('抗性提升').lightPurple(), Text.of('效果的几率').gray()])
-		text.add(3, [Text.of(' > 收集').gray(), Text.of(' Elixir Shards').yellow(), Text.of('以增加触发效果的几率。').gray()])
+		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
-		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('的 HP 降至 75% 以下时，它们将获得 ').gray(), Text.of('抗性提升II效果').lightPurple(), Text.of('3秒').green()])
+		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('的生命值降至 75% 以下时，它们将获得 ').gray(), Text.of('抗性提升II效果').lightPurple(), Text.of('3秒').green()])
 		text.add(7, [Text.of(' >').gray(), Text.of(' 冷却：').red(), Text.of('1分钟').gold()])
 	});
 
 	event.addAdvanced(`kubejs:regeneration_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
 		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('生命恢复').lightPurple(), Text.of('效果的几率').gray()])
-		text.add(3, [Text.of(' > 收集').gray(), Text.of(' Elixir Shards').yellow(), Text.of('以增加触发效果的几率。').gray()])
+		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
-		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('的 HP 降至 80% 以下时，它们将获得 ').gray(), Text.of('生命回复II效果').lightPurple(), Text.of('3秒').green()])
+		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('的生命值降至80%以下时，它们将获得').gray(), Text.of('生命回复II 效果').lightPurple(), Text.of('3秒').green()])
 		text.add(7, [Text.of(' >').gray(), Text.of(' 冷却：').red(), Text.of('1分钟').gold()])
 	});
 
 	event.addAdvanced(`kubejs:strength_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
 		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('力量').lightPurple(), Text.of('效果的几率').gray()])
-		text.add(3, [Text.of(' > 收集').gray(), Text.of(' Elixir Shards').yellow(), Text.of('以增加触发效果的几率。').gray()])
+		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
-		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('连续命中 5 次，他们将获得').gray(), Text.of('力量效果').lightPurple(), Text.of('3秒').green()])
+		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('连续命中5次，他们将获得').gray(), Text.of('力量效果').lightPurple(), Text.of('3秒').green()])
 	});
 
 	event.addAdvanced(`kubejs:endurance_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
-		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('耐力').lightPurple(), Text.of('效果的几率').gray()])
-		text.add(3, [Text.of(' > 收集').gray(), Text.of(' Elixir Shards').yellow(), Text.of('以增加触发效果的几率。').gray()])
+		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('羽毛提升').lightPurple(), Text.of('效果的几率').gray()])
+		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
 		text.add(6, [Text.of(' >').gray(), Text.of('无').red()])
@@ -1403,72 +1403,72 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	event.addAdvanced(`kubejs:absorption_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
 		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('伤害吸收').lightPurple(), Text.of('效果的几率').gray()])
-		text.add(3, [Text.of(' > 收集').gray(), Text.of(' Elixir Shards').yellow(), Text.of('以增加触发效果的几率。').gray()])
+		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
-		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('的 HP 降至 80% 以下时，').gray(), Text.of('他们将获得').gray(), Text.of('伤害吸收效果').lightPurple(), Text.of('10秒').green()])
+		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('的生命值降至80%以下时，').gray(), Text.of('他们将获得').gray(), Text.of('伤害吸收效果').lightPurple(), Text.of('10秒').green()])
 		text.add(7, [Text.of(' >').gray(), Text.of(' 冷却：').red(), Text.of('1分钟').gold()])
 	});
 
 	event.addAdvanced(`kubejs:charged_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
-		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('充能').lightPurple(), Text.of('效果的几率').gray()])
-		text.add(3, [Text.of(' > 收集').gray(), Text.of(' Elixir Shards').yellow(), Text.of('以增加触发效果的几率。').gray()])
+		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('超负荷').lightPurple(), Text.of('效果的几率').gray()])
+		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
-		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('的 HP 降至 20% 以下时，').gray(), Text.of('他们会生成一个').gray(), Text.of('闪电').yellow(), Text.of('击中攻击者。').gray()])
+		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('的生命值降至20%以下时，').gray(), Text.of('它们会召唤一束').gray(), Text.of('闪电').yellow(), Text.of('击中攻击者。').gray()])
 		text.add(7, [Text.of(' >').gray(), Text.of(' 冷却：').red(), Text.of('1分钟').gold()])
 	});
 
 	event.addAdvanced(`kubejs:angel_wings_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
-		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('Angel Wings').lightPurple(), Text.of('效果的几率').gray()])
-		text.add(3, [Text.of(' > 收集').gray(), Text.of(' Elixir Shards').yellow(), Text.of('以增加触发效果的几率。').gray()])
+		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('天使之翼').lightPurple(), Text.of('效果的几率').gray()])
+		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
-		text.add(6, [Text.of(' > When an').gray(), Text.of('友军生物').blue(), Text.of('的 HP 降至 15% 以下时，').gray(), Text.of('他们会将攻击者推到空中。').gray()])
+		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('的生命值降至15%以下时，').gray(), Text.of('它们会将攻击者击飞。').gray()])
 		text.add(7, [Text.of(' >').gray(), Text.of(' 冷却：').red(), Text.of('1分钟').gold()])
 	});
 
 	event.addAdvanced(`kubejs:soul_steal_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
-		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('Soul Steal').lightPurple(), Text.of('效果的几率').gray()])
-		text.add(3, [Text.of(' > 收集').gray(), Text.of(' Elixir Shards').yellow(), Text.of('以增加触发效果的几率。').gray()])
+		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('灵魂窃取').lightPurple(), Text.of('效果的几率').gray()])
+		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
-		text.add(6, [Text.of(' >').gray(), Text.of('友军生物').yellow(), Text.of('会获得').gray(), Text.of('永久的').green(), Text.of('Soul Steal').lightPurple(), Text.of('效果').gray()])
+		text.add(6, [Text.of(' >').gray(), Text.of('友军生物').yellow(), Text.of('会获得').gray(), Text.of('永久的').green(), Text.of('灵魂窃取').lightPurple(), Text.of('效果').gray()])
 	});
 
 	event.addAdvanced(`kubejs:fire_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
-		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('Fire Breathing').lightPurple(), Text.of('效果的几率').gray()])
-		text.add(3, [Text.of(' > 收集').gray(), Text.of(' Elixir Shards').yellow(), Text.of('以增加触发效果的几率。').gray()])
+		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('焰息').lightPurple(), Text.of('效果的几率').gray()])
+		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
-		text.add(6, [Text.of(' > When an').gray(), Text.of('友军生物').blue(), Text.of('的 HP 降至 40% 以下时，它们将会获得').gray(), Text.of('Fire Breathing').lightPurple(), Text.of('效果').gray(), Text.of('1秒').green()])
+		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('的生命值降至40%以下时，它们将会获得').gray(), Text.of('焰息').lightPurple(), Text.of('效果').gray(), Text.of('1秒').green()])
 		text.add(7, [Text.of(' >').gray(), Text.of(' 冷却：').red(), Text.of('1分钟').gold()])
 	});
 
 	event.addAdvanced(`kubejs:shadow_form_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
-		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of(' Heart Stop').lightPurple(), Text.of('效果的几率').gray()])
-		text.add(3, [Text.of(' > 收集').gray(), Text.of(' Elixir Shards').yellow(), Text.of('以增加触发效果的几率。').gray()])
+		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('止心术').lightPurple(), Text.of('效果的几率').gray()])
+		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
-		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('杀掉一个敌人，它们将会获得').gray(), Text.of('隐身').lightPurple(), Text.of('效果').gray(), Text.of('5秒').green()])
+		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('击杀敌人后，它们将会获得').gray(), Text.of('隐身').lightPurple(), Text.of('效果').gray(), Text.of('5秒').green()])
 
 	});
 
 	event.addAdvanced('kubejs:common_beastmaster_totem', (item, advanced, text) => {
-		text.add(1, [Text.of('能够驯服').gold(), Text.of('最大生命为').gold(), Text.of('25').green(), Text.of('或以下').gold(), Text.of('的动物').darkGreen()])
+		text.add(1, [Text.of('能够驯服').gold(), Text.of('最大生命值为').gold(), Text.of('25').green(), Text.of('及以下').gold(), Text.of('的动物').darkGreen()])
 		text.add(2, [Text.of(' > 冷却：').gray(), Text.of('1分钟').red()])
-		text.add(3, [Text.of(' > 野兽大师副职业').darkAqua(), Text.of(' 冷却：').gray(), Text.of('30秒').red()])
+		text.add(3, [Text.of(' > 驯兽师副职业').darkAqua(), Text.of(' 冷却：').gray(), Text.of('30秒').red()])
 	});
 
 	event.addAdvanced('kubejs:uncommon_beastmaster_totem', (item, advanced, text) => {
-		text.add(1, [Text.of('能够驯服').gold(), Text.of('最大生命为').gold(), Text.of('50').green(), Text.of('或以下').gold(), Text.of('的动物').darkGreen()])
-		text.add(2, [Text.of(' > 冷却：').gray(), Text.of(' 2分钟').red()])
-		text.add(3, [Text.of(' > 野兽大师副职业').darkAqua(), Text.of(' 冷却：').gray(), Text.of('45秒').red()])
+		text.add(1, [Text.of('能够驯服').gold(), Text.of('最大生命值为').gold(), Text.of('50').green(), Text.of('及以下').gold(), Text.of('的动物').darkGreen()])
+		text.add(2, [Text.of(' > 冷却：').gray(), Text.of('2分钟').red()])
+		text.add(3, [Text.of(' > 驯兽师副职业').darkAqua(), Text.of(' 冷却：').gray(), Text.of('45秒').red()])
 	});
 
 	event.addAdvanced('kubejs:rare_beastmaster_totem', (item, advanced, text) => {
