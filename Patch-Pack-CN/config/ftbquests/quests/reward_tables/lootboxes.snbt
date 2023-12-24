@@ -7,39 +7,39 @@
 		{
 			command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
 			icon: "kubejs:legendary_lootbox"
-			title: "Legendary Mekanism Lootbox"
+			title: "传奇通用机械战利品箱"
 			type: "command"
 		}
 		{
 			command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_legendary"
 			icon: "kubejs:legendary_lootbox"
-			title: "Legendary PC:R Lootbox"
+			title: "传奇气动工艺战利品箱"
 			type: "command"
 		}
 		{
 			command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_legendary"
 			icon: "kubejs:legendary_lootbox"
-			title: "Legendary Immersive Engineering Lootbox"
+			title: "传奇沉浸工业战利品箱"
 			type: "command"
 		}
 		{
 			command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
 			icon: "kubejs:legendary_lootbox"
-			title: "Legendary Create Lootbox"
+			title: "传奇机械动力战利品箱"
 			type: "command"
 		}
 		{
 			command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_legendary"
 			icon: "kubejs:legendary_lootbox"
-			title: "Legendary Thermal Lootbox"
+			title: "传奇热力战利品箱"
 			type: "command"
 		}
 		{
 			command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
 			icon: "kubejs:legendary_lootbox"
-			title: "Legendary Tinkers Lootbox"
+			title: "传奇匠魂战利品箱"
 			type: "command"
 		}
 	]
-	title: "Lootboxes"
+	title: "战利品箱"
 }

@@ -38,5 +38,5 @@
 		{ item: "pneumaticcraft:stomp_upgrade" }
 		{ item: "pneumaticcraft:elytra_upgrade" }
 	]
-	title: "PR: Upgrades"
+	title: "气动工艺：升级"
 }

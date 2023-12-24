@@ -20,5 +20,5 @@
 		{ count: 16, item: "thermal:fire_grenade" }
 		{ count: 8, item: "thermal:nuke_grenade" }
 	]
-	title: "Common Materials"
+	title: "普通金属"
 }
