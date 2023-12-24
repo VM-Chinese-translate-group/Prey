@@ -249,7 +249,7 @@ ItemEvents.tooltip(event => {
 		  text.add(2, [Text.of('副职业综合:').gold().underlined()])
 		  text.add(3, [Text.of(' > 奥术游侠').aqua()])
 		  text.add(4, [Text.of(' > 探索者').aqua()])
-		  text.add(5, [Text.of(' > 织梦者').aqua()])
+		  text.add(5, [Text.of(' > 织梦师').aqua()])
 		  text.add(6, [Text.of(' > 剑士').aqua()])
 		  text.add(7, Text.gold('  ')) 
 		  }
