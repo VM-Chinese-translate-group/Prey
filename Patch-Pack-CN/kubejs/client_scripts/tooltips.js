@@ -1340,7 +1340,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		text.add(1, [Text.of('+5%').green(), Text.of('受到伤害时').gray(), Text.of('Elixir').lightPurple(), Text.of('激活的几率').gray()])
 		text.add(2, [Text.of(' ').red()])
 		text.add(3, [Text.of('获取方式： ').red()])
-		text.add(4, [Text.of(' - Boss kills').gold()])
+		text.add(4, [Text.of(' - 击杀Boss').gold()])
 	});
 
 	event.addAdvanced(`kubejs:evasion_elixir`, (item, advanced, text) => {
