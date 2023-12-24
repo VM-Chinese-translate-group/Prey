@@ -786,7 +786,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(3, Text.green(' > +200% 最大羽毛'))
 			text.add(4, Text.green(' > +50% 羽毛回复率'))
 			text.add(5, Text.green(' > +75% 所有酿造药水持续时长与强度提升'))
-			text.add(6, Text.green(' > +75% 药水效果下的攻击速度'))
+			text.add(6, Text.green(' > +75% 拥有药水效果时提供攻击速度'))
 			text.add(7, Text.green(' > +75% 拥有药水效果时提供伤害'))
 			text.add(8, Text.green(' > +25% 药水效果提供伤害'))
 			text.add(9, Text.green(' > +25% 对中毒敌人的暴击率'))
