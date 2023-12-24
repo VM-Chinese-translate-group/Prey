@@ -18,8 +18,8 @@
     "book.occultism.dictionary_of_spirits.pentacles.summon_familiar.intro.title": "一个“熟悉”的问题。",
     "book.occultism.dictionary_of_spirits.pentacles.summon_familiar.intro.text": "召唤一个使魔。",
 
-    "multiblock.occultism.summon_evil": "Birog's Baleful Binding",
-    "book.occultism.dictionary_of_spirits.pentacles.summon_evil.name": "Birog's Baleful Binding",
+    "multiblock.occultism.summon_evil": "比罗格的恶毒绑定",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_evil.name": "比罗格的恶毒绑定",
     "book.occultism.dictionary_of_spirits.pentacles.summon_evil.intro.title": "可怕的事物",
     "book.occultism.dictionary_of_spirits.pentacles.summon_evil.intro.text": "召唤可怖的生物。",
 
@@ -38,14 +38,14 @@
     "ritual.enigmatica.occultism/ritual/ritual_spell_night_vision.conditions": "未满足仪式全部需求。",
 
     "item.kubejs.ritual_teleport_everdawn": "仪式：传送至恒晓之地。",
-    "item.kubejs.ritual_teleport_everdawn.tooltip": "Launch nearby entities straight to the first moon, Everdawn.",
-    "ritual.enigmatica.occultism/ritual/ritual_teleport_everdawn.started": "正在前往，恒晓之地。请注意不要将您的双手伸出仪式圈外。",
+    "item.kubejs.ritual_teleport_everdawn.tooltip": "将附近的实体直接发射到第一个月球--恒晓之地。",
+    "ritual.enigmatica.occultism/ritual/ritual_teleport_everdawn.started": "正在前往恒晓之地。请注意不要将您的双手伸出仪式圈外。",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everdawn.finished": "请小心间隙。",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everdawn.interrupted": "目前，已停止提供恒晓之地传送服务。",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everdawn.conditions": "路费不足，请满足仪式全部需求。",
 
     "item.kubejs.ritual_teleport_everbright": "仪式：传送至永昼之地。",
-    "item.kubejs.ritual_teleport_everbright.tooltip": "Launch nearby entities straight to the first moon, Everbright.",
+    "item.kubejs.ritual_teleport_everbright.tooltip": "将附近的实体直接发射到第一个月球--永昼之地。",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.started": "正在前往，永昼之地。请注意不要将您的双手伸出仪式圈外。",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.finished": "请小心间隙。",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.interrupted": "目前，已停止提供永昼之地传送服务。",
