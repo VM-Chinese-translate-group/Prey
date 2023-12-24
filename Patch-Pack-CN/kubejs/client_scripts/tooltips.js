@@ -1,4 +1,3 @@
-//本愿说他搞这个文件
 const bone_effigy = [
     'crow',
     'sugar_glider',
@@ -285,7 +284,7 @@ ItemEvents.tooltip(event => {
 			text.add(1, Text.gold('Class Attributes:').underlined().italic())
 			text.add(2, [Text.of(' - Class Stat:').gray(), Text.of(' +2 Base Armor...').blue(), Text.of(' (Subclass Synergy: ').yellow(), Text.of('+2.5 Base Armor').darkPurple(), Text.of(')').yellow()])
 			text.add(3, [Text.of(' - Class Pet:').gray(), Text.of(' Grizzly Bear').gold()])
-			text.add(4, [Text.of(' - Class Passive:').gray(), Text.of(' Upon killing an enemy regenerate a small amount of health').lightPurple()])
+			text.add(4, [Text.of(' - Class Passive:').gray(), Text.of(' Kills regenerate a small amount of health').lightPurple()])
 		  }
 		  text.add(1, [Text.of('Summary:').gold().underlined().italic(), Text.of(' This bold Main Class excels at staying in the fight as long as possible. Recommended Subclasses are flexible and combine melee combat with the unique aspects of other main classes.')])
 		  text.add(2, Text.gold('  ')) 
@@ -424,62 +423,45 @@ ItemEvents.tooltip(event => {
 
 
 	  event.addAdvanced('kubejs:rune_of_the_bloodripper', (item, advanced, text) => {
-		text.add(1, Text.yellow('Summary').underlined(true))
-		text.add(2, [Text.of(' > Wielding Twin Scythes,').white(), Text.of(' Desolation').darkRed().italic(), Text.of(' and ').white(), Text.of(' Reckoning,').darkRed().italic(), Text.of(' this subclass harvests blood from monsters and uses it to summon Allies in place of their victim.')])
-		text.add(3, Text.yellow('  '))
-		text.add(4, Text.yellow('Passives').underlined(true))
-		text.add(5, [Text.of(' > Harvest').white(), Text.of(' Blood').darkRed(), Text.of(' to summon').white(), Text.of(' Allies').blue(), Text.of(' where enemies die. Every').white(), Text.of(' 50 Allies').blue(), Text.of(' summoned will cause the Bloodripper to').white(), Text.of(' Level-Up').green(), Text.of(', granting stronger').white(), Text.of(' Allies').blue(), Text.of(' and').white(), Text.of(' Permanent Effects').yellow()])
-		text.add(6, [Text.of(' > At night, deal').white(), Text.of(' 75% more damage').red(), Text.of(' and double the amount of').white(), Text.of(' Harvested Blood ').darkRed(), Text.of('from each enemy.').white()])
-		text.add(7, Text.yellow('  ')) 
-		text.add(8, Text.yellow('Talent Tree Skills').underlined(true))
-		text.add(9, Text.aqua(' > Attack Speed'))
-		text.add(10, Text.aqua(' > Attack Knockback'))
-		text.add(11, Text.aqua(' > Melee Crit Damage'))
-		text.add(12, Text.aqua(' > Life Per Hit'))
-		text.add(13, Text.yellow('  '))
+		if (!event.ctrl) {
+			text.add(1, [Text.of('Hold ').gold(), Text.of('CTRL ').yellow(), Text.of('to view ').gold(), Text.of('Abilities').lightPurple().italic().underlined(), Text.of(' (Bloodripper Abilities only work at night)').yellow()])
+		} else {
+			text.add(1, [Text.of('Abilities').lightPurple().italic().underlined()])
+			text.add(2, [Text.of(' > ').white(), Text.of('Blood Siphon:').red().underlined(), Text.of(' Killing a monster has a chance to increase your').white(), Text.of(' Siphoned Blood').darkRed(), Text.of(' by').white(), Text.of(' 1.').green()])
+			text.add(3, Text.yellow(' '))
+			text.add(4, [Text.of(' > ').white(), Text.of('Parasitic Ripper:').red().underlined(), Text.of(' Right-Click').yellow(), Text.of(' to instakill monsters at less than').white(), Text.of(' 50% health').darkGreen(), Text.of(', increase your').white(), Text.of(' Siphoned Blood').darkRed(), Text.of(' by').white(), Text.of(' 3').green(), Text.of(', and regenerate').white(), Text.of(' 5% of your health').darkGreen(), Text.of('. Level Up').green(), Text.of(' the').white(), Text.of(' Bloodripper').lightPurple(), Text.of(' to instakill stronger enemies and heal more on activation.').white()])
+			text.add(5, Text.yellow(' '))
+			text.add(6, [Text.of(' > ').white(), Text.of('Corrupted Vessel:').red().underlined(), Text.of(' Each attack has a chance to').white(), Text.of(' Tame').yellow(), Text.of(' your target. Each point of ').white(), Text.of('Siphoned Blood').darkRed(), Text.of(' increases your chance by').white(), Text.of(' 1%').green(), Text.of('. You lose').white(), Text.of(' 10 Siphoned Blood').darkRed(), Text.of(' upon ').white(), Text.of('Taming').yellow(), Text.of(' a creature.').white(), Text.of(' Level Up').green(), Text.of(' the').white(), Text.of(' Bloodripper').lightPurple(), Text.of(' to give your ').white(), Text.of('Corrupted Allies').darkRed(), Text.of(' powerful buffs.').white()])
+			text.add(7, Text.yellow(' '))
+			text.add(8, [Text.of(' > ').white(), Text.of('Undying Flesh:').red().underlined(), Text.of(' Right-Click').yellow(), Text.of(' on an ').white(), Text.of('Allied Creature').darkAqua(), Text.of(' to regain ').white(), Text.of('5% of your health').darkGreen(), Text.of('. The ').white(), Text.of('Allied Creature').darkAqua(), Text.of(' takes damage equal to ').white(), Text.of('3x the amount healed.').red()])
+		}
+		
 		if (!event.shift) {
-			text.add(14, [Text.of('Hold ').gold(), Text.of('SHIFT ').yellow(), Text.of('to view ').gold(), Text.of('Bloodripper Levels').darkRed().underlined()])
+			text.add(1, [Text.of('Hold ').gold(), Text.of('SHIFT ').yellow(), Text.of('to view ').gold(), Text.of('Levels').darkRed().italic().underlined(true)])
 		} else {
-			text.add(14, Text.darkRed('Bloodripper Levels:').underlined())
-			text.add(15, [Text.of(' Level 1: ').gold(), Text.of('Access to').white(), Text.of(' Tier 1 Summons').green()])
-			text.add(16, [Text.of(' Level 2: ').gold(), Text.of('Blood Summons gain a permanent').white(), Text.of(' Speed 2 Effect').darkGreen()])
-			text.add(17, [Text.of(' Level 3: ').gold(), Text.of('Access to ').white(), Text.of('Tier 2 Summons').yellow()])
-			text.add(18, [Text.of(' Level 4: ').gold(), Text.of('Blood Summons gain a permanent').white(), Text.of(' Soul Steal Effect').lightPurple()])
-			text.add(19, [Text.of(' Level 5: ').gold(), Text.of('Access to').white(), Text.of(' Tier 3 Summons').red()])
-			text.add(20, [Text.of(' Level 6: ').gold(), Text.of('Blood Summons gain a permanent').white(), Text.of(' Resistance Effect').darkAqua()])
-			text.add(21, [Text.of(' Level 8: ').gold(), Text.of('Blood Summons gain a permanent').white(), Text.of(' Strength Effect').red()])
-			text.add(22, [Text.of(' Level 10: ').gold(), Text.of('Blood Summons gain the').white(), Text.of(' Soul Protection Effect').yellow(), Text.of(', reviving them ONCE when they die.')])
-			text.add(23, Text.yellow('  '))
-
-		}
-		text.add(14, Text.yellow('  '))
-		if (!event.alt) {
-			text.add(15, [Text.of('Hold ').gold(), Text.of('ALT ').yellow(), Text.of('to view possible').gold(), Text.of(' Blood Summons').darkRed().underlined()])
-		} else {
-			text.add(15, Text.darkRed('Bloodripper Summons').underlined())
-			text.add(16, [Text.of('Tier 1 Summons: ').green()])
-			text.add(17, [Text.of('  > ').gold(), Text.of('Royal Guard').italic()])
-			text.add(18, [Text.of('  > ').gold(), Text.of('Geomancer').italic()])
-			text.add(19, [Text.of('  > ').gold(), Text.of('Blastling').italic()])
-			text.add(20, [Text.of('  > ').gold(), Text.of('Skirmisher').italic()])
-			text.add(21, [Text.of(' ').gold()])
-			text.add(22, [Text.of('Tier 2 Summons: ').yellow()])
-			text.add(23, [Text.of('  > ').gold(), Text.of('All Tier 1 Summons').italic()])
-			text.add(24, [Text.of('  > ').gold(), Text.of('Cryomancer').italic()])
-			text.add(25, [Text.of('  > ').gold(), Text.of('Pyromancer').italic()])
-			text.add(26, [Text.of('  > ').gold(), Text.of('Whisperer').italic()])
-			text.add(27, [Text.of('  > ').gold(), Text.of('Wraith').italic()])
-			text.add(28, [Text.of(' ').gold()])
-			text.add(29, [Text.of('Tier 3 Summons: ').red()])
-			text.add(30, [Text.of('  > ').gold(), Text.of('All Tier 1 and 2 Summons').italic()])
-			text.add(31, [Text.of('  > ').gold(), Text.of('Citadel Keeper').italic()])
-			text.add(32, [Text.of('  > ').gold(), Text.of('Dire Hound Leader').italic()])
-			text.add(33, [Text.of('  > ').gold(), Text.of('Necromancer').italic()])
-			text.add(34, [Text.of('  > ').gold(), Text.of('Leapleaf').italic()])
-			text.add(35, Text.yellow('  '))
-
+			text.add(2, Text.darkRed('Bloodripper Levels:').underlined().underlined(true))
+			text.add(3, [Text.of(' Level 1: ').gold(), Text.of('Upon killing an enemy with').white(), Text.of(' Parasitic Ripper').red(), Text.of(', regain 5% of your health. Increases Max Health threshold of ').white(), Text.of('Parasitic Ripper').red(), Text.of(' by 30 each level.').white()])
+			text.add(4, [Text.of(' Level 2: ').gold(), Text.of('Corrupted Vessels').darkRed(), Text.of(' gain a permanent').white(), Text.of(' Speed 2 Effect').darkGreen()])
+			text.add(5, [Text.of(' Level 3: ').gold(), Text.of('Upon killing an enemy with ').white(), Text.of('Parasitic Ripper').red(), Text.of(', regain').white(), Text.of(' 10% of your health.').green()])
+			text.add(6, [Text.of(' Level 4: ').gold(), Text.of('Corrupted Vessels').darkRed(), Text.of(' gain a permanent').white(), Text.of(' Soul Steal Effect').lightPurple()])
+			text.add(7, [Text.of(' Level 5: ').gold(), Text.of('Upon killing an enemy with ').white(), Text.of('').white(), Text.of('Parasitic Ripper').red(), Text.of('').red(), Text.of(', regain').white(), Text.of(' 15% of your health.').green()])
+			text.add(8, [Text.of(' Level 6: ').gold(), Text.of('Corrupted Vessels').darkRed(), Text.of(' gain a permanent').white(), Text.of(' Resistance Effect').darkAqua()])
+			text.add(9, [Text.of(' Level 7: ').gold(), Text.of('Upon killing an enemy with ').white(), Text.of('Parasitic Ripper').red(), Text.of(', regain').white(), Text.of(' 20% of your health.').green()])
+			text.add(10, [Text.of(' Level 8: ').gold(), Text.of('Corrupted Vessels').darkRed(), Text.of(' gain a permanent').white(), Text.of(' Strength Effect').red()])
+			text.add(11, [Text.of(' Level 9: ').gold(), Text.of('Upon killing an enemy with ').white(), Text.of('Parasitic Ripper').red(), Text.of(', regain').white(), Text.of(' 30% of your health.').green()])
+			text.add(12, [Text.of(' Level 10: ').gold(), Text.of('Corrupted Vessels').darkRed(), Text.of(' gain the').white(), Text.of(' Soul Protection Effect').yellow(), Text.of(', reviving them ONCE when they die.')])
+			text.add(13, Text.yellow('  '))
 		}
 
+		text.add(1, Text.yellow('Summary').underlined(true))
+		text.add(2, [Text.of(' > Wielding Twin Scythes,').white(), Text.of(' Desolation').darkRed().italic(), Text.of(' and ').white(), Text.of(' Reckoning,').darkRed().italic(), Text.of(' this subclass harvests blood from monsters and uses it to turn enemies into allies.')])
+		text.add(3, Text.yellow('  ')) 
+		text.add(4, Text.yellow('Talent Tree Skills').underlined(true))
+		text.add(5, Text.aqua(' > Attack Speed'))
+		text.add(6, Text.aqua(' > Attack Knockback'))
+		text.add(7, Text.aqua(' > Melee Crit Damage'))
+		text.add(8, Text.aqua(' > Life Per Hit'))
+		text.add(9, Text.yellow('  '))
 	})
 
 /// In guide book make sure to distinguish that certain bonuses only go to certain creature types. The 3 types are Summoned (from summoning stones), Tamed (from the taming flute), and Conjured (from spells)
@@ -548,7 +530,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.yellow('Passives').underlined(true))
 			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of(' Attack Speed').gold()])
-			text.add(3, [Text.of(' >').white(), Text.of(' 30%').green(), Text.of(' chance to get a 10 Second').white(), Text.of(' Haste').yellow(), Text.of(' effect after killing a Monster').white()])
+			text.add(3, [Text.of(' >').white(), Text.of(' 50%').green(), Text.of(' chance to get a 10 Second').white(), Text.of(' Haste').yellow(), Text.of(' effect after killing a Monster').white()])
   
 		}
 
@@ -610,7 +592,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, Text.yellow('Passives').underlined(true))
 			text.add(2, [Text.of(' >').white(), Text.of(' +15%').green(), Text.of(' Projectile Damage').gold()])
 			text.add(3, [Text.of(' > You gather').white(), Text.of(' Souls').aqua().italic(), Text.of(' when you kill a Monster or get').white(), Text.of(' 3x hits').yellow(), Text.of(' on a boss.')])
-			text.add(4, [Text.of(' > Capture ').white(), Text.of('Spirits').darkPurple(), Text.of(' of powerful mobs by defeating them while you have a').white(), Text.of(' Spirit Crystal ').gold(), Text.of('in your ').white(), Text.of('offhand').gold().underlined(), Text.of('. Using Souls, summon the Spirits as allies using the').white(), Text.of(' Orb of Slaughtered Foes.').darkRed()])
+			text.add(4, [Text.of(' > Capture ').white(), Text.of('Spirits').darkPurple(), Text.of(' of powerful mobs by defeating them while you have a').white(), Text.of(' Spirit Crystal ').blue(), Text.of('in your ').white(), Text.of('offhand').green(), Text.of('. Using').white(), Text.of(' Souls').aqua().italic(), Text.of(', summon the').white(), Text.of(' Spirits').darkPurple(), Text.of(' as allies using the').white(), Text.of(' Orb of Slaughtered Foes.').darkRed()])
 
 		  }
 
@@ -670,6 +652,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.yellow('Passives').underlined(true))
 			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of(' Attack Knockback').gold()])
+			text.add(3, [Text.of(' >').white(), Text.of(' Hits grant a stacking').white(), Text.of(' +10% Attack Speed Bonus').green(), Text.of(' (up to').white(), Text.of(' 100%').lightPurple(), Text.of('). Upon taking damage, this bonus is reset to').white(), Text.of(' 0%').darkRed()])
 		  }
 
 		if (!event.shift) {
@@ -742,7 +725,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, Text.yellow('Passives').underlined(true))
 			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of(' Crit Chance if Wounded').gold()])
 			text.add(3, [Text.of(' > Completing a').white(), Text.of(' Bounty').gold().italic(), Text.of(' or ').white(), Text.of('High Value Target Contract').gold().italic(), Text.of(' rewards you with significantly better payouts than other Subclasses.')])
-			text.add(4, [Text.of(' > ').white(), Text.of('3 Friendly Kangaroos ').green(), Text.of(' are summoned every 10 minutes').white()])
+			text.add(4, [Text.of(' > ').white(), Text.of('3 Friendly Kangaroos ').green(), Text.of('are summoned every 10 minutes').white()])
 
 		  }
 
@@ -1437,7 +1420,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		text.add(3, [Text.of(' > Gather').gray(), Text.of(' Elixir Shards').yellow(), Text.of(' to increase the chance of effects triggering.').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('Allied Creature Effects:').gold().italic()])
-		text.add(6, [Text.of(' >').gray(), Text.of(' Allied Creature\'s').yellow(), Text.of(' gain a').gray(), Text.of(' PERMANENT ').green(), Text.of('Soul Steal').lightPurple(), Text.of(' Effect ').gray()])
+		text.add(6, [Text.of(' >').gray(), Text.of(' Allied Creatures').yellow(), Text.of(' gain a').gray(), Text.of(' PERMANENT ').green(), Text.of('Soul Steal').lightPurple(), Text.of(' Effect ').gray()])
 	});
 
 	event.addAdvanced(`kubejs:fire_elixir`, (item, advanced, text) => {
@@ -1478,6 +1461,55 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		text.add(3, [Text.of(' > ').gray(), Text.of('Beastmaster Subclass').darkAqua(), Text.of(' Cooldown:').gray(), Text.of(' 1 Minute').red()])
 	});
 	
+
+	event.addAdvanced('kubejs:breakfall', (item, advanced, text) => {
+		text.add(1, [Text.of('Unlock Parkour Skill:').gold().underlined()])
+		text.add(2, [Text.of(' > Break Fall').lightPurple().italic()])
+		text.add(3, [Text.of(' ').gray().italic()])
+		text.add(4, [Text.of('Tip: Read your').gray(), Text.of(' ParCool Guidebook').aqua(), Text.of(' to learn about this skill.').gray()])
+	});
+
+	event.addAdvanced('kubejs:catleap', (item, advanced, text) => {
+		text.add(1, [Text.of('Unlock Parkour Skill:').gold().underlined()])
+		text.add(2, [Text.of(' > Cat Leap').lightPurple().italic()])
+		text.add(3, [Text.of(' ').gray().italic()])
+		text.add(4, [Text.of('Tip: Read your').gray(), Text.of(' ParCool Guidebook').aqua(), Text.of(' to learn about this skill.').gray()])
+		
+	});
+
+	event.addAdvanced('kubejs:ledgegrab', (item, advanced, text) => {
+		text.add(1, [Text.of('Unlock Parkour Skills:').gold().underlined()])
+		text.add(2, [Text.of(' > Ledge Grab').lightPurple().italic()])
+		text.add(3, [Text.of(' > Climb Up').lightPurple().italic()])
+		text.add(4, [Text.of(' > Wall Slide').lightPurple().italic()])
+		text.add(5, [Text.of(' > Wall Jump').lightPurple().italic()])
+		text.add(6, [Text.of(' ').gray().italic()])
+		text.add(7, [Text.of('Tip: Read your').gray(), Text.of(' ParCool Guidebook').aqua(), Text.of(' to learn about these skills.').gray()])
+	});
+
+	event.addAdvanced('kubejs:crawl', (item, advanced, text) => {
+		text.add(1, [Text.of('Unlock Parkour Skills:').gold().underlined()])
+		text.add(2, [Text.of(' > Crawl').lightPurple().italic()])
+		text.add(3, [Text.of(' > Slide').lightPurple().italic()])
+		text.add(4, [Text.of(' ').gray().italic()])
+		text.add(5, [Text.of('Tip: Read your').gray(), Text.of(' ParCool Guidebook').aqua(), Text.of(' to learn about these skills.').gray()])
+	});
+
+	event.addAdvanced('kubejs:vertical_wallrun', (item, advanced, text) => {
+		text.add(1, [Text.of('Unlock Parkour Skill:').gold().underlined()])
+		text.add(2, [Text.of(' > Vertical Wallrun').lightPurple().italic()])
+		text.add(3, [Text.of(' ').gray().italic()])
+		text.add(4, [Text.of('Tip: Read your').gray(), Text.of(' ParCool Guidebook').aqua(), Text.of(' to learn about this skill.').gray()])
+	});
+
+
+	event.addAdvanced('kubejs:horizontal_wallrun', (item, advanced, text) => {
+		text.add(1, [Text.of('Unlock Parkour Skill:').gold().underlined()])
+		text.add(2, [Text.of(' > Horizontal Wallrun').lightPurple().italic()])
+		text.add(3, [Text.of(' ').gray().italic()])
+		text.add(4, [Text.of('Tip: Read your').gray(), Text.of(' ParCool Guidebook').aqua(), Text.of(' to learn about this skill.').gray()])
+	});
+
 })
 
 
