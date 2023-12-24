@@ -297,7 +297,7 @@ ItemEvents.tooltip(event => {
 		  text.add(2, Text.gold('  ')) 
 		  text.add(3, [Text.of('只有这些副职业可用').gold().underlined(), Text.of(' (召唤师独有)').darkPurple()])
 		  text.add(4, [Text.of(' > 噬血者').darkRed()])
-		  text.add(5, [Text.of(' > 野兽大师').green()])
+		  text.add(5, [Text.of(' > 驯兽师').green()])
 		  text.add(6, [Text.of(' > 唤灵者').aqua()])
 		  text.add(7, Text.gold('  ')) 
 		  text.add(8, Text.gold('职业属性：').underlined().italic())
