@@ -1,7 +1,7 @@
 {
 	"unlocked_by_default": false,
 	"exclusive_root": true,
-	"title": "Battlemage",
+	"title": "战斗法师",
 	"icon": {
 		"type": "texture",
 		"data": {

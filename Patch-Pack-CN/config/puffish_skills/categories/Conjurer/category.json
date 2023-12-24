@@ -1,7 +1,7 @@
 {
 	"unlocked_by_default": false,
 	"exclusive_root": true,
-	"title": "Conjurer",
+	"title": "魔术师",
 	"icon": {
 		"type": "texture",
 		"data": {

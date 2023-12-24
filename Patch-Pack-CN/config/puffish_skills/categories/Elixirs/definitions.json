@@ -1,6 +1,6 @@
 {
     "relic_evasion": {
-        "title": "Challenge: Evasion",
+        "title": "挑战：隐匿",
         "icon": {
             "type": "texture",
             "data": {
@@ -17,7 +17,7 @@
         ]
     },
     "relic_speed": {
-        "title": "Challenge: Speed",
+        "title": "挑战：速度",
         "icon": {
             "type": "texture",
             "data": {
@@ -34,7 +34,7 @@
         ]
     },
     "relic_resistance": {
-        "title": "Challenge: Resistance",
+        "title": "挑战：抗性提升",
         "icon": {
             "type": "texture",
             "data": {
@@ -51,7 +51,7 @@
         ]
     },
     "relic_regeneration": {
-        "title": "Challenge: Regeneration",
+        "title": "挑战：生命恢复",
         "icon": {
             "type": "texture",
             "data": {
@@ -68,7 +68,7 @@
         ]
     },
     "relic_heartstop": {
-        "title": "Challenge: Heartstop",
+        "title": "挑战：止心术",
         "icon": {
             "type": "texture",
             "data": {
@@ -85,7 +85,7 @@
         ]
     },
     "relic_strength": {
-        "title": "Challenge: Strength",
+        "title": "挑战：力量",
         "icon": {
             "type": "texture",
             "data": {
@@ -102,7 +102,7 @@
         ]
     },
     "relic_endurance": {
-        "title": "Challenge: Endurance",
+        "title": "挑战：额外羽毛",
         "icon": {
             "type": "texture",
             "data": {
@@ -119,7 +119,7 @@
         ]
     },
     "relic_dragonsbreath": {
-        "title": "Challenge: Dragons Breath",
+        "title": "挑战：龙息",
         "icon": {
             "type": "texture",
             "data": {
@@ -136,7 +136,7 @@
         ]
     },
     "relic_absorption": {
-        "title": "Challenge: Absorption",
+        "title": "挑战：伤害吸收",
         "icon": {
             "type": "texture",
             "data": {
@@ -153,7 +153,7 @@
         ]
     },
     "relic_charged": {
-        "title": "Challenge: Charged",
+        "title": "挑战：超负荷",
         "icon": {
             "type": "texture",
             "data": {
@@ -170,7 +170,7 @@
         ]
     },
     "relic_soulsteal": {
-        "title": "Challenge: Soul Steal",
+        "title": "挑战：灵魂窃取",
         "icon": {
             "type": "texture",
             "data": {
@@ -187,7 +187,7 @@
         ]
     },
     "relic_angelwings": {
-        "title": "Challenge: Angel Wings",
+        "title": "挑战：Angel Wings",
         "icon": {
             "type": "texture",
             "data": {
