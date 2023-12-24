@@ -417,6 +417,25 @@
             }
         ]
     },
+    "mana_regen+5%": {
+        "title": "+5% 法力恢复",
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "irons_spellbooks:mana_ring"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:mana_regen",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    },
     "poison_spell_power+5%": {
         "title": "+5% 自然法术强度",
         "icon": {
