@@ -196,7 +196,7 @@ ItemEvents.tooltip(event => {
 		  text.add(2, [Text.of('副职业综合：').gold().underlined()])
 		  text.add(3, [Text.of(' > 战斗法师').aqua()])
 		  text.add(4, [Text.of(' > 守护者').aqua()])
-		  text.add(5, [Text.of(' > 巫师').aqua()])
+		  text.add(5, [Text.of(' > 魔术师').aqua()])
 		  text.add(6, [Text.of(' > 魔剑士').aqua()])
 		  text.add(7, Text.gold('  ')) 
 		  }
