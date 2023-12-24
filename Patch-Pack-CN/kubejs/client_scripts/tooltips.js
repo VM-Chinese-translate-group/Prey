@@ -1025,7 +1025,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	event.addAdvanced('kubejs:time_turner', (item, advanced, text) => {
         text.add(1, [Text.of('扭曲时间，带来黑暗或黎明。').gold().italic()])
         text.add(2, [Text.of(' ').gray().italic()])
-        text.add(3, [Text.of('10% 有几率扭曲使用者的心智，使其').gray().italic(), Text.of('理智').darkRed().italic(), Text.of('.失去理智状态持续一分钟').gray().italic()])
+        text.add(3, [Text.of('有10%的几率扭曲使用者的心智，使其').gray().italic(), Text.of('失去理智').darkRed().italic(), Text.of('。这种状态持续一分钟').gray().italic()])
     })
 	event.addAdvanced('kubejs:blood_oath', (item, advanced, text) => {
         text.add(1, [Text.of('效果：').yellow(), Text.of('使用该道具会产生一个').white(), Text.of('起死回生').gold().italic(), Text.of('的效果').white()])
