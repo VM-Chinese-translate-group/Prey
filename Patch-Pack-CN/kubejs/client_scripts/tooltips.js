@@ -649,7 +649,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.yellow('天赋树技能').underlined(true))
 			text.add(2, Text.aqua(' > 最大生命值'))
-			text.add(3, Text.aqua(' > 最大耐力'))
+			text.add(3, Text.aqua(' > 最大羽毛量'))
 			text.add(4, Text.aqua(' > 羽毛回复率'))
 			text.add(5, Text.aqua(' > 移动速度'))
 			text.add(6, Text.yellow('  '))
