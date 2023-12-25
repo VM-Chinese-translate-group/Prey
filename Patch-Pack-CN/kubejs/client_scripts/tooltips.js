@@ -284,7 +284,7 @@ ItemEvents.tooltip(event => {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
 			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+2基础护甲值').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+2.5基础护甲值').darkPurple(), Text.of(')').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('灰熊').gold()])
-			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('每击杀一名敌人可以回复少许生命值').lightPurple()])
+			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('击杀可以回复少许生命值').lightPurple()])
 		  }
 		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('这个大胆的主职业擅长尽可能长时间地保持战斗状态。推荐的副职业非常灵活，将近战与其他主职业的独特之处结合在一起。')])
 		  text.add(2, Text.gold('  ')) 
@@ -407,7 +407,7 @@ ItemEvents.tooltip(event => {
 		  text.add(2, [Text.of(' > 装备有').white(), Text.of('尖骨').lightPurple().italic(), Text.of('和').white(), Text.of('冻伤刀片').lightPurple().italic(), Text.of('，这个职业可以指挥强大的盟友和宠物，用强大的生物军团压倒敌人。')])
 		  text.add(3, Text.yellow('  '))
 		  text.add(4, Text.yellow('被动').underlined(true))
-		  text.add(5, [Text.of(' >').white(), Text.of('召唤的石宠物').blue(), Text.of('有').white(), Text.of('额外35%血量。').green()])
+		  text.add(5, [Text.of(' >').white(), Text.of('召唤的石宠物').blue(), Text.of('有').white(), Text.of('额外35%生命值。').green()])
 		  text.add(6, [Text.of(' > 收集10个相同的').white(), Text.of('骨头图腾').gold(), Text.of('永久捕捉动物的灵魂 使用').white(), Text.of('召唤师大门').gold(), Text.of('让你获得一个').white(), Text.of('捕获的每一个动物灵魂的').white(), Text.of('召唤石').gold()])
 		  text.add(7, [Text.of(' > 使用足够多的相同').white(), Text.of('召唤石宠物').blue(), Text.of('将使其').white(), Text.of('升级').darkGreen(), Text.of('。每一次').white(), Text.of('升级').darkGreen(), Text.of('授予该宠物类型大量').white(), Text.of('生命提升').green()])
 		  text.add(8, [Text.of(' >').white(), Text.of('驯兽师图腾').darkGreen(), Text.of('冷却时间大大缩短').white()]) 
@@ -423,62 +423,45 @@ ItemEvents.tooltip(event => {
 
 
 	  event.addAdvanced('kubejs:rune_of_the_bloodripper', (item, advanced, text) => {
-		text.add(1, Text.yellow('概述').underlined(true))
-		text.add(2, [Text.of(' > 挥舞双镰，').white(), Text.of('荒芜').darkRed().italic(), Text.of('与').white(), Text.of('惩戒，').darkRed().italic(), Text.of('该副职业可以从怪物身上获取血液，并用它来代替牺牲者召唤盟友。')])
-		text.add(3, Text.yellow('  '))
-		text.add(4, Text.yellow('被动').underlined(true))
-		text.add(5, [Text.of(' > 在敌人死亡的地方').white(), Text.of('采集').white(), Text.of('血液，').darkRed(), Text.of('以召唤').white(), Text.of('盟友。').blue(), Text.of('每50个盟友').blue(), Text.of('的召唤会致使嗜血者').white(), Text.of('升级').green(), Text.of('并获得更强的').white(), Text.of('盟友').blue(), Text.of('和').white(), Text.of('永久效果').yellow()])
-		text.add(6, [Text.of(' > 在晚上，造成').white(), Text.of('额外75%的伤害').red(), Text.of('并能从每个敌人身上').white(), Text.of('收获双倍的').darkRed(), Text.of('血液').white()])
-		text.add(7, Text.yellow('  ')) 
-		text.add(8, Text.yellow('天赋树技能').underlined(true))
-		text.add(9, Text.aqua(' > 攻击速度'))
-		text.add(10, Text.aqua(' > 攻击击退'))
-		text.add(11, Text.aqua(' > 近战暴击伤害'))
-		text.add(12, Text.aqua(' > 每次击中的生命'))
-		text.add(13, Text.yellow('  '))
+		if (!event.ctrl) {
+			text.add(1, [Text.of('按住 ').gold(), Text.of('CTRL ').yellow(), Text.of('以查看').gold(), Text.of('能力').lightPurple().italic().underlined(), Text.of('（嗜血者能力仅在夜晚生效）').yellow()])
+		} else {
+			text.add(1, [Text.of('能力').lightPurple().italic().underlined()])
+			text.add(2, [Text.of(' > ').white(), Text.of('血吸：').red().underlined(), Text.of('击杀怪物有几率使你').white(), Text.of('吸取的血').darkRed(), Text.of('增加').white(), Text.of('1。').green()])
+			text.add(3, Text.yellow(' '))
+			text.add(4, [Text.of(' > ').white(), Text.of('寄生撕裂：').red().underlined(), Text.of('右击').yellow(), Text.of('以秒杀低于').white(), Text.of('50%生命值').darkGreen(), Text.of('的怪物，使你').white(), Text.of('吸取的血').darkRed(), Text.of('增加').white(), Text.of('3').green(), Text.of('，并且恢复').white(), Text.of('5%生命值').darkGreen(), Text.of('。升级').green(), Text.of('嗜血者').lightPurple(), Text.of('以秒杀更强大的敌人，并获得更多治疗量。').white()])
+			text.add(5, Text.yellow(' '))
+			text.add(6, [Text.of(' > ').white(), Text.of('腐化容器：').red().underlined(), Text.of('每次攻击有几率').white(), Text.of('驯服').yellow(), Text.of('目标。每点').white(), Text.of('吸取的血').darkRed(), Text.of('增加').white(), Text.of('1%').green(), Text.of('几率。你会失去').white(), Text.of('10 吸取的血').darkRed(), Text.of('以').white(), Text.of('驯服').yellow(), Text.of('一只生物。').white(), Text.of('升级').green(), Text.of('嗜血者').lightPurple(), Text.of('以给予你').white(), Text.of('腐化盟友').darkRed(), Text.of('强力Buff。').white()])
+			text.add(7, Text.yellow(' '))
+			text.add(8, [Text.of(' > ').white(), Text.of('不死肉：').red().underlined(), Text.of('右击').yellow(), Text.of('盟友生物').darkAqua(), Text.of('以恢复').white(), Text.of('5%生命值').darkGreen(), Text.of('。').white(), Text.of('盟友生物').darkAqua(), Text.of('受到').white(), Text.of('治疗量3倍').red(), Text.of('的伤害').white()])
+		}
+		
 		if (!event.shift) {
-			text.add(14, [Text.of('按住').gold(), Text.of('SHIFT ').yellow(), Text.of('来查看').gold(), Text.of('嗜血者等级').darkRed().underlined()])
+			text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('以查看').gold(), Text.of('等级').darkRed().italic().underlined(true)])
 		} else {
-			text.add(14, Text.darkRed('嗜血者等级：').underlined())
-			text.add(15, [Text.of(' 等级1: ').gold(), Text.of('可以使用').white(), Text.of('等级一的召唤').green()])
-			text.add(16, [Text.of(' 等级2: ').gold(), Text.of('血之召唤获得永久').white(), Text.of('速度2效果').darkGreen()])
-			text.add(17, [Text.of(' 等级3: ').gold(), Text.of('可以使用 ').white(), Text.of('等级二的召唤').yellow()])
-			text.add(18, [Text.of(' 等级4: ').gold(), Text.of('血之召唤获得永久').white(), Text.of(' Soul Steal Effect').lightPurple()])
-			text.add(19, [Text.of(' 等级5: ').gold(), Text.of('可以使用').white(), Text.of('等级三的召唤').red()])
-			text.add(20, [Text.of(' 等级6: ').gold(), Text.of('血之召唤获得永久').white(), Text.of('伤害吸收效果').darkAqua()])
-			text.add(21, [Text.of(' 等级8: ').gold(), Text.of('血之召唤获得永久').white(), Text.of('力量效果').red()])
-			text.add(22, [Text.of(' 等级10: ').gold(), Text.of('血之召唤获得').white(), Text.of('灵魂保护效果').yellow(), Text.of('，它们死亡的时候会复活一次')])
-			text.add(23, Text.yellow('  '))
-
-		}
-		text.add(14, Text.yellow('  '))
-		if (!event.alt) {
-			text.add(15, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看可能的').gold(), Text.of('血液召唤').darkRed().underlined()])
-		} else {
-			text.add(15, Text.darkRed('嗜血者召唤').underlined())
-			text.add(16, [Text.of('等级1召唤物：').green()])
-			text.add(17, [Text.of('  > ').gold(), Text.of('皇家守卫').italic()])
-			text.add(18, [Text.of('  > ').gold(), Text.of('地卜师').italic()])
-			text.add(19, [Text.of('  > ').gold(), Text.of('爆破灵').italic()])
-			text.add(20, [Text.of('  > ').gold(), Text.of('突袭者').italic()])
-			text.add(21, [Text.of(' ').gold()])
-			text.add(22, [Text.of('等级2召唤物：').yellow()])
-			text.add(23, [Text.of('  > ').gold(), Text.of('所有等级1召唤物').italic()])
-			text.add(24, [Text.of('  > ').gold(), Text.of('冰霜术士').italic()])
-			text.add(25, [Text.of('  > ').gold(), Text.of('炽焰术士').italic()])
-			text.add(26, [Text.of('  > ').gold(), Text.of('唤藤者').italic()])
-			text.add(27, [Text.of('  > ').gold(), Text.of('幽灵').italic()])
-			text.add(28, [Text.of(' ').gold()])
-			text.add(29, [Text.of('等级3召唤物：').red()])
-			text.add(30, [Text.of('  > ').gold(), Text.of('所有等级1和2的召唤物：').italic()])
-			text.add(31, [Text.of('  > ').gold(), Text.of('远古骑士').italic()])
-			text.add(32, [Text.of('  > ').gold(), Text.of('骇狼首领（Dire Hound Leader）').italic()])
-			text.add(33, [Text.of('  > ').gold(), Text.of('亡灵术士').italic()])
-			text.add(34, [Text.of('  > ').gold(), Text.of('腾跃之叶').italic()])
-			text.add(35, Text.yellow('  '))
-
+			text.add(2, Text.darkRed('嗜血者等级：').underlined().underlined(true))
+			text.add(3, [Text.of(' 等级1：').gold(), Text.of('用').white(), Text.of('寄生撕裂').red(), Text.of('击杀敌人，恢复5%生命值。每升一级').white(), Text.of('寄生撕裂').red(), Text.of('的最大生命值提升30。').white()])
+			text.add(4, [Text.of(' 等级2：').gold(), Text.of('腐化容器').darkRed(), Text.of('获得永久').white(), Text.of('速度2效果').darkGreen()])
+			text.add(5, [Text.of(' 等级3：').gold(), Text.of('用').white(), Text.of('寄生撕裂').red(), Text.of('击杀敌人，恢复').white(), Text.of('10%生命值').green()])
+			text.add(6, [Text.of(' 等级4：').gold(), Text.of('腐化容器').darkRed(), Text.of('获得永久').white(), Text.of('灵魂窃取效果').lightPurple()])
+			text.add(7, [Text.of(' 等级5：').gold(), Text.of('用').white(), Text.of('').white(), Text.of('寄生撕裂').red(), Text.of('击杀敌人，恢复').white(), Text.of('15%生命值').green()])
+			text.add(8, [Text.of(' 等级6：').gold(), Text.of('腐化容器').darkRed(), Text.of('获得永久').white(), Text.of('抗性提升效果').darkAqua()])
+			text.add(9, [Text.of(' 等级7：').gold(), Text.of('用').white(), Text.of('寄生撕裂').red(), Text.of('击杀敌人，恢复').white(), Text.of('20%生命值').green()])
+			text.add(10, [Text.of(' 等级8：').gold(), Text.of('腐化容器').darkRed(), Text.of('获得永久').white(), Text.of('力量效果').red()])
+			text.add(11, [Text.of(' 等级9：').gold(), Text.of('用').white(), Text.of('寄生撕裂').red(), Text.of('击杀敌人，恢复').white(), Text.of('30%生命值').green()])
+			text.add(12, [Text.of(' 等级10：').gold(), Text.of('腐化容器').darkRed(), Text.of('获得').white(), Text.of('灵魂保护效果').yellow(), Text.of('，它们死后可以获得。')])
+			text.add(13, Text.yellow('  '))
 		}
 
+		text.add(1, Text.yellow('概述').underlined(true))
+		text.add(2, [Text.of(' > 挥舞着双镰刀，').white(), Text.of('荒土').darkRed().italic(), Text.of('和').white(), Text.of('计算，').darkRed().italic(), Text.of('该副职业从怪物身上收割血液，用它将敌人变成盟友。')])
+		text.add(3, Text.yellow('  ')) 
+		text.add(4, Text.yellow('天赋树技能').underlined(true))
+		text.add(5, Text.aqua(' > 攻击速度'))
+		text.add(6, Text.aqua(' > 攻击击退'))
+		text.add(7, Text.aqua(' > 近战暴击伤害'))
+		text.add(8, Text.aqua(' > 每次击中的生命值'))
+		text.add(9, Text.yellow('  '))
 	})
 
 /// In guide book make sure to distinguish that certain bonuses only go to certain creature types. The 3 types are Summoned (from summoning stones), Tamed (from the taming flute), and Conjured (from spells)
@@ -492,7 +475,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		text.add(1, Text.yellow('被动').underlined(true))
 		text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('法术书召唤物').aqua(), Text.of('伤害').gold()])
         text.add(3, [Text.of(' >').white(), Text.of('当法术书召唤物').aqua(), Text.of('每击杀1个敌人时，').gold(), Text.of(' +10').green(), Text.of('法力值').gold()])
-		text.add(4, [Text.of(' >').white(), Text.of(' 当').gold(), Text.of('魔法书召唤物').aqua(), Text.of('攻击一个敌人，它可以').gold(), Text.of('回复血量').green()])
+		text.add(4, [Text.of(' >').white(), Text.of(' 当').gold(), Text.of('魔法书召唤物').aqua(), Text.of('攻击一个敌人，它可以').gold(), Text.of('回复生命值').green()])
 	}
 	if (!event.shift) {
 		text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('以查看天赋树技能。').gold()])
@@ -547,7 +530,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
 			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('攻击速度').gold()])
-			text.add(3, [Text.of(' >').white(), Text.of('每击杀一只怪物，都有').white(), Text.of('30%').green(), Text.of('几率获得10秒').white(), Text.of('急迫').yellow()])
+			text.add(3, [Text.of(' >').white(), Text.of('每击杀一只怪物，都有').white(), Text.of('50%').green(), Text.of('几率获得10秒').white(), Text.of('急迫').yellow()])
   
 		}
 
@@ -609,7 +592,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, Text.yellow('被动').underlined(true))
 			text.add(2, [Text.of(' >').white(), Text.of(' +15%').green(), Text.of('弹射物伤害').gold()])
 			text.add(3, [Text.of(' > 当你击杀怪物或').white(), Text.of('击中BOSS').white().italic(), Text.of('3次').yellow(), Text.of('你就能收集').white(), Text.of('灵魂').aqua()])
-			text.add(4, [Text.of(' > 副手').gold().underlined(),Text.of('持有').white(),Text.of('Spirit Crystal').gold(), Text.of('的情况下击败强大的怪物，').white(), Text.of('可以捕捉它们的').white(), Text.of('灵魂，').darkPurple(), Text.of('使用').white(), Text.of('Orb of Slaughtered Foes').darkRed(), Text.of('将它们召唤为盟友。').white()])
+			text.add(4, [Text.of(' > 当你').white(), Text.of('副手').green(), Text.of('持有').white(), Text.of('灵魂水晶').blue(), Text.of('时，击败强大的生物能捕获').white(), Text.of('灵魂').darkPurple(), Text.of('。想使用').white(), Text.of('灵魂').aqua().italic(), Text.of('用').white(), Text.of(' Orb of Slaughtered Foes.').darkRed(), Text.of('将').white, Text.of('灵魂').darkPurple(), Text.of('作为盟友召唤').white()])
 
 		  }
 
@@ -669,6 +652,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
 			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('攻击击退').gold()])
+			text.add(3, [Text.of(' >').white(), Text.of(' 命中敌人能叠加').white(), Text.of(' +10% 攻击速度增益').green(), Text.of('（上限至').white(), Text.of('100%').lightPurple(), Text.of('）受到伤害后，增益重置为').white(), Text.of('0%').darkRed()])
 		  }
 
 		if (!event.shift) {
@@ -1460,23 +1444,71 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	});
 
 	event.addAdvanced('kubejs:common_beastmaster_totem', (item, advanced, text) => {
-		text.add(1, [Text.of('能够驯服').gold(), Text.of('最大生命值为').gold(), Text.of('25').green(), Text.of('及以下').gold(), Text.of('的动物').darkGreen()])
+		text.add(1, [Text.of('可驯服').gold(), Text.of('最大生命值为').gold(), Text.of('25').green(), Text.of('及以下').gold(), Text.of('的动物').darkGreen()])
 		text.add(2, [Text.of(' > 冷却：').gray(), Text.of('1分钟').red()])
 		text.add(3, [Text.of(' > 驯兽师副职业').darkAqua(), Text.of(' 冷却：').gray(), Text.of('30秒').red()])
 	});
 
 	event.addAdvanced('kubejs:uncommon_beastmaster_totem', (item, advanced, text) => {
-		text.add(1, [Text.of('能够驯服').gold(), Text.of('最大生命值为').gold(), Text.of('50').green(), Text.of('及以下').gold(), Text.of('的动物').darkGreen()])
+		text.add(1, [Text.of('可驯服').gold(), Text.of('最大生命值为').gold(), Text.of('50').green(), Text.of('及以下').gold(), Text.of('的动物').darkGreen()])
 		text.add(2, [Text.of(' > 冷却：').gray(), Text.of('2分钟').red()])
 		text.add(3, [Text.of(' > 驯兽师副职业').darkAqua(), Text.of(' 冷却：').gray(), Text.of('45秒').red()])
 	});
 
 	event.addAdvanced('kubejs:rare_beastmaster_totem', (item, advanced, text) => {
-		text.add(1, [Text.of('可以驯服').gold(), Text.of('任何动物').darkGreen()])
+		text.add(1, [Text.of('可驯服').gold(), Text.of('任何动物').darkGreen()])
 		text.add(2, [Text.of(' > 冷却：').gray(), Text.of('3分钟').red()])
 		text.add(3, [Text.of(' > ').gray(), Text.of('野兽大师副职业').darkAqua(), Text.of(' 冷却：').gray(), Text.of('1分钟').red()])
 	});
 	
+	event.addAdvanced('kubejs:breakfall', (item, advanced, text) => {
+		text.add(1, [Text.of('解锁跑酷技能：').gold().underlined()])
+		text.add(2, [Text.of(' > 缓冲技').lightPurple().italic()])
+		text.add(3, [Text.of(' ').gray().italic()])
+		text.add(4, [Text.of('提示：读你的').gray(), Text.of('跑酷指南').aqua(), Text.of('以了解这个技能。').gray()])
+	});
+
+	event.addAdvanced('kubejs:catleap', (item, advanced, text) => {
+		text.add(1, [Text.of('解锁跑酷技能：').gold().underlined()])
+		text.add(2, [Text.of(' > 猫扑').lightPurple().italic()])
+		text.add(3, [Text.of(' ').gray().italic()])
+		text.add(4, [Text.of('提示：读你的').gray(), Text.of('跑酷指南').aqua(), Text.of('以了解这个技能。').gray()])
+		
+	});
+
+	event.addAdvanced('kubejs:ledgegrab', (item, advanced, text) => {
+		text.add(1, [Text.of('解锁跑酷技能：').gold().underlined()])
+		text.add(2, [Text.of(' > 壁架抓取').lightPurple().italic()])
+		text.add(3, [Text.of(' > 攀爬').lightPurple().italic()])
+		text.add(4, [Text.of(' > 滑墙').lightPurple().italic()])
+		text.add(5, [Text.of(' > 墙跳').lightPurple().italic()])
+		text.add(6, [Text.of(' ').gray().italic()])
+		text.add(7, [Text.of('提示：读你的').gray(), Text.of('跑酷指南').aqua(), Text.of('以了解这些技能。').gray()])
+	});
+
+	event.addAdvanced('kubejs:crawl', (item, advanced, text) => {
+		text.add(1, [Text.of('解锁跑酷技能：').gold().underlined()])
+		text.add(2, [Text.of(' > 爬行').lightPurple().italic()])
+		text.add(3, [Text.of(' > 滑行').lightPurple().italic()])
+		text.add(4, [Text.of(' ').gray().italic()])
+		text.add(5, [Text.of('提示：读你的').gray(), Text.of('跑酷指南').aqua(), Text.of('以了解这些技能。').gray()])
+	});
+
+	event.addAdvanced('kubejs:vertical_wallrun', (item, advanced, text) => {
+		text.add(1, [Text.of('解锁跑酷技能：').gold().underlined()])
+		text.add(2, [Text.of(' > 蹬壁上墙（踩墙跳）').lightPurple().italic()])
+		text.add(3, [Text.of(' ').gray().italic()])
+		text.add(4, [Text.of('提示：读你的').gray(), Text.of('跑酷指南').aqua(), Text.of('以了解这个技能。').gray()])
+	});
+
+
+	event.addAdvanced('kubejs:horizontal_wallrun', (item, advanced, text) => {
+		text.add(1, [Text.of('解锁跑酷技能：').gold().underlined()])
+		text.add(2, [Text.of(' > 水平跑墙').lightPurple().italic()])
+		text.add(3, [Text.of(' ').gray().italic()])
+		text.add(4, [Text.of('提示：读你的').gray(), Text.of('跑酷指南').aqua(), Text.of('以了解这个技能。').gray()])
+	});
+
 })
 
 
