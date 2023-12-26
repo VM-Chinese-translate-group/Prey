@@ -211,7 +211,7 @@ const paramount_discs = {
         event.create('catleap', "basic").group('KubeJS').texture('kubejs:item/catleap').rarity('common').displayName('技能币：CatLeap')
         event.create('vertical_wallrun', "basic").group('KubeJS').texture('kubejs:item/vwallrun').rarity('common').displayName('技能币：Vertical Wallrun')
         event.create('horizontal_wallrun', "basic").group('KubeJS').texture('kubejs:item/hwallrun').rarity('common').displayName('技能币：Horizontal Wallrun')
-        event.create('crawl', "basic").group('KubeJS').texture('kubejs:item/crawl').rarity('common').displayName('技能币：Crawl') //include crawl and slide
+        event.create('crawl', "basic").group('KubeJS').texture('kubejs:item/crawl').rarity('common').displayName('技能币：爬行') //include crawl and slide
         event.create('ledgegrab', "basic").group('KubeJS').texture('kubejs:item/ledgegrab').rarity('common').displayName('技能币：壁架抓取') /// include climb up, cling to cliff, and wall slide, wall jump
 	event.create('bloodripper_grim', "basic").group('KubeJS').texture('kubejs:item/bloodripper_grim').rarity('rare').displayName('血裂者的魔法书')
     
