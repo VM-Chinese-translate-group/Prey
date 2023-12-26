@@ -215,8 +215,11 @@ const paramount_discs = {
         event.create('ledgegrab', "basic").group('KubeJS').texture('kubejs:item/ledgegrab').rarity('common').displayName('技能币：Ledge Grab') /// include climb up, cling to cliff, and wall slide, wall jump
 	event.create('bloodripper_grim', "basic").group('KubeJS').texture('kubejs:item/bloodripper_grim').rarity('rare').displayName('Bloodripper\'s Grimoire')
     
-    
     });
+  StartupEvents.registry('sound_event', event => {
+        event.create('kubejs:sounds/bloodripper.ogg')
+    })
+
 
 
 
