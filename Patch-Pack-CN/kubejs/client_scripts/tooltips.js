@@ -559,7 +559,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
-			text.add(2, [Text.of(' > 天赋树由').white(), Text.of('6个忘却的试炼组成').darkRed().italic(), Text.of('每完成一个忘却的试炼，你就可以获得一个').white(), Text.of('被动能力').lightPurple()])
+			text.add(2, [Text.of(' > 天赋树由').white(), Text.of('6个遗忘的试炼组成').darkRed().italic(), Text.of('每完成一个遗忘的试炼，你就可以获得一个').white(), Text.of('被动能力').lightPurple()])
 			text.add(3, [Text.of(' >').white(), Text.of(' +5%').green(), Text.of('受伤时的攻击速度').gold()])
 		}
 
@@ -577,7 +577,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 		  }
 		  text.add(1, Text.yellow('概述').underlined(true))
-		  text.add(2, [Text.of(' > 装备有').white(), Text.of('超凡').lightPurple().italic(), Text.of('和').white(), Text.of('暴怒').lightPurple().italic(), Text.of('，狂战士必须面对').white(), Text.of('6个忘却的试炼').darkRed(), Text.of('才能夺回失去的技能')])
+		  text.add(2, [Text.of(' > 装备有').white(), Text.of('超凡').lightPurple().italic(), Text.of('和').white(), Text.of('暴怒').lightPurple().italic(), Text.of('，狂战士必须面对').white(), Text.of('6个遗忘的试炼').darkRed(), Text.of('才能夺回失去的技能')])
 		  text.add(3, Text.yellow('  '))
 	  })
 	  
