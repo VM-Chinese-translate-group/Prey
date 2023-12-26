@@ -206,7 +206,21 @@
     "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.finished": "大型杀手兔传送门已部署",
     "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.interrupted": "大型杀手兔传送门部署被打断",
     "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.conditions": "未满足仪式全部需求。",
-
+    
+    "item.kubejs.rune_of_the_guardian": "守护者符石",
+    "item.kubejs.rune_of_the_battlemage": "战斗法师符石",
+    "item.kubejs.rune_of_the_conjurer": "幻术师符石",
+    "item.kubejs.rune_of_the_spellsword": "魔剑士符石",
+    "item.kubejs.rune_of_the_kensei": "剑士符石",
+    "item.kubejs.rune_of_the_berserker": "狂战士符石",
+    "item.kubejs.rune_of_the_spirit_caller": "唤灵者符石",
+    "item.kubejs.rune_of_the_alchemist": "炼金术士符石",
+    "item.kubejs.rune_of_the_dreamweaver": "织梦者符石",
+    "item.kubejs.rune_of_the_arcane_ranger": "奥术游侠符石",
+    "item.kubejs.rune_of_the_explorer": "探险家符石",
+    "item.kubejs.rune_of_the_bloodripper": "血裂者符石",
+    "item.kubejs.rune_of_the_beastmaster": "驯兽师符石",
+    
     "item.kubejs.admin_sword": "创造之剑",
     "item.kubejs.rune_of_the_dead": "死亡符石",
     "item.kubejs.redstone_key": "红石钥匙",
