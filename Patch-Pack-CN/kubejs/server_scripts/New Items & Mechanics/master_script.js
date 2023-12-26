@@ -422,7 +422,7 @@ ItemEvents.rightClicked('kubejs:blood_oath', event => {
     let player_username = event.entity.username
 
     if (blood_oath_trigger[player_username] == false) {
-        Utils.server.runCommandSilent(`/tell ${player_username} Cooldown still active`)
+        Utils.server.runCommandSilent(`/tell ${player_username} 仍然处于冷却`)
     }
 
     if (blood_oath_trigger[player_username] == undefined) {
@@ -485,7 +485,7 @@ PlayerEvents.loggedIn((event) => {
     })
     event.player.stages.add('starting_items')
 	event.server.scheduleInTicks(400, event => {
-		player_real.tell('Open your Quest Book to get started.')
+		player_real.tell('打开你的任务书以启程。')
 	})
 })
 
@@ -495,7 +495,7 @@ PlayerEvents.loggedIn((event) => {
 		let player = event.player
 		let player_username = player.username
 		event.server.scheduleInTicks(200, event => {
-			Utils.server.tell('5 Minute Peace Period Begins Now.')
+			Utils.server.tell('现在开始5分钟和平时期。')
 			Utils.server.runCommand('/mode Stage0 noreload')
 			Utils.server.runCommand('/difficulty peaceful')
 			Utils.server.runCommandSilent('/playertabs setNumberOfTabs 4')
@@ -533,7 +533,7 @@ PlayerEvents.loggedIn((event) => {
         event.server.scheduleInTicks(6000, event => {
             Utils.server.runCommand('/mode Stage1 noreload')
 			Utils.server.runCommand('/difficulty normal')
-			Utils.server.tell('The 5 minute peace period has ended. Prepare Yourself. ')
+			Utils.server.tell('5分钟和平时期已结束，做好准备。')
             })
     })
 
@@ -560,7 +560,7 @@ EntityEvents.hurt(event => {
 
 EntityEvents.death('cataclysm:the_leviathan', event => {
 	Utils.server.runCommandSilent('/dimension minecraft:the_end access grant')
-	Utils.server.tell('End Dimension: Access Granted')
+	Utils.server.tell('末地维度：允许访问')
 })
 
 
@@ -675,7 +675,7 @@ EntityEvents.death('irons_spellbooks:dead_king', event => {
     const ent_z = event.entity.z
     Utils.server.runCommandSilent('/dimension minecraft:overworld access grant')
     Utils.server.runCommandSilent('/dimension minecraft:the_nether access grant')
-	Utils.server.tell('Nether Access: Granted')
+	Utils.server.tell('下界：允许访问')
 })
 
 EntityEvents.death('minecraft:warden', event => {

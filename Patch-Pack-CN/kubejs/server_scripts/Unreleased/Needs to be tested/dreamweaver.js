@@ -36,7 +36,7 @@ EntityEvents.hurt(event => {
     if (!event.source.player) return
     if (!event.source.projectile) return
     if (!event.source.actual.persistentData.contains('kubejs_class:dreamweaver')) return
-    if (event.source.player.offHandItem.displayName.string != '   [Warmonger]') return
+    if (event.source.player.offHandItem.displayName.string != '   [战争贩子]') return
     let username = event.source.actual.username
     let id = event.entity.type
     if (event.entity.tags.contains(`dreamweaver_mark_${username}`)) return
@@ -47,7 +47,7 @@ EntityEvents.hurt(event => {
     }
     if (sorrow_counter[username+id] != 3) return
     event.entity.tags.add(`dreamweaver_mark_${username}`)
-    event.source.actual.tell('Dreamweaver mark added.')
+    event.source.actual.tell('织梦师标记已添加。')
     event.entity.potionEffects.add('tetra:bleeding',40)
     sorrow_counter[username] = 0
 })
@@ -70,7 +70,7 @@ EntityEvents.hurt(event => {
     if (event.source.projectile) return
     if (!event.entity.tags.contains(`dreamweaver_mark_${username}`)) return
     if (!event.source.actual.persistentData.contains('kubejs_class:dreamweaver')) return
-    if (event.source.player.mainHandItem.displayName.string != '   [Torment]') return
+    if (event.source.player.mainHandItem.displayName.string != '   [苦痛]') return
     if (event.entity.player) {
         let target_username = event.entity.username
         Utils.server.runCommandSilent(`/sanity set ${target_username} 0`)

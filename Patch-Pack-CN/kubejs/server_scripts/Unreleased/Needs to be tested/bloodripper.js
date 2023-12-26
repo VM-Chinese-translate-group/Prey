@@ -95,7 +95,7 @@ EntityEvents.hurt(event => {
     event.entity.health = event.entity.maxHealth
     event.entity.tags.add(`${player.username}_ripped`)
     let display_name = event.entity.displayName.getString()
-    event.entity.customName = `${player.username}'s Corrupted ${display_name}`
+    event.entity.customName = `${player.username}\u7684\u8150\u5316${display_name}`
     player.persistentData.blood -= 10
     if (player.persistentData.blood < 0) {
         player.persistentData.blood = 0
@@ -146,7 +146,7 @@ EntityEvents.hurt(event => {
         event.entity.potionEffects.add('dungeons_gear:soul_protection', 999999)
     }
     if (player.persistentData.bound_blood_leveling < player.persistentData.bound_blood*20) return
-    player.tell('Bloodripper Level-Up')
+    player.tell('血裂者升级')
     player.persistentData.bound_blood += 1
     player.persistentData.bound_blood_leveling = 0
 /// Still to do: Leveling, maybe other stuff
