@@ -190,7 +190,7 @@
         ]
     },
     "feathers_regen+5%": {
-        "title": "+5% 羽毛获取",
+        "title": "+5% 耐力恢复",
         "icon": {
             "type": "texture",
             "data": {
@@ -209,7 +209,7 @@
         ]
     },
     "stamina+5%": {
-        "title": "+5% 最大羽毛数",
+        "title": "+5% 最大耐力值",
         "icon": {
             "type": "texture",
             "data": {
