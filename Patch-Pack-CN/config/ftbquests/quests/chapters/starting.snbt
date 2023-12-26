@@ -493,7 +493,7 @@
 			dependencies: ["44EF4C8A7F6402F1"]
 			icon: {
 				Count: 1
-				ForgeCaps: {D
+				ForgeCaps: {
 					"dungeons_libraries:built_in_enchantments": { }
 				}
 				id: "kubejs:class_lootbox"
