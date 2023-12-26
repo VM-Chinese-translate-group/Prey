@@ -39,14 +39,14 @@ EntityEvents.death(event => {
 		restoration_counter[player_username]++;
 	}
 	if (restoration_counter[player_username] == 250) {
-		Utils.server.tell('Restoration Trial: 50% Complete. 250 Kills Remaining')
+		Utils.server.tell('复原试炼：已完成50%。剩余250击杀数')
 	}
 
 	if (restoration_counter[player_username] != 500) return;
 		event.source.player.tags.remove(`restoration`)
         Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Berserker 1`)
 		Utils.server.runCommandSilent(`/give ${player_username} kubejs:restoration`)
-		Utils.server.tell('Complete')
+		Utils.server.tell('完成')
 		restoration_counter[player_username] = 0
     }
 })
@@ -64,7 +64,7 @@ EntityEvents.death(event => {
     if (!event.entity.isMonster()) return
     if (bloodlust_counter[player_username] == undefined) {
 		bloodlust_counter[player_username] = 1
-        Utils.server.runCommandSilent(`/tell ${player_username} 5 Minute Bloodlust Timer: Started`);
+        Utils.server.runCommandSilent(`/tell ${player_username} 5分钟嗜血计时：已开始`);
         event.server.scheduleInTicks(6000, () => {
             bloodlust_counter[player_username] = 0            
         })
@@ -72,14 +72,14 @@ EntityEvents.death(event => {
 		bloodlust_counter[player_username]++;
 	}
 	if (bloodlust_counter[player_username] == 25) {
-		Utils.server.tell('Bloodlust Trial: 50% Complete. 25 Kills Remaining')
+		Utils.server.tell('嗜血试炼：已完成50%。剩余25击杀数')
 	}
 
 	if (bloodlust_counter[player_username] != 50) return;
 		event.source.player.tags.remove(`bloodlust`)
         Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Berserker 1`)
 		event.source.player.getPersistentData().putBoolean(`kubejs_trial_complete:bloodlust`, true)
-		Utils.server.tell('Complete')
+		Utils.server.tell('完成')
         Utils.server.runCommandSilent(`/clear ${player_username} kubejs:bloodlust`)
 		bloodlust_counter[player_username] = 0
     }
@@ -103,13 +103,13 @@ EntityEvents.death(event => {
 		sf_counter[player_username]++;
 	}
 	if (sf_counter[player_username] == 75) {
-		Utils.server.tell('Heart Stop Trial: 50% Complete. 75 Kills Remaining')
+		Utils.server.tell('止心试炼：已完成50%。剩余75击杀数')
 	}
 
 	if (sf_counter[player_username] != 150) return;
 		event.source.player.tags.remove(`sf`)
 		event.source.player.getPersistentData().putBoolean(`kubejs_trial_complete:shadow_form`, true)
-		Utils.server.tell('Complete')
+		Utils.server.tell('完成')
         Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Berserker 1`)
 		sf_counter[player_username] = 0
     }
@@ -119,7 +119,7 @@ PlayerEvents.respawned(event => {
     let player_username = event.entity.username
     if (!event.entity.tags.contains(`sf`)) return
     sf_counter[player_username] = 0
-    Utils.server.runCommandSilent(`/tell ${player_username} Heart Stop Trial: Failed`)
+    Utils.server.runCommandSilent(`/tell ${player_username} 止心试炼：失败`)
 
 })
 
@@ -145,14 +145,14 @@ EntityEvents.death(event => {
         //Utils.server.tell(`${strike_counter[player_username]}`)
 	}
 	if (strike_counter[player_username] == 750) {
-		Utils.server.tell('Strike Trial: 50% Complete. 750')
+		Utils.server.tell('打击试炼：已完成50%。剩余75击杀数')
 	}
 
 	if (strike_counter[player_username] != 1500) return;
 		event.source.player.tags.remove(`strike`)
         Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Berserker 1`)
 		event.source.player.getPersistentData().putBoolean(`kubejs_trial_complete:strike`, true)
-		Utils.server.tell('Complete')
+		Utils.server.tell('完成')
 		strike_counter[player_username] = 0
     }
 })

@@ -59,13 +59,13 @@ EntityEvents.hurt('minecraft:ender_dragon', event => {
 ///EntityEvents.death('born_in_chaos_v1:sir_pumpkinhead', event => {
   ///  if (!invuln_trigger) return
    /// invuln_trigger = false
-   /// Utils.server.tell('The Dragons shields are down')
+   /// Utils.server.tell('龙的护盾已被击落')
 ////})
 
    )
 EntityEvents.hurt('minecraft:ender_dragon', event => {
    if (invuln_trigger != 0) {
-      Utils.server.tell('The Dragon is being shielded by the lifeforce of another Entity')
+      Utils.server.tell('龙受到另一些实体生命力提供的护盾')
       event.cancel()
       
    }
@@ -90,7 +90,7 @@ EntityEvents.hurt('minecraft:ender_dragon', event => {
 EntityEvents.death('dungeons_mobs:endersent', event => {
    if (!event.entity.tags.contains('phase_one')) return
    invuln_trigger -= 1
-   Utils.server.tell('The Dragons shields are down')
+   Utils.server.tell('龙的护盾已被击落')
    
 })
 
@@ -99,13 +99,13 @@ EntityEvents.death('cataclysm:ender_golem', event => {
    ender_golem_counter+= 1
    if (ender_golem_counter != 2) return
    invuln_trigger -= 1
-   Utils.server.tell('The Dragons shields are down')
+   Utils.server.tell('龙的护盾已被击落')
    
 })
 
 EntityEvents.death('cataclysm:ender_guardian', event => {
    if (!event.entity.tags.contains('phase_three')) return
    invuln_trigger -= 1
-   Utils.server.tell('The Dragons shields are down')
+   Utils.server.tell('龙的护盾已被击落')
    
 })

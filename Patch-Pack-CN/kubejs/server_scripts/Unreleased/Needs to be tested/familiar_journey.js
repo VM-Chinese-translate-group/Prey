@@ -35,7 +35,7 @@ EntityEvents.death('minecraft:wolf', event => {
     if (!event.entity.tags.contains('old_yeller')) return
     let player_username = event.entity.persistentData.player_username
     event.server.persistentData[`${player_username}_old_yeller`] = 0
-    Utils.server.runCommandSilent(`/tell ${player_username} Surge Trial: Failed`)
+    Utils.server.runCommandSilent(`/tell ${player_username} 潮涌试炼：失败`)
 })
 
 
@@ -50,7 +50,7 @@ EntityEvents.death('alexsmobs:tusklin', event => {
     if (!event.source.actual.tags.contains(`${player_username}_old_yeller`)) return
     player.tags.remove('old_yeller_one')
     player.tags.add('old_yeller_two')
-    Utils.server.runCommandSilent(`/tell ${player_username} Surge Trial Part 1: Complete`)
+    Utils.server.runCommandSilent(`/tell ${player_username} 潮涌试炼第一部分：完成`)
     event.source.actual.maxHealth = event.source.actual.maxHealth*1.5;
     event.source.actual.health = event.source.actual.maxHealth*1.5;
 })
@@ -81,7 +81,7 @@ EntityEvents.death(event => {
     if (old_yeller_skinwalker_kills[player_username] != 1) return
     player.tags.remove('old_yeller_two')
     player.tags.add('old_yeller_three')
-    Utils.server.runCommandSilent(`/tell ${player_username} Surge Trial Part 2: Complete`)
+    Utils.server.runCommandSilent(`/tell ${player_username} 潮涌试炼第二部分：完成`)
     event.source.actual.maxHealth = event.source.actual.maxHealth*2.0;
     event.source.actual.health = event.source.actual.maxHealth*2.0;
 })
@@ -109,13 +109,13 @@ EntityEvents.death(event => {
     if (old_yeller_wendigo_kills[player_username] != 1) return
     player.tags.remove('old_yeller_three')
     player.tags.add('old_yeller_four')
-    Utils.server.runCommandSilent(`/tell ${player_username} Surge Trial Part 3: Complete`)
+    Utils.server.runCommandSilent(`/tell ${player_username} 潮涌试炼第三部分；完成`)
     player.giveInHand('kubejs:betrayal')
-    player.tell('Stab the Dog')
-    player.tell('Stab the Dog')
-    player.tell('Stab the Dog')
-    player.tell('Stab the Dog')
-    player.tell('Stab the Dog')
+    player.tell('戳戳狗')
+    player.tell('戳戳狗')
+    player.tell('戳戳狗')
+    player.tell('戳戳狗')
+    player.tell('戳戳狗')
 })
 
 EntityEvents.hurt('minecraft:wolf', event => {
