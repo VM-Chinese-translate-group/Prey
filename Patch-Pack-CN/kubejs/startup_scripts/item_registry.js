@@ -151,7 +151,7 @@ const paramount_discs = {
             event.create(`rune_of_the_${name}`).group('KubeJS').texture(`kubejs:item/${texture}`)
         })
 
-        event.create('admin_sword', 'sword').tier('netherite').attackDamageBaseline(1000.0).tooltip('A weapon')
+        event.create('admin_sword', 'sword').tier('netherite').attackDamageBaseline(1000.0).tooltip('一把武器')
         event.create('rune_of_the_dead', 'basic').group('KubeJS').texture('kubejs:item/rune_of_the_dead').rarity('epic') /// Dead King Drop
         event.create('redstone_key', 'basic').unstackable().group('KubeJS').texture('kubejs:icons/key_01b') ///Redstone Golem Drop
         event.create('forgotten_tablet', 'basic').group('KubeJS').texture('kubejs:icons/forgotten_tablet') ///Warden Golem Drop
@@ -162,40 +162,40 @@ const paramount_discs = {
         event.create('speed_elixir', 'basic').group('KubeJS').texture('kubejs:item/elixir_of_speed').rarity('epic')//
         event.create('resistance_elixir', 'basic').group('KubeJS').texture('kubejs:item/elixir_of_resistance').rarity('epic')//
         event.create('regeneration_elixir', 'basic').group('KubeJS').texture('kubejs:item/elixir_of_regeneration').rarity('epic')//
-        event.create('shadow_form_elixir', 'basic').group('KubeJS').texture('kubejs:item/elixir_of_shadow').rarity('epic').displayName('Heart Stop Elixir')//
+        event.create('shadow_form_elixir', 'basic').group('KubeJS').texture('kubejs:item/elixir_of_shadow').rarity('epic').displayName('止心圣酿')//
         event.create('strength_elixir', 'basic').group('KubeJS').texture('kubejs:item/elixir_of_strength').rarity('epic')//
         event.create('endurance_elixir', 'basic').group('KubeJS').texture('kubejs:item/elixir_of_endurance').rarity('epic')//
-        event.create('fire_elixir', 'basic').group('KubeJS').texture('kubejs:item/fire_elixir').rarity('epic').displayName('Dragons Breath Elixir')//
+        event.create('fire_elixir', 'basic').group('KubeJS').texture('kubejs:item/fire_elixir').rarity('epic').displayName('焰息圣酿')//
         event.create('absorption_elixir', 'basic').group('KubeJS').texture('kubejs:item/absorption_elixir').rarity('epic')//
         event.create('charged_elixir', 'basic').group('KubeJS').texture('kubejs:item/charged_elixir').rarity('epic')//
         event.create('soul_steal_elixir', 'basic').group('KubeJS').texture('kubejs:item/soul_steal_elixir').rarity('epic')//
         event.create('angel_wings_elixir', 'basic').group('KubeJS').texture('kubejs:item/angelic_elixir').rarity('epic')//
-        event.create('bloodlust', 'basic').displayName('Forgotten Tablet: Bloodlust').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('surge', 'basic').displayName('Forgotten Tablet: Surge').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('restoration', 'basic').displayName('Forgotten Tablet: Restoration').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('shadow_form', 'basic').displayName('Forgotten Tablet: Heartstop').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('strike', 'basic').displayName('Forgotten Tablet: Strike').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('trial_blood_oath', 'basic').displayName('Forgotten Tablet: Blood Oath').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('bloodlust', 'basic').displayName('遗忘石板：嗜血').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('surge', 'basic').displayName('遗忘石板：潮涌').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('restoration', 'basic').displayName('遗忘石板：急迫').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('shadow_form', 'basic').displayName('遗忘石板：止心').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('strike', 'basic').displayName('遗忘石板：雷电').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('trial_blood_oath', 'basic').displayName('遗忘石板：血契').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
         event.create('blood_oath', 'basic').group('KubeJS').texture('kubejs:icons/blood_oath')
-        event.create('summoners_gateway', 'basic').group('KubeJS').texture('kubejs:item/totem').displayName('Summoning Gateway')
-        event.create('evasion_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Evasion Elixir')////
-        event.create('speed_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Speed Elixir')////
-        event.create('resistance_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Resistance Elixir')////
-        event.create('regeneration_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Regeneration Elixir')////
-        event.create('shadow_form_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Heart Stop Elixir')//
-        event.create('strength_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Strength Elixir')////
-        event.create('endurance_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Endurance Elixir')////
-        event.create('fire_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Dragons Breath Elixir')////
-        event.create('absorption_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Absorption Elixir')////
-        event.create('charged_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Charged Elixir')////
-        event.create('soul_steal_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Soul Steal Elixir')////
-        event.create('angel_wings_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('Relic: Angel Wings Elixir')////
+        event.create('summoners_gateway', 'basic').group('KubeJS').texture('kubejs:item/totem').displayName('召唤之门')
+        event.create('evasion_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：闪避圣酿')////
+        event.create('speed_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：速度圣酿')////
+        event.create('resistance_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：抗性圣酿')////
+        event.create('regeneration_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：回复圣酿')////
+        event.create('shadow_form_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：止心圣酿')//
+        event.create('strength_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：力量圣酿')////
+        event.create('endurance_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：耐力圣酿')////
+        event.create('fire_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：焰息圣酿')////
+        event.create('absorption_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：伤害吸收圣酿')////
+        event.create('charged_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：超负荷圣酿')////
+        event.create('soul_steal_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：灵魂窃取圣酿')////
+        event.create('angel_wings_elixir_relic', 'basic').group('KubeJS').texture('kubejs:item/relic').rarity('epic').displayName('圣物：天使之翼圣酿')////
         event.create('common_beastmaster_totem', 'basic').group('KubeJS').texture('kubejs:item/common_beastmaster_totem').rarity('common')
         event.create('uncommon_beastmaster_totem', 'basic').group('KubeJS').texture('kubejs:item/uncommon_beastmaster_totem').rarity('uncommon')
         event.create('rare_beastmaster_totem', 'basic').group('KubeJS').texture('kubejs:item/rare_beastmaster_totem').rarity('epic')
         event.create('time_turner', 'basic').group('KubeJS').texture('kubejs:item/time_turner').rarity('uncommon')
         event.create('high_value_target', 'basic').group('KubeJS').texture('kubejs:item/hvt')
-        event.create('familiar_journey', 'basic').displayName('A Familiar Journey').group('KubeJS').texture('kubejs:item/old_yeller').rarity('common')
+        event.create('familiar_journey', 'basic').displayName('一段熟悉的旅途').group('KubeJS').texture('kubejs:item/old_yeller').rarity('common')
         event.create('betrayal', 'sword').tier('stone').attackDamageBaseline(1.0).group('KubeJS').texture('kubejs:item/betrayal').rarity('uncommon')
         event.create('spirit_crystal', 'basic').group('KubeJS').texture('kubejs:item/spirit_crystal').rarity('rare')
         event.create('orb_of_slaughtered_foes', 'basic').group('KubeJS').texture('kubejs:item/orb_of_slaughtered_foes').rarity('epic')
@@ -207,21 +207,20 @@ const paramount_discs = {
         event.create(`lesser_summoning_disc`, 'basic').group('KubeJS').texture('kubejs:item/lesser_summoning_disc').rarity('uncommon')
         event.create(`superior_summoning_disc`, 'basic').group('KubeJS').texture('kubejs:item/superior_summoning_disc').rarity('rare')
         event.create(`paramount_summoning_disc`, 'basic').group('KubeJS').texture('kubejs:item/paramount_summoning_disc').rarity('epic')
-        event.create('breakfall', "basic").group('KubeJS').texture('kubejs:item/breakfall').rarity('common').displayName('Skill Token: Breakfall') /// Skills always enabled: Pole Climbing, fast run, safety tap
-        event.create('catleap', "basic").group('KubeJS').texture('kubejs:item/catleap').rarity('common').displayName('Skill Token: Cat Leap')
-        event.create('vertical_wallrun', "basic").group('KubeJS').texture('kubejs:item/vwallrun').rarity('common').displayName('Skill Token: Vertical Wallrun')
-        event.create('horizontal_wallrun', "basic").group('KubeJS').texture('kubejs:item/hwallrun').rarity('common').displayName('Skill Token: Horizontal Wallrun')
-        event.create('crawl', "basic").group('KubeJS').texture('kubejs:item/crawl').rarity('common').displayName('Skill Token: Crawl') //include crawl and slide
-        event.create('ledgegrab', "basic").group('KubeJS').texture('kubejs:item/ledgegrab').rarity('common').displayName('Skill Token: Ledge Grab') /// include climb up, cling to cliff, and wall slide, wall jump
-        event.create('bloodripper_grim', "basic").group('KubeJS').texture('kubejs:item/bloodripper_grim').rarity('rare').displayName('Bloodripper\'s Grimoire')
-    
+        event.create('breakfall', "basic").group('KubeJS').texture('kubejs:item/breakfall').rarity('common').displayName('技能币：缓降技') /// Skills always enabled: Pole Climbing, fast run, safety tap
+        event.create('catleap', "basic").group('KubeJS').texture('kubejs:item/catleap').rarity('common').displayName('技能币：猫扑')
+        event.create('vertical_wallrun', "basic").group('KubeJS').texture('kubejs:item/vwallrun').rarity('common').displayName('技能币：蹬壁上墙')
+        event.create('horizontal_wallrun', "basic").group('KubeJS').texture('kubejs:item/hwallrun').rarity('common').displayName('技能币：水平跑墙')
+        event.create('crawl', "basic").group('KubeJS').texture('kubejs:item/crawl').rarity('common').displayName('技能币：爬行') //include crawl and slide
+        event.create('ledgegrab', "basic").group('KubeJS').texture('kubejs:item/ledgegrab').rarity('common').displayName('技能币：壁架抓取') /// include climb up, cling to cliff, and wall slide, wall jump
+	event.create('bloodripper_grim', "basic").group('KubeJS').texture('kubejs:item/bloodripper_grim').rarity('rare').displayName('血裂者的魔法书')
     
     });
-
-
-    StartupEvents.registry('sound_event', event => {
+  StartupEvents.registry('sound_event', event => {
         event.create('kubejs:sounds/bloodripper.ogg')
     })
+
+
 
 
 
