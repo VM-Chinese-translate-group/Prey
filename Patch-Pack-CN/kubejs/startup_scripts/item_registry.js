@@ -208,7 +208,7 @@ const paramount_discs = {
         event.create(`superior_summoning_disc`, 'basic').group('KubeJS').texture('kubejs:item/superior_summoning_disc').rarity('rare')
         event.create(`paramount_summoning_disc`, 'basic').group('KubeJS').texture('kubejs:item/paramount_summoning_disc').rarity('epic')
         event.create('breakfall', "basic").group('KubeJS').texture('kubejs:item/breakfall').rarity('common').displayName('技能币：Breakfall') /// Skills always enabled: Pole Climbing, fast run, safety tap
-        event.create('catleap', "basic").group('KubeJS').texture('kubejs:item/catleap').rarity('common').displayName('技能币：CatLeap')
+        event.create('catleap', "basic").group('KubeJS').texture('kubejs:item/catleap').rarity('common').displayName('技能币：猫扑')
         event.create('vertical_wallrun', "basic").group('KubeJS').texture('kubejs:item/vwallrun').rarity('common').displayName('技能币：Vertical Wallrun')
         event.create('horizontal_wallrun', "basic").group('KubeJS').texture('kubejs:item/hwallrun').rarity('common').displayName('技能币：水平跑墙')
         event.create('crawl', "basic").group('KubeJS').texture('kubejs:item/crawl').rarity('common').displayName('技能币：爬行') //include crawl and slide
