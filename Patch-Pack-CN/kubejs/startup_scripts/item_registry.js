@@ -171,7 +171,7 @@ const paramount_discs = {
         event.create('soul_steal_elixir', 'basic').group('KubeJS').texture('kubejs:item/soul_steal_elixir').rarity('epic')//
         event.create('angel_wings_elixir', 'basic').group('KubeJS').texture('kubejs:item/angelic_elixir').rarity('epic')//
         event.create('bloodlust', 'basic').displayName('遗忘石板：嗜血').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
-        event.create('surge', 'basic').displayName('遗忘石板：涌动').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
+        event.create('surge', 'basic').displayName('遗忘石板：潮涌').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
         event.create('restoration', 'basic').displayName('遗忘石板：急迫').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
         event.create('shadow_form', 'basic').displayName('遗忘石板：止心').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
         event.create('strike', 'basic').displayName('遗忘石板：雷电').group('KubeJS').texture('kubejs:icons/forgotten_tablet')
