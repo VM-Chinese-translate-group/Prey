@@ -570,9 +570,9 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(2, [Text.of(' > 试炼：').white(), Text.of('嗜血').darkRed().italic()])
 			text.add(3, [Text.of(' > 试炼：').white(), Text.of('潮涌').darkRed().italic()])
 			text.add(4, [Text.of(' > 试炼：').white(), Text.of('幽影态').darkRed().italic()])
-			text.add(5, [Text.of(' > 试炼：').white(), Text.of('复原').darkRed().italic()])
-			text.add(6, [Text.of(' > 试炼：').white(), Text.of('打击').darkRed().italic()])
-			text.add(7, [Text.of(' > 试炼：').white(), Text.of('血誓').darkRed().italic()])
+			text.add(5, [Text.of(' > 试炼：').white(), Text.of('急迫').darkRed().italic()])
+			text.add(6, [Text.of(' > 试炼：').white(), Text.of('雷电').darkRed().italic()])
+			text.add(7, [Text.of(' > 试炼：').white(), Text.of('血契').darkRed().italic()])
 			text.add(8, Text.yellow('  '))
 
 		  }
@@ -796,7 +796,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('悬赏详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀15x 苦力怕').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀25x  苦力怕').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀25x  苦力怕').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀50x 苦力怕').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('50只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('5枚铜币。').yellow()])   
@@ -814,7 +814,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀25x 骷髅').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀50x 骷髅').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀50x 骷髅').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀75x 骷髅').italic().darkRed()])
 			text.add(5, Text.yellow(' '))			
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('75只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('3枚铜币。').yellow()])   
@@ -831,7 +831,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			  } else {
 				text.add(1, Text.gold('赏金详情：'))
 				text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀25x 蜘蛛').italic().darkRed()])
-				text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀50x 蜘蛛').italic().darkRed()]) 
+				text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀50x 蜘蛛').italic().darkRed()]) 
 				text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀75x 蜘蛛').italic().darkRed()])
 				text.add(5, Text.yellow(' '))
 				text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('75只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('3枚铜币。').yellow()])   
@@ -849,7 +849,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀25x 僵尸').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀50x 僵尸').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀50x 僵尸').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀75x 僵尸').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('75只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('3枚铜币。').yellow()])   
@@ -867,7 +867,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀15x末影人').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀25x 末影人').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀25x 末影人').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀50x 末影人').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('50只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('5枚铜币。').yellow()])  
@@ -885,7 +885,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀15x掠夺者').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀25x 掠夺者').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀25x 掠夺者').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀50x 掠夺者').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('50只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('5枚铜币。').yellow()])  
@@ -903,7 +903,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀15x猪灵').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀25x 猪灵').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀25x 猪灵').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀50x 猪灵').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('50只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('5枚铜币。').yellow()])  
@@ -921,7 +921,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀25x 溺尸').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀50x 溺尸').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀50x 溺尸').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀75x 溺尸').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('75只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('3枚铜币。').yellow()])    
@@ -997,7 +997,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	event.addAdvanced('kubejs:trial_blood_oath', (item, advanced, text) => {
         text.add(1, [Text.of('试炼：').darkRed().italic(), Text.of('变得').white(), Text.of('失去理智').darkRed(), Text.of('，面对着内心的恶魔，屠杀').white(), Text.of('5').red(), Text.of('个这样追杀你的生物而不死。').white()])
         text.add(2, Text.white(' ')),
-        text.add(3, [Text.of('奖励：').green().italic(), Text.of('每').white(), Text.of(' 15分钟').blue(), Text.of('你会获得一个').white(), Text.of('血誓').darkRed(), Text.of('，如果你使用它，您将获得一次性效果，即'), Text.of('死而复生').gold()])
+        text.add(3, [Text.of('奖励：').green().italic(), Text.of('每').white(), Text.of(' 15分钟').blue(), Text.of('你会获得一个').white(), Text.of('血契').darkRed(), Text.of('，如果你使用它，您将获得一次性效果，即'), Text.of('死而复生').gold()])
     })// Not Finished
 
 	event.addAdvanced('kubejs:shadow_form', (item, advanced, text) => {
@@ -1124,7 +1124,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
         text.add(2, [Text.of('> 使用').white(), Text.of('火焰法术').aqua().underlined(), Text.of('击杀').white(), Text.of('100只飞行怪物').darkRed().italic(), Text.of('（任何等级的魔法均可）').yellow()])
         text.add(3, [Text.of(' ').darkRed()])
         text.add(4, [Text.of('奖励：').gold().underlined()])
-        text.add(5, [Text.of('龙息圣酿').aqua()])
+        text.add(5, [Text.of('焰息圣酿').aqua()])
 	});
 
 	event.addAdvanced('kubejs:absorption_elixir_relic', (item, advanced, text) => {
@@ -1311,7 +1311,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		text.add(1, [Text.of('+2%').green(), Text.of('受到伤害时').gray(), Text.of('圣酿').lightPurple(), Text.of('激活的几率').gray()])
 		text.add(2, [Text.of(' ').red()])
 		text.add(3, [Text.of('获取方式： ').red()])
-		text.add(4, [Text.of(' - 不凡赏金战利品箱').gold()])
+		text.add(4, [Text.of(' - 罕见赏金战利品箱').gold()])
 	});
 
 	event.addAdvanced('kubejs:paramount_elixir_shard', (item, advanced, text) => {
