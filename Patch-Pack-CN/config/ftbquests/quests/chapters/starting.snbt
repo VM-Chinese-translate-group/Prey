@@ -57,7 +57,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来查看你的技能树和圣酿挑战（译注：实则是“K”键）"
+			subtitle: "按下“H”来查看你的技能树和圣酿挑战"
 			tasks: [{
 				id: "36AF815F834793DA"
 				title: "完成教程"
@@ -248,7 +248,7 @@
 				"    &o缩放：&rC"
 				"    &o建造菜单：&rTAB"
 				"    &o法术书滚轮：&rV（需要手持法术书）"
-				"    译注：技能树是K键，缩放是Z键，注意按键冲突"
+				""
 				"___________________________"
 			]
 			id: "44EF4C8A7F6402F1"
@@ -274,7 +274,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来分配你的初始技能点（K键）"
+			subtitle: "按下“H”来分配你的初始技能点"
 			tasks: [{
 				id: "398B76A53A074272"
 				title: "阅读这个："
@@ -314,7 +314,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来查看你的技能树（K键）"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "2B3E44623F548139"
 				item: {
@@ -356,7 +356,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来查看你的技能树（K键）"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "0A3C6FD43F074D8F"
 				item: {
@@ -404,7 +404,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来查看你的技能树（K键）"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "33F7407753ABE2E3"
 				item: {
@@ -446,7 +446,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来查看你的技能树（K键）"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "08898689C7E31D04"
 				item: {
