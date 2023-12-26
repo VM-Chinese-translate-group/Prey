@@ -592,7 +592,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, Text.yellow('被动').underlined(true))
 			text.add(2, [Text.of(' >').white(), Text.of(' +15%').green(), Text.of('弹射物伤害').gold()])
 			text.add(3, [Text.of(' > 当你击杀怪物或').white(), Text.of('击中BOSS').white().italic(), Text.of('3次').yellow(), Text.of('你就能收集').white(), Text.of('灵魂').aqua()])
-			text.add(4, [Text.of(' > 当你').white(), Text.of('副手').green(), Text.of('持有').white(), Text.of('灵魂水晶').blue(), Text.of('时，击败强大的生物能捕获').white(), Text.of('灵魂').darkPurple(), Text.of('。想使用').white(), Text.of('灵魂').aqua().italic(), Text.of('用').white(), Text.of(' Orb of Slaughtered Foes.').darkRed(), Text.of('将').white, Text.of('灵魂').darkPurple(), Text.of('作为盟友召唤').white()])
+			text.add(4, [Text.of(' > 当你').white(), Text.of('副手').green(), Text.of('持有').white(), Text.of('灵魂水晶').blue(), Text.of('时，击败强大的生物能捕获').white(), Text.of('灵魂').darkPurple(), Text.of('。想使用').white(), Text.of('灵魂').aqua().italic(), Text.of('用').white(), Text.of('杀戮宝珠。').darkRed(), Text.of('将').white, Text.of('灵魂').darkPurple(), Text.of('作为盟友召唤').white()])
 
 		  }
 
@@ -698,9 +698,9 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 		}
 
-		if (!event.shift) {
+		if (!event.hift) {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('以查看天赋树技能。').gold()])
-		  } else {
+		  } ele {
 			text.add(1, Text.yellow('天赋树技能').underlined(true))
 			text.add(2, Text.aqua(' > 远程武器攻击速度'))
 			text.add(3, Text.aqua(' > 箭生命窃取'))
@@ -716,12 +716,12 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 	  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	  event.addAdvanced('kubejs:rune_of_the_bounty_hunter', (item, advanced, text) => {
+	  event.addAdvanced('kubej:rune_of_the_bounty_hunter', (item, advanced, text) => {
 		
 
 		if (!event.alt) {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
-		  } else {
+		  } ele {
 			text.add(1, Text.yellow('被动').underlined(true))
 			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('受伤时暴击几率').gold()])
 			text.add(3, [Text.of(' > 完成一个').white(), Text.of('悬赏').gold().italic(), Text.of('或').white(), Text.of('高价悬赏目标，').gold().italic(), Text.of('会带给你比其他副职业更好的奖励')])
@@ -729,9 +729,9 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 		  }
 
-		if (!event.shift) {
+		if (!event.hift) {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('以查看天赋树技能。').gold()])
-		  } else {
+		  } ele {
 			text.add(1, Text.yellow('天赋树技能').underlined(true))
 			text.add(2, Text.aqua(' > 装备盾时的伤害'))///
 			text.add(3, Text.aqua(' > 生命回复'))
@@ -749,12 +749,12 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 
 	  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	  event.addAdvanced('kubejs:rune_of_the_alchemist', (item, advanced, text) => {
+	  event.addAdvanced('kubej:rune_of_the_alchemit', (item, advanced, text) => {
 		
 
 		if (!event.alt) {
 			text.add(1, [Text.of('按住 ').red(), Text.of('ALT ').yellow(), Text.of('以查看负面被动').red()])
-		  } else {
+		  } ele {
 			text.add(1, Text.darkRed('负面被动：').underlined(true))
 			text.add(2, Text.red(' > 无命中耐力回复效果'))
 			text.add(3, Text.red(' > 攻击伤害仅为正常伤害的25%'))
@@ -762,9 +762,9 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			
 		  }
 
-		if (!event.shift) {
+		if (!event.hift) {
 			text.add(1, [Text.of('按住 ').green(), Text.of('SHIFT ').yellow(), Text.of('以查看被动.').green()])
-		  } else {
+		  } ele {
 			text.add(1, Text.darkGreen('正面被动').underlined(true))
 			text.add(2, Text.green(' > 在药水效果下，你的最大生命值将增至正常值'))
 			text.add(3, Text.green(' > +200% 最大羽毛'))
