@@ -29,7 +29,7 @@
 							id: "minecraft:air"
 							tag: {
 								glide: 0b
-								struck: 0b
+                        struck: 0b
 							}
 						}
 					}
@@ -169,7 +169,7 @@
 					id: "irons_spellbooks:lightning_bottle"
 				}
 				id: "40587A581A109CAB"
-				title: "1x Magic Skill Point"
+				title: "1x 魔法技能点"
 				type: "command"
 			}]
 			shape: "rsquare"
@@ -206,7 +206,7 @@
 					id: "cataclysm:mechanical_fusion_anvil"
 				}
 				id: "6D9C7AAADDA1E98D"
-				title: "1x Crafting Skill Point"
+				title: "1x 合成技能点"
 				type: "command"
 			}]
 			shape: "rsquare"
