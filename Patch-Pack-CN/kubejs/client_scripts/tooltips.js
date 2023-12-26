@@ -414,8 +414,8 @@ ItemEvents.tooltip(event => {
 		  text.add(9, Text.yellow('  ')) 
 		  text.add(10, Text.yellow('天赋树技能').underlined(true))
 		  text.add(11, Text.aqua(' > 最大生命'))
-		  text.add(12, Text.aqua(' > 最大羽毛'))
-		  text.add(13, Text.aqua(' > 羽毛恢复率'))
+		  text.add(12, Text.aqua(' > 最大耐力'))
+		  text.add(13, Text.aqua(' > 耐力恢复率'))
 		  text.add(14, Text.aqua(' > 受伤则有几率暴击'))
 		  text.add(15, Text.yellow('  '))
 
@@ -558,7 +558,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(2, Text.aqua(' > 远程伤害'))
 			text.add(3, Text.aqua(' > 移动速度'))
 			text.add(4, Text.aqua(' > 攻击速度'))
-			text.add(5, Text.aqua(' > 羽毛回复率'))
+			text.add(5, Text.aqua(' > 耐力回复率'))
 			text.add(6, Text.yellow('  '))
 		  }
 
@@ -617,7 +617,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('以查看天赋树技能。').gold()])
 		  } else {
 			text.add(1, Text.yellow('天赋树技能').underlined(true))
-			text.add(2, Text.aqua(' > 羽毛再生'))
+			text.add(2, Text.aqua(' > 耐力恢复'))
 			text.add(3, Text.aqua(' > 近战伤害'))
 			text.add(4, Text.aqua(' > 受到治疗'))
 			text.add(5, Text.aqua(' > 来自击杀生物的经验')) /// 
@@ -649,8 +649,8 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.yellow('天赋树技能').underlined(true))
 			text.add(2, Text.aqua(' > 最大生命值'))
-			text.add(3, Text.aqua(' > 最大羽毛量'))
-			text.add(4, Text.aqua(' > 羽毛回复率'))
+			text.add(3, Text.aqua(' > 最大耐力量'))
+			text.add(4, Text.aqua(' > 耐力回复率'))
 			text.add(5, Text.aqua(' > 移动速度'))
 			text.add(6, Text.yellow('  '))
 		  }
@@ -783,8 +783,8 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.darkGreen('正面被动').underlined(true))
 			text.add(2, Text.green(' > 在药水效果下，你的最大生命值将增至正常值'))
-			text.add(3, Text.green(' > +200% 最大羽毛'))
-			text.add(4, Text.green(' > +50% 羽毛回复率'))
+			text.add(3, Text.green(' > +200% 最大耐力'))
+			text.add(4, Text.green(' > +50% 耐力回复率'))
 			text.add(5, Text.green(' > +75% 所有酿造药水持续时长与强度提升'))
 			text.add(6, Text.green(' > +75% 拥有药水效果时提供攻击速度'))
 			text.add(7, Text.green(' > +75% 拥有药水效果时提供伤害'))
@@ -1132,7 +1132,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
         text.add(5, [Text.of(' > 一定要是晚上').gray()])
         text.add(6, [Text.of(' ').darkRed()])
         text.add(7, [Text.of('奖励：').gold().underlined()])
-        text.add(8, [Text.of('额外羽毛圣酿').aqua()])
+        text.add(8, [Text.of('额外耐力圣酿').aqua()])
 	});
 
 	event.addAdvanced('kubejs:fire_elixir_relic', (item, advanced, text) => {
@@ -1393,7 +1393,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 	event.addAdvanced(`kubejs:endurance_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
-		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('羽毛提升').lightPurple(), Text.of('效果的几率').gray()])
+		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('耐力提升').lightPurple(), Text.of('效果的几率').gray()])
 		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])

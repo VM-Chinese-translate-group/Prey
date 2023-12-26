@@ -102,7 +102,7 @@
         ]
     },
     "relic_endurance": {
-        "title": "挑战：额外羽毛",
+        "title": "挑战：耐力",
         "icon": {
             "type": "texture",
             "data": {
