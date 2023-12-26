@@ -26,7 +26,7 @@ PlayerEvents.loggedIn(event => {
         event.player.paint({
             souls_word: {
                 type: 'text',
-                text: `Souls: ${souls}`,
+                text: `灵魂：${souls}`,
                 w: '$screenW', 
                 h: '$screenH',
                 x: 69,
@@ -40,7 +40,7 @@ PlayerEvents.loggedIn(event => {
             },
             summon_points: {
                 type: 'text',
-                text: `XP: ${parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`,
+                text: `经验：${parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`,
                 w: '$screenW', 
                 h: '$screenH',
                 x: 69,

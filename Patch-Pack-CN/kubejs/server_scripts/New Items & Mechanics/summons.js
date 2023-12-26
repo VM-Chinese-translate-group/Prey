@@ -96,7 +96,7 @@ Object.entries(common_summoned_pets).forEach(([pet, health]) => {
         event.player.persistentData.common_summoned_counter += 1
         if (event.player.persistentData.common_summoned_counter != 15*event.player.persistentData.common_summoner_counter) return
         event.player.persistentData.common_summoner_counter+=1
-        Utils.server.tell(`Common Summoned Pets: Health Level Up`)
+        Utils.server.tell(`普通召唤宠物：生命值升级`)
         event.player.persistentData.common_summoned_counter = 0
     })
 })
@@ -122,7 +122,7 @@ Object.entries(rare_summoned_pets).forEach(([pet, health]) => {
         event.player.persistentData.rare_summoned_counter += 1
         if (event.player.persistentData.rare_summoned_counter != 15*event.player.persistentData.rare_summoner_counter) return
         event.player.persistentData.rare_summoner_counter+=1
-        Utils.server.tell(`Rare Summoned Pets: Health Level Up`)
+        Utils.server.tell(`稀有召唤宠物：生命值升级`)
         event.player.persistentData.rare_summoned_counter = 0
     })
 })
@@ -150,7 +150,7 @@ Object.entries(epic_summoned_pets).forEach(([pet, health]) => {
         event.player.persistentData.epic_summoned_counter += 1
         if (event.player.persistentData.epic_summoned_counter != 15*event.player.persistentData.epic_summoner_counter) return
         event.player.persistentData.epic_summoner_counter+=1
-        Utils.server.tell(`Epic Summoned Pets: Health Level Up`)
+        Utils.server.tell(`史诗召唤宠物：生命值升级`)
         event.player.persistentData.epic_summoned_counter = 0
     })
 })

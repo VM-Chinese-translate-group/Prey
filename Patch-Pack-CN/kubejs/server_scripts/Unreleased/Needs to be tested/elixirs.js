@@ -67,7 +67,7 @@ Object.entries(elixir_shards).forEach(([name, chance]) => {
         event.player.persistentData.arcane_affinity += chance
         event.item.count -= 1
         let act_chance = chance*100
-        event.player.tell(`+${act_chance}% Elixir Activation Chance`)
+        event.player.tell(`+${act_chance}% 圣酿激活几率`)
     })
 })
 

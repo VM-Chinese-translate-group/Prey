@@ -103,7 +103,7 @@ EntityEvents.death(event => {
         player.paint({blood: {text: `${player.persistentData.blood}`}})
     }
     if (player.persistentData.bound_blood_leveling < (player.persistentData.bound_blood*20)) return
-    player.tell('Bloodripper Level-Up')
+    player.tell('血裂者升级')
     player.persistentData.bound_blood += 1
     player.persistentData.bound_blood_leveling = 0
 })
