@@ -76,7 +76,7 @@ ItemEvents.entityInteracted(event => {
     if (entity.maxHealth < 50) {
         if (!player.persistentData.contains('kubejs_class:beastmaster ')) {
             if (common_flute_cooldown[player_username] == 0) {
-                player.tell('不凡驯兽师图腾：再充能中')
+                player.tell('罕见驯兽师图腾：再充能中')
             } else {
     //
                 if (common_flute_cooldown[player_username] == undefined) {
@@ -89,7 +89,7 @@ ItemEvents.entityInteracted(event => {
                 entity.tags.add(`kubejs_uncommon_tame`)
                 Utils.server.scheduleInTicks(2400, () => {
                     common_flute_cooldown[player_username]++
-                    event.player.tell('不凡驯兽师图腾：就绪')
+                    event.player.tell('罕见驯兽师图腾：就绪')
                 })
     //
             }
@@ -112,7 +112,7 @@ ItemEvents.entityInteracted(event => {
                 entity.tags.add(`kubejs_uncommon_tame`)
                 Utils.server.scheduleInTicks(900, () => {
                     common_flute_cooldown[player_username]++
-                    event.player.tell('不凡驯兽师图腾：就绪')
+                    event.player.tell('罕见驯兽师图腾：就绪')
                 })
     //
             }
