@@ -29,7 +29,7 @@
 							id: "minecraft:air"
 							tag: {
 								glide: 0b
-truck: 0b
+                        struck: 0b
 							}
 						}
 					}
