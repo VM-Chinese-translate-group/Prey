@@ -148,7 +148,7 @@ EntityEvents.death(event => {
     event.player.tags.remove('berserker_insane')
     event.player.tags.remove('insane')
     event.player.give('kubejs:blood_oath')
-    Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Berserker 1`)
+    Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} berserker 1`)
     event.player.tell('血契试炼：完成')
     event.item.setCount(0)
     Utils.server.scheduleInTicks(18000, e => {

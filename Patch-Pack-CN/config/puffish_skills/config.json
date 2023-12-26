@@ -1,0 +1,26 @@
+{
+	"version": 1,
+
+	"categories": [
+		"starter",
+		"melee",
+		"archery",
+		"magic",
+		"crafting",
+		"mining",
+		"Guardian",
+		"Battlemage",
+		"Conjurer",
+		"Spellsword",
+		"Kensei",
+		"Spirit_Caller",
+		"Bounty_Hunter",
+		"Dreamweaver",
+		"Beastmaster",
+		"Bloodripper",
+		"Arcane_Ranger",
+		"Explorer",
+		"berserker",
+		"elixirs"
+	]
+}

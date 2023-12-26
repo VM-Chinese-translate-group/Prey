@@ -44,7 +44,7 @@ EntityEvents.death(event => {
 
 	if (restoration_counter[player_username] != 500) return;
 		event.source.player.tags.remove(`restoration`)
-        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Berserker 1`)
+        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} berserker 1`)
 		Utils.server.runCommandSilent(`/give ${player_username} kubejs:restoration`)
 		Utils.server.tell('完成')
 		restoration_counter[player_username] = 0
@@ -77,7 +77,7 @@ EntityEvents.death(event => {
 
 	if (bloodlust_counter[player_username] != 50) return;
 		event.source.player.tags.remove(`bloodlust`)
-        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Berserker 1`)
+        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} berserker 1`)
 		event.source.player.getPersistentData().putBoolean(`kubejs_trial_complete:bloodlust`, true)
 		Utils.server.tell('完成')
         Utils.server.runCommandSilent(`/clear ${player_username} kubejs:bloodlust`)
@@ -110,7 +110,7 @@ EntityEvents.death(event => {
 		event.source.player.tags.remove(`sf`)
 		event.source.player.getPersistentData().putBoolean(`kubejs_trial_complete:shadow_form`, true)
 		Utils.server.tell('完成')
-        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Berserker 1`)
+        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} berserker 1`)
 		sf_counter[player_username] = 0
     }
 })
@@ -150,7 +150,7 @@ EntityEvents.death(event => {
 
 	if (strike_counter[player_username] != 1500) return;
 		event.source.player.tags.remove(`strike`)
-        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Berserker 1`)
+        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} berserker 1`)
 		event.source.player.getPersistentData().putBoolean(`kubejs_trial_complete:strike`, true)
 		Utils.server.tell('完成')
 		strike_counter[player_username] = 0

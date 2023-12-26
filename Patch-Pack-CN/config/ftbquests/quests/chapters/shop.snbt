@@ -46,7 +46,7 @@
 			}
 			id: "3BABB751F538942D"
 			rewards: [{
-				command: "/puffish_skills points add @p Archery 1"
+				command: "/puffish_skills points add @p archery 1"
 				icon: {
 					Count: 1
 					ForgeCaps: {
@@ -120,7 +120,7 @@
 			}
 			id: "214ED793AFE8982F"
 			rewards: [{
-				command: "/puffish_skills points add @p Melee 1"
+				command: "/puffish_skills points add @p melee 1"
 				icon: {
 					Count: 1
 					ForgeCaps: {
@@ -160,7 +160,7 @@
 			icon: "irons_spellbooks:lightning_bottle"
 			id: "6E03639C59152042"
 			rewards: [{
-				command: "/puffish_skills points add @p Magic 1"
+				command: "/puffish_skills points add @p magic 1"
 				icon: {
 					Count: 1
 					ForgeCaps: {
@@ -197,7 +197,7 @@
 			icon: "cataclysm:mechanical_fusion_anvil"
 			id: "3556C9F6E32BC12B"
 			rewards: [{
-				command: "/puffish_skills points add @p Crafting 1"
+				command: "/puffish_skills points add @p crafting 1"
 				icon: {
 					Count: 1
 					ForgeCaps: {

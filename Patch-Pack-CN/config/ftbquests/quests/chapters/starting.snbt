@@ -16,7 +16,7 @@
 			id: "1B37A0AF9CF68F4B"
 			rewards: [
 				{
-					command: "/puffish_skills points add @p Elixirs 1"
+					command: "/puffish_skills points add @p elixirs 1"
 					icon: "kubejs:fire_elixir"
 					id: "6195F8D050D2ED09"
 					title: "1x 圣酿点"
@@ -204,7 +204,7 @@
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/puffish_skills category unlock @p Crafting"
+					command: "/puffish_skills category unlock @p crafting"
 					icon: {
 						Count: 1
 						ForgeCaps: {
@@ -290,7 +290,7 @@
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/puffish_skills category unlock @p Mining"
+					command: "/puffish_skills category unlock @p mining"
 					icon: {
 						Count: 1
 						ForgeCaps: {
@@ -337,7 +337,7 @@
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/puffish_skills category unlock @p Melee"
+					command: "/puffish_skills category unlock @p melee"
 					icon: "aquamirae:dead_sea_scroll"
 					id: "6D2297AB6406D9E5"
 					title: "解锁近战技能树"
@@ -379,7 +379,7 @@
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/puffish_skills category unlock @p Magic"
+					command: "/puffish_skills category unlock @p magic"
 					icon: {
 						Count: 1
 						ForgeCaps: {
@@ -427,7 +427,7 @@
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/puffish_skills category unlock @p Archery"
+					command: "/puffish_skills category unlock @p archery"
 					icon: "aquamirae:dead_sea_scroll"
 					id: "787E1F3FC026754D"
 					title: "解锁箭术技能树"
