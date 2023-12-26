@@ -592,7 +592,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, Text.yellow('被动').underlined(true))
 			text.add(2, [Text.of(' >').white(), Text.of(' +15%').green(), Text.of('弹射物伤害').gold()])
 			text.add(3, [Text.of(' > 当你击杀怪物或').white(), Text.of('击中BOSS').white().italic(), Text.of('3次').yellow(), Text.of('你就能收集').white(), Text.of('灵魂').aqua()])
-			text.add(4, [Text.of(' > 当你').white(), Text.of('副手').green(), Text.of('持有').white(), Text.of('灵魂水晶').blue(), Text.of('时，击败强大的生物能捕获').white(), Text.of('灵魂').darkPurple(), Text.of('。想使用').white(), Text.of('灵魂').aqua().italic(), Text.of('用').white(), Text.of(' Orb of Slaughtered Foes.').darkRed(), Text.of('将').white, Text.of('灵魂').darkPurple(), Text.of('作为盟友召唤').white()])
+			text.add(4, [Text.of(' > 当你').white(), Text.of('副手').green(), Text.of('持有').white(), Text.of('灵魂水晶').blue(), Text.of('时，击败强大的生物能捕获').white(), Text.of('灵魂').darkPurple(), Text.of('。想使用').white(), Text.of('灵魂').aqua().italic(), Text.of('用').white(), Text.of('杀戮宝珠.').darkRed(), Text.of('将').white, Text.of('灵魂').darkPurple(), Text.of('作为盟友召唤').white()])
 
 		  }
 
@@ -1222,7 +1222,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	event.addAdvanced('kubejs:spirit_crystal', (item, advanced, text) => {
 		text.add(1, [Text.of('副手持有').gold(), Text.of('灵魂水晶').darkPurple().italic(), Text.of('，就能捕捉到被杀实体的灵魂。').gold()])
 		text.add(2, [Text.of(' ').red()])
-		text.add(3, [Text.of('使用').gray(), Text.of(' Orb of Slaughtered Foes').red().italic(), Text.of('，就可以将捕获的实体作为').gray(), Text.of('友军').darkGreen(), Text.of('以其').gray(), Text.of('灵魂').aqua().italic(), Text.of('作为代价').gray()])
+		text.add(3, [Text.of('使用').gray(), Text.of('杀戮宝珠').red().italic(), Text.of('，就可以将捕获的实体作为').gray(), Text.of('友军').darkGreen(), Text.of('以其').gray(), Text.of('灵魂').aqua().italic(), Text.of('作为代价').gray()])
 	});
 
 	event.addAdvanced('kubejs:orb_of_slaughtered_foes', (item, advanced, text) => {
