@@ -19,20 +19,20 @@ const subclass_runes = {
 
 
 const summon_items = {
-    'gorilla': '2 Modes: Stay, Wander. Will defend its owner from attackers',
-    'grizzly_bear': '3 Modes: Follow, Stay, Wander. Can be ridden without a saddle. Will defend its owner from attackers',
-    'crow': '4 Modes: Follow, Stay, Wander, Gather Items (Gathers nearby items and brings to containers). Will defend its owner from attackers and deals additional damage to the undead.',
-    'crocodile': '2 modes: Wander, Stay. Crocodiles will attack by biting their target with their jaws then dragging them into Water where they proceed to do a death roll to damage their target.',
-    'capuchin_monkey':'3 Modes: Follow, Stay, Wander. Will defend its owner. Give this animal an Ancient Dart to increase its attack damage and add a piercing ability.',
-    'elephant': 'Cannot be commanded to follow but can be ridden. Will defend its owner from attackers.',
-    'komodo_dragon': '3 Modes: Follow, Stay, Wander. Attacks inflict poison. Can be ridden with a saddle.',
-    'tarantula_hawk': '3 Modes: Follow, Stay, Wander. Will aid its owner in a fight. Due to the Debilitating Sting effect, Tarantula Hawks are very good at protecting their owner, especially from arthropods.',
-    'mantis_shrimp': '4 Modes: Follow, Stay, Wander, Break Blocks. Will defend its owner from attackers with its fists which inflict a fire effect. To enter Break Blocks mode give a mantis shrimp the block you wish it to break and set to wander mode.',
-    'kangaroo':'3 Modes: Follow, Stay, Wander. Has a storage space in its pouch. If given a melee weapon, chestplate or helmet the kangaroo will use them in combat.',
-    'bald_eagle':'3 Modes: Follow, Stay, Wander. Will defend its owner and can be used for scouting areas if used with Falconry Glove and Hood.',
-    'sugar_glider': '3 Modes: Follow, Stay, Wander. Cannot attack.',
-    'mimic_octopus': '3 Modes: Follow, Stay, Wander. The Mimic Octopus will defend its owner if attacked. Using certain items on it will cause it to transform.',
-    'flutter': '3 Modes: Follow, Stay, Wander. The Flutter will defend its owner if attacked'
+    'gorilla': '2种模式：停留，游荡。能保护主人免受攻击',
+    'grizzly_bear': '3种模式：跟随，停留，游荡。无需鞍即可骑。能保护主人免受攻击',
+    'crow': '4种模式：跟随，停留，游荡，收集物品（收集附近的物品并放入容器）。能保护主人免受攻击并对亡灵造成额外伤害。',
+    'crocodile': '2种模式：游荡，停留。 鳄鱼的攻击方式是用下颚咬住目标，然后将其拖入水中，并在水中进行死亡翻滚，对目标造成伤害。',
+    'capuchin_monkey':'3种模式：跟随，停留，游荡。能保护它的主人。给该动物佩戴古代飞镖，可提高其攻击伤害并增加穿透能力。',
+    'elephant': '无法命令它跟随，但能骑上它。能保护主人免受攻击。',
+    'komodo_dragon': '3种模式：跟随，停留，游荡。攻击会造成中毒。可佩鞍骑行。',
+    'tarantula_hawk': '3种模式：跟随，停留，游荡。会在战斗中帮助主人。由于具有衰弱螫伤效果，沙漠蛛蜂可以很好地保护主人，尤其是免受节肢动物的伤害。',
+    'mantis_shrimp': '4种模式：跟随，停留，游荡，破坏方块。它会用拳头保护主人免受攻击，拳头会产生火焰效果。要进入破坏方块模式，请给螳螂虾一个你希望它破坏的方块，并将其设置为游荡模式。',
+    'kangaroo':'3种模式：跟随，停留，游荡。袋中有一个储物空间。袋鼠会在战斗中使用获得的近战武器、胸甲或头盔。',
+    'bald_eagle':'3种模式：跟随，停留，游荡。它能保护主人，如果与猎鹰手套和兜帽一起使用，还能用于侦查区域。',
+    'sugar_glider': '3种模式：跟随，停留，游荡。无法攻击。',
+    'mimic_octopus': '3种模式：跟随，停留，游荡。如果受到攻击，拟态章鱼会保护主人。对它使用某些物品会使它变形。',
+    'flutter': '3种模式：跟随，停留，游荡。如果受到攻击，花飘飘会保护它的主人'
 };
 
 
