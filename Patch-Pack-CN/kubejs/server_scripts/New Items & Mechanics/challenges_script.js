@@ -420,7 +420,7 @@ EntityEvents.death(event => {
             endurance_counter[player_username]++;
         }
         if (endurance_counter[player_username] == 75) {
-            Utils.server.tell('额外羽毛试炼：已完成50%。剩余75击杀数')
+            Utils.server.tell('额外耐力试炼：已完成50%。剩余75击杀数')
         }
 
         if (endurance_counter[player_username] != 150) return;
@@ -436,7 +436,7 @@ PlayerEvents.respawned(event => {
     let player_username = event.entity.username
     if (!event.entity.tags.contains(`endurance`)) return
     endurance_counter[player_username] = 0
-    Utils.server.runCommandSilent(`/tell ${player_username} 额外羽毛试炼：失败`)
+    Utils.server.runCommandSilent(`/tell ${player_username} 额外耐力试炼：失败`)
 
 })
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
