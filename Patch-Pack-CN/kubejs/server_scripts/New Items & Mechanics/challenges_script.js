@@ -95,10 +95,10 @@ EntityEvents.death('minecraft:piglin_brute', event => {
 
     if (strength_elixir[player_username] == undefined) {
         strength_elixir[player_username] = 1
-        Utils.server.tell(`双斧手击杀数：${strength_elixir[player_username]}`)
+        Utils.server.tell(`双持金斧击杀数：${strength_elixir[player_username]}`)
 	} else {
 		strength_elixir[player_username]++;
-        Utils.server.tell(`双斧手击杀数： ${strength_elixir[player_username]}`)
+        Utils.server.tell(`双持金斧击杀数： ${strength_elixir[player_username]}`)
 	}
     if (strength_elixir[player_username] != 100) return
     Utils.server.runCommandSilent(`/give ${player_username} kubejs:strength_elixir`)

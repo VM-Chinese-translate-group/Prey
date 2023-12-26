@@ -1102,7 +1102,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 	event.addAdvanced('kubejs:strength_elixir_relic', (item, advanced, text) => {
         text.add(1, [Text.of('挑战：').gold().underlined()])
-        text.add(2, [Text.of(' > 击杀').white(), Text.of('100只猪灵蛮兵').darkRed(), Text.of('使用双持的').white(), Text.of('金斧').lightPurple().italic()])
+        text.add(2, [Text.of(' > 双持').white(), , Text.of('金斧').lightPurple().italic(),Text.of('击杀').white(), Text.of('100只猪灵蛮兵').darkRed()])
         text.add(3, [Text.of(' ').darkRed()])
         text.add(4, [Text.of('奖励：').gold().underlined()])
         text.add(5, [Text.of('力量圣酿').aqua()])
