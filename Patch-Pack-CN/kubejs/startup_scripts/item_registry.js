@@ -207,7 +207,7 @@ const paramount_discs = {
         event.create(`lesser_summoning_disc`, 'basic').group('KubeJS').texture('kubejs:item/lesser_summoning_disc').rarity('uncommon')
         event.create(`superior_summoning_disc`, 'basic').group('KubeJS').texture('kubejs:item/superior_summoning_disc').rarity('rare')
         event.create(`paramount_summoning_disc`, 'basic').group('KubeJS').texture('kubejs:item/paramount_summoning_disc').rarity('epic')
-        event.create('breakfall', "basic").group('KubeJS').texture('kubejs:item/breakfall').rarity('common').displayName('技能币：Breakfall') /// Skills always enabled: Pole Climbing, fast run, safety tap
+        event.create('breakfall', "basic").group('KubeJS').texture('kubejs:item/breakfall').rarity('common').displayName('技能币：缓降技') /// Skills always enabled: Pole Climbing, fast run, safety tap
         event.create('catleap', "basic").group('KubeJS').texture('kubejs:item/catleap').rarity('common').displayName('技能币：猫扑')
         event.create('vertical_wallrun', "basic").group('KubeJS').texture('kubejs:item/vwallrun').rarity('common').displayName('技能币：蹬壁上墙')
         event.create('horizontal_wallrun', "basic").group('KubeJS').texture('kubejs:item/hwallrun').rarity('common').displayName('技能币：水平跑墙')
