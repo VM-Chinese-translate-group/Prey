@@ -205,5 +205,8 @@
     "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.started": "Started Opening Large Killer Bunny Gateway",
     "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.finished": "Large Killer Bunny Gateway Opened",
     "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.interrupted": "Large Killer Bunny Gateway Interrupted",
-    "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.conditions": "Not all requirements for this ritual are met."
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.conditions": "Not all requirements for this ritual are met.",
+    
+    "item.kubejs.admin_sword": "Admin Sword",
+    "item.kubejs.rune_of_the_dead": "Rune of the Dead",
 }
