@@ -86,7 +86,7 @@
 					}
 				}
 				id: "5E539E24BB122CAA"
-				title: "1x 箭术技能点"
+				title: "1x 弓箭手技能点"
 				type: "command"
 			}]
 			shape: "rsquare"
@@ -105,7 +105,7 @@
 				}
 				type: "item"
 			}]
-			title: "25x 银币 -> 1x 箭术技能点"
+			title: "25x 银币 -> 1x 弓箭手技能点"
 			x: -3.75d
 			y: -6.25d
 		}

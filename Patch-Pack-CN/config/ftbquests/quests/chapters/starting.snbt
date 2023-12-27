@@ -417,7 +417,7 @@
 				title: "任意魔法卷轴或法术书"
 				type: "item"
 			}]
-			title: "Acquire Any Spell Casting Item"
+			title: "获得任意施法物品"
 			x: 0.5d
 			y: 1.5d
 		}
@@ -430,7 +430,7 @@
 					command: "/puffish_skills category unlock @p archery"
 					icon: "aquamirae:dead_sea_scroll"
 					id: "787E1F3FC026754D"
-					title: "解锁箭术技能树"
+					title: "解锁弓箭手技能树"
 					type: "command"
 				}
 				{
@@ -524,7 +524,7 @@
 			description: [
 				"&l初始技能：&r"
 				" "
-				" &n爬墙：&r "
+				" &n爬墙：&r"
 				"   > 靠近墙时按住&oSHIFT&r并跳跃就可以爬墙"
 				""
 				""
@@ -552,13 +552,13 @@
 				" &n滑行：&r"
 				"   > 冲刺时按下&oZ&r可以滑行。可以用来全速通过1格高的地方"
 				""
-				" &n缓冲技：&r "
+				" &n缓冲技：&r"
 				"   > 摔落时在靠近地面前按下&oSHIFT&r和&oR&r可以减少摔落伤害"
 				""
-				" &n水平墙跑：&r "
+				" &n水平墙跑：&r"
 				"  > 贴墙冲刺并跳跃时按住&oR&r和&oCTRL&r可以沿着墙跑。水平墙跑时按&o空格&r可以蹬墙跳"
 				""
-				" &n蹬壁上墙：&r "
+				" &n蹬壁上墙：&r"
 				"   > 冲刺时面向墙壁并抬头看。然后按下&o空格&r可以蹬壁上墙。可以配合爬墙和壁架抓取。"
 			]
 			id: "151988F78FFBCEB5"
@@ -589,7 +589,7 @@
 		{
 			dependencies: ["151988F78FFBCEB5"]
 			description: [
-				" &n爬行：&r "
+				" &n爬行：&r"
 				"   > 按住&oZ&r可以爬行。可以用来进入1格高的地方。"
 				""
 				" &n滑行：&r"
@@ -617,7 +617,7 @@
 			tasks: [{
 				elapsedTime: 30L
 				id: "754A831418AD2CDB"
-				title: "Learn Parkour: Crawl"
+				title: "跑酷技能：爬行"
 				type: "questsadditions:time"
 			}]
 			title: "跑酷技能：爬行"
@@ -656,7 +656,7 @@
 		{
 			dependencies: ["32795C02B2854A37"]
 			description: [
-				" &n壁架抓取：&r "
+				" &n壁架抓取：&r"
 				"   > 抵住栏杆时按住&o右键&r就可以抓住栏杆"
 				""
 				" &n攀爬：&r"
@@ -722,7 +722,7 @@
 		{
 			dependencies: ["5AC85A470C9499FE"]
 			description: [
-				" &n蹬壁上墙：&r "
+				" &n蹬壁上墙：&r"
 				"   > 冲刺时面向墙壁并抬头看。然后按下&o空格&r可以蹬壁上墙。可以配合爬墙和壁架抓取。"
 			]
 			icon: "kubejs:vertical_wallrun"
@@ -751,7 +751,7 @@
 		{
 			dependencies: ["45FD45256E21D9AC"]
 			description: [
-				" &n水平墙跑：&r "
+				" &n水平墙跑：&r"
 				"  > 贴墙冲刺并跳跃时按住&oR&r和&oCTRL&r可以沿着墙跑。水平墙跑时按&o空格&r可以蹬墙跳。"
 			]
 			icon: "kubejs:horizontal_wallrun"
