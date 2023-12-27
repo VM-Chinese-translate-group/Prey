@@ -220,6 +220,8 @@
     "item.kubejs.rune_of_the_explorer": "探险家符石",
     "item.kubejs.rune_of_the_bloodripper": "血裂者符石",
     "item.kubejs.rune_of_the_beastmaster": "驯兽师符石",
+    "item.kubejs.rune_of_the_bounty_hunter": "赏金猎人符石",
+
 
     "item.kubejs.warlock": "巫师",
     "item.kubejs.blacksmith": "铁匠",
@@ -304,7 +306,8 @@
     "item.kubejs.uncommon_beastmaster_totem": "罕见驯兽师图腾",
     "item.kubejs.rare_beastmaster_totem": "稀有驯兽师图腾",
     "item.kubejs.time_turner": "时间扭曲器",
-    "item.kubejs.rare_high_value_target": "高价悬赏令",
+    "item.kubejs.high_value_target": "高价悬赏目标",
+    "item.kubejs.rare_high_value_target": "高价悬赏目标",
     "item.kubejs.betrayal": "背叛",
     "item.kubejs.spirit_crystal": "灵魂水晶",
     "item.kubejs.orb_of_slaughtered_foes": "杀戮宝珠",
