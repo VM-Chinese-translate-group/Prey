@@ -16,7 +16,7 @@
 			id: "1B37A0AF9CF68F4B"
 			rewards: [
 				{
-					command: "/puffish_skills points add @p Elixirs 1"
+					command: "/puffish_skills points add @p elixirs 1"
 					icon: "kubejs:fire_elixir"
 					id: "6195F8D050D2ED09"
 					title: "1x 圣酿点"
@@ -57,7 +57,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来查看你的技能树和圣酿挑战（译注：实则是“K”键）"
+			subtitle: "按下“H”来查看你的技能树和圣酿挑战"
 			tasks: [{
 				id: "36AF815F834793DA"
 				title: "完成教程"
@@ -204,7 +204,7 @@
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/puffish_skills category unlock @p Crafting"
+					command: "/puffish_skills category unlock @p crafting"
 					icon: {
 						Count: 1
 						ForgeCaps: {
@@ -248,7 +248,7 @@
 				"    &o缩放：&rC"
 				"    &o建造菜单：&rTAB"
 				"    &o法术书滚轮：&rV（需要手持法术书）"
-				"    译注：技能树是K键，缩放是Z键，注意按键冲突"
+				""
 				"___________________________"
 			]
 			id: "44EF4C8A7F6402F1"
@@ -274,7 +274,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来分配你的初始技能点（K键）"
+			subtitle: "按下“H”来分配你的初始技能点"
 			tasks: [{
 				id: "398B76A53A074272"
 				title: "阅读这个："
@@ -290,7 +290,7 @@
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/puffish_skills category unlock @p Mining"
+					command: "/puffish_skills category unlock @p mining"
 					icon: {
 						Count: 1
 						ForgeCaps: {
@@ -314,7 +314,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来查看你的技能树（K键）"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "2B3E44623F548139"
 				item: {
@@ -337,7 +337,7 @@
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/puffish_skills category unlock @p Melee"
+					command: "/puffish_skills category unlock @p melee"
 					icon: "aquamirae:dead_sea_scroll"
 					id: "6D2297AB6406D9E5"
 					title: "解锁近战技能树"
@@ -356,7 +356,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来查看你的技能树（K键）"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "0A3C6FD43F074D8F"
 				item: {
@@ -379,7 +379,7 @@
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/puffish_skills category unlock @p Magic"
+					command: "/puffish_skills category unlock @p magic"
 					icon: {
 						Count: 1
 						ForgeCaps: {
@@ -404,7 +404,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来查看你的技能树（K键）"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "33F7407753ABE2E3"
 				item: {
@@ -417,7 +417,7 @@
 				title: "任意魔法卷轴或法术书"
 				type: "item"
 			}]
-			title: "Acquire Any Spell Casting Item"
+			title: "获得任意施法物品"
 			x: 0.5d
 			y: 1.5d
 		}
@@ -427,10 +427,10 @@
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/puffish_skills category unlock @p Archery"
+					command: "/puffish_skills category unlock @p archery"
 					icon: "aquamirae:dead_sea_scroll"
 					id: "787E1F3FC026754D"
-					title: "解锁箭术技能树"
+					title: "解锁弓箭手技能树"
 					type: "command"
 				}
 				{
@@ -446,7 +446,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "按下“H”来查看你的技能树（K键）"
+			subtitle: "按下“H”来查看你的技能树"
 			tasks: [{
 				id: "08898689C7E31D04"
 				item: {
@@ -513,7 +513,7 @@
 			tasks: [{
 				elapsedTime: 300L
 				id: "030D6162972C99CC"
-				title: "Class Lootbox"
+				title: "职业战利品箱"
 				type: "questsadditions:time"
 			}]
 			x: 2.5d
@@ -522,44 +522,44 @@
 		{
 			dependencies: ["44EF4C8A7F6402F1"]
 			description: [
-				"&lStarting Skills:&r"
+				"&l初始技能：&r"
 				" "
-				" &nWall Cling:&r "
-				"   > While against a wall, hold &oSHIFT&r to cling to the wall"
+				" &n爬墙：&r"
+				"   > 靠近墙时按住&oSHIFT&r并跳跃就可以爬墙"
 				""
 				""
 				""
-				"&lUnlockable Skills:&r"
+				"&l未解锁的技能：&r"
 				" "
-				" &nLedge Grab:&r "
-				"   > While against a ledge, hold &oRIGHT-CLICK&r to hold on to the edge"
+				" &n壁架抓取：&r "
+				"   > 抵住栏杆时按住&o右键&r就可以抓住栏杆"
 				""
-				" &nClimb Up:&r"
-				"   > While using Ledge Grab, press &oSPACE&r to climb up."
+				" &n攀爬：&r"
+				"   > 使用壁架抓取时按下&o空格&r就可以爬上栏杆"
 				""
-				" &nWall Jump:&r"
-				"   > While using Ledge Grab or Wall Cling, look away from the ledge you are holding and press &oSPACE&r to jump away from the wall. Can be chained to another Ledge Grab or Wall Cling"
+				" &n墙跳：&r"
+				"   > 使用壁架抓取或爬墙时，看向栏杆按住并按下&o空格&r就可以跳离墙壁。可以用来在另一个栏杆壁架抓取或爬墙"
 				""
-				" &nWall Slide:&r"
-				"   > While falling next to a wall, hold &oRIGHT-CLICK&r to slow your fall and reduce fall damage"
+				" &n滑墙：&r"
+				"   > 当下落并靠近墙壁时按住&o右键&r可以缓慢下落并减少摔落伤害"
 				""
-				" &nCat Leap:&r"
-				"   > While sprinting, tap &oSHIFT&r to do a long horizontal jump. "
+				" &n猫扑：&r"
+				"   > 冲刺时按下&oSHIFT&r可以进行长距离跳跃"
 				""
-				" &nCrawl:&r "
-				"   > Hold &oZ&r to crawl. Can be used to go under gaps of 1 block."
+				" &n爬行：&r "
+				"   > 按住&oZ&r可以爬行。可以用来进入1格高的地方"
 				""
-				" &nSlide:&r"
-				"   > While Sprinting, hold &oZ&r to Slide. Can be used to go under gaps of 1 block without losing momentum."
+				" &n滑行：&r"
+				"   > 冲刺时按下&oZ&r可以滑行。可以用来全速通过1格高的地方"
 				""
-				" &nBreakfall:&r "
-				"   > While falling, Hold &oSHIFT&r and &oR&r before hitting the ground to reduce the fall damage you take."
+				" &n缓冲技：&r"
+				"   > 摔落时在靠近地面前按下&oSHIFT&r和&oR&r可以减少摔落伤害"
 				""
-				" &nHorizontal Wallrun:&r "
-				"  > While Sprinting parallel to a wall, jump towards the wall and hold &oR&r and &oCTRL&r to run along the wall. Press &oSPACE&r to jump away from the wall using Wall Jump"
+				" &n水平墙跑：&r"
+				"  > 贴墙冲刺并跳跃时按住&oR&r和&oCTRL&r可以沿着墙跑。水平墙跑时按&o空格&r可以蹬墙跳"
 				""
-				" &nVertical Wallrun:&r "
-				"   > While Sprinting, face a wall and look slightly up towards a ledge. Then press and hold &oSPACE&r to run up the wall. Chain this with Wall Cling or Ledge Grab."
+				" &n蹬壁上墙：&r"
+				"   > 冲刺时面向墙壁并抬头看。然后按下&o空格&r可以蹬壁上墙。可以配合爬墙和壁架抓取。"
 			]
 			id: "151988F78FFBCEB5"
 			rewards: [{
@@ -567,7 +567,7 @@
 				type: "xp_levels"
 				xp_levels: 1
 			}]
-			subtitle: "Parkour help"
+			subtitle: "跑酷小贴士"
 			tasks: [{
 				id: "1CD02B4422C7EF5F"
 				item: {
@@ -582,18 +582,18 @@
 				}
 				type: "item"
 			}]
-			title: "ParCool Tutorial [READ ME]"
+			title: "跑酷指南[读我]"
 			x: 2.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["151988F78FFBCEB5"]
 			description: [
-				" &nCrawl:&r "
-				"   > Hold &oZ&r to crawl. Can be used to go under gaps of 1 block."
+				" &n爬行：&r"
+				"   > 按住&oZ&r可以爬行。可以用来进入1格高的地方。"
 				""
-				" &nSlide:&r"
-				"   > While Sprinting, hold &oZ&r to Slide. Can be used to go under gaps of 1 block without losing momentum."
+				" &n滑行：&r"
+				"   > 冲刺时按下&oZ&r可以滑行。可以用来全速通过1格高的地方。"
 			]
 			icon: {
 				Count: 1
@@ -617,18 +617,18 @@
 			tasks: [{
 				elapsedTime: 30L
 				id: "754A831418AD2CDB"
-				title: "Learn Parkour: Crawl"
+				title: "跑酷技能：爬行"
 				type: "questsadditions:time"
 			}]
-			title: "Parkour Skill: Crawl"
+			title: "跑酷技能：爬行"
 			x: 3.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["4DF87944C39C3424"]
 			description: [
-				"&nCat Leap:&r"
-				"   > While sprinting, tap &oSHIFT&r to do a long horizontal jump. "
+				"&n猫扑：&r"
+				"   > 冲刺时按下&oSHIFT&r可以进行长距离跳跃。 "
 			]
 			icon: "kubejs:catleap"
 			id: "32795C02B2854A37"
@@ -649,24 +649,24 @@
 				id: "69975E5A254AD356"
 				type: "questsadditions:time"
 			}]
-			title: "Parkour Skill: Cat Leap"
+			title: "跑酷技能：猫扑"
 			x: 2.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["32795C02B2854A37"]
 			description: [
-				"&nLedge Grab:&r "
-				"   > While against a ledge, hold &oRIGHT-CLICK&r to hold on to the edge"
+				" &n壁架抓取：&r"
+				"   > 抵住栏杆时按住&o右键&r就可以抓住栏杆"
 				""
-				" &nClimb Up:&r"
-				"   > While using Ledge Grab, press &oSPACE&r to climb up."
+				" &n攀爬：&r"
+				"   > 使用壁架抓取时按下&o空格&r就可以爬上栏杆"
 				""
-				" &nWall Jump:&r"
-				"   > While using Ledge Grab or Wall Cling, look away from the ledge you are holding and press &oSPACE&r to jump away from the wall. Can be chained to another Ledge Grab or Wall Cling"
+				" &n墙跳：&r"
+				"   > 使用壁架抓取或爬墙时，看向栏杆按住并按下&o空格&r就可以跳离墙壁。可以用来在另一个栏杆壁架抓取或爬墙"
 				""
-				" &nWall Slide:&r"
-				"   > While falling next to a wall, hold &oRIGHT-CLICK&r to slow your fall and reduce fall damage"
+				" &n滑墙：&r"
+				"   > 当下落并靠近墙壁时按住&o右键&r可以缓慢下落并减少摔落伤害"
 			]
 			icon: "kubejs:ledgegrab"
 			id: "65843007A63422B3"
@@ -684,7 +684,7 @@
 			tasks: [{
 				elapsedTime: 45L
 				id: "54AC8ECD87FA0CED"
-				title: "Parkour Skill: Ledge Grab"
+				title: "跑酷技能：壁架抓取"
 				type: "questsadditions:time"
 			}]
 			x: 3.0d
@@ -693,8 +693,8 @@
 		{
 			dependencies: ["65843007A63422B3"]
 			description: [
-				"&nBreakfall:&r "
-				"   > While falling, Hold &oSHIFT&r and &oR&r before hitting the ground to reduce the fall damage you take."
+				"&n缓冲技：&r "
+				"   > 摔落时在靠近地面前按下&oSHIFT&r和&oR&r可以减少摔落伤害。"
 			]
 			icon: "kubejs:breakfall"
 			id: "5AC85A470C9499FE"
@@ -712,18 +712,18 @@
 			tasks: [{
 				elapsedTime: 45L
 				id: "0784F090A3D0A2AF"
-				title: "Parkour Skill: Break Fall"
+				title: "跑酷技能：缓冲技"
 				type: "questsadditions:time"
 			}]
-			title: "Parkour Skill: Break Fall"
+			title: "跑酷技能：缓冲技"
 			x: 2.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["5AC85A470C9499FE"]
 			description: [
-				" &nVertical Wallrun:&r "
-				"   > While Sprinting, face a wall and look slightly up towards a ledge. Then press and hold &oSPACE&r to run up the wall. Chain this with Wall Cling or Ledge Grab."
+				" &n蹬壁上墙：&r"
+				"   > 冲刺时面向墙壁并抬头看。然后按下&o空格&r可以蹬壁上墙。可以配合爬墙和壁架抓取。"
 			]
 			icon: "kubejs:vertical_wallrun"
 			id: "45FD45256E21D9AC"
@@ -741,18 +741,18 @@
 			tasks: [{
 				elapsedTime: 45L
 				id: "14A8E15EC13EF27D"
-				title: "Parkour Skill: Vertical Wallrun"
+				title: "跑酷技能：蹬壁上墙"
 				type: "questsadditions:time"
 			}]
-			title: "Parkour Skill: Vertical Wallrun"
+			title: "跑酷技能：蹬壁上墙"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["45FD45256E21D9AC"]
 			description: [
-				" &nHorizontal Wallrun:&r "
-				"  > While Sprinting parallel to a wall, jump towards the wall and hold &oR&r and &oCTRL&r to run along the wall. Press &oSPACE&r to jump away from the wall using Wall Jump"
+				" &n水平墙跑：&r"
+				"  > 贴墙冲刺并跳跃时按住&oR&r和&oCTRL&r可以沿着墙跑。水平墙跑时按&o空格&r可以蹬墙跳。"
 			]
 			icon: "kubejs:horizontal_wallrun"
 			id: "7620E496F9C5CCAC"
@@ -770,13 +770,13 @@
 			tasks: [{
 				elapsedTime: 45L
 				id: "1318BC6EE8F409EA"
-				title: "Parkour Skill: Horizontal Wallrun"
+				title: "跑酷技能：水平墙跑"
 				type: "questsadditions:time"
 			}]
-			title: "Parkour Skill: Horizontal Wallrun"
+			title: "跑酷技能：水平墙跑"
 			x: 2.0d
 			y: 0.0d
 		}
 	]
-	title: "Tutorial"
+	title: "教程"
 }

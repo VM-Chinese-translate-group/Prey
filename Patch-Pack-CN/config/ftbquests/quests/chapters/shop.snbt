@@ -29,7 +29,7 @@
 							id: "minecraft:air"
 							tag: {
 								glide: 0b
-								struck: 0b
+                        struck: 0b
 							}
 						}
 					}
@@ -46,7 +46,7 @@
 			}
 			id: "3BABB751F538942D"
 			rewards: [{
-				command: "/puffish_skills points add @p Archery 1"
+				command: "/puffish_skills points add @p archery 1"
 				icon: {
 					Count: 1
 					ForgeCaps: {
@@ -86,7 +86,7 @@
 					}
 				}
 				id: "5E539E24BB122CAA"
-				title: "1x 箭术技能点"
+				title: "1x 弓箭手技能点"
 				type: "command"
 			}]
 			shape: "rsquare"
@@ -105,7 +105,7 @@
 				}
 				type: "item"
 			}]
-			title: "25x 银币 -> 1x 箭术技能点"
+			title: "25x 银币 -> 1x 弓箭手技能点"
 			x: -3.75d
 			y: -6.25d
 		}
@@ -120,7 +120,7 @@
 			}
 			id: "214ED793AFE8982F"
 			rewards: [{
-				command: "/puffish_skills points add @p Melee 1"
+				command: "/puffish_skills points add @p melee 1"
 				icon: {
 					Count: 1
 					ForgeCaps: {
@@ -160,7 +160,7 @@
 			icon: "irons_spellbooks:lightning_bottle"
 			id: "6E03639C59152042"
 			rewards: [{
-				command: "/puffish_skills points add @p Magic 1"
+				command: "/puffish_skills points add @p magic 1"
 				icon: {
 					Count: 1
 					ForgeCaps: {
@@ -169,7 +169,7 @@
 					id: "irons_spellbooks:lightning_bottle"
 				}
 				id: "40587A581A109CAB"
-				title: "1x Magic Skill Point"
+				title: "1x 魔法技能点"
 				type: "command"
 			}]
 			shape: "rsquare"
@@ -197,7 +197,7 @@
 			icon: "cataclysm:mechanical_fusion_anvil"
 			id: "3556C9F6E32BC12B"
 			rewards: [{
-				command: "/puffish_skills points add @p Crafting 1"
+				command: "/puffish_skills points add @p crafting 1"
 				icon: {
 					Count: 1
 					ForgeCaps: {
@@ -206,7 +206,7 @@
 					id: "cataclysm:mechanical_fusion_anvil"
 				}
 				id: "6D9C7AAADDA1E98D"
-				title: "1x Crafting Skill Point"
+				title: "1x 合成技能点"
 				type: "command"
 			}]
 			shape: "rsquare"
@@ -2274,7 +2274,7 @@
 				}
 				type: "item"
 			}]
-			title: "99x 金币 -> 1x 副职业符文"
+			title: "99x 金币 -> 1x 副职业符石"
 			x: 0.75d
 			y: -6.25d
 		}

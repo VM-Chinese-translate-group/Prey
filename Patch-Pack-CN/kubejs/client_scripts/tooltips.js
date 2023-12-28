@@ -204,7 +204,7 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住').yellow(), Text.of('CTRL').gold(), Text.of('来查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
-			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+100最大法力值……').blue(), Text.of('（副职业综合效果：').yellow(), Text.of('+150最大法力值').darkPurple(), Text.of('）').yellow()])
+			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+100 最大法力值……').blue(), Text.of('（副职业综合效果：').yellow(), Text.of('+150 最大法力值').darkPurple(), Text.of('）').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('沙漠蛛蜂').gold()])
 			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('击杀任何怪物可获得45法力值').lightPurple()])
 		  }
@@ -222,7 +222,7 @@ ItemEvents.tooltip(event => {
 		  text.add(2, [Text.of('副职业综合:').gold().underlined()])
 		  text.add(3, [Text.of(' > 赏金猎人').aqua()])
 		  text.add(4, [Text.of(' > 炼金术师').aqua()])
-		  text.add(5, [Text.of(' > 织梦者').aqua()])
+		  text.add(5, [Text.of(' > 织梦师').aqua()])
 		  text.add(6, [Text.of(' > 狂战士').aqua()])
 		  text.add(7, Text.gold('  ')) 
 		  }
@@ -230,7 +230,7 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住 ').yellow(), Text.of('CTRL ').gold(), Text.of('来查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
-			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+20%暴击伤害').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+30%暴击伤害').darkPurple(), Text.of(')').yellow()])
+			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+20% 暴击伤害').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+30% 暴击伤害').darkPurple(), Text.of(')').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('袋鼠').gold()])
 			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('杀掉一个敌人时你会隐身于阴影并获得5秒的爆发加速').lightPurple()])
 		  }
@@ -257,7 +257,7 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住 ').yellow(), Text.of('CTRL ').gold(), Text.of('以查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
-			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+20%范围攻击速度').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+35%范围攻击速度').darkPurple(), Text.of(')').yellow()])
+			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+20% 范围攻击速度').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+35% 范围攻击速度').darkPurple(), Text.of(')').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('白头海雕').gold()])
 			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('每成功击中10次弹射物都会生成一道').lightPurple(), Text.of('闪电').yellow(), Text.of('击中目标，弹射物包括掷出的物品。').lightPurple()])
 		  }
@@ -282,7 +282,7 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住 ').yellow(), Text.of('CTRL ').gold(), Text.of('以查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
-			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+2基础护甲值').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+2.5基础护甲值').darkPurple(), Text.of(')').yellow()])
+			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+2 基础护甲值').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+2.5 基础护甲值').darkPurple(), Text.of(')').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('灰熊').gold()])
 			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('击杀可以回复少许生命值').lightPurple()])
 		  }
@@ -301,7 +301,7 @@ ItemEvents.tooltip(event => {
 		  text.add(6, [Text.of(' > 唤灵者').aqua()])
 		  text.add(7, Text.gold('  ')) 
 		  text.add(8, Text.gold('职业属性：').underlined().italic())
-		  text.add(9, [Text.of(' - 职业数据：').gray(), Text.of('+20%中毒伤害').blue()])
+		  text.add(9, [Text.of(' - 职业数据：').gray(), Text.of('+20% 中毒伤害').blue()])
 		  text.add(10, [Text.of(' - 职业宠物：').gray(), Text.of('科莫多巨蜥').gold()])
 		  text.add(11, [Text.of(' - 职业被动：').gray(), Text.of('有概率生成自动被你驯服的生物。').lightPurple()])
 
@@ -316,7 +316,7 @@ ItemEvents.tooltip(event => {
 		text.add(6, [Text.of(' > 职业被动：').gray(), Text.of('职业数据可以被升级。').lightPurple()])
 		text.add(7, Text.gold(' '))
 		text.add(8, Text.yellow('被动详情：').underlined())
-		text.add(9, [Text.of(' > 每合成').white(), Text.of(' 250个工具').red(), Text.of('或者').white(), Text.of('200盔甲碎片').gold(), Text.of(' 都会获得').white(), Text.of(' +1').green(), Text.of('可升级数据').darkGreen(), Text.of('。木制和石制工具不计入其中').white()])
+		text.add(9, [Text.of(' > 每合成').white(), Text.of('250个工具').red(), Text.of('或').white(), Text.of('200盔甲碎片').gold(), Text.of('，都会获得').white(), Text.of('+1').green(), Text.of('可升级数据').darkGreen(), Text.of('。木制和石制工具不计入其中').white()])
 		text.add(10, Text.gold(' '))
 		text.add(11, Text.gold(' '))
 		if (!event.shift) {
@@ -350,7 +350,7 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
-			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('神圣法术强度').gold()])
+			text.add(2, [Text.of(' >').white(), Text.of(' +10% ').green(), Text.of('神圣法术强度').gold()])
 			text.add(3, [Text.of(' >').white(), Text.of('击杀怪物后有').white(), Text.of('30%').green(), Text.of('概率恢复').white(), Text.of('法力值').blue()])
 
 		  }
@@ -378,7 +378,7 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
-			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('火焰法术强度').gold()])
+			text.add(2, [Text.of(' >').white(), Text.of(' +10% ').green(), Text.of('火焰法术强度').gold()])
 			text.add(3, [Text.of(' > 每达成').white(), Text.of('10次击杀').red(), Text.of('会获得10秒钟的').white(), Text.of('超负荷').lightPurple(), Text.of('效果').white()])
   
 		}
@@ -413,9 +413,9 @@ ItemEvents.tooltip(event => {
 		  text.add(8, [Text.of(' >').white(), Text.of('驯兽师图腾').darkGreen(), Text.of('冷却时间大大缩短').white()]) 
 		  text.add(9, Text.yellow('  ')) 
 		  text.add(10, Text.yellow('天赋树技能').underlined(true))
-		  text.add(11, Text.aqua(' > 最大生命'))
-		  text.add(12, Text.aqua(' > 最大羽毛'))
-		  text.add(13, Text.aqua(' > 羽毛恢复率'))
+		  text.add(11, Text.aqua(' > 最大生命值'))
+		  text.add(12, Text.aqua(' > 最大耐力值'))
+		  text.add(13, Text.aqua(' > 耐力恢复率'))
 		  text.add(14, Text.aqua(' > 受伤则有几率暴击'))
 		  text.add(15, Text.yellow('  '))
 
@@ -473,8 +473,8 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 	  } else {
 		text.add(1, Text.yellow('被动').underlined(true))
-		text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('法术书召唤物').aqua(), Text.of('伤害').gold()])
-        text.add(3, [Text.of(' >').white(), Text.of('当法术书召唤物').aqua(), Text.of('每击杀1个敌人时，').gold(), Text.of(' +10').green(), Text.of('法力值').gold()])
+		text.add(2, [Text.of(' >').white(), Text.of(' +10% ').green(), Text.of('法术书召唤物').aqua(), Text.of('伤害').gold()])
+        text.add(3, [Text.of(' >').white(), Text.of('当法术书召唤物').aqua(), Text.of('每击杀1个敌人时，').gold(), Text.of(' +10 ').green(), Text.of('法力值').gold()])
 		text.add(4, [Text.of(' >').white(), Text.of(' 当').gold(), Text.of('魔法书召唤物').aqua(), Text.of('攻击一个敌人，它可以').gold(), Text.of('回复生命值').green()])
 	}
 	if (!event.shift) {
@@ -499,7 +499,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
-			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('更快的法术冷却时间').gold()])
+			text.add(2, [Text.of(' >').white(), Text.of(' +10% ').green(), Text.of('更快的法术冷却时间').gold()])
 			text.add(3, [Text.of(' > 使用来自').white(), Text.of('法术书').blue(), Text.of('或者').white(), Text.of('卷轴').gold(), Text.of('的').white(), Text.of('魔法').gold(), Text.of('会获得一个').white(), Text.of(' 10%的伤害加成，').darkRed(), Text.of('时长').white(), Text.of('8秒').yellow()])
   
 		}
@@ -529,7 +529,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
-			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('攻击速度').gold()])
+			text.add(2, [Text.of(' >').white(), Text.of(' +10% ').green(), Text.of('攻击速度').gold()])
 			text.add(3, [Text.of(' >').white(), Text.of('每击杀一只怪物，都有').white(), Text.of('50%').green(), Text.of('几率获得10秒').white(), Text.of('急迫').yellow()])
   
 		}
@@ -541,7 +541,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(2, Text.aqua(' > 远程伤害'))
 			text.add(3, Text.aqua(' > 移动速度'))
 			text.add(4, Text.aqua(' > 攻击速度'))
-			text.add(5, Text.aqua(' > 羽毛回复率'))
+			text.add(5, Text.aqua(' > 耐力恢复率'))
 			text.add(6, Text.yellow('  '))
 		  }
 
@@ -559,8 +559,8 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
-			text.add(2, [Text.of(' > 天赋树由').white(), Text.of('6个忘却的试炼组成').darkRed().italic(), Text.of('每完成一个忘却的试炼，你就可以获得一个').white(), Text.of('被动能力').lightPurple()])
-			text.add(3, [Text.of(' >').white(), Text.of(' +5%').green(), Text.of('受伤时的攻击速度').gold()])
+			text.add(2, [Text.of(' > 天赋树由').white(), Text.of('6个遗忘的试炼组成').darkRed().italic(), Text.of('每完成一个遗忘的试炼，你就可以获得一个').white(), Text.of('被动能力').lightPurple()])
+			text.add(3, [Text.of(' >').white(), Text.of(' +5% ').green(), Text.of('受伤时的攻击速度').gold()])
 		}
 
 		if (!event.shift) {
@@ -570,14 +570,14 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(2, [Text.of(' > 试炼：').white(), Text.of('嗜血').darkRed().italic()])
 			text.add(3, [Text.of(' > 试炼：').white(), Text.of('潮涌').darkRed().italic()])
 			text.add(4, [Text.of(' > 试炼：').white(), Text.of('幽影态').darkRed().italic()])
-			text.add(5, [Text.of(' > 试炼：').white(), Text.of('复原').darkRed().italic()])
-			text.add(6, [Text.of(' > 试炼：').white(), Text.of('打击').darkRed().italic()])
-			text.add(7, [Text.of(' > 试炼：').white(), Text.of('血誓').darkRed().italic()])
+			text.add(5, [Text.of(' > 试炼：').white(), Text.of('急迫').darkRed().italic()])
+			text.add(6, [Text.of(' > 试炼：').white(), Text.of('雷电').darkRed().italic()])
+			text.add(7, [Text.of(' > 试炼：').white(), Text.of('血契').darkRed().italic()])
 			text.add(8, Text.yellow('  '))
 
 		  }
 		  text.add(1, Text.yellow('概述').underlined(true))
-		  text.add(2, [Text.of(' > 装备有').white(), Text.of('超凡').lightPurple().italic(), Text.of('和').white(), Text.of('暴怒').lightPurple().italic(), Text.of('，狂战士必须面对').white(), Text.of('6个忘却的试炼').darkRed(), Text.of('才能夺回失去的技能')])
+		  text.add(2, [Text.of(' > 装备有').white(), Text.of('超凡').lightPurple().italic(), Text.of('和').white(), Text.of('暴怒').lightPurple().italic(), Text.of('，狂战士必须面对').white(), Text.of('6个遗忘的试炼').darkRed(), Text.of('才能夺回失去的技能')])
 		  text.add(3, Text.yellow('  '))
 	  })
 	  
@@ -590,9 +590,9 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
-			text.add(2, [Text.of(' >').white(), Text.of(' +15%').green(), Text.of('弹射物伤害').gold()])
+			text.add(2, [Text.of(' >').white(), Text.of(' +15% ').green(), Text.of('弹射物伤害').gold()])
 			text.add(3, [Text.of(' > 当你击杀怪物或').white(), Text.of('击中BOSS').white().italic(), Text.of('3次').yellow(), Text.of('你就能收集').white(), Text.of('灵魂').aqua()])
-			text.add(4, [Text.of(' > 当你').white(), Text.of('副手').green(), Text.of('持有').white(), Text.of('灵魂水晶').blue(), Text.of('时，击败强大的生物能捕获').white(), Text.of('灵魂').darkPurple(), Text.of('。想使用').white(), Text.of('灵魂').aqua().italic(), Text.of('用').white(), Text.of(' Orb of Slaughtered Foes.').darkRed(), Text.of('将').white, Text.of('灵魂').darkPurple(), Text.of('作为盟友召唤').white()])
+			text.add(4, [Text.of(' > 当你').white(), Text.of('副手').green(), Text.of('持有').white(), Text.of('灵魂水晶').blue(), Text.of('时，击败强大的生物能捕获').white(), Text.of('灵魂').darkPurple(), Text.of('。想使用').white(), Text.of('灵魂').aqua().italic(), Text.of('用').white(), Text.of('杀戮宝珠.').darkRed(), Text.of('将').white, Text.of('灵魂').darkPurple(), Text.of('作为盟友召唤').white()])
 
 		  }
 
@@ -600,7 +600,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('以查看天赋树技能。').gold()])
 		  } else {
 			text.add(1, Text.yellow('天赋树技能').underlined(true))
-			text.add(2, Text.aqua(' > 羽毛再生'))
+			text.add(2, Text.aqua(' > 耐力恢复'))
 			text.add(3, Text.aqua(' > 近战伤害'))
 			text.add(4, Text.aqua(' > 受到治疗'))
 			text.add(5, Text.aqua(' > 来自击杀生物的经验')) /// 
@@ -632,13 +632,13 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.yellow('天赋树技能').underlined(true))
 			text.add(2, Text.aqua(' > 最大生命值'))
-			text.add(3, Text.aqua(' > 最大羽毛量'))
-			text.add(4, Text.aqua(' > 羽毛回复率'))
+			text.add(3, Text.aqua(' > 最大耐力值'))
+			text.add(4, Text.aqua(' > 耐力恢复率'))
 			text.add(5, Text.aqua(' > 移动速度'))
 			text.add(6, Text.yellow('  '))
 		  }
 		  text.add(1, Text.yellow('概述').underlined(true))
-		  text.add(2, [Text.of(' > 拥有各种小工具，例如').white(), Text.of(' Anomoly').lightPurple().italic(), Text.of('和').white(), Text.of('铁滑翔伞').aqua(), Text.of('，还有').white(), Text.of('永恒牛排').gold(), Text.of('，探险家是一个非常全能的职业，允许多种玩法。')])
+		  text.add(2, [Text.of(' > 拥有各种小工具，例如').white(), Text.of('Anomoly').lightPurple().italic(), Text.of('和').white(), Text.of('铁滑翔伞').aqua(), Text.of('，还有').white(), Text.of('永恒牛排').gold(), Text.of('，探险家是一个非常全能的职业，允许多种玩法。')])
 		  text.add(3, Text.yellow('  '))
 	  })
 
@@ -681,8 +681,8 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
-			text.add(2, [Text.of(' >').gray(), Text.of(' +10%').green(), Text.of('点燃目标几率').gold()])
-			text.add(3, [Text.of(' > ').gray(), Text.of('+100%').green(), Text.of('对疯狂（低san）').gold(), Text.of('玩家').green(), Text.of('的伤害').gold()])
+			text.add(2, [Text.of(' >').gray(), Text.of(' +10% ').green(), Text.of('点燃目标几率').gold()])
+			text.add(3, [Text.of(' > ').gray(), Text.of('+100% ').green(), Text.of('对疯狂（低san）').gold(), Text.of('玩家').green(), Text.of('的伤害').gold()])
 			text.add(4, Text.yellow('---------------------------------------'))
 			text.add(5, [Text.of(' > 使用').gray(), Text.of('战争贩子').red(), Text.of('和').gray(), Text.of('苦痛').darkRed(), Text.of('按一定模式攻击，会对目标产生').gray(), Text.of('负面效果，').gold(), Text.of('玩家').green(), Text.of('和').gray(), Text.of('非玩家').aqua(), Text.of('会获得不同的').gray(), Text.of('负面效果').yellow()])
 			text.add(6, [Text.of(' > 你').gray(), Text.of('必须').gold(), Text.of('在').gray(), Text.of('主手').yellow(), Text.of('使用').gray(), Text.of('苦痛').darkRed(), Text.of('并').gray(), Text.of(' 在你的').gray(), Text.of('副手').yellow(), Text.of('使用').gray(), Text.of('战争贩子').red(), Text.of('，效果才能生效。').gray()])
@@ -723,7 +723,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('ALT ').yellow(), Text.of('以查看被动').gold()])
 		  } else {
 			text.add(1, Text.yellow('被动').underlined(true))
-			text.add(2, [Text.of(' >').white(), Text.of(' +10%').green(), Text.of('受伤时暴击几率').gold()])
+			text.add(2, [Text.of(' >').white(), Text.of(' +10% ').green(), Text.of('受伤时暴击几率').gold()])
 			text.add(3, [Text.of(' > 完成一个').white(), Text.of('悬赏').gold().italic(), Text.of('或').white(), Text.of('高价悬赏目标，').gold().italic(), Text.of('会带给你比其他副职业更好的奖励')])
 			text.add(4, [Text.of(' > ').white(), Text.of('每10分钟召唤').white(), Text.of('3只友善的袋鼠').green()])
 
@@ -767,8 +767,8 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.darkGreen('正面被动').underlined(true))
 			text.add(2, Text.green(' > 在药水效果下，你的最大生命值将增至正常值'))
-			text.add(3, Text.green(' > +200% 最大羽毛'))
-			text.add(4, Text.green(' > +50% 羽毛回复率'))
+			text.add(3, Text.green(' > +200% 最大耐力值'))
+			text.add(4, Text.green(' > +50% 耐力恢复率'))
 			text.add(5, Text.green(' > +75% 所有酿造药水持续时长与强度提升'))
 			text.add(6, Text.green(' > +75% 拥有药水效果时提供攻击速度'))
 			text.add(7, Text.green(' > +75% 拥有药水效果时提供伤害'))
@@ -796,7 +796,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('悬赏详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀15x 苦力怕').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀25x  苦力怕').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀25x  苦力怕').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀50x 苦力怕').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('50只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('5枚铜币。').yellow()])   
@@ -814,7 +814,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀25x 骷髅').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀50x 骷髅').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀50x 骷髅').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀75x 骷髅').italic().darkRed()])
 			text.add(5, Text.yellow(' '))			
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('75只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('3枚铜币。').yellow()])   
@@ -831,7 +831,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 			  } else {
 				text.add(1, Text.gold('赏金详情：'))
 				text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀25x 蜘蛛').italic().darkRed()])
-				text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀50x 蜘蛛').italic().darkRed()]) 
+				text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀50x 蜘蛛').italic().darkRed()]) 
 				text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀75x 蜘蛛').italic().darkRed()])
 				text.add(5, Text.yellow(' '))
 				text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('75只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('3枚铜币。').yellow()])   
@@ -849,7 +849,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀25x 僵尸').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀50x 僵尸').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀50x 僵尸').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀75x 僵尸').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('75只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('3枚铜币。').yellow()])   
@@ -867,7 +867,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀15x末影人').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀25x 末影人').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀25x 末影人').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀50x 末影人').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('50只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('5枚铜币。').yellow()])  
@@ -885,7 +885,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀15x掠夺者').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀25x 掠夺者').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀25x 掠夺者').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀50x 掠夺者').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('50只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('5枚铜币。').yellow()])  
@@ -903,7 +903,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀15x猪灵').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀25x 猪灵').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀25x 猪灵').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀50x 猪灵').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('50只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('5枚铜币。').yellow()])  
@@ -921,7 +921,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		  } else {
 			text.add(1, Text.gold('赏金详情：'))
 			text.add(2, [Text.of(' > 普通赏金：').green(), Text.of('击杀25x 溺尸').italic().darkRed()])
-			text.add(3, [Text.of(' > 不凡赏金：').yellow(), Text.of('击杀50x 溺尸').italic().darkRed()]) 
+			text.add(3, [Text.of(' > 罕见赏金：').yellow(), Text.of('击杀50x 溺尸').italic().darkRed()]) 
 			text.add(4, [Text.of(' > 稀有赏金：').darkPurple(), Text.of('击杀75x 溺尸').italic().darkRed()])
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > 赏金：').gold(), Text.of('击杀').white(), Text.of('75只').darkGreen().italic(), Text.of('后，每击杀一只可获得').white(), Text.of('3枚铜币。').yellow()])    
@@ -997,7 +997,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	event.addAdvanced('kubejs:trial_blood_oath', (item, advanced, text) => {
         text.add(1, [Text.of('试炼：').darkRed().italic(), Text.of('变得').white(), Text.of('失去理智').darkRed(), Text.of('，面对着内心的恶魔，屠杀').white(), Text.of('5').red(), Text.of('个这样追杀你的生物而不死。').white()])
         text.add(2, Text.white(' ')),
-        text.add(3, [Text.of('奖励：').green().italic(), Text.of('每').white(), Text.of(' 15分钟').blue(), Text.of('你会获得一个').white(), Text.of('血誓').darkRed(), Text.of('，如果你使用它，您将获得一次性效果，即'), Text.of('死而复生').gold()])
+        text.add(3, [Text.of('奖励：').green().italic(), Text.of('每').white(), Text.of('15分钟').blue(), Text.of('你会获得一个').white(), Text.of('血契').darkRed(), Text.of('，如果你使用它，您将获得一次性效果，即'), Text.of('死而复生').gold()])
     })// Not Finished
 
 	event.addAdvanced('kubejs:shadow_form', (item, advanced, text) => {
@@ -1102,7 +1102,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 	event.addAdvanced('kubejs:strength_elixir_relic', (item, advanced, text) => {
         text.add(1, [Text.of('挑战：').gold().underlined()])
-        text.add(2, [Text.of(' > 击杀').white(), Text.of('100只猪灵蛮兵').darkRed(), Text.of('使用双持的').white(), Text.of('金斧').lightPurple().italic()])
+        text.add(2, [Text.of(' > 双持').white(), , Text.of('金斧').lightPurple().italic(),Text.of('击杀').white(), Text.of('100只猪灵蛮兵').darkRed()])
         text.add(3, [Text.of(' ').darkRed()])
         text.add(4, [Text.of('奖励：').gold().underlined()])
         text.add(5, [Text.of('力量圣酿').aqua()])
@@ -1116,7 +1116,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
         text.add(5, [Text.of(' > 一定要是晚上').gray()])
         text.add(6, [Text.of(' ').darkRed()])
         text.add(7, [Text.of('奖励：').gold().underlined()])
-        text.add(8, [Text.of('额外羽毛圣酿').aqua()])
+        text.add(8, [Text.of('额外耐力圣酿').aqua()])
 	});
 
 	event.addAdvanced('kubejs:fire_elixir_relic', (item, advanced, text) => {
@@ -1124,7 +1124,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
         text.add(2, [Text.of('> 使用').white(), Text.of('火焰法术').aqua().underlined(), Text.of('击杀').white(), Text.of('100只飞行怪物').darkRed().italic(), Text.of('（任何等级的魔法均可）').yellow()])
         text.add(3, [Text.of(' ').darkRed()])
         text.add(4, [Text.of('奖励：').gold().underlined()])
-        text.add(5, [Text.of('龙息圣酿').aqua()])
+        text.add(5, [Text.of('焰息圣酿').aqua()])
 	});
 
 	event.addAdvanced('kubejs:absorption_elixir_relic', (item, advanced, text) => {
@@ -1161,7 +1161,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 	event.addAdvanced('kubejs:angel_wings_elixir_relic', (item, advanced, text) => {
         text.add(1, [Text.of('挑战：').gold().underlined()])
-        text.add(2, [Text.of(' > 获得任意').white(), Text.of(' 滑翔伞').lightPurple(), Text.of('和').white(), Text.of('榴弹发射器').lightPurple(), Text.of('，在滑翔伞飞行时，使用 ').white(), Text.of('榴弹发射器击杀').white(),Text.of('150名敌人').darkRed()])
+        text.add(2, [Text.of(' > 获得任意').white(), Text.of('滑翔伞').lightPurple(), Text.of('和').white(), Text.of('榴弹发射器').lightPurple(), Text.of('，在滑翔伞飞行时，使用 ').white(), Text.of('榴弹发射器击杀').white(),Text.of('150名敌人').darkRed()])
         text.add(3, [Text.of(' ').red()])
         text.add(4, [Text.of('要求：').red()])
         text.add(5, [Text.of(' >  你必须在目标上方10格以上击杀才算数').gray()])
@@ -1178,7 +1178,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	});
 
 	event.addAdvanced('kubejs:high_value_target', (item, advanced, text) => {
-		text.add(1, [Text.of('高价悬赏目标').gold(), Text.of(' 消灭特别危险的敌人后，赏金单会给你丰厚的奖励').white()])
+		text.add(1, [Text.of('消灭特别危险的敌人后，').white(), Text.of('高价悬赏令').gold(), Text.of('会给你丰厚的奖励')])
 		text.add(2, [Text.of(' ').red()])
 		text.add(3, [Text.of('要求：').red(), Text.of('你必须在夜间击杀目标。').gray().italic().underlined()])
 		text.add(4, [Text.of(' ').red()])
@@ -1222,7 +1222,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	event.addAdvanced('kubejs:spirit_crystal', (item, advanced, text) => {
 		text.add(1, [Text.of('副手持有').gold(), Text.of('灵魂水晶').darkPurple().italic(), Text.of('，就能捕捉到被杀实体的灵魂。').gold()])
 		text.add(2, [Text.of(' ').red()])
-		text.add(3, [Text.of('使用').gray(), Text.of(' Orb of Slaughtered Foes').red().italic(), Text.of('，就可以将捕获的实体作为').gray(), Text.of('友军').darkGreen(), Text.of('以其').gray(), Text.of('灵魂').aqua().italic(), Text.of('作为代价').gray()])
+		text.add(3, [Text.of('使用').gray(), Text.of('杀戮宝珠').red().italic(), Text.of('，就可以将捕获的实体作为').gray(), Text.of('友军').darkGreen(), Text.of('以其').gray(), Text.of('灵魂').aqua().italic(), Text.of('作为代价').gray()])
 	});
 
 	event.addAdvanced('kubejs:orb_of_slaughtered_foes', (item, advanced, text) => {
@@ -1301,28 +1301,28 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 	});
 
 	event.addAdvanced('kubejs:lesser_elixir_shard', (item, advanced, text) => {
-		text.add(1, [Text.of('+1%').green(), Text.of('受到伤害时').gray(), Text.of('圣酿').lightPurple(), Text.of('激活的几率').gray()])
+		text.add(1, [Text.of('+1% ').green(), Text.of('受到伤害时').gray(), Text.of('圣酿').lightPurple(), Text.of('激活的几率').gray()])
 		text.add(2, [Text.of(' ').red()])
 		text.add(3, [Text.of('获取方式： ').red()])
 		text.add(4, [Text.of(' - 普通赏金战利品箱').gold()])
 	});
 
 	event.addAdvanced('kubejs:superior_elixir_shard', (item, advanced, text) => {
-		text.add(1, [Text.of('+2%').green(), Text.of('受到伤害时').gray(), Text.of('圣酿').lightPurple(), Text.of('激活的几率').gray()])
+		text.add(1, [Text.of('+2% ').green(), Text.of('受到伤害时').gray(), Text.of('圣酿').lightPurple(), Text.of('激活的几率').gray()])
 		text.add(2, [Text.of(' ').red()])
 		text.add(3, [Text.of('获取方式： ').red()])
-		text.add(4, [Text.of(' - 不凡赏金战利品箱').gold()])
+		text.add(4, [Text.of(' - 罕见赏金战利品箱').gold()])
 	});
 
 	event.addAdvanced('kubejs:paramount_elixir_shard', (item, advanced, text) => {
-		text.add(1, [Text.of('+3%').green(), Text.of('受到伤害时').gray(), Text.of('圣酿').lightPurple(), Text.of('激活的几率').gray()])
+		text.add(1, [Text.of('+3% ').green(), Text.of('受到伤害时').gray(), Text.of('圣酿').lightPurple(), Text.of('激活的几率').gray()])
 		text.add(2, [Text.of(' ').red()])
 		text.add(3, [Text.of('获取方式： ').red()])
 		text.add(4, [Text.of(' - 稀有赏金战利品箱').gold()])
 	});
 
 	event.addAdvanced('kubejs:exalted_elixir_shard', (item, advanced, text) => {
-		text.add(1, [Text.of('+5%').green(), Text.of('受到伤害时').gray(), Text.of('圣酿').lightPurple(), Text.of('激活的几率').gray()])
+		text.add(1, [Text.of('+5% ').green(), Text.of('受到伤害时').gray(), Text.of('圣酿').lightPurple(), Text.of('激活的几率').gray()])
 		text.add(2, [Text.of(' ').red()])
 		text.add(3, [Text.of('获取方式： ').red()])
 		text.add(4, [Text.of(' - 击杀Boss').gold()])
@@ -1377,7 +1377,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 	event.addAdvanced(`kubejs:endurance_elixir`, (item, advanced, text) => {
 		text.add(1, [Text.of('玩家效果：').gold().italic()])
-		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('羽毛提升').lightPurple(), Text.of('效果的几率').gray()])
+		text.add(2, [Text.of(' >').gray(), Text.of(' 1%').green(), Text.of('受到伤害时触发').gray(), Text.of('额外耐力').lightPurple(), Text.of('效果的几率').gray()])
 		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])

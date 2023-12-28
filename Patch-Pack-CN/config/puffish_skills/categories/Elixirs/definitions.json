@@ -102,7 +102,7 @@
         ]
     },
     "relic_endurance": {
-        "title": "挑战：额外羽毛",
+        "title": "挑战：额外耐力",
         "icon": {
             "type": "texture",
             "data": {
@@ -119,7 +119,7 @@
         ]
     },
     "relic_dragonsbreath": {
-        "title": "挑战：龙息",
+        "title": "挑战：焰息",
         "icon": {
             "type": "texture",
             "data": {
@@ -187,7 +187,7 @@
         ]
     },
     "relic_angelwings": {
-        "title": "挑战：Angel Wings",
+        "title": "挑战：天使之翼",
         "icon": {
             "type": "texture",
             "data": {

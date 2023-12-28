@@ -35,7 +35,7 @@
     },
 
     "trial_restoration": {
-        "title": "试炼：复原",
+        "title": "试炼：急迫",
         "icon": {
             "type": "texture",
             "data": {
@@ -71,7 +71,7 @@
     },
 
     "trial_strike": {
-        "title": "试炼：打击",
+        "title": "试炼：雷电",
         "icon": {
             "type": "texture",
             "data": {
@@ -88,7 +88,7 @@
         ]
     },
     "trial_blood_oath": {
-        "title": "试炼：血誓",
+        "title": "试炼：血契",
         "icon": {
             "type": "texture",
             "data": {
