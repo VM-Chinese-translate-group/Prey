@@ -1,1 +1,22 @@
-
+{
+  "block.realmrpg_skeletons.duelist_skeleton": "决斗者的尸体",
+  "block.realmrpg_skeletons.webbed_skeleton": "结网的尸体",
+  "block.realmrpg_skeletons.thief_skeleton": "偷盗者的尸体",
+  "block.realmrpg_skeletons.snow_skeleton": "被雪覆盖的尸体",
+  "block.realmrpg_skeletons.unsaved_skeleton": "没有保护好物品的尸体",
+  "block.realmrpg_skeletons.mushroomer_skeleton": "长菌的尸体",
+  "block.realmrpg_skeletons.burnt_skeleton": "烧毁的尸体",
+  "block.realmrpg_skeletons.corrupted_skeleton": "损坏的尸体",
+  "block.realmrpg_skeletons.waterdrop_skeleton": "落地水失败的尸体",
+  "block.realmrpg_skeletons.lucky_skeleton": "被狗屎绊倒的尸体",
+  "block.realmrpg_skeletons.quicksand_skeleton": "陷入流沙的尸体",
+  "block.realmrpg_skeletons.basic_skeleton": "冒险者的尸体",
+  "block.realmrpg_skeletons.bow_skeleton": "弓箭手的尸体",
+  "block.realmrpg_skeletons.swimmer_skeleton": "长满水草的尸体",
+  "block.realmrpg_skeletons.dungeon_crawler_skeleton": "地牢里爬行的尸体",
+  "block.realmrpg_skeletons.fungus_gatherer_skeleton": "采集者的尸体",
+  "block.realmrpg_skeletons.arrow_skeleton": "入侵者的尸体",
+  "block.realmrpg_skeletons.powder_snow_skeleton": "攀爬者的尸体",
+  "block.realmrpg_skeletons.acrobat_skeleton": "表演杂技的尸体",
+  "block.realmrpg_skeletons.rookie_skeleton": "新兵的尸体"
+}
