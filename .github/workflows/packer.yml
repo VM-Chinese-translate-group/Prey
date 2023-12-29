@@ -19,7 +19,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: pack.zip
+          name: Prey-Chinese-patch_1.05.1.zip
           path: ./Patch-Pack-CN
       - name: Release
         uses: ncipollo/release-action@v1
