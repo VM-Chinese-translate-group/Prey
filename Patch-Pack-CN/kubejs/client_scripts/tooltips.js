@@ -610,7 +610,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 		  }
 		  text.add(1, Text.yellow('概述').underlined(true))
-		  text.add(2, [Text.of(' > 唤灵者挥舞宝剑').white(), Text.of('以太').lightPurple().italic(), Text.of('，').white(), Text.of('一块灵魂水晶').lightPurple().italic(), Text.of('和').white(), Text.of('Orb of Slaughtered Foes').darkRed().italic(), Text.of('，同时利用收集到的').white(), Text.of('灵魂').aqua(), Text.of('来召唤被击败敌人的').white(), Text.of('灵魂').darkPurple()])
+		  text.add(2, [Text.of(' > 唤灵者挥舞宝剑').white(), Text.of('以太').lightPurple().italic(), Text.of('，').white(), Text.of('一块灵魂水晶').lightPurple().italic(), Text.of('和').white(), Text.of('杀戮宝珠').darkRed().italic(), Text.of('，同时利用收集到的').white(), Text.of('灵魂').aqua(), Text.of('来召唤被击败敌人的').white(), Text.of('灵魂').darkPurple()])
 		  text.add(3, Text.yellow('  '))
 		})
 
@@ -1345,7 +1345,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		text.add(3, [Text.of(' > 收集').gray(), Text.of('圣酿碎片').yellow(), Text.of('以增加触发效果的几率。').gray()])
 		text.add(4, [Text.of(' ')])
 		text.add(5, [Text.of('友军生物效果：').gold().italic()])
-		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('击杀敌人时，它们会获得 ').gray(), Text.of('速度 II效果').lightPurple(), Text.of('10秒').green()])
+		text.add(6, [Text.of(' > 当').gray(), Text.of('友军生物').blue(), Text.of('击杀敌人时，它们会获得').gray(), Text.of('速度 II效果').lightPurple(), Text.of('10秒').green()])
 	});
 
 	event.addAdvanced(`kubejs:resistance_elixir`, (item, advanced, text) => {
