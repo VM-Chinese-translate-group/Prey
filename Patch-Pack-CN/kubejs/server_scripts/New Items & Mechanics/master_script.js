@@ -568,11 +568,6 @@ ServerEvents.loaded(event => {
     Utils.server.runCommandSilent('/gamerule moneyDropPercentage 0')
 })
 
-
-const trades = {
-
-}
-
 // All Create Items (Maybe make a lootbox that you can buy instead of items)
 // Tetra Items
 // most ores (use scroll of harvest for tiers)

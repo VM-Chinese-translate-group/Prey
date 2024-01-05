@@ -424,14 +424,14 @@ ItemEvents.tooltip(event => {
 
 	  event.addAdvanced('kubejs:rune_of_the_bloodripper', (item, advanced, text) => {
 		if (!event.ctrl) {
-			text.add(1, [Text.of('按住 ').gold(), Text.of('CTRL ').yellow(), Text.of('以查看').gold(), Text.of('能力').lightPurple().italic().underlined(), Text.of('（嗜血者能力仅在夜晚生效）').yellow()])
+			text.add(1, [Text.of('按住 ').gold(), Text.of('CTRL ').yellow(), Text.of('以查看').gold(), Text.of('能力').lightPurple().italic().underlined(), Text.of('（血裂者能力仅在夜晚生效）').blue()])
 		} else {
 			text.add(1, [Text.of('能力').lightPurple().italic().underlined()])
 			text.add(2, [Text.of(' > ').white(), Text.of('血吸：').red().underlined(), Text.of('击杀怪物有几率使你').white(), Text.of('吸取的血').darkRed(), Text.of('增加').white(), Text.of('1。').green()])
 			text.add(3, Text.yellow(' '))
-			text.add(4, [Text.of(' > ').white(), Text.of('寄生撕裂：').red().underlined(), Text.of('右击').yellow(), Text.of('以秒杀低于').white(), Text.of('50%生命值').darkGreen(), Text.of('的怪物，使你').white(), Text.of('吸取的血').darkRed(), Text.of('增加').white(), Text.of('3').green(), Text.of('，并且恢复').white(), Text.of('5%生命值').darkGreen(), Text.of('。升级').green(), Text.of('嗜血者').lightPurple(), Text.of('以秒杀更强大的敌人，并获得更多治疗量。').white()])
+			text.add(4, [Text.of(' > ').white(), Text.of('寄生撕裂：').red().underlined(), Text.of('右击').yellow(), Text.of('以秒杀低于').white(), Text.of('50%生命值').darkGreen(), Text.of('的怪物，使你').white(), Text.of('吸取的血').darkRed(), Text.of('增加').white(), Text.of('3').green(), Text.of('，并且恢复').white(), Text.of('5%生命值').darkGreen(), Text.of('。升级').green(), Text.of('血裂者').lightPurple(), Text.of('以秒杀更强大的敌人，并获得更多治疗量。').white()])
 			text.add(5, Text.yellow(' '))
-			text.add(6, [Text.of(' > ').white(), Text.of('腐化容器：').red().underlined(), Text.of('每次攻击有几率').white(), Text.of('驯服').yellow(), Text.of('目标。每点').white(), Text.of('吸取的血').darkRed(), Text.of('增加').white(), Text.of('1%').green(), Text.of('几率。你会失去').white(), Text.of('10 吸取的血').darkRed(), Text.of('以').white(), Text.of('驯服').yellow(), Text.of('一只生物。').white(), Text.of('升级').green(), Text.of('嗜血者').lightPurple(), Text.of('以给予你').white(), Text.of('腐化盟友').darkRed(), Text.of('强力Buff。').white()])
+			text.add(6, [Text.of(' > ').white(), Text.of('腐化容器：').red().underlined(), Text.of('每次攻击有几率').white(), Text.of('驯服').yellow(), Text.of('目标。每点').white(), Text.of('吸取的血').darkRed(), Text.of('增加').white(), Text.of('1%').green(), Text.of('几率。你会失去').white(), Text.of('10点吸取的生命值').darkRed(), Text.of('以').white(), Text.of('驯服').yellow(), Text.of('一只生物。').white(), Text.of('升级').green(), Text.of('血裂者').lightPurple(), Text.of('以给予你').white(), Text.of('腐化盟友').darkRed(), Text.of('强力Buff。').white()])
 			text.add(7, Text.yellow(' '))
 			text.add(8, [Text.of(' > ').white(), Text.of('不死肉：').red().underlined(), Text.of('右击').yellow(), Text.of('盟友生物').darkAqua(), Text.of('以恢复').white(), Text.of('5%生命值').darkGreen(), Text.of('。').white(), Text.of('盟友生物').darkAqua(), Text.of('受到').white(), Text.of('治疗量3倍').red(), Text.of('的伤害').white()])
 		}
@@ -439,7 +439,7 @@ ItemEvents.tooltip(event => {
 		if (!event.shift) {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('以查看').gold(), Text.of('等级').darkRed().italic().underlined(true)])
 		} else {
-			text.add(2, Text.darkRed('嗜血者等级：').underlined().underlined(true))
+			text.add(2, Text.darkRed('血裂者等级：').underlined().underlined(true))
 			text.add(3, [Text.of(' 等级1：').gold(), Text.of('用').white(), Text.of('寄生撕裂').red(), Text.of('击杀敌人，恢复5%生命值。每升一级').white(), Text.of('寄生撕裂').red(), Text.of('的最大生命值提升30。').white()])
 			text.add(4, [Text.of(' 等级2：').gold(), Text.of('腐化容器').darkRed(), Text.of('获得永久').white(), Text.of('速度2效果').darkGreen()])
 			text.add(5, [Text.of(' 等级3：').gold(), Text.of('用').white(), Text.of('寄生撕裂').red(), Text.of('击杀敌人，恢复').white(), Text.of('10%生命值').green()])
@@ -456,12 +456,14 @@ ItemEvents.tooltip(event => {
 		text.add(1, Text.yellow('概述').underlined(true))
 		text.add(2, [Text.of(' > 挥舞着双镰刀，').white(), Text.of('荒土').darkRed().italic(), Text.of('和').white(), Text.of('计算，').darkRed().italic(), Text.of('该副职业从怪物身上收割血液，用它将敌人变成盟友。')])
 		text.add(3, Text.yellow('  ')) 
-		text.add(4, Text.yellow('天赋树技能').underlined(true))
-		text.add(5, Text.aqua(' > 攻击速度'))
-		text.add(6, Text.aqua(' > 攻击击退'))
-		text.add(7, Text.aqua(' > 近战暴击伤害'))
-		text.add(8, Text.aqua(' > 每次击中的生命值'))
-		text.add(9, Text.yellow('  '))
+		text.add(4, [Text.of(' > 每名被').gold(), Text.of('腐化容器').darkRed(), Text.of('驯服的敌人会获得').gold(), Text.of('裂血者经验。').yellow(), Text.of('升级').green(), Text.of('裂血者').lightPurple(), Text.of('以获得更好的增益和').gold(), Text.of('腐化容器。').darkRed()])
+		text.add(5, Text.yellow('  ')) 
+		text.add(6, Text.yellow('天赋树技能').underlined(true))
+		text.add(7, Text.aqua(' > 攻击速度'))
+		text.add(8, Text.aqua(' > 攻击击退'))
+		text.add(9, Text.aqua(' > 近战暴击伤害'))
+		text.add(10, Text.aqua(' > 每次击中的生命值'))
+		text.add(11, Text.yellow('  '))
 	})
 
 /// In guide book make sure to distinguish that certain bonuses only go to certain creature types. The 3 types are Summoned (from summoning stones), Tamed (from the taming flute), and Conjured (from spells)
