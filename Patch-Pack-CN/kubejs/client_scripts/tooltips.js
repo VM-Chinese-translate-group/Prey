@@ -19,7 +19,7 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('kubejs:gorilla_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' 生命值：').gold(), Text.of(' 70').darkGreen()])
+		text.add(2, [Text.of(' 生命值：').gold(), Text.of('70').darkGreen()])
 		text.add(3, [Text.of(' 模式：').gold(), Text.of(' 停留，游荡').gray()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -29,7 +29,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:grizzly_bear_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 70').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('70').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -41,7 +41,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:crow_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 25').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('25').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随,').darkAqua(), Text.of(' 聚集').yellow()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -53,7 +53,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:crocodile_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 70').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('70').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡').gray()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -63,7 +63,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:capuchin_monkey_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 25').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('25').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -74,7 +74,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:elephant_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 85').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('85').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 游荡').gray()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -84,7 +84,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:komodo_dragon_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 55').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('55').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -96,7 +96,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:tarantula_hawk_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 40').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('40').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -106,7 +106,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:kangaroo_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 45').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('45').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -117,7 +117,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:bald_eagle_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 25').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('25').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -127,7 +127,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:sugar_glider_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 20').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('20').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -139,7 +139,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:flutter_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 30').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('30').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -150,7 +150,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:mantis_shrimp_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 25').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('25').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随, ').yellow(), Text.of('破坏方块').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
@@ -161,7 +161,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:mimic_octopus_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
-		text.add(2, [Text.of(' > 生命值：').gold(), Text.of(' 35').darkGreen()])
+		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('35').darkGreen()])
 		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
