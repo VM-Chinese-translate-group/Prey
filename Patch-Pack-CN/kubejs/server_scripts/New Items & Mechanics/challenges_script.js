@@ -43,7 +43,7 @@ EntityEvents.hurt(event => {
     if (golem_counter[player_username] != 3)
         event.source.player.tell('灵魂窃取圣酿挑战：完成')
         Utils.server.runCommandSilent(`/give ${player_username} kubejs:soul_steal_elixir`)
-        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
         event.source.player.tags.remove(`soul_steal`)
         knock_knock_counter[player_username] = 0
         golem_counter[player_username] = 0
@@ -74,7 +74,7 @@ EntityEvents.death('lategamegolems:lgg_entity', event => {
         if (golem_counter[player_username] != 3)
             event.source.player.tell('灵魂窃取圣酿挑战：完成')
             Utils.server.runCommandSilent(`/give ${player_username} kubejs:soul_steal_elixir`)
-            Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+            Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
             event.source.player.tags.remove(`soul_steal`)
             knock_knock_counter[player_username] = 0
             golem_counter[player_username] = 0
@@ -103,7 +103,7 @@ EntityEvents.death('minecraft:piglin_brute', event => {
     if (strength_elixir[player_username] != 100) return
     Utils.server.runCommandSilent(`/give ${player_username} kubejs:strength_elixir`)
     event.player.tell('力量圣酿挑战：完成')
-    Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+    Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
     Utils.server.runCommandSilent(`/tag ${player_username} remove strength`)
     strength_elixir[event.source.player.username] = 0
 
@@ -142,7 +142,7 @@ EntityEvents.death(event => {
             if (grenade_launcher[player_username] == 150) {
                 Utils.server.runCommandSilent(`/tell ${player_username} 天使之翼圣酿挑战：完成`)
                 Utils.server.runCommandSilent(`/give ${player_username} kubejs:angel_wings_elixir`)
-                Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+                Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
                 Utils.server.runCommandSilent(`/tag ${player_username} remove angel_wings`)
             }
         }
@@ -179,7 +179,7 @@ EntityEvents.death(event => {
             if (bazooka_counter[player_username] == 100) {
                 Utils.server.runCommandSilent(`/tell ${player_username} 伤害吸收圣酿挑战：完成`)
                 Utils.server.runCommandSilent(`/give ${player_username} kubejs:absorption_elixir`)
-                Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+                Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
                 Utils.server.runCommandSilent(`/tag ${player_username} remove absorption`)
             }
         }
@@ -222,7 +222,7 @@ EntityEvents.death(event => {
 	if (charged_counter[player_username] != 500) return;
 		event.source.player.tags.remove(`charged`)
 		Utils.server.runCommandSilent(`/give ${player_username} kubejs:charged_elixir`)
-        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
 		Utils.server.tell('超负荷圣酿挑战：完成')
 		charged_counter[player_username] = 0
     }
@@ -330,7 +330,7 @@ EntityEvents.death('minecraft:villager', event => {
     if (soul_vulture_counter[player_username] != 5) return
     player.tags.remove(`speed`)
     Utils.server.runCommandSilent(`/give ${player_username} kubejs:speed_elixir`)
-    Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+    Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
     Utils.server.tell('速度圣酿挑战：完成')
     crocodile_counter[player_username] = 0
 })
@@ -375,7 +375,7 @@ flying_creatures.forEach((entity) => {
         Utils.server.runCommandSilent(`/give ${player_username} kubejs:fire_elixir`)
         event.source.player.tags.remove('fire')
         event.source.player.tell('火焰圣酿挑战：完成')
-        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+        Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
         firebolt_counter[player_username] = 0
 
     })
@@ -399,7 +399,7 @@ PlayerEvents.respawned(event => {
     tags.add('all_bounties_completed')
     tags.remove('resistance')
     Utils.server.runCommandSilent(`/give ${event.player.username} kubejs:resistance_elixir`)
-    Utils.server.runCommandSilent(`/puffish_skills points add ${event.player.username} elixirs 1`)
+    Utils.server.runCommandSilent(`/puffish_skills points add ${event.player.username} Elixirs 1`)
 })
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let endurance_counter = new Map();
@@ -426,7 +426,7 @@ EntityEvents.death(event => {
         if (endurance_counter[player_username] != 150) return;
             event.source.player.tags.remove(`endurance`)
             Utils.server.runCommandSilent(`/give ${player_username} kubejs:endurance_elixir`)
-            Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+            Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
             Utils.server.tell('Complete')
             endurance_counter[player_username] = 0
     }
@@ -450,7 +450,7 @@ EntityEvents.death('cave_dweller:cave_dweller', event => {
     let y = event.entity.y
     let z = event.entity.z
     event.source.player.tags.remove(`evasion`)
-    Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+    Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
     Utils.server.runCommandSilent(`/execute at ${player_username} run loot spawn ${x} ${y} ${z} loot minecraft:loot_boxes/cave_dweller`)
 
 })
@@ -508,7 +508,7 @@ Object.entries(pet_kills).forEach(([class_name, pet]) => {
         if (regeneration_counter[player_username] != 150) return;
             player.tags.remove('regeneration')
             Utils.server.runCommandSilent(`/give ${player_username} kubejs:regeneration_elixir`)
-            Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+            Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
             regeneration_counter[player_username] = 0
             Utils.server.tell('生命恢复试炼：完成')
     })
@@ -535,7 +535,7 @@ EntityEvents.death(event => {
     Utils.server.runCommandSilent(`/give ${player_username} kubejs:shadow_form_elixir`)
     event.source.player.tags.remove('shadow_form')
     event.source.player.tell('止心挑战：完成')
-    Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} elixirs 1`)
+    Utils.server.runCommandSilent(`/puffish_skills points add ${player_username} Elixirs 1`)
     shadow_form_hit_counter[player_username] = 0
 })
 
