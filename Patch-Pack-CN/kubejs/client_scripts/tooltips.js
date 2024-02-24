@@ -427,13 +427,12 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('CTRL ').yellow(), Text.of('以查看').gold(), Text.of('能力').lightPurple().italic().underlined(), Text.of('（血裂者能力仅在夜晚生效）').blue()])
 		} else {
 			text.add(1, [Text.of('能力').lightPurple().italic().underlined()])
-			text.add(2, [Text.of(' > ').white(), Text.of('血吸：').red().underlined(), Text.of('击杀怪物有几率使你').white(), Text.of('吸取的血').darkRed(), Text.of('增加').white(), Text.of('1。').green()])
+			text.add(2, [Text.of(' > ').white(), Text.of('血吸：').red().underlined(), Text.of('击杀怪物有几率使你').white(), Text.of('收获的血').darkRed(), Text.of('增加').white(), Text.of('1。').green()])
 			text.add(3, Text.yellow(' '))
-			text.add(4, [Text.of(' > ').white(), Text.of('寄生撕裂：').red().underlined(), Text.of('右击').yellow(), Text.of('以秒杀低于').white(), Text.of('50%生命值').darkGreen(), Text.of('的怪物，使你').white(), Text.of('吸取的血').darkRed(), Text.of('增加').white(), Text.of('3').green(), Text.of('，并且恢复').white(), Text.of('5%生命值').darkGreen(), Text.of('。升级').green(), Text.of('血裂者').lightPurple(), Text.of('以秒杀更强大的敌人，并获得更多治疗量。').white()])
+			text.add(4, [Text.of(' > ').white(), Text.of('寄生撕裂：').red().underlined(), Text.of('右击').yellow(), Text.of('以秒杀低于').white(), Text.of('50%生命值').darkGreen(), Text.of('的怪物，使你').white(), Text.of('收获的血').darkRed(), Text.of('增加').white(), Text.of('3').green(), Text.of('，并且恢复').white(), Text.of('5%生命值').darkGreen(), Text.of('。升级').green(), Text.of('血裂者').lightPurple(), Text.of('以秒杀更强大的敌人，并获得更多治疗量。').white()])
 			text.add(5, Text.yellow(' '))
-			text.add(6, [Text.of(' > ').white(), Text.of('腐化容器：').red().underlined(), Text.of('每次攻击有几率').white(), Text.of('驯服').yellow(), Text.of('目标。每点').white(), Text.of('吸取的血').darkRed(), Text.of('增加').white(), Text.of('1%').green(), Text.of('几率。你会失去').white(), Text.of('10点吸取的生命值').darkRed(), Text.of('以').white(), Text.of('驯服').yellow(), Text.of('一只生物。').white(), Text.of('升级').green(), Text.of('血裂者').lightPurple(), Text.of('以给予你').white(), Text.of('腐化盟友').darkRed(), Text.of('强力Buff。').white()])
+			text.add(6, [Text.of(' > ').white(), Text.of('腐化容器：').red().underlined(), Text.of('每次攻击有几率').white(), Text.of('驯服').yellow(), Text.of('目标。每点').white(), Text.of('收获的血').darkRed(), Text.of('增加').white(), Text.of('1%').green(), Text.of('几率。你会失去').white(), Text.of('10点收获的血').darkRed(), Text.of('以').white(), Text.of('驯服').yellow(), Text.of('一只生物。').white(), Text.of('升级').green(), Text.of('血裂者').lightPurple(), Text.of('以给予你').white(), Text.of('腐化盟友').darkRed(), Text.of('强力Buff。').white()])
 			text.add(7, Text.yellow(' '))
-			text.add(8, [Text.of(' > ').white(), Text.of('不死肉：').red().underlined(), Text.of('右击').yellow(), Text.of('盟友生物').darkAqua(), Text.of('以恢复').white(), Text.of('5%生命值').darkGreen(), Text.of('。').white(), Text.of('盟友生物').darkAqua(), Text.of('受到').white(), Text.of('治疗量3倍').red(), Text.of('的伤害').white()])
 		}
 		
 		if (!event.shift) {
@@ -1513,6 +1512,9 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 })
 
+event.addAdvanced('kubejs:cleansing_serum', (item, advanced, text) => {
+	text.add(1, [Text.of('移除').yellow(), Text.of('所有').red().underlined(), Text.of('主职业').gold(), Text.of('和').yellow(), Text.of('副职业').gold(), Text.of('效果和增益。').yellow()])
+});
 
 
 

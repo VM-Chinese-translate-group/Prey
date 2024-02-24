@@ -25,6 +25,7 @@ EntityEvents.hurt(event => {
 })    
 
 ItemEvents.rightClicked('kubejs:rune_of_the_berserker', event => {
+    if (event.player.persistentData.subclass_counter == 1) return
     event.player.tags.add('berserker')
 })
 
@@ -67,6 +68,7 @@ EntityEvents.hurt(event => {
 
 
 ItemEvents.rightClicked('kubejs:blacksmith', event => {
+    if (event.player.persistentData.mainclass_counter == 1) return
     let player_name = event.player.username
     event.player.persistentData.putInt('per_tools_counter', 0)
     event.player.persistentData.putInt('per_armor_counter', 0)

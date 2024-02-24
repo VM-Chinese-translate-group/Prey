@@ -622,129 +622,223 @@ bounty_level_two.forEach((bounty_entity) => {
 		'irons_spellbooks:archevoker'
 	]	
 	
-let hvt_counter = new Map()
-let hvt_current = new Map()
-ItemEvents.rightClicked('kubejs:high_value_target', event => {
-	if (event.player.persistentData.HVT_counter > 0) {
-//待译
-		event.player.tell('你只能拥有一张激活的高价悬赏令。')
+
+	ItemEvents.rightClicked('stick', event => {
+		event.player.persistentData.HVT_counter -=1
 		event.player.paint({
-			hvt: {
+			quests: {
 				w: '$screenW', 
 				h: '$screenH',
-				x: 15,
-				y: -23,
+				x: 10,
+				y: -80,
 				alignX: 'left',
 				alignY: 'center',
 				draw: 'ingame',
-				color: 'white',
+				color: 'gold',
 				type: 'text',
 				centered: false,
-				text: `${hvt_current[event.player.username]}`,
+				text: `任务`,
 				shadow: true,
-				scale: 1,
-			},
-			hvt_title: {
+				scale: 1.05,},
+			quests_underline: {
 				w: '$screenW', 
 				h: '$screenH',
-				x: -300,
-				y: -35,
-				alignX: 'center',
+				x: 6,
+				y: -79,
+				alignX: 'left',
 				alignY: 'center',
 				draw: 'ingame',
-				color: 'darkRed',
+				color: 'gold',
 				type: 'text',
-				centered: true,
-				text: `高价悬赏目标`,
+				centered: false,
+				text: `_______`,
 				shadow: true,
-				scale: 1.1,
-			},
+				scale: 1.05,},
+			})
+			event.player.persistentData.HVT_counter = 0
 		})
-	} else {
-		event.player.persistentData.HVT_counter+=1
+	
+	/**
+	 * New HVT:
+	 * Kill the hvt to complete the bounty. No more scaling amount of kills.
+	 * Keep scaling rewards
+	 * assign the values to persistent data, not maps
+	 * 
+	 * 
+	 * 
+	 */
+	
+	
+	EntityEvents.death(event => {
+		if (event.level.day) return
+		if (!event.source.player) return
+		if (event.entity.type != event.source.player.persistentData.HVT_ID) return
+		const player = event.source.player
+		event.source.player.persistentData.hvt_complete += 1
+		event.source.player.tell(event.entity.displayName.getString() + "悬赏已完成")
+		event.source.player.persistentData.putString('HVT_name', `None`)
+		event.source.player.persistentData.HVT_counter -= 1
+		player.paint({
+			hvt: {
+				w: '$screenW', 
+				h: '$screenH',
+				x: 37,
+				y: -65,
+				alignX: 'left',
+				alignY: 'center',
+				draw: 'ingame',
+				color: 'yellow',
+				type: 'text',
+				centered: false,
+				text: event.source.player.persistentData.HVT_name,
+				shadow: true,
+				scale: 0.8,},})
+		Utils.server.runCommandSilent(`/give ${event.source.player.username} numismaticoverhaul:bronze_coin ${(event.source.player.persistentData.hvt_complete*2)}`)
+	
+		if (!event.source.player.persistentData.contains('kubejs_class:bounty_hunter')) return
+		Utils.server.runCommandSilent(`/give ${event.source.player.username} numismaticoverhaul:bronze_coin ${(event.source.player.persistentData.hvt_complete*4)}`)
+	
+	})
+	
+	
+	
+	
+	
+	let hvt_counter = new Map()
+	let hvt_current = new Map()
+	ItemEvents.rightClicked('kubejs:high_value_target', event => {
+		if (event.player.persistentData.HVT_counter != 0) return
+		event.player.persistentData.HVT_counter += 1
 		let player_username = event.player.username;
 		let randomIndex = Math.floor(Math.random() * hvt.length);
 		let randomEntry = hvt[randomIndex];
-
+	
 		let entryParts = randomEntry.split(":")[1];
 		let formattedEntry = entryParts
 		.replace(/_/g, ' ')
 		.replace(/\w+/g, word => word.charAt(0).toUpperCase() + word.slice(1));
 		let hvt_complete = event.player.persistentData[`${randomEntry}_hvt`]
 		event.entity.tags.add(`${randomEntry}_bounty`)
-		Utils.server.runCommandSilent(`/tell ${player_username} 你必须击杀${hvt_complete} ${formattedEntry}`)
-		hvt_current[player_username] = `${formattedEntry}`
+		event.player.persistentData.putString('HVT_ID', `${randomEntry}`)
+		event.player.persistentData.putString('HVT_name', `${formattedEntry}`)
 		event.item.count--
-		event.player.paint({
+			event.player.paint({
+				hvt: {
+					w: '$screenW', 
+					h: '$screenH',
+					x: 37,
+					y: -65,
+					alignX: 'left',
+					alignY: 'center',
+					draw: 'ingame',
+					color: 'yellow',
+					type: 'text',
+					centered: false,
+					text: event.player.persistentData.HVT_name,
+					shadow: true,
+					scale: 0.8,},
+				target: {
+					w: '$screenW', 
+					h: '$screenH',
+					x: 5,
+					y: -65,
+					alignX: 'left',
+					alignY: 'center',
+					draw: 'ingame',
+					color: 'darkRed',
+					type: 'text',
+					centered: false,
+					text: `目标：`,
+					shadow: true,
+					scale: 0.8,},
+				quests: {
+					w: '$screenW', 
+					h: '$screenH',
+					x: 10,
+					y: -80,
+					alignX: 'left',
+					alignY: 'center',
+					draw: 'ingame',
+					color: 'gold',
+					type: 'text',
+					centered: false,
+					text: `任务`,
+					shadow: true,
+					scale: 1.05,},
+				quests_underline: {
+					w: '$screenW', 
+					h: '$screenH',
+					x: 6,
+					y: -79,
+					alignX: 'left',
+					alignY: 'center',
+					draw: 'ingame',
+					color: 'gold',
+					type: 'text',
+					centered: false,
+					text: `_______`,
+					shadow: true,
+					scale: 1.05,},
+				})
+			})
+	/** 
+	 * 
+	 * 
+	 * EntityEvents.death(event => {
+		if (!event.source.player) return
+		let player = event.source.player
+		let player_username = player.username
+		let entity_id = event.entity.type
+		let entity_name = event.entity.displayName.getString()
+	
+		if (!event.level.isNight()) return
+		if (!event.source.player.tags.contains(`${entity_id}_bounty`)) return
+		let hvt_complete = event.source.player.persistentData.getInt(`${entity_id}_hvt`)
+	
+		if (hvt_counter[`${player_username}_${entity_name}`] == undefined) {
+			hvt_counter[`${player_username}_${entity_name}`] = 1
+		} else {
+			hvt_counter[`${player_username}_${entity_name}`]++
+		}
+	
+		if (hvt_counter[`${player_username}_${entity_name}`] != hvt_complete) return
+	
+		let entity_id_name = `${entity_id}_hvt`
+	
+		event.source.player.persistentData[entity_id_name] += 1
+		event.source.player.persistentData.HVT_counter -= 1
+	
+		hvt_counter[`${player_username}_${entity_name}`] = 0
+		event.server.tell(event.entity.displayName.getString() + " Bounty Complete")
+		event.source.player.tags.remove(`${entity_id}_bounty`)
+		if (!event.source.player.persistentData.contains(`kubejs_class:bounty_hunter`)) {
+			Utils.server.runCommandSilent(`/give ${player_username} numismaticoverhaul:bronze_coin ${(hvt_complete*2)*3}`)
+			event.source.player.tell(`High Value Target Reward: ${(hvt_complete*2)*3} Bronze Coins`)
+		} else {
+			Utils.server.runCommandSilent(`/give ${player_username} numismaticoverhaul:bronze_coin ${(hvt_complete*2)*9}`)
+			event.source.player.persistentData.souls += 50
+			event.source.player.paint({souls_word: {text: `Souls: ${event.source.player.persistentData.souls}`}})
+			event.source.player.tell(`Dark Marauder Reward: ${(hvt_complete*2)*9} Bronze Coins & 50 Souls`)
+		}
+	
+		player.paint({
 			hvt: {
 				w: '$screenW', 
 				h: '$screenH',
-				x: 15,
-				y: -23,
+				x: 37,
+				y: -65,
 				alignX: 'left',
 				alignY: 'center',
 				draw: 'ingame',
-				color: 'white',
+				color: 'yellow',
 				type: 'text',
 				centered: false,
-				text: `${formattedEntry}`,
+				text: `None`,
 				shadow: true,
-				scale: 1,
-			},
-			hvt_title: {
-				w: '$screenW', 
-				h: '$screenH',
-				x: -300,
-				y: -35,
-				alignX: 'center',
-				alignY: 'center',
-				draw: 'ingame',
-				color: 'darkRed',
-				type: 'text',
-				centered: true,
-				text: `高价悬赏目标`,
-				shadow: true,
-				scale: 1.1,
-			},
-		})
-	}
-})
-
-
-EntityEvents.death(event => {
-	if (!event.source.player) return
-
-	let player_username = event.source.player.username
-	let entity_id = event.entity.type
-	let entity_name = event.entity.displayName.getString()
-
-	if (!event.level.isNight()) return
-	if (!event.source.player.tags.contains(`${entity_id}_bounty`)) return
-	let hvt_complete = event.source.player.persistentData.getInt(`${entity_id}_hvt`)
-
-	if (hvt_counter[`${player_username}_${entity_name}`] == undefined) {
-		hvt_counter[`${player_username}_${entity_name}`] = 1
-	} else {
-		hvt_counter[`${player_username}_${entity_name}`]++
-	}
-
-	if (hvt_counter[`${player_username}_${entity_name}`] != hvt_complete) return
-
-	let entity_id_name = `${entity_id}_hvt`
-
-	event.source.player.persistentData[entity_id_name] += 1
-	event.source.player.persistentData.HVT_counter -= 1
-
-	hvt_counter[`${player_username}_${entity_name}`] = 0
-	event.server.tell(event.entity.displayName.getString() + "悬赏完成")
-	event.source.player.tags.remove(`${entity_id}_bounty`)
-	if (!event.source.player.persistentData.contains(`kubejs_class:bounty_hunter`)) {
-		Utils.server.runCommandSilent(`/give ${player_username} numismaticoverhaul:bronze_coin ${(hvt_complete*2)*3}`)
-		event.source.player.tell(`高价悬赏目标奖励：${(hvt_complete*2)*3} 青铜币`)
-	} else {
-		Utils.server.runCommandSilent(`/give ${player_username} numismaticoverhaul:bronze_coin ${(hvt_complete*2)*9}`)
-		event.source.player.persistentData.souls += 50
-		event.source.player.paint({souls_word: {text: `灵魂：${event.source.player.persistentData.souls}`}})
-		event.source.player.tell(`邪恶强盗的奖励：${(hvt_complete*2)*9} 青铜币和50灵魂`)
-	}
-})
+				scale: 0.8,},
+			})
+	
+	})
+	 * 
+	*/
+	

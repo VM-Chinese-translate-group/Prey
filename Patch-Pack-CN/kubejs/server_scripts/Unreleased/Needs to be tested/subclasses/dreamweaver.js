@@ -15,10 +15,14 @@ ItemEvents.rightClicked('kubejs:mindshatter_orb', event => {
             Utils.server.runCommandSilent(`/sanity set ${player_username} 100`)
             player.tags.remove('mindshatter')
             Utils.server.runCommandSilent(`/tp ${player_username} ${player_x} ${player_y} ${player_z}`)
+Utils.server.runCommandSilent(`/particle nikgubs_blades_plus:blue_spark ${player_x} ${player_y} ${player_z} 0.5 0.5 0.5 4 100 force @a`)
+            player.playSound('undead_revamp2:bidyboom')
         })
         player.addItemCooldown('kubejs:mindshatter_orb', 1000)
 
 })
+
+
 
 ItemEvents.rightClicked('kubejs:rune_of_the_dreamweaver', event => {
     event.player.persistentData.putString('mark', ' ')

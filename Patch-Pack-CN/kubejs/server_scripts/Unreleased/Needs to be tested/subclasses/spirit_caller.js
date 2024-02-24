@@ -8,32 +8,85 @@ ItemEvents.rightClicked('kubejs:rune_of_the_spirit_caller', event => {
     event.player.persistentData.putString('summon_id', ' ')
     event.player.persistentData.putInt('summon_cost', 0)
     let souls = event.player.persistentData.souls
+let souls_levels = event.player.persistentData.souls_levels
     event.player.paint({
-        souls_word: {
+spirit_caller: {
             type: 'text',
-            text: `灵魂：${souls}`,
+            text: `唤灵者：等级${souls_levels}`,
             w: '$screenW', 
             h: '$screenH',
-            x: 69,
-            y: -60,
-            alignX: 'center',
-            alignY: 'bottom',
+            x: 5,
+            y: 20,
 			draw: 'ingame',
-            color: 'lightPurple',
+            shadow: true,
+            color: 'darkAqua',
+            scale: 1,
+        },
+        souls_word: {
+            type: 'text',
+            text: ` - 灵魂：${souls}`,
+            w: '$screenW', 
+            h: '$screenH',
+            x: 5,
+            y: 30,
+			draw: 'ingame',
+            color: 'aqua',
             shadow: true,
             scale: 1,
         },
         summon_points: {
             type: 'text',
-            text: `经验：${parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`,
+            text: `经验：${parseInt(400*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`,
             w: '$screenW', 
             h: '$screenH',
-            x: 69,
-            y: -50,
-            alignX: 'center',
-            alignY: 'bottom',
+            x: 5,
+            y: 40,
+			draw: 'ingame',
+            color: 'green',
+            shadow: true,
+            scale: 1,
+        },
+    })
+})
+
+PlayerEvents.loggedIn(event => {
+    if (!event.player.persistentData.contains('kubejs_class:spirit_caller')) return
+    let souls = event.player.persistentData.souls
+    let souls_levels = event.player.persistentData.souls_levels
+    event.player.paint({
+        spirit_caller: {
+            type: 'text',
+            text: `唤灵者：等级${souls_levels}`,
+            w: '$screenW', 
+            h: '$screenH',
+            x: 5,
+            y: 20,
+			draw: 'ingame',
+            shadow: true,
+            color: 'darkAqua',
+            scale: 1,
+        },
+        souls_word: {
+            type: 'text',
+            text: ` - 灵魂：${souls}`,
+            w: '$screenW', 
+            h: '$screenH',
+            x: 5,
+            y: 30,
 			draw: 'ingame',
             color: 'aqua',
+            shadow: true,
+            scale: 1,
+},
+        summon_points: {
+            type: 'text',
+            text: ` - 经验已升级至：${parseInt(400*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`,
+            w: '$screenW', 
+            h: '$screenH',
+            x: 5,
+            y: 40,
+			draw: 'ingame',
+            color: 'green',
             shadow: true,
             scale: 1,
         }
@@ -41,14 +94,9 @@ ItemEvents.rightClicked('kubejs:rune_of_the_spirit_caller', event => {
 })
 
 
-
 EntityEvents.death(event => {
-    if (!event.entity.isMonster()) return
-    const { source } = event
-    if (!source instanceof $EntityDamageSource) return
-    if (source.actual == null) return
-    if (!source.actual.player) return
-    let player = source.actual
+    if (!event.source.player) return
+    let player = event.source.player
     if (!player.persistentData.contains('kubejs_class:spirit_caller')) return
     if (event.level.day) {
         player.persistentData.souls += parseInt(event.entity.maxHealth/6)
@@ -56,8 +104,8 @@ EntityEvents.death(event => {
         player.persistentData.souls += parseInt(2*(event.entity.maxHealth/6))/// Double soul collection at night
         
     }
-    player.paint({souls_word: {text: `灵魂：${player.persistentData.souls}`}})
-    player.paint({summon_points: {text: `召唤经验升级至${parseInt(1000*player.persistentData.souls_levels-player.persistentData.souls_leveling)}`}})
+    player.paint({souls_word: {text: ` - 灵魂：${player.persistentData.souls}`}})
+    player.paint({summon_points: {text: ` - 经验升级至：${parseInt(400*player.persistentData.souls_levels-player.persistentData.souls_leveling)}`}})
 })
 
 //EntityEvents.hurt(event => {
@@ -70,11 +118,11 @@ EntityEvents.death(event => {
   //  if (event.level.day) {
    //     player.persistentData.souls += parseInt(event.entity.maxHealth/6)
 //
-    //    player.paint({souls_word: {text: `灵魂：${player.persistentData.souls}`}})
+    //    player.paint({souls_word: {text: ` - Souls: ${player.persistentData.souls}`}})
   //  } else {
    //     player.persistentData.souls += parseInt(event.entity.maxHealth/6)
     //    player.persistentData.souls += parseInt(event.entity.maxHealth/6) /// Double soul collection at night
-    //    player.paint({souls_word: {text: `灵魂：${player.persistentData.souls}`}})
+    //    player.paint({souls_word: {text: ` - Souls: ${player.persistentData.souls}`}})
   //  }
 //})
 
@@ -112,7 +160,7 @@ EntityEvents.death(event => {
     if (event.entity.persistentData.souls < 0) {
         event.entity.persistentData.souls = 0
     }
-    event.player.paint({souls_word: {text: `灵魂：${event.player.persistentData.souls}`}})
+    event.player.paint({souls_word: {text: ` - 灵魂：${event.player.persistentData.souls}`}})
 })
 
 
@@ -135,8 +183,8 @@ EntityEvents.hurt(event => {
 
     if (boss_hits[player_username] != 3) return
     player.persistentData.souls += 1
-    player.paint({souls_word: {text: `灵魂：${player.persistentData.souls}`}})
-    player.paint({summon_points: {text: `召唤经验升级至${parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`}})
+    player.paint({souls_word: {text: ` - 灵魂：${player.persistentData.souls}`}})
+    player.paint({summon_points: {text: ` - 经验升级至${parseInt(400*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`}})
     boss_hits[player_username] = 0  
 })
 
@@ -148,6 +196,9 @@ ItemEvents.rightClicked('kubejs:orb_of_slaughtered_foes', event => {
         let entity_id = event.player.persistentData.summon_id
         let entity_cost = event.player.persistentData.summon_cost
         let souls = event.player.persistentData.souls
+let x = event.player.x
+        let y = event.player.y
+        let z = event.player.z
         if (entity_cost > souls) {
             event.player.tell('你需要'+ (entity_cost - souls)+ '以上的灵魂以召唤这种生物')
         } else {
@@ -155,10 +206,12 @@ ItemEvents.rightClicked('kubejs:orb_of_slaughtered_foes', event => {
             Utils.server.scheduleInTicks(40, () => {
                 event.player.tags.remove('OOSF')
             })
-            Utils.server.runCommandSilent(`/execute at ${player_username} run summon ${entity_id}`)
+            Utils.server.runCommandSilent(`/execute at ${player_username} run summon ${entity_id} ${x+1} ${y+1} ${z+1}`)
+            Utils.server.runCommandSilent(`/particle minecraft:soul_fire_flame ${x} ${y} ${z} 0.5 0.5 0.5 1 100 force @a`)
+            event.player.playSound('undead_unleashed:soul_scream')
             event.player.persistentData.souls -= event.player.persistentData.summon_cost
-            event.player.paint({souls_word: {text: `灵魂：${event.player.persistentData.souls}`}})
-            event.player.paint({summon_points: {text: `召唤经验升级至${parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`}})
+            event.player.paint({souls_word: {text: ` - 灵魂：${event.player.persistentData.souls}`}})
+            event.player.paint({summon_points: {text: ` - 经验升级至${parseInt(400*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)}`}})
 
         }
     })
@@ -207,7 +260,7 @@ EntityEvents.spawned(event => {
 ///
 
     player.persistentData.souls_leveling += event.entity.maxHealth/3
-    if (player.persistentData.souls_leveling <= 1000*player.persistentData.souls_levels) return
+    if (player.persistentData.souls_leveling <= 400*player.persistentData.souls_levels) return
 
 
 
@@ -217,35 +270,35 @@ EntityEvents.spawned(event => {
     //if (event.entity.maxHealth <= 30) return
     //if (player.persistentData.souls_leveling < 5) return
     player.persistentData.souls_levels += 1
-    //标记
     Utils.server.tell('灵魂水晶升级')
     player.persistentData.souls_leveling = 0
-    player.paint({summon_points: {text: `召唤经验升级至${parseInt(1000*player.persistentData.souls_levels-player.persistentData.souls_leveling)}`}})
+    player.paint({summon_points: {text: ` - 经验升级至${parseInt(400*player.persistentData.souls_levels-player.persistentData.souls_leveling)}`}})
 })
 
 //ItemEvents.rightClicked('kubejs:admin_sword', event => {
  //   Utils.server.tell(event.player.persistentData.souls_leveling)
    // Utils.server.tell(event.player.persistentData.souls_levels)
   /// / ///event.player.persistentData.souls += 1000000
-   // let souls_needed = parseInt(1000*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)
+   // let souls_needed = parseInt(400*event.player.persistentData.souls_levels-event.player.persistentData.souls_leveling)
   ///  Utils.server.tell('Summon Points Needed: '+souls_needed)
 //})
 EntityEvents.death(event => {
-    ///if (event.source.actual == null) return
-    const { source } = event
-    if (!source instanceof $EntityDamageSource) return
-    if (!source.player) return
-    let player = source.player
+    if (!event.source.player) return
+    let player = event.source.player
     let player_username = player.username
+let x = event.entity.x
+    let y = event.entity.y
+    let z = event.entity.z
     if (!player.persistentData.contains('kubejs_class:spirit_caller')) return
     let entity_id = event.entity.type
     let entity_health = parseInt(event.entity.maxHealth/2)
     if (player.offHandItem != 'kubejs:spirit_crystal') return
+Utils.server.runCommandSilent(`/playsound undead_unleashed:soul_scream master ${player_username}`)
+    Utils.server.runCommandSilent(`/particle minecraft:soul ${x} ${y} ${z} 0.5 0.5 0.5 1 100 force @a`)
     if (player.persistentData.souls_levels == 1) {
         if (event.entity.maxHealth <= 30) {
             player.persistentData.summon_id = entity_id
             player.persistentData.summon_cost = entity_health
-            //标记
             player.tell(event.entity.displayName.getString()+ '灵魂被捕获。')
         } else {
             player.tell('此生物对水晶来说太强')
@@ -301,3 +354,18 @@ EntityEvents.death(event => {
     }
 
 })
+
+
+/**
+
+ * 
+ * 
+ * 
+ * New class idea: Unnamed
+ * Weilds a sword and a pistol. Hitting enemies with the sword gives +1% damage to the next shot from the pistol.
+ * Killing enemies with the pistol gives +1% chance to tame the next mob you shoot with the pistol.
+ * Upon taming a mob, it will heal to full health and fight for you.
+ * Level it up to give the mob special effects 
+ * 
+ */
+

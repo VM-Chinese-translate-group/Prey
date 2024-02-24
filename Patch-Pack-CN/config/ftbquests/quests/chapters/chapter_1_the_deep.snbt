@@ -260,6 +260,13 @@
 					}
 					type: "item"
 				}
+				{
+					auto: "invisible"
+					command: "/subtract_subclass"
+					id: "15DE17D45AE54D72"
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "hexagon"
 			tasks: [{

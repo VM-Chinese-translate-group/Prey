@@ -1,24 +1,4 @@
-const blacklisted_horror_entities = [
-    'boh:siren_head',
-    'boh:jeff_the_killer',
-    'boh:gold_lost',
-    'boh:gold_hostile',
-    'boh:rake',
-    'boh:slender_man',
-    'boh:ben_drowned',
-    'boh:springtrap',
-    'boh:smile_dog',
-    'boh:xenomorph'
 
-]
-
-
-
-blacklisted_horror_entities.forEach((entity) => {
-    EntityEvents.spawned(`${entity}`, event => {
-        event.cancel()
-    })
-})
 
 EntityEvents.spawned(`minecraft:cat`, event => {
     let randomNumber = Math.random();

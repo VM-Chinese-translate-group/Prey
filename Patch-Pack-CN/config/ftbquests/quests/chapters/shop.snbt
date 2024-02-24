@@ -774,21 +774,10 @@
 				ForgeCaps: {
 					"dungeons_libraries:built_in_enchantments": { }
 				}
-				id: "blocky_siege:roaster_stand"
+				id: "blocky_siege:spewer_stand"
 			}
 			id: "5AE5B757F79DA221"
 			rewards: [
-				{
-					id: "33E6A4954243D756"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"dungeons_libraries:built_in_enchantments": { }
-						}
-						id: "blocky_siege:roaster_stand"
-					}
-					type: "item"
-				}
 				{
 					count: 16
 					id: "4EFB2DA9160AB7A0"
@@ -798,6 +787,17 @@
 							"dungeons_libraries:built_in_enchantments": { }
 						}
 						id: "minecraft:fire_charge"
+						}
+					type: "item"
+				}
+				{
+					id: "282AFA5F56232259"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+						id: "blocky_siege:spewer_stand"
 					}
 					type: "item"
 				}
@@ -951,14 +951,14 @@
 					type: "item"
 				}
 				{
-					count: 20
-					id: "216600FE5E5121F7"
+					count: 32
+					id: "7652DCE27378ACC4"
 					item: {
 						Count: 1
 						ForgeCaps: {
 							"dungeons_libraries:built_in_enchantments": { }
 						}
-						id: "blocky_siege:bolt"
+						id: "minecraft:arrow"
 					}
 					type: "item"
 				}
@@ -3370,6 +3370,45 @@
 			}]
 			x: 0.0d
 			y: 4.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+				id: "kubejs:cleansing_serum"
+			}
+			id: "2741AF7EEEB70E51"
+			rewards: [{
+				id: "5B9BDDB22B91A6E1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+					id: "kubejs:cleansing_serum"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				id: "24649CC0CA4413BE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+					id: "numismaticoverhaul:bronze_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -8.25d
 		}
 	]
 	title: "商店"

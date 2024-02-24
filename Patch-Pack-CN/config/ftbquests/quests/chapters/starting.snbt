@@ -252,28 +252,12 @@
 				"___________________________"
 			]
 			id: "44EF4C8A7F6402F1"
-			rewards: [
-				{
+			rewards: [{
 					exclude_from_claim_all: true
 					id: "6E690EB9756F5F32"
 					table_id: 8943371143960527305L
 					type: "choice"
-				}
-				{
-					id: "5CF6B605F86A1F21"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"dungeons_libraries:built_in_enchantments": { }
-						}
-						id: "patchouli:guide_book"
-						tag: {
-							"patchouli:book": "parcool:parcool_guide"
-						}
-					}
-					type: "item"
-				}
-			]
+				}]
 			subtitle: "按下“H”来分配你的初始技能点"
 			tasks: [{
 				id: "398B76A53A074272"
@@ -417,7 +401,7 @@
 				title: "任意魔法卷轴或法术书"
 				type: "item"
 			}]
-			title: "获得任意施法物品"
+			title: "获得一个魔法物品"
 			x: 0.5d
 			y: 1.5d
 		}
@@ -520,7 +504,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["270F556A231E8F1F"]
+			dependencies: ["44EF4C8A7F6402F1"]
 			description: [
 				" &n爬行：&r"
 				"   > 按住&oZ&r以爬行。可用来穿过1格高的间隙。"
@@ -748,9 +732,6 @@
 				]
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"dungeons_libraries:built_in_enchantments": { }
-				}
 				id: "patchouli:guide_book"
 				tag: {
 					"patchouli:book": "parcool:parcool_guide"
@@ -758,9 +739,18 @@
 			}
 			id: "270F556A231E8F1F"
 			rewards: [{
-				id: "1E5FEAEBAFD1C8AA"
-				type: "xp_levels"
-				xp_levels: 1
+				id: "2496B4A2A6B1ACFE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "parcool:parcool_guide"
+				}
+			}
+				type: "item"
 			}]
 			subtitle: "跑酷小贴士"
 			tasks: [{
@@ -769,7 +759,7 @@
 			type: "checkmark"
 			}]
 			title: "跑酷指南[读我]"			
-			x: 2.5d
+			x: 2.0d
 			y: -3.0d
 		}
 	]

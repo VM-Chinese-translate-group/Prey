@@ -213,7 +213,8 @@ const paramount_discs = {
         event.create('horizontal_wallrun', "basic").group('KubeJS').texture('kubejs:item/hwallrun').rarity('common').displayName('技能币：水平跑墙')
         event.create('crawl', "basic").group('KubeJS').texture('kubejs:item/crawl').rarity('common').displayName('技能币：爬行') //include crawl and slide
         event.create('ledgegrab', "basic").group('KubeJS').texture('kubejs:item/ledgegrab').rarity('common').displayName('技能币：壁架抓取') /// include climb up, cling to cliff, and wall slide, wall jump
-	event.create('bloodripper_grim', "basic").group('KubeJS').texture('kubejs:item/bloodripper_grim').rarity('rare').displayName('血裂者的魔法书')
+	    event.create('bloodripper_grim', "basic").group('KubeJS').texture('kubejs:item/bloodripper_grim').rarity('rare').displayName('血裂者的魔法书')
+        event.create('cleansing_serum', "basic").group('KubeJS').texture('kubejs:item/cleansing_serum').rarity('rare')
     
     });
   StartupEvents.registry('sound_event', event => {

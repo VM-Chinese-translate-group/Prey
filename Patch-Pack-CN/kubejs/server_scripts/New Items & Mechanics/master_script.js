@@ -1,6 +1,6 @@
 const removeids = ['lategamegolems:lgg_upgrade_package','lategamegolems:lgg_shield','lategamegolems:lgg_flamer_magic','lategamegolems:lgg_flamer','lategamegolems:lgg_laser','lategamegolems:lgg_ai_chip_follower','lategamegolems:lgg_ai_chip_guard','skilltree:quiver','skilltree:fiery_quiver','skilltree:armored_quiver','skilltree:gilded_quiver','skilltree:toxic_quiver','skilltree:diamond_quiver','skilltree:healing_quiver','skilltree:explosive_quiver','skilltree:silent_quiver','skilltree:bone_quiver','celestisynth:breezebreaker','celestisynth:crescentia','celestisynth:solaris','lategamegolems:lgg_sword_diamond','lategamegolems:lgg_sword_netherite','lategamegolems:lgg_mace_diamond','lategamegolems:lgg_mace_netherite','lategamegolems:lgg_mace_emerald','lategamegolems:lgg_mace_iron','lategamegolems:lgg_spear_netherite','lategamegolems:lgg_spear_emerald','lategamegolems:lgg_spear_diamond','lategamegolems:lgg_spear_iron','lategamegolems:lgg_sword_emerald','lategamegolems:lgg_sword_iron','lategamegolems:lgg_axe_diamond','lategamegolems:lgg_axe_iron','lategamegolems:lgg_axe_netherite','lategamegolems:lgg_axe_emerald','xtraarrows:golden_freezing_arrow','xtraarrows:diamond_freezing_arrow','xtraarrows:netherite_freezing_arrow','xtraarrows:iron_freezing_arrow','xtraarrows:flint_freezing_arrow','xtraarrows:diamond_explosive_arrow','xtraarrows:golden_explosive_arrow','xtraarrows:netherite_explosive_arrow','xtraarrows:iron_explosive_arrow','xtraarrows:flint_explosive_arrow','archers_paradox:diamond_arrow','archers_paradox:slime_arrow','xtraarrows:netherite_lightning_arrow','xtraarrows:diamond_lightning_arrow','xtraarrows:flint_lightning_arrow','xtraarrows:iron_lightning_arrow','xtraarrows:golden_lightning_arrow',"cgm:heavy_rifle","cgm:machine_pistol","cgm:assault_rifle","cgm:mini_gun","cgm:bazooka","cgm:grenade_launcher","cgm:rifle","cgm:shotgun","cgm:pistol","cgm:workbench","cgm:specialised_grip","cgm:light_grip","cgm:weighted_stock","cgm:tactical_stock","cgm:light_stock","cgm:silencer","cgm:long_scope","cgm:medium_scope","cgm:short_scope","cgm:stun_grenade","cgm:grenade","cgm:missile","cgm:basic_bullet","cgm:shell","cgm:advanced_bullet",'powder_power:token_night_vision','powder_power:token_speed','powder_power:token_fire_resistance','powder_power:token_speed','powder_power:token_no_fall','powder_power:token_healing','powder_power:token_exp','powder_power:token_trash','powder_power:token_jump_boost','powder_power:token_haste','powder_power:token_breathing','powder_power:token_good_omen','powder_power:token_unseen','powder_power:token_greater_healing','powder_power:token_sunshine','powder_power:token_dolphin','powder_power:token_conduit_power','powder_power:token_resistance','powder_power:token_strength','powder_power:token_greater_absorption','artifacts:scarf_of_invisibility','max_armory:copper_spear','max_armory:wooden_spear','max_armory:iron_spear','max_armory:stone_spear','max_armory:diamond_spear','max_armory:golden_spear', 'max_armory:netherite_spear', 'max_armory:wooden_halberd','max_armory:iron_halberd','max_armory:stone_halberd','max_armory:diamond_halberd','max_armory:golden_halberd','max_armory:netherite_halberd']
 const removemods = [
-	'endrem','valhelsia_furniture','nikgubs_blades_plus', 'divineweaponry', 'rpggods', 'shieldexp'
+	'endrem','valhelsia_furniture','nikgubs_blades_plus', 'divineweaponry', 'rpggods', 'shieldexp', 'prefab'
 ]
 const LTC = [
 	 'dungeons_gear:dual_crossbow','dungeons_gear:dual_crossbow','endrem:black_eye','endrem:cold_eye', 'endrem:lost_eye','endrem:nether_eye','endrem:old_eye','endrem:rogue_eye','endrem:magical_eye','endrem:wither_eye','endrem:witch_eye','endrem:cryptic_eye','assortedtools:ultimate_fist'
@@ -11,6 +11,10 @@ const ELM = {
 	'blue_skies:alchemist': 'blue_skies:poison_key',
 	'blue_skies:summoner': 'blue_skies:nature_key'
 }
+
+
+
+
 
 
 ServerEvents.recipes(e => {
@@ -76,6 +80,18 @@ ServerEvents.recipes(e => {
 			'kubejs:uncommon_pet_lootbox',
 			'kubejs:uncommon_pet_lootbox',
 			'kubejs:uncommon_pet_lootbox'
+		])
+	e.shapeless(
+		Item.of('numismaticoverhaul:bronze_coin', 10),
+			[
+				'numismaticoverhaul:silver_coin'
+	
+			])
+	e.shapeless(
+		Item.of('numismaticoverhaul:silver_coin', 10),
+			[
+				'numismaticoverhaul:gold_coin'
+	
 		])
 	e.shapeless(
 		Item.of('nikgubs_blades_plus:heart_of_final', 1),
@@ -489,53 +505,17 @@ PlayerEvents.loggedIn((event) => {
 	})
 })
 
-PlayerEvents.loggedIn((event) => {
-		if (event.server.persistentData.first_load == false) return
-		event.server.persistentData.putBoolean('first_load', false)
-		let player = event.player
-		let player_username = player.username
-		event.server.scheduleInTicks(200, event => {
-			Utils.server.tell('现在开始5分钟和平时期。')
-			Utils.server.runCommand('/mode Stage0 noreload')
-			Utils.server.runCommand('/difficulty peaceful')
-			Utils.server.runCommandSilent('/playertabs setNumberOfTabs 4')
-			Utils.server.runCommandSilent('/playertabs setTabName 0 Gear')
-			Utils.server.runCommandSilent('/playertabs setTabName 1 Food')
-			Utils.server.runCommandSilent('/playertabs setTabName 2 Blocks')
-			Utils.server.runCommandSilent('/playertabs setTabName 3 Misc')
-			Utils.server.runCommandSilent(`/parcool limitation enable ${player_username}`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility BreakfallReady false`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility Roll false`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility CatLeap false`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility VerticalWallRun false`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility HorizontalWallRun false`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility ClimbUp false`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility ClingToCliff false`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility WallSlide false`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility WallJump false`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility Crawl false`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility Slide false`)
-			Utils.server.runCommandSilent(`/parcool limitation set ${player_username} possibility Tap false`)
 
-			event.server.persistentData.putInt('lev_death', 0)
-			event.server.persistentData.putInt('golem_counter', 0)
-			event.server.persistentData.putInt('guardian_counter', 0)
-			event.server.persistentData.putInt('harbinger_counter',0)
-			event.server.persistentData.putInt('ignis_counter', 0)
-			event.server.persistentData.putInt('summoner_counter', 0)
-			event.server.persistentData.putInt('server_stage', 1)
-			player.persistentData.putFloat('arcane_affinity', 0.01)
-			player.persistentData.putInt('HVT_counter', 0)
-			hvt.forEach((target) => {
-				player.persistentData.putInt(`${target}_hvt`, 1)
-			})
-		})
-        event.server.scheduleInTicks(6000, event => {
-            Utils.server.runCommand('/mode Stage1 noreload')
-			Utils.server.runCommand('/difficulty normal')
-			Utils.server.tell('5分钟和平时期已结束，做好准备。')
-            })
-    })
+PlayerEvents.loggedIn((event) => {
+	let player = event.player
+	event.server.scheduleInTicks(600, event => {
+		player.runCommandSilent('/kubejs reload client_scripts')
+	})
+})
+
+
+
+
 
 EntityEvents.hurt(event => {
     let dmgSource = event.source
