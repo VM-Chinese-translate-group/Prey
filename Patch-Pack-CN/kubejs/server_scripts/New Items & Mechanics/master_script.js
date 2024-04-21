@@ -19,28 +19,7 @@ const ELM = {
 
 ServerEvents.recipes(e => {
 	e.smelting('minecraft:leather','minecraft:rotten_flesh')
-	
-	e.shaped('lategamegolems:lgg_ai_chip_follower', [
-		'IRI',
-		'GNG',
-		'IRI'
-	], {
-	I: 'minecraft:iron_block',
-	R: 'minecraft:redstone_block',
-	G: 'minecraft:gold_block',
-	N: 'minecraft:netherite_ingot',
-	})
 
-	e.shaped('lategamegolems:lgg_ai_chip_guard', [
-		'IRI',
-		'LNL',
-		'IRI'
-	], {
-	I: 'minecraft:iron_block',
-	R: 'minecraft:redstone_block',
-	L: 'minecraft:lapis_block',
-	N: 'minecraft:netherite_ingot',
-	})
 	e.shapeless(
 		Item.of('minecraft:string', 3),
 		[
