@@ -487,12 +487,12 @@
 			description: [
 				"&n基础控制：&r"
 				""
-				"    &oOpen Skill Tree&r: H"
-				"    &oOpen Quiver:&r X (Quiver Required)"
-				"    &oBackpack:&r B (Backpack Required)"
-				"    &oZoom:&r C"
-				"    &oBuilding Menu:&r TAB"
-				"    &oSpellbook Wheel:&r V (Spellbook Required)"
+				"    &o打开技能树：&rH"
+				"    &o打开箭袋&r：X（需要箭袋）"
+				"    &o背包：&rB（需要背包）"
+				"    &o缩放：&rC"
+				"    &o建筑菜单：&rTAB"
+				"    &o法术书轮盘：&rV（需要法术书）"
 				""
 				"___________________________"
 			]
@@ -503,13 +503,13 @@
 				table_id: 8943371143960527305L
 				type: "choice"
 			}]
-			subtitle: "Press 'H' to allocate your starting Skill Points"
+			subtitle: "按下‘H’以分配你的初始技能点"
 			tasks: [{
 				id: "398B76A53A074272"
-				title: "Read This:"
+				title: "请阅读："
 				type: "checkmark"
 			}]
-			title: "Choose Your Main Class"
+			title: "选择你的主职业"
 			x: 1.0d
 			y: -15.5d
 		}
@@ -517,7 +517,7 @@
 			can_repeat: true
 			dependencies: ["44EF4C8A7F6402F1"]
 			description: [
-				"&lStarting Skills:&r"
+				"&l初始技能：&r"
 				" "
 				" &nWall Cling:&r "
 				"   > While against a wall, hold &oSHIFT&r to cling to the wall"
@@ -612,7 +612,7 @@
 			}]
 			tasks: [{
 				id: "112D27D64DCD1878"
-				title: "[READ]"
+				title: "[请读]"
 				type: "checkmark"
 			}]
 			title: "Parkour Skill: Crawl"
@@ -640,7 +640,7 @@
 			}]
 			tasks: [{
 				id: "05B031DC99F50244"
-				title: "[READ]"
+				title: "[请读]"
 				type: "checkmark"
 			}]
 			title: "Parkour Skill: Cat Leap"
@@ -668,7 +668,7 @@
 			}]
 			tasks: [{
 				id: "382E353B1E8CFB7E"
-				title: "[READ]"
+				title: "[请读]"
 				type: "checkmark"
 			}]
 			title: "Parkour Skill: Break Fall"
@@ -705,7 +705,7 @@
 			}]
 			tasks: [{
 				id: "71E7EC77314F5955"
-				title: "[READ]"
+				title: "[请读]"
 				type: "checkmark"
 			}]
 			x: 2.5d
@@ -732,7 +732,7 @@
 			}]
 			tasks: [{
 				id: "0E1D6606000423C8"
-				title: "[READ]"
+				title: "[请读]"
 				type: "checkmark"
 			}]
 			title: "Parkour Skill: Vertical Wallrun"
@@ -760,7 +760,7 @@
 			}]
 			tasks: [{
 				id: "23F390EA8CE3A97C"
-				title: "[READ]"
+				title: "[请读]"
 				type: "checkmark"
 			}]
 			title: "Parkour Skill: Horizontal Wallrun"
