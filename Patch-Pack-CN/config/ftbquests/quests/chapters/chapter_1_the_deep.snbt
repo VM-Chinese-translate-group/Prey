@@ -519,42 +519,42 @@
 			description: [
 				"&l初始技能：&r"
 				" "
-				" &nWall Cling:&r "
-				"   > While against a wall, hold &oSHIFT&r to cling to the wall"
+				" &n爬墙：&r "
+				"   > 靠近墙时按住&oSHIFT&r并跳跃就可以爬墙。"
 				""
 				""
 				""
-				"&lUnlockable Skills:&r"
+				"&l未解锁的技能：&r"
 				" "
-				" &nLedge Grab:&r "
-				"   > While against a ledge, hold &oRIGHT-CLICK&r to hold on to the edge"
+				" &n壁架抓取：&r "
+				"   > 靠近栏杆时按住&o右键&r就可以抓住栏杆。"
 				""
-				" &nClimb Up:&r"
-				"   > While using Ledge Grab, press &oSPACE&r to climb up."
+				" &n攀爬：&r"
+				"   > 使用壁架抓取时按下&o空格&r就可以爬上栏杆。"
 				""
-				" &nWall Jump:&r"
-				"   > While using Ledge Grab or Wall Cling, look away from the ledge you are holding and press &oSPACE&r to jump away from the wall. Can be chained to another Ledge Grab or Wall Cling"
+				" &n墙跳：&r"
+				"   > 使用壁架抓取或爬墙时，看向你抓住的栏杆并按下&o空格&r就可以跳离墙壁。可以用来在另一个栏杆壁架抓取或爬墙。"
 				""
-				" &nWall Slide:&r"
-				"   > While falling next to a wall, hold &oRIGHT-CLICK&r to slow your fall and reduce fall damage"
+				" &n滑墙：&r"
+				"   > 当下落并靠近墙壁时按住&o右键&r可以缓慢下落并减少摔落伤害。"
 				""
-				" &nCat Leap:&r"
-				"   > While sprinting, tap &oSHIFT&r to do a long horizontal jump. "
+				" &n猫扑：&r"
+				"   > 冲刺时按下&oSHIFT&r可以进行长距离跳跃。"
 				""
-				" &nCrawl:&r "
-				"   > Hold &oZ&r to crawl. Can be used to go under gaps of 1 block."
+				" &n爬行：&r "
+				"   > 按住&oZ&r可以爬行。可用来进入1格高的间隙。"
 				""
-				" &nSlide:&r"
-				"   > While Sprinting, hold &oZ&r to Slide. Can be used to go under gaps of 1 block without losing momentum."
+				" &n滑行：&r"
+				"   > 冲刺时按下&oZ&r可以滑行。可以用来全速通过1格高的地方。"
 				""
-				" &nBreakfall:&r "
-				"   > While falling, Hold &oSHIFT&r and &oR&r before hitting the ground to reduce the fall damage you take."
+				" &n缓冲技：&r "
+				"   > 摔落时在靠近地面前按下&oSHIFT&r和&oR&r可以减少摔落伤害。"
 				""
-				" &nHorizontal Wallrun:&r "
-				"  > While Sprinting parallel to a wall, jump towards the wall and hold &oR&r and &oCTRL&r to run along the wall. Press &oSPACE&r to jump away from the wall using Wall Jump"
+				" &n水平墙跑：&r "
+				"  > 贴墙冲刺并跳跃时按住&oR&r和&oCTRL&r可以沿着墙跑。水平墙跑时按&o空格&r可以蹬墙跳。"
 				""
-				" &nVertical Wallrun:&r "
-				"   > While Sprinting, face a wall and look slightly up towards a ledge. Then press and hold &oSPACE&r to run up the wall. Chain this with Wall Cling or Ledge Grab."
+				" &n蹬壁上墙：&r "
+				"   > 冲刺时面向墙壁并抬头看。然后按下&o空格&r可以蹬壁上墙。可以配合爬墙和壁架抓取。"
 			]
 			icon: {
 				Count: 1
@@ -578,24 +578,24 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Parkour Help"
+			subtitle: "跑酷小贴士"
 			tasks: [{
 				id: "5FA4C3417E0EB30F"
-				title: "ParCool Tutorial (READ ME)"
+				title: "跑酷指南[读我]"
 				type: "checkmark"
 			}]
-			title: "ParCool Tutorial [READ ME]"
+			title: "跑酷指南[读我]"
 			x: 0.5d
 			y: -17.5d
 		}
 		{
 			dependencies: ["44EF4C8A7F6402F1"]
 			description: [
-				" &nCrawl:&r "
-				"   > Hold &oZ&r to crawl. Can be used to go under gaps of 1 block."
+				" &n爬行：&r "
+				"   > 按住&oZ&r以爬行。可用来穿过1格高的间隙。"
 				""
-				" &nSlide:&r"
-				"   > While Sprinting, hold &oZ&r to Slide. Can be used to go under gaps of 1 block without losing momentum."
+				" &n滑行：&r"
+				"   > 冲刺时按下&oZ&r可以滑行。可以用来全速通过1格高的间隙。"
 			]
 			icon: "kubejs:crawl"
 			id: "4DF87944C39C3424"
@@ -615,15 +615,15 @@
 				title: "[请读]"
 				type: "checkmark"
 			}]
-			title: "Parkour Skill: Crawl"
+			title: "跑酷技能：爬行"
 			x: 0.0d
 			y: -14.5d
 		}
 		{
 			dependencies: ["44EF4C8A7F6402F1"]
 			description: [
-				"&nCat Leap:&r"
-				"   > While sprinting, tap &oSHIFT&r to do a long horizontal jump. "
+				"&n猫扑：&r"
+				"   > 冲刺时按下&oSHIFT&r可以进行长距离跳跃。"
 			]
 			icon: "kubejs:catleap"
 			id: "32795C02B2854A37"
@@ -643,15 +643,15 @@
 				title: "[请读]"
 				type: "checkmark"
 			}]
-			title: "Parkour Skill: Cat Leap"
+			title: "跑酷技能：猫扑"
 			x: 2.0d
 			y: -14.5d
 		}
 		{
 			dependencies: ["44EF4C8A7F6402F1"]
 			description: [
-				"&nBreakfall:&r "
-				"   > While falling, Hold &oSHIFT&r and &oR&r before hitting the ground to reduce the fall damage you take."
+				"&n缓冲技：&r "
+				"   > 摔落时在靠近地面前按下&oSHIFT&r和&oR&r可以减少摔落伤害。"
 			]
 			icon: "kubejs:breakfall"
 			id: "5AC85A470C9499FE"
@@ -671,24 +671,24 @@
 				title: "[请读]"
 				type: "checkmark"
 			}]
-			title: "Parkour Skill: Break Fall"
+			title: "跑酷技能：缓冲技"
 			x: -0.5d
 			y: -15.5d
 		}
 		{
 			dependencies: ["44EF4C8A7F6402F1"]
 			description: [
-				"&nLedge Grab:&r "
-				"   > While against a ledge, hold &oRIGHT-CLICK&r to hold on to the edge"
+				"&n壁架抓取：&r "
+				"   > 靠近栏杆时按住&o右键&r就可以抓住栏杆。"
 				""
-				" &nClimb Up:&r"
-				"   > While using Ledge Grab, press &oSPACE&r to climb up."
+				" &n攀爬：&r"
+				"   > 使用壁架抓取时按下&o空格&r就可以爬上栏杆。"
 				""
-				" &nWall Jump:&r"
-				"   > While using Ledge Grab or Wall Cling, look away from the ledge you are holding and press &oSPACE&r to jump away from the wall. Can be chained to another Ledge Grab or Wall Cling"
+				" &n墙跳：&r"
+				"   > 使用壁架抓取或爬墙时，看向你抓住的栏杆并按下&o空格&r就可以跳离墙壁。可以用来在另一个栏杆壁架抓取或爬墙。"
 				""
-				" &nWall Slide:&r"
-				"   > While falling next to a wall, hold &oRIGHT-CLICK&r to slow your fall and reduce fall damage"
+				" &n滑墙：&r"
+				"   > 当下落并靠近墙壁时按住&o右键&r可以缓慢下落并减少摔落伤害。"
 			]
 			icon: "kubejs:ledgegrab"
 			id: "65843007A63422B3"
@@ -714,8 +714,8 @@
 		{
 			dependencies: ["44EF4C8A7F6402F1"]
 			description: [
-				" &nVertical Wallrun:&r "
-				"   > While Sprinting, face a wall and look slightly up towards a ledge. Then press and hold &oSPACE&r to run up the wall. Chain this with Wall Cling or Ledge Grab."
+				" &n蹬壁上墙：&r "
+				"   > 冲刺时面向墙壁并抬头看。然后按下&o空格&r可以蹬壁上墙。可以配合爬墙和壁架抓取。"
 			]
 			icon: "kubejs:vertical_wallrun"
 			id: "45FD45256E21D9AC"
@@ -735,15 +735,15 @@
 				title: "[请读]"
 				type: "checkmark"
 			}]
-			title: "Parkour Skill: Vertical Wallrun"
+			title: "跑酷技能：蹬壁上墙"
 			x: 2.0d
 			y: -16.5d
 		}
 		{
 			dependencies: ["44EF4C8A7F6402F1"]
 			description: [
-				" &nHorizontal Wallrun:&r "
-				"  > While Sprinting parallel to a wall, jump towards the wall and hold &oR&r and &oCTRL&r to run along the wall. Press &oSPACE&r to jump away from the wall using Wall Jump"
+				" &n水平墙跑：&r "
+				"  > 贴墙冲刺并跳跃时按住&oR&r和&oCTRL&r可以沿着墙跑。水平墙跑时按&o空格&r可以蹬墙跳。"
 			]
 			icon: "kubejs:horizontal_wallrun"
 			id: "7620E496F9C5CCAC"
@@ -763,7 +763,7 @@
 				title: "[请读]"
 				type: "checkmark"
 			}]
-			title: "Parkour Skill: Horizontal Wallrun"
+			title: "跑酷技能：水平墙跑"
 			x: 0.0d
 			y: -16.5d
 		}
@@ -782,7 +782,7 @@
 						id: "aquamirae:dead_sea_scroll"
 					}
 					id: "3D21A8BE5C12B9B5"
-					title: "Unlock Magic Skill Tree"
+					title: "解锁魔法技能树"
 					type: "command"
 				}
 				{
@@ -804,7 +804,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press \"H\" to view your Skill Trees"
+			subtitle: "按“H”以显示你的技能树"
 			tasks: [{
 				id: "33F7407753ABE2E3"
 				item: {
@@ -814,10 +814,10 @@
 						value: "kubejs:magic_item"
 					}
 				}
-				title: "Any Magic Scroll or Spellbook"
+				title: "任意法术卷轴或法术书"
 				type: "item"
 			}]
-			title: "Acquire A Magical Item"
+			title: "获得一个魔法物品"
 			x: 1.0d
 			y: -7.0d
 		}
@@ -836,7 +836,7 @@
 						id: "aquamirae:dead_sea_scroll"
 					}
 					id: "646840C2F3740C74"
-					title: "Unlock Crafting Skill Tree"
+					title: "解锁合成技能树"
 					type: "command"
 				}
 				{
@@ -851,13 +851,13 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press \"H\" to view your Skill Trees"
+			subtitle: "按‘H’以显示你的技能树"
 			tasks: [{
 				id: "0F57AC510960A3D2"
 				item: "crafting_on_a_stick:crafting_table"
 				type: "item"
 			}]
-			title: "Acquire a Crafting Table on a Stick"
+			title: "获得一个便携式橡木工作台"
 			x: 1.0d
 			y: -12.0d
 		}
@@ -880,7 +880,7 @@
 						id: "aquamirae:dead_sea_scroll"
 					}
 					id: "2519B4AA4E31DF99"
-					title: "Unlock Mining Skill Tree"
+					title: "解锁挖掘技能树"
 					type: "command"
 				}
 				{
@@ -895,7 +895,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press \"H\" to view your Skill Trees"
+			subtitle: "按‘H’以显示你的技能树"
 			tasks: [{
 				id: "2B3E44623F548139"
 				item: {
@@ -905,10 +905,10 @@
 						value: "kubejs:hammers"
 					}
 				}
-				title: "Any Mining Hammer"
+				title: "任意挖掘锤"
 				type: "item"
 			}]
-			title: "Acquire Any Hammer"
+			title: "获得任意锤"
 			x: 1.0d
 			y: -10.0d
 		}
@@ -921,7 +921,7 @@
 					command: "/puffish_skills category unlock @p Melee"
 					icon: "aquamirae:dead_sea_scroll"
 					id: "6D2297AB6406D9E5"
-					title: "Unlock Melee Skill Tree"
+					title: "解锁近战技能树"
 					type: "command"
 				}
 				{
@@ -937,7 +937,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press \"H\" to view your Skill Trees"
+			subtitle: "按‘H’以显示你的技能树"
 			tasks: [{
 				id: "0A3C6FD43F074D8F"
 				item: {
@@ -947,10 +947,10 @@
 						value: "forge:tools/swords"
 					}
 				}
-				title: "Any Sword"
+				title: "任意剑"
 				type: "item"
 			}]
-			title: "Acquire a Sword"
+			title: "获得一把剑"
 			x: 0.5d
 			y: -11.0d
 		}
@@ -963,7 +963,7 @@
 					command: "/puffish_skills category unlock @p Archery"
 					icon: "aquamirae:dead_sea_scroll"
 					id: "787E1F3FC026754D"
-					title: "Unlock Archery Skill Tree"
+					title: "解锁弓箭手技能树"
 					type: "command"
 				}
 				{
@@ -979,7 +979,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press \"H\" to view your Skill Trees"
+			subtitle: "按‘H’以显示你的技能树"
 			tasks: [{
 				id: "08898689C7E31D04"
 				item: {
@@ -991,7 +991,7 @@
 				}
 				type: "item"
 			}]
-			title: "Acquire a Bow"
+			title: "获得一把弓"
 			x: 1.5d
 			y: -11.0d
 		}
@@ -1068,7 +1068,7 @@
 				}
 				type: "item"
 			}]
-			title: "Acquire a Grappling Hook"
+			title: "获得一个抓钩"
 			x: 2.0d
 			y: -8.5d
 		}
@@ -1081,14 +1081,14 @@
 				item: "minecraft:copper_ore"
 				type: "item"
 			}]
-			subtitle: "A valuable tool for the journey ahead"
+			subtitle: "前行路上的宝贵工具"
 			tasks: [{
 				consume_items: false
 				id: "3BFCDCF6B5C7C24A"
 				item: "structurecompass:structure_compass"
 				type: "item"
 			}]
-			title: "Craft a Structure Compass"
+			title: "合成一个结构指南针"
 			x: 1.0d
 			y: -13.5d
 		}
@@ -1128,10 +1128,10 @@
 						value: "curios:glider"
 					}
 				}
-				title: "Any #curios:glider"
+				title: "任意#curios:glider"
 				type: "item"
 			}]
-			title: "Acquire a Paraglider"
+			title: "获得一个滑翔伞"
 			x: 0.0d
 			y: -8.5d
 		}
@@ -1143,7 +1143,7 @@
 					command: "/puffish_skills points add @p Elixirs 1"
 					icon: "kubejs:fire_elixir"
 					id: "6195F8D050D2ED09"
-					title: "1x Elixir Point"
+					title: "1x 圣酿点"
 					type: "command"
 				}
 				{
@@ -1181,13 +1181,13 @@
 					type: "item"
 				}
 			]
-			subtitle: "Press H to view your Skill Trees and Elixir Challenges"
+			subtitle: "按H以显示你的技能树和圣酿挑战"
 			tasks: [{
 				id: "36AF815F834793DA"
 				title: "Finish Tutorial"
 				type: "checkmark"
 			}]
-			title: "Finish Chapter 1"
+			title: "完成第一章"
 			x: 1.0d
 			y: 3.5d
 		}
@@ -1198,14 +1198,14 @@
 				count: 8
 				id: "71F7739633AD1C90"
 				item: "minecraft:rotten_flesh"
-				title: "Cook this Rotten Flesh in a furnace to get leather"
+				title: "在熔炉里烧炼腐肉以获得皮革"
 				type: "item"
 			}]
-			subtitle: "Use your Structure Compass"
+			subtitle: "使用你的结构指南针"
 			tasks: [{
 				id: "17C525872F30BCE5"
 				structure: "irons_spellbooks:evoker_fort"
-				title: "Use your Structure Compass"
+				title: "使用你的结构指南针"
 				type: "structure"
 			}]
 			title: "Find an Evoker Fort"
@@ -1215,7 +1215,7 @@
 		{
 			dependencies: ["1E1715D25E09BA64"]
 			id: "56167F4613F04904"
-			subtitle: "Climb the tower"
+			subtitle: "爬上塔"
 			tasks: [{
 				entity: "irons_spellbooks:archevoker"
 				icon: {
@@ -1229,7 +1229,7 @@
 					}
 				}
 				id: "1E107FE9C2D604C3"
-				title: "Kill the Archevoker"
+				title: "击杀高位唤魔者"
 				type: "kill"
 				value: 1L
 			}]
