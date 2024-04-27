@@ -5,7 +5,7 @@
 	filename: "shop"
 	group: ""
 	id: "3B550B0EBC45421C"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
