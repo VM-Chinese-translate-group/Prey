@@ -7,6 +7,6 @@ playerNameCheck = true
 modPackTranslationUpdateCheckUrl = "https://vmct-cn.top/modpacks/prey/update.txt"
 modPackTranslationUrl = "https://vmct-cn.top/modpacks/prey/"
 tipsUrl = "https://vmct-cn.top/tips.txt"
-modPackTranslationVersion = "1.0"
+modPackTranslationVersion = "1.13v2"
 tipsMinutes = 20
 nameUrl = "https://vmct-cn.top/name.json"
