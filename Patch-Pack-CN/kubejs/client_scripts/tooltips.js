@@ -20,7 +20,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' 生命值：').gold(), Text.of('70').darkGreen()])
-		text.add(3, [Text.of(' 模式：').gold(), Text.of(' 停留，游荡').gray()])
+		text.add(3, [Text.of(' 模式：').gold(), Text.of('停留，游荡').gray()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, Text.green(' 猴子').bold(true))
@@ -30,7 +30,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('70').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡，').gray(), Text.of('跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, Text.gray(' > 可用作坐骑，无需鞍。'))
@@ -42,7 +42,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('25').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随,').darkAqua(), Text.of(' 聚集').yellow()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡，').gray(), Text.of('跟随，').darkAqua(), Text.of('聚集').yellow()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, Text.gray(' > 可以收集物品并运送到附近的容器中'))
@@ -54,7 +54,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('70').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡').gray()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡').gray()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, Text.gray(' > 可将目标拖入水中并使其死亡'))
@@ -64,7 +64,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('25').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡，').gray(), Text.of('跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, [Text.of(' > 给予它一个').gray(), Text.of(' 古代飞镖').gold(), Text.of('以提高攻击伤害并增加穿透能力').gray()])
@@ -75,7 +75,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('85').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 游荡').gray()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('游荡').gray()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, Text.gray(' > 骑乘时可带有箱子'))
@@ -85,7 +85,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('55').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡，').gray(), Text.of('跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, [Text.of(' > 攻击会造成').gray(), Text.of(' 中毒').darkGreen()])
@@ -97,7 +97,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('40').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡，').gray(), Text.of('跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, Text.gray(' > 攻击可使节肢动物瘫痪'))
@@ -107,7 +107,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('45').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡，').gray(), Text.of('跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, Text.gray(' > 育儿袋中有存储物品的空间'))
@@ -118,7 +118,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('25').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡，').gray(), Text.of('跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, [Text.of(' > 可用于侦察区域，需要装备').gray(), Text.of(' 猎鹰手套和兜帽').gold()])
@@ -128,7 +128,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('20').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡，').gray(), Text.of('跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, Text.gray(' > 不能攻击'))
@@ -140,7 +140,7 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('30').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡，').gray(), Text.of('跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, Text.green(' > 可以飞在危险区域外'))
@@ -151,25 +151,25 @@ ItemEvents.tooltip(event => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('25').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随, ').yellow(), Text.of('破坏方块').darkAqua()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡，').gray(), Text.of('跟随，').yellow(), Text.of('破坏方块').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
 		text.add(6, [Text.of(' > 攻击会对目标').gray(), Text.of('造成').gray(), Text.of(' 火焰效果').red()])
-		text.add(7, [Text.of(' > 进入').gray(), Text.of(' 破坏方块模式').darkAqua(), Text.of('，需要给它你想让它破坏的方块，并设置为').gray(), Text.of(' 游荡模式').gold()])
+		text.add(7, [Text.of(' > 进入').gray(), Text.of('破坏方块模式').darkAqua(), Text.of('，需要给它你想让它破坏的方块，并设置为').gray(), Text.of('游荡模式').gold()])
 	})
 
 	  event.addAdvanced('kubejs:mimic_octopus_summoning_stone', (item, advanced, text) => {
 		
 		text.add(1, Text.yellow('属性：').underlined(true))
 		text.add(2, [Text.of(' > 生命值：').gold(), Text.of('35').darkGreen()])
-		text.add(3, [Text.of(' > 模式：').gold(), Text.of(' 停留，游荡,').gray(), Text.of(' 跟随').darkAqua()])
+		text.add(3, [Text.of(' > 模式：').gold(), Text.of('停留，游荡，').gray(), Text.of('跟随').darkAqua()])
 		text.add(4, Text.white(' '))
 		text.add(5, Text.yellow('特殊属性：').underlined(true))
-		text.add(6, [Text.of(' > 只能在水中生存，除非使用 ').gray(), Text.of('粘液球 ').green(), Text.of('，而粘液球必须每 2天重新使用一次。').gray()])
-		text.add(7, [Text.of(' > 当获得特定物品时，它会模仿其他生物。在模仿中，你可以为它注入').gray(), Text.of(' 5-8个复刻凝胶').gold(), Text.of(' 来激活').gray(), Text.of(' 特殊攻击').yellow()])
+		text.add(6, [Text.of(' > 只能在水中生存，除非使用').gray(), Text.of('黏液球').green(), Text.of('，而黏液球必须每2天重新使用一次。').gray()])
+		text.add(7, [Text.of(' > 当获得特定物品时，它会模仿其他生物。在模仿中，你可以为它注入').gray(), Text.of(' 5-8个复刻凝胶').gold(), Text.of('以激活').gray(), Text.of('特殊攻击').yellow()])
 		text.add(8, Text.white(' '))
 		if (!event.alt) {
-			text.add(9, [Text.of('按住 ').yellow(), Text.of('ALT ').gold(), Text.of('以了解更多有关其').yellow(), Text.of(' 形态，').aqua(), Text.of(' 攻击，').red(), Text.of('以及其相应').yellow(), Text.of('物品的内容').green()])
+			text.add(9, [Text.of('按住 ').yellow(), Text.of('ALT ').gold(), Text.of('以了解更多有关其').yellow(), Text.of('形态，').aqua(), Text.of('攻击，').red(), Text.of('以及其相应').yellow(), Text.of('物品的内容').green()])
 		  } else {
 			text.add(9, [Text.of('苦力怕形态：').aqua()])
 			text.add(10, [Text.of(' > 物品：').green(), Text.of('火药').gray()])
@@ -180,7 +180,7 @@ ItemEvents.tooltip(event => {
 			text.add(15, [Text.of(' >攻击：').red(), Text.of('发射一束激光').gray()])
 			text.add(16, [Text.of(' ').gray()])
 			text.add(17, [Text.of('河豚形态 ：').aqua()])
-			text.add(18, [Text.of(' > 物品：').green(), Text.of(' 河豚').gray()])
+			text.add(18, [Text.of(' > 物品：').green(), Text.of('河豚').gray()])
 			text.add(19, [Text.of(' >攻击：').red(), Text.of('毒刺').gray()])
 		  }
 	  })
@@ -201,7 +201,7 @@ ItemEvents.tooltip(event => {
 		  text.add(7, Text.gold('  ')) 
 		  }
 		  if (!event.ctrl) {
-			text.add(1, [Text.of('按住').yellow(), Text.of('CTRL').gold(), Text.of('来查看').yellow(), Text.of('职业属性').gold()])
+			text.add(1, [Text.of('按住').yellow(), Text.of('CTRL').gold(), Text.of('以查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
 			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+100 最大法力值……').blue(), Text.of('（副职业综合效果：').yellow(), Text.of('+150 最大法力值').darkPurple(), Text.of('）').yellow()])
@@ -216,7 +216,7 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:rogue', (item, advanced, text) => {
 		
 		if (!event.shift) {
-			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('来查看').yellow(), Text.of('副职业综合').darkPurple()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业综合').darkPurple()])
 		  } else {
 		  text.add(1, Text.gold('  ')) 
 		  text.add(2, [Text.of('副职业综合:').gold().underlined()])
@@ -227,7 +227,7 @@ ItemEvents.tooltip(event => {
 		  text.add(7, Text.gold('  ')) 
 		  }
 		  if (!event.ctrl) {
-			text.add(1, [Text.of('按住 ').yellow(), Text.of('CTRL ').gold(), Text.of('来查看').yellow(), Text.of('职业属性').gold()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('CTRL ').gold(), Text.of('以查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
 			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+20% 暴击伤害').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+30% 暴击伤害').darkPurple(), Text.of(')').yellow()])
@@ -384,7 +384,7 @@ ItemEvents.tooltip(event => {
 		}
 
 		if (!event.shift) {
-			text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('来查看天赋树技能。').gold()])
+			text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('以查看天赋树技能。').gold()])
 		  } else {
 			text.add(1, Text.yellow('天赋树技能').underlined(true))
 			text.add(2, Text.aqua(' > 末影法术强度'))
@@ -1510,10 +1510,9 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 		text.add(4, [Text.of('提示：读你的').gray(), Text.of('跑酷指南').aqua(), Text.of('以了解这个技能。').gray()])
 	});
 
-})
-
-event.addAdvanced('kubejs:cleansing_serum', (item, advanced, text) => {
-	text.add(1, [Text.of('移除').yellow(), Text.of('所有').red().underlined(), Text.of('主职业').gold(), Text.of('和').yellow(), Text.of('副职业').gold(), Text.of('效果和增益。').yellow()])
+	event.addAdvanced('kubejs:cleansing_serum', (item, advanced, text) => {
+		text.add(1, [Text.of('移除').yellow(), Text.of('所有').red().underlined(), Text.of('主职业').gold(), Text.of('和').yellow(), Text.of('副职业').gold(), Text.of('效果和增益。').yellow()])
+	});
 });
 
 
