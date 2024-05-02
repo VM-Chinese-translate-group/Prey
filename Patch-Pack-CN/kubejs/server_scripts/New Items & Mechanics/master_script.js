@@ -19,7 +19,7 @@ const ELM = {
 
 ServerEvents.recipes(e => {
 	e.smelting('minecraft:leather','minecraft:rotten_flesh')
-
+	
 	e.shapeless(
 		Item.of('minecraft:string', 3),
 		[
@@ -62,15 +62,15 @@ ServerEvents.recipes(e => {
 		])
 	e.shapeless(
 		Item.of('numismaticoverhaul:bronze_coin', 10),
-			[
-				'numismaticoverhaul:silver_coin'
-	
-			])
+		[
+			'numismaticoverhaul:silver_coin'
+
+		])
 	e.shapeless(
 		Item.of('numismaticoverhaul:silver_coin', 10),
-			[
-				'numismaticoverhaul:gold_coin'
-	
+		[
+			'numismaticoverhaul:gold_coin'
+
 		])
 	e.shapeless(
 		Item.of('nikgubs_blades_plus:heart_of_final', 1),
@@ -527,6 +527,9 @@ ServerEvents.loaded(event => {
     Utils.server.runCommandSilent('/gamerule moneyDropPercentage 0')
 })
 
+
+
+
 // All Create Items (Maybe make a lootbox that you can buy instead of items)
 // Tetra Items
 // most ores (use scroll of harvest for tiers)
@@ -809,6 +812,7 @@ const scaling_entity_health = {
 	'mutantmonsters:mutant_enderman': 250,
 	'dungeons_mobs:blastling': 40,
 	'mutantmonsters:mutant_snow_golem': 250,
+	'born_in_chaos_v1:lord_the_headless': 120
 	
 	
 }
