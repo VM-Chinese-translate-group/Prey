@@ -190,10 +190,10 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('kubejs:warlock', (item, advanced, text) => {
 		
 		if (!event.shift) {
-			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业综合').darkPurple()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业协作').darkPurple()])
 		  } else {
 		  text.add(1, Text.gold('  ')) 
-		  text.add(2, [Text.of('副职业综合：').gold().underlined()])
+		  text.add(2, [Text.of('副职业协作：').gold().underlined()])
 		  text.add(3, [Text.of(' > 战斗法师').aqua()])
 		  text.add(4, [Text.of(' > 守护者').aqua()])
 		  text.add(5, [Text.of(' > 魔术师').aqua()])
@@ -204,11 +204,11 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住').yellow(), Text.of('CTRL').gold(), Text.of('以查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
-			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+100 最大法力值……').blue(), Text.of('（副职业综合效果：').yellow(), Text.of('+150 最大法力值').darkPurple(), Text.of('）').yellow()])
+			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+100 最大法力值……').blue(), Text.of('（副职业协作效果：').yellow(), Text.of('+150 最大法力值').darkPurple(), Text.of('）').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('沙漠蛛蜂').gold()])
 			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('击杀任何怪物可获得45法力值').lightPurple()])
 		  }
-		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('专注于魔法的职业。推荐副职业从前线输出伤害到后方治疗和辅助')])
+		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('从前线输出型到后方辅助型，都是推荐的副职业选择')])
 		  text.add(2, Text.gold('  ')) 
 	  })
 
@@ -216,10 +216,10 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:rogue', (item, advanced, text) => {
 		
 		if (!event.shift) {
-			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业综合').darkPurple()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业协作').darkPurple()])
 		  } else {
 		  text.add(1, Text.gold('  ')) 
-		  text.add(2, [Text.of('副职业综合:').gold().underlined()])
+		  text.add(2, [Text.of('副职业协作:').gold().underlined()])
 		  text.add(3, [Text.of(' > 赏金猎人').aqua()])
 		  text.add(4, [Text.of(' > 炼金术师').aqua()])
 		  text.add(5, [Text.of(' > 织梦师').aqua()])
@@ -230,7 +230,7 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住 ').yellow(), Text.of('CTRL ').gold(), Text.of('以查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
-			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+20% 暴击伤害').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+30% 暴击伤害').darkPurple(), Text.of(')').yellow()])
+			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+20% 暴击伤害').blue(), Text.of(' (副职业协作效果：').yellow(), Text.of('+30% 暴击伤害').darkPurple(), Text.of(')').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('袋鼠').gold()])
 			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('杀掉一个敌人时你会隐身于阴影并获得5秒的爆发加速').lightPurple()])
 		  }
@@ -243,10 +243,10 @@ ItemEvents.tooltip(event => {
 	  event.addAdvanced('kubejs:scout', (item, advanced, text) => {
 		
 		if (!event.shift) {
-			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业综合').darkPurple()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业协作').darkPurple()])
 		  } else {
 		  text.add(1, Text.gold('  ')) 
-		  text.add(2, [Text.of('副职业综合:').gold().underlined()])
+		  text.add(2, [Text.of('副职业协作:').gold().underlined()])
 		  text.add(3, [Text.of(' > 奥术游侠').aqua()])
 		  text.add(4, [Text.of(' > 探险家').aqua()])
 		  text.add(5, [Text.of(' > 织梦师').aqua()])
@@ -257,21 +257,21 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住 ').yellow(), Text.of('CTRL ').gold(), Text.of('以查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
-			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+20% 范围攻击速度').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+35% 范围攻击速度').darkPurple(), Text.of(')').yellow()])
+			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+20% 范围攻击速度').blue(), Text.of(' (副职业协作效果：').yellow(), Text.of('+35% 范围攻击速度').darkPurple(), Text.of(')').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('白头海雕').gold()])
 			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('每成功击中10次弹射物都会生成一道').lightPurple(), Text.of('闪电').yellow(), Text.of('击中目标，弹射物包括掷出的物品。').lightPurple()])
 		  }
-		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('专注于远程攻击和精确的CQC，推荐的副职业都非常多样，且提供像连发弓和魔法双刃匕首这样的专业工具')])
+		  text.add(1, [Text.of('概要：').gold().underlined().italic(), Text.of('专注于远程攻击和精确的近身格斗术，推荐的副职业都非常多样，且提供像连发弓和魔法双刃匕首这样的专业工具')])
 		  text.add(2, Text.gold('  ')) 
 	  })
 
 	  event.addAdvanced('kubejs:warden', (item, advanced, text) => {
 		
 		if (!event.shift) {
-			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业综合').darkPurple()])
+			text.add(1, [Text.of('按住 ').yellow(), Text.of('SHIFT ').darkPurple(), Text.of('以查看').yellow(), Text.of('副职业协作').darkPurple()])
 		  } else {
 		  text.add(1, Text.gold('  ')) 
-		  text.add(2, [Text.of('副职业综合:').gold().underlined()])
+		  text.add(2, [Text.of('副职业协作:').gold().underlined()])
 		  text.add(3, [Text.of(' > 魔剑士').aqua()])
 		  text.add(4, [Text.of(' > 剑士').aqua()])
 		  text.add(5, [Text.of(' > 狂战士').aqua()])
@@ -282,7 +282,7 @@ ItemEvents.tooltip(event => {
 			text.add(1, [Text.of('按住 ').yellow(), Text.of('CTRL ').gold(), Text.of('以查看').yellow(), Text.of('职业属性').gold()])
 		  } else {
 			text.add(1, Text.gold('职业属性：').underlined().italic())
-			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+2 基础护甲值').blue(), Text.of(' (副职业综合效果：').yellow(), Text.of('+2.5 基础护甲值').darkPurple(), Text.of(')').yellow()])
+			text.add(2, [Text.of(' - 职业数据：').gray(), Text.of('+2 基础护甲值').blue(), Text.of(' (副职业协作效果：').yellow(), Text.of('+2.5 基础护甲值').darkPurple(), Text.of(')').yellow()])
 			text.add(3, [Text.of(' - 职业宠物：').gray(), Text.of('灰熊').gold()])
 			text.add(4, [Text.of(' - 职业被动：').gray(), Text.of('击杀可以回复少许生命值').lightPurple()])
 		  }
@@ -366,7 +366,7 @@ ItemEvents.tooltip(event => {
 			text.add(6, Text.aqua(' '))
 		  }
 		  text.add(1, Text.yellow('概述').underlined(true))
-		  text.add(2, [Text.of(' > 一个灵活的职业可以持有着').white(), Text.of('守护者的魔法书').lightPurple().italic(), Text.of('和').white(), Text.of('霹雳长矛').lightPurple().italic(), Text.of('，提供治疗和保护。')])
+		  text.add(2, [Text.of(' > 持有着').white(), Text.of('守护者的魔法书').lightPurple().italic(), Text.of('和').white(), Text.of('霹雳长矛').lightPurple().italic(), Text.of('的灵活职业').white(), Text.of('，提供治疗和保护。')])
 		  text.add(3, Text.yellow('  '))
 	  })
 
@@ -781,7 +781,7 @@ event.addAdvanced('kubejs:rune_of_the_conjurer', (item, advanced, text) => {
 
 		  }
 		  text.add(1, Text.yellow('概述').underlined(true))
-		  text.add(2, [Text.of(' > 甚至拥有着').white(), Text.of('酸骨').lightPurple().italic(), Text.of('，炼金术师最初很弱。然而，它可以从药水中获得非凡的加成，随着时间的推移，它的力量会达到难以想象的高度。')])
+		  text.add(2, [Text.of(' > 有了').white(), Text.of('酸骨').lightPurple().italic(), Text.of('的加持，即使炼金术师最初很弱。然而，它可以从药水中获得非凡的加成，随着时间的推移，它的力量会达到难以想象的高度。')])
 		  text.add(3, Text.yellow('  '))
 		})
 
