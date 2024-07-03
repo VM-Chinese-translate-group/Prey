@@ -433,7 +433,7 @@ ItemEvents.tooltip(event => {
 			text.add(5, Text.yellow(' '))
 			text.add(6, [Text.of(' > ').white(), Text.of('腐化容器：').red().underlined(), Text.of('每次攻击有几率').white(), Text.of('驯服').yellow(), Text.of('目标。每点').white(), Text.of('收获的血').darkRed(), Text.of('增加').white(), Text.of('1%').green(), Text.of('几率。你会失去').white(), Text.of('10点收获的血').darkRed(), Text.of('以').white(), Text.of('驯服').yellow(), Text.of('一只生物。').white(), Text.of('升级').green(), Text.of('血裂者').lightPurple(), Text.of('以给予你').white(), Text.of('腐化盟友').darkRed(), Text.of('强力Buff。').white()])
 			text.add(7, Text.yellow(' '))
-		}
+				}
 		
 		if (!event.shift) {
 			text.add(1, [Text.of('按住 ').gold(), Text.of('SHIFT ').yellow(), Text.of('以查看').gold(), Text.of('等级').darkRed().italic().underlined(true)])

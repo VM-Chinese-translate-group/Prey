@@ -29,7 +29,7 @@
 							id: "minecraft:air"
 							tag: {
 								glide: 0b
-                        struck: 0b
+								struck: 0b
 							}
 						}
 					}
@@ -787,7 +787,7 @@
 							"dungeons_libraries:built_in_enchantments": { }
 						}
 						id: "minecraft:fire_charge"
-						}
+					}
 					type: "item"
 				}
 				{

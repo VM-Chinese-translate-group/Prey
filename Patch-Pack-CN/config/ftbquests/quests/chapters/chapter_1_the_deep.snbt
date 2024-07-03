@@ -106,7 +106,7 @@
 			}]
 			title: "溺尸"
 			x: 1.0d
-			y: -0.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7E369C270A0FCEBD"]
@@ -181,8 +181,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -1.0d
-			y: 1.0d
+			x: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["14836D63D5E2F7D9"]
@@ -316,7 +316,7 @@
 				type: "structure"
 			}]
 			x: 1.0d
-			y: -3.0d		
+			y: -3.0d
 		}
 		{
 			dependencies: ["3BE65D7B8F51B626"]
@@ -346,7 +346,7 @@
 			}]
 			title: "从搁浅舰船获得贝壳号角"
 			x: 1.0d
-			y: -2.0d		
+			y: -2.0d
 		}
 		{
 			dependencies: ["2AA044A6B61D5C49"]
@@ -380,7 +380,7 @@
 			}]
 			title: "力荐: 背罐"
 			x: 2.0d
-			y: -5.5d		
+			y: -5.5d
 		}
 		{
 			dependencies: ["2AA044A6B61D5C49"]

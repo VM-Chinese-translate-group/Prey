@@ -3,15 +3,19 @@ const subclass_runes = {
     'guardian': 'guardian_rune',//
     'battlemage': 'battlemage_rune',//
     'conjurer': 'conjurer_rune',
+    // __ 
     'spellsword': 'spellsword_rune',//
     'kensei': 'kensei_rune',//
     'berserker': 'berserker_rune',//
+    ///
     'spirit_caller': 'spirit_caller_rune',//
     'alchemist': 'alchemist_rune',//
     'bounty_hunter': 'bounty_hunter_rune',//
+    ////
     'dreamweaver':'dreamweaver_rune',//
     'arcane_ranger': 'arcane_ranger_rune',
     'explorer': 'explorer_rune',
+    ///
     'bloodripper': 'bloodripper_rune',
     'beastmaster': 'beastmaster_rune',//
 };
@@ -217,11 +221,11 @@ const paramount_discs = {
         event.create('cleansing_serum', "basic").group('KubeJS').texture('kubejs:item/cleansing_serum').rarity('rare')
     
     });
-  StartupEvents.registry('sound_event', event => {
+
+
+    StartupEvents.registry('sound_event', event => {
         event.create('kubejs:sounds/bloodripper.ogg')
     })
-
-
 
 
 
